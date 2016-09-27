@@ -40,12 +40,17 @@
     
     
         <script>
-      function getMovieQuote() {
+      var tweetURL;
+function getPlayerQuote() {
   var randomGet = Math.floor(Math.random()*movies.length);
   document.getElementById("playerQuote").innerHTML = movies[randomGet].quote;
   document.getElementById("playerName").innerHTML = movies[randomGet].name;
+  var tweetURL = 'Google.com' + movies[0].quote;
 }
 
+function tweet() {
+  window.open(tweetURL);
+}
 
 var movies = [
   {
@@ -141,7 +146,7 @@ var movies = [
     quote: "LUq gonna pro run lets watch"
   }
 ]
-
+      //# sourceURL=pen.js
     </script>
 
     
