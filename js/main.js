@@ -111,5 +111,9 @@ var quotes = [
   {
     name: "Plekz",
     quote: "just reading that gave me stage 7"
+  },
+  {
+    name: "Plekz",
+    quote: "cunts attract cunts"
   }
 ]
