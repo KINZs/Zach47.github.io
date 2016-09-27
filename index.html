@@ -33,17 +33,17 @@
     </div>
 </div>
 <footer>
-<p class="text-center">Written and Coded by <a href="http://codepen.io/Zach47/">Jacob Barrett</a></p>
+<p class="text-center">Written and Coded by <a href="https://github.com/Zach47">Jacob Barrett</a></p>
 </footer>
     
     
         <script>
-      var tweetURL;
+var tweetURL;
 function getPlayerQuote() {
   var randomGet = Math.floor(Math.random()*quotes.length);
   document.getElementById("playerQuote").innerHTML = quotes[randomGet].quote;
   document.getElementById("playerName").innerHTML = quotes[randomGet].name;
-  var tweetURL = 'https://twitter.com/intent/tweet?text=' + quotes[randomGet].quote + quotes[randomGet].name;
+  var tweetURL = 'https://twitter.com/intent/tweet?text=hey';
 }
 
 function tweet() {
