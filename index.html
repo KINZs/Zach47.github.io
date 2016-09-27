@@ -43,9 +43,11 @@ function getPlayerQuote() {
   var randomGet = Math.floor(Math.random()*quotes.length);
   document.getElementById("playerQuote").innerHTML = quotes[randomGet].quote;
   document.getElementById("playerName").innerHTML = quotes[randomGet].name;
-  var tweetURL = 'https://twitter.com/intent/tweet?text=hey';
+  tweetURL = 'https://twitter.com/intent/tweet?text=' + movies[randomGet].quote + '-' + movies[randomGet].name;
 }
-
+		
+window.onload = quotes;
+		
 function tweet() {
   window.open(tweetURL);
 }
