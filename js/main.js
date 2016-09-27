@@ -131,5 +131,9 @@ var quotes = [
   {
     name: "zza",
     quote: "back to back 30 min runs on tron, ive seen it all"
+  },
+  {
+    name: "Maksy",
+    quote: "How many quarters are there in four dollars? There are 12 quarters."
   }
 ]
