@@ -115,5 +115,21 @@ var quotes = [
   {
     name: "Plekz",
     quote: "cunts attract cunts"
+  },
+  {
+    name: "Linus",
+    quote: "supa you fat fuck"
+  },
+  {
+    name: "Winter Nebs",
+    quote: "well my uncles a child molester"
+  },
+  {
+    name: "Cloudff7tm",
+    quote: "shameful waffle sucker freaking eat a pancake im off bout to eat my peepee this is my peepee"
+  },
+  {
+    name: "zza",
+    quote: "back to back 30 min runs on tron, ive seen it all"
   }
 ]
