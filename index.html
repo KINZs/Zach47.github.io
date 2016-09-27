@@ -1,20 +1,19 @@
 
 
 <!DOCTYPE html>
-<html >
+<html>
   <head>
     <meta charset="UTF-8">
     
     <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
 		<!-- link to main stylesheet -->
 		<link rel="stylesheet" type="text/css" href="/css/main.css">
-        
   </head>
 
   <body translate="no" >
 
     <link href="https://fonts.googleapis.com/css?family=Copse" rel="stylesheet">
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"/>
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"/>
 
 <h1 class="text-center">Quotes from KZers</h1>
 
@@ -25,12 +24,11 @@
   </div>
   <div class="row">
     <div class="newQuote col-xs-6">
-      <a target='_blank' onclick='getMovieQuote();getMovieTitle();getMovieYear()'><button class="btn btn-block btn-danger">Give Me a Quote</button></a>
+      <a target='_blank' onClick='getPlayerQuote()'><button class="btn btn-block btn-danger">Give Me a Quote</button></a>
     </div>
     
     <div class="tweetThis col-xs-6">
-      <a target='_blank' class="twitter-share-button"
-  href="https://twitter.com/intent/tweet"><button class="btn btn-block btn-info"><i class="fa fa-twitter"> Tweet This Quote</i></a>
+      <a target='_blank' onClick='tweet()'><button class="btn btn-block btn-info"><i class="fa fa-twitter"> Tweet This Quote</i></a>
     </div>
     </div>
 </div>
@@ -45,7 +43,7 @@ function getPlayerQuote() {
   var randomGet = Math.floor(Math.random()*movies.length);
   document.getElementById("playerQuote").innerHTML = movies[randomGet].quote;
   document.getElementById("playerName").innerHTML = movies[randomGet].name;
-  var tweetURL = 'https://twitter.com/intent/tweet?text=' + movies[randomGet].quote + movies[randomGet].name;
+  var tweetURL = 'https://twitter.com/intent/tweet?text=' + movies[0].quote;
 }
 
 function tweet() {
@@ -153,4 +151,3 @@ var movies = [
     
   </body>
 </html>
- 
