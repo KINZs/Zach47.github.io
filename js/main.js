@@ -135,5 +135,17 @@ var quotes = [
   {
     name: "Maksy",
     quote: "How many quarters are there in four dollars? There are 12 quarters."
+  },
+  {
+    name: "Cloudff7tm",
+    quote: "because im a dicklicker and im currently eating a dick"
+  },
+  {
+    name: "Cloudff7tm",
+    quote: "ill believe that when my dick expands 16 inches in 1 night"
+  },
+  {
+    name: "nosound",
+    quote: "i shouldn't have to strafe like zpamm to do the first jump"
   }
 ]
