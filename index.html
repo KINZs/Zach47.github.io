@@ -40,17 +40,17 @@
         <script>
       var tweetURL;
 function getPlayerQuote() {
-  var randomGet = Math.floor(Math.random()*movies.length);
-  document.getElementById("playerQuote").innerHTML = movies[randomGet].quote;
-  document.getElementById("playerName").innerHTML = movies[randomGet].name;
-  var tweetURL = 'https://twitter.com/intent/tweet?text=' + movies[0].quote;
+  var randomGet = Math.floor(Math.random()*quotes.length);
+  document.getElementById("playerQuote").innerHTML = quotes[randomGet].quote;
+  document.getElementById("playerName").innerHTML = quotes[randomGet].name;
+  var tweetURL = 'https://twitter.com/intent/tweet?text=' + quotes[randomGet].quote + quotes[randomGet].name;
 }
 
 function tweet() {
   window.open(tweetURL);
 }
 
-var movies = [
+var quotes = [
   {
     name: "Haru",
     quote: "Holy fuck this joink guy triggered me"
