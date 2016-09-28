@@ -1,16 +1,3 @@
-var tweetURL;
-function getPlayerQuote() {
-  var randomGet = Math.floor(Math.random()*quotes.length);
-  document.getElementById("playerQuote").innerHTML = quotes[randomGet].quote;
-  document.getElementById("playerName").innerHTML = quotes[randomGet].name;
-  tweetURL = 'https://twitter.com/intent/tweet?text=' + quotes[randomGet].quote + ' - ' + quotes[randomGet].name;
-}
-		
-window.onload = quotes;
-		
-function tweet() {
-  window.open(tweetURL);
-}
 var quotes = [
   {
     name: "Haru",
@@ -157,3 +144,17 @@ var quotes = [
     quote: "HOC is playing fotball and doing drugs"
   }
 ]
+
+// Moved functions down
+var tweetURL;
+function getPlayerQuote() {
+  var randomGet = Math.floor(Math.random()*quotes.length);
+  document.getElementById("playerQuote").innerHTML = quotes[randomGet].quote;
+  document.getElementById("playerName").innerHTML = quotes[randomGet].name;
+  tweetURL = 'https://twitter.com/intent/tweet?text=' + quotes[randomGet].quote + ' - ' + quotes[randomGet].name;
+}
+getPlayerQuote();
+
+function tweet() {
+  window.open(tweetURL);
+}
