@@ -151,5 +151,9 @@ var quotes = [
   {
     name: "Supa",
     quote: "One day I closed my eyes and sach was good."
+  },
+  {
+    name: "Danvari",
+    quote: "HOC is playing fotball and doing drugs"
   }
 ]
