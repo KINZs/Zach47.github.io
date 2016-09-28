@@ -146,6 +146,10 @@ var quotes = [
   {
     name: "wejn",
     quote: "isnt honk kong in japan"
+  },
+  {
+    name: "LUq",
+    quote: "some dank memes my eyes are reading :^)"
   }
 ]
 
