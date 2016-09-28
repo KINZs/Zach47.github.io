@@ -147,5 +147,9 @@ var quotes = [
   {
     name: "nosound",
     quote: "i shouldn't have to strafe like zpamm to do the first jump"
+  },
+  {
+    name: "Supa",
+    quote: "One day I closed my eyes and sach was good."
   }
 ]
