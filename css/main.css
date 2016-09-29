@@ -15,8 +15,9 @@ h1 {
   color: #C5EFF7;
 }
 
-a:link, a:hover {
+a:link, a:hover, a:visited {
     color: #C5EFF7;
+    text-decoration: none;
 }
 
 h2 {
@@ -45,9 +46,6 @@ h4 {
   left: 5%;
 }
 
-a:hover {
-    text-decoration: none;
-}
 
 footer {
   text-align: center;
