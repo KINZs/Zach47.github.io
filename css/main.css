@@ -15,6 +15,10 @@ h1 {
   color: #C5EFF7;
 }
 
+a:link, a:hover {
+    color: #C5EFF7;
+}
+
 h2 {
   text-align: center;
   font-family: 'Copse', serif;
