@@ -150,6 +150,22 @@ var quotes = [
   {
     name: "LUq",
     quote: "some dank memes my eyes are reading :^)"
+  },
+  {
+    name: "Child from Hell",
+    quote: "ohhh i`m testing script with worsteverseen strafes! This script maded by myself=)"
+  },
+  {
+    name: "rifk",
+    quote: " yeye i've still got transparent semen Keepo"
+  },
+  {
+    name: "duck",
+    quote: "try starfing"
+  },
+  {
+    name: "Funk",
+    quote: "Are you wanna get banned?"
   }
 ]
 
