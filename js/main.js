@@ -166,6 +166,10 @@ var quotes = [
   {
     name: "Funk",
     quote: "Are you wanna get banned?"
+  },
+  {
+    name: "Zane",
+    quote: "I played this map on a Brazilian server and they all yelled in Portuguese when I beat the map. Prob top 5 scariest moments in my life"
   }
 ]
 
