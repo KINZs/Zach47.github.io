@@ -49,6 +49,7 @@ h4 {
 textarea {
   resize: none;
   width: 50%;
+  height: 90px;
 }
 
 footer {
