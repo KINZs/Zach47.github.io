@@ -177,7 +177,7 @@ var quotes = [
   },
   {
     name: "Danzay",
-    quote: "omg they added a bind jump to infernooOO!?
+    quote: "omg they added a bind jump to infernooOO!?"
   },
   {
     name: "Klyve",
