@@ -181,7 +181,7 @@ var quotes = [
   },
   {
     name: "Klyve",
-    quote: "so they more or less made everything american size"
+    quote: "so they more or less made everything american size",
   }
 ]
 
