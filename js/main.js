@@ -170,10 +170,22 @@ var quotes = [
   {
     name: "Zane",
     quote: "I played this map on a Brazilian server and they all yelled in Portuguese when I beat the map. Prob top 5 scariest moments in my life"
+  },
+  {
+    name: "Danzay",
+    quote: "time to start using bind"
+  },
+  {
+    name: "Danzay",
+    quote: "omg they added a bind jump to infernooOO!?
+  },
+  {
+    name: "Klyve",
+    quote: "so they more or less made everything american size"
   }
 ]
 
-// Moved functions down
+// Functions
 var tweetURL;
 function getPlayerQuote() {
   var randomGet = Math.floor(Math.random()*quotes.length);
