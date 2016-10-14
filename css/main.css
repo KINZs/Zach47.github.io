@@ -1,10 +1,10 @@
 body {
-  background: #3A539B;
+  background: #C63D0F;
 }
 
 .quote-box {
   position: relative;
-  background-color: #C5EFF7;
+  background-color: #FDF3E7;
   margin: auto;
   width: 40%;
   height: 260px;
@@ -12,24 +12,24 @@ body {
 h1 {
   text-align: center;
   font-family: 'Copse', serif;
-  color: #C5EFF7;
+  color: #F7882F;
 }
 
 a:link, a:hover, a:visited {
-    color: #C5EFF7;
+    color: #F7882F;
     text-decoration: none;
 }
 
 h2 {
   text-align: center;
   font-family: 'Copse', serif;
-  color: #3A539B;
+  color: #3B3738;
 }
 
 h4 {
   text-align: right;
   font-family: 'Orbitron', sans-serif;
-  color: #3A539B;
+  color: #3B3738;
 }
 
 .newQuote {
@@ -55,6 +55,5 @@ textarea {
 footer {
   text-align: center;
   font-family: 'Copse', serif;
-  color: #C5EFF7;
+  color: #F7882F;
 }
-
