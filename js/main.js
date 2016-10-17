@@ -191,14 +191,33 @@ var quotes = [
 
 // Functions
 var tweetURL;
+var temp_QArray = [];
+
+// Gets player quote from an array, randomly.
 function getPlayerQuote() {
+  
+  // Refills Array when 0 is reached
+  if (temp_QArray.length < 1) {
+    temp_QArray = quotes.slice(0);
+  }
+  
   var randomGet = Math.floor(Math.random()*quotes.length);
+  
+  
   document.getElementById("playerQuote").innerHTML = quotes[randomGet].quote;
   document.getElementById("playerName").innerHTML = quotes[randomGet].name;
   tweetURL = 'https://twitter.com/intent/tweet?text=' + quotes[randomGet].quote + ' - ' + quotes[randomGet].name;
+  
+  // Removes current quote from temp array
+  if (randomGet > -1) {
+    temp_QArray.splice(randomGet, 1);
+  }
+  
 }
 getPlayerQuote();
 
+// Opens twitter to post a tweet with quote and name inside.
+// See getPlayerQuote function for tweetURL
 function tweet() {
   window.open(tweetURL);
 }
