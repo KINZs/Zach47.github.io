@@ -201,12 +201,12 @@ function getPlayerQuote() {
     temp_QArray = quotes.slice(0);
   }
   
-  var randomGet = Math.floor(Math.random()*quotes.length);
+  var randomGet = Math.floor(Math.random()*temp_QArray.length);
   
   
-  document.getElementById("playerQuote").innerHTML = quotes[randomGet].quote;
-  document.getElementById("playerName").innerHTML = quotes[randomGet].name;
-  tweetURL = 'https://twitter.com/intent/tweet?text=' + quotes[randomGet].quote + ' - ' + quotes[randomGet].name;
+  document.getElementById("playerQuote").innerHTML = temp_QArray[randomGet].quote;
+  document.getElementById("playerName").innerHTML = temp_QArray[randomGet].name;
+  tweetURL = 'https://twitter.com/intent/tweet?text=' + temp_QArray[randomGet].quote + ' - ' + temp_QArray[randomGet].name;
   
   // Removes current quote from temp array
   if (randomGet > -1) {
