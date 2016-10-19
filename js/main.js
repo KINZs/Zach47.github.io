@@ -185,7 +185,11 @@ var quotes = [
   },
   {
     name: "Vortex ^w^",
-    quote: "Ive seen enough of funk to get him banned",
+    quote: "Ive seen enough of funk to get him banned"
+  },
+  {
+    name: "MMZ_Kask",
+    quote: "Anyone that takes a record from b0utamine is OK in my book.",
   }
 ]
 
@@ -201,6 +205,7 @@ function getPlayerQuote() {
     temp_QArray = quotes.slice(0);
   }
   
+  // Gets a random number
   var randomGet = Math.floor(Math.random()*temp_QArray.length);
   
   
