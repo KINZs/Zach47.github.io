@@ -189,7 +189,11 @@ var quotes = [
   },
   {
     name: "MMZ_Kask",
-    quote: "Anyone that takes a record from b0utamine is OK in my book.",
+    quote: "Anyone that takes a record from b0utamine is OK in my book."
+  },
+  {
+    name: "Persona",
+    quote: "hope it was worth the ban kiddo!!!!!!",
   }
 ]
 
