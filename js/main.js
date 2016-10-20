@@ -193,7 +193,11 @@ var quotes = [
   },
   {
     name: "Persona",
-    quote: "hope it was worth the ban kiddo!!!!!!",
+    quote: "hope it was worth the ban kiddo!!!!!!"
+  },
+  {
+    name: "Klyve",
+    quote: "my bones are strong dude",
   }
 ]
 
