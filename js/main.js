@@ -197,7 +197,11 @@ var quotes = [
   },
   {
     name: "Klyve",
-    quote: "my bones are strong dude",
+    quote: "my bones are strong dude"
+  },
+  {
+    name: "Sachburger",
+    quote: "so if someone is having a stroke you toss them an aspirin",
   }
 ]
 
