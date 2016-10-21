@@ -1,111 +1,118 @@
+// {
+//   "Name": "<span>Klyve</span>",
+//   "Steam": '<a href="https://steamcommunity.com/id/officialKlyve"><i class="fa fa-steam-square fa-2x" aria-hidden="true"></i></a>',
+//   "Twitch": '<a href="https://twitch.tv/klyve"><i class="fa fa-twitch fa-2x" aria-hidden="true"></i></a>',
+// },
+
 // Array of Global admins
 var globalAdmins = [
   {
-    "Name": "<span>Klyve</span>",
-    "Steam": '<a href="https://steamcommunity.com/id/officialKlyve"><i class="fa fa-steam-square fa-2x" aria-hidden="true"></i></a>',
-    "Twitch": '<a href="https://twitch.tv/klyve"><i class="fa fa-twitch fa-2x" aria-hidden="true"></i></a>',
+    "name": "Klyve",
+    "steam": 'officialKlyve',
+    "twitch": 'klyve',
   },
   {
-    "Name": "<span>Sachburger</span>",
-    "Steam": '<a href="https://steamcommunity.com/id/Sachburger"><i class="fa fa-steam-square fa-2x" aria-hidden="true"></i></a>',
-    "Twitch": '<a href="https://twitch.tv/Sachburger"><i class="fa fa-twitch fa-2x" aria-hidden="true"></i></a>'
+    "name": "Sachburger",
+    "steam": 'Sachburger',
+    "twitch": 'Sachburger',
   },
   {
-    "Name": "<span>Zpamm</span>",
-    "Steam": '<a href="https://steamcommunity.com/id/Zpamm"><i class="fa fa-steam-square fa-2x" aria-hidden="true"></i></a>',
-    "Twitch": '<a href="https://twitch.tv/zpammm"><i class="fa fa-twitch fa-2x"></i></a><span></span>'
+    "name": "Zpamm",
+    "steam": 'Zpamm',
+    "twitch": 'zpammm',
   },
   {
-    "Name": "<span>Chuckles</span>",
-    "Steam": '<a href="https://steamcommunity.com/id/ChucklesHoC"><i class="fa fa-steam-square fa-2x" aria-hidden="true"></i></a>'
+    "name": "Chuckles",
+    "steam": 'ChucklesHoC',
   },
   {
-    "Name": "<span>Plekz</span>",
-    "Steam": '<a href="https://steamcommunity.com/id/pLekz"><i class="fa fa-steam-square fa-2x" aria-hidden="true"></i></a>'
+    "name": "Plekz",
+    "steam": 'pLekz',
   },
   {
-    "Name": "<span>Funk</span>",
-    "Steam": '<a href="https://steamcommunity.com/id/uwatm8lelele"><i class="fa fa-steam-square fa-2x" aria-hidden="true"></i></a>'
+    "name": "Funk",
+    "steam": 'uwatm8lelele',
   },
 ];
 
 // Array of map testers
 var mapTesters = [
   {
-    "Name": "<span>Zach47</span>",
-    "Steam": '<a href="https://steamcommunity.com/id/Zach47"><i class="fa fa-steam-square fa-2x" aria-hidden="true"></i></a>',
-    "Twitch": '<a href="https://twitch.tv/ijjust"><i class="fa fa-twitch fa-2x" aria-hidden="true"></i></a>',
-    "Youtube": '<a href="https://www.youtube.com/channel/UCMNFbj_kGdJ4QcAAjsGI3Ew"><i class="fa fa-youtube-play fa-2x" aria-hidden="true"></i></a>'
+    "name": "Zach47",
+    "steam": 'Zach47',
+    "twitch": 'ijjust',
+    "youtube": 'UCMNFbj_kGdJ4QcAAjsGI3Ew'
   },
   {
-    "Name": "<span>DanZay</span>",
-    "Steam": '<a href="https://steamcommunity.com/id/DanZay/"><i class="fa fa-steam-square fa-2x" aria-hidden="true"></i></a>',
-    "Twitch": '<a href="https://www.twitch.tv/danzayau"><i class="fa fa-twitch fa-2x"></i></a>',
-    "Youtube": '<a href="https://www.youtube.com/channel/UCZs3cFXfMIY6l3yXT3ooHVQ"><i class="fa fa-youtube-play fa-2x"></i></a>'
+    "name": "DanZay",
+    "steam": 'DanZay',
+    "twitch": 'danzayau',
+    "youtube": 'UCZs3cFXfMIY6l3yXT3ooHVQ'
   },
   {
-    "Name": "<span>Sachburger</span>",
-    "Steam": '<a href="https://steamcommunity.com/id/Sachburger"><i class="fa fa-steam-square fa-2x" aria-hidden="true"></i></a>',
-    "Twitch": '<a href="https://twitch.tv/Sachburger"><i class="fa fa-twitch fa-2x" aria-hidden="true"></i></a>'
+    "name": "Sachburger",
+    "steam": 'Sachburger',
+    "twitch": 'Sachburger'
   }
 ];
 
 // Array of notable players
 var notablePlayers = [
+
   {
-    "Name": "<span>Launders</span>",
-    "Steam": '<a href="https://steamcommunity.com/id/csboxr"><i class="fa fa-steam-square fa-2x" aria-hidden="true"></i></a>',
-    "Twitch": '<a href="https://www.twitch.tv/launders"><i class="fa fa-twitch fa-2x"></i></a>',
-    "Youtube": '<a href="https://www.youtube.com/user/csboxr"><i class="fa fa-youtube-play fa-2x"></i></a>'
+    "name": "Launders",
+    "steam": 'csboxr',
+    "twitch": 'launders',
+    "youtube": 'csboxr'
   },
   {
-    "Name": "<span>Ruben</span>",
-    "Steam": '<a href="https://steamcommunity.com/id/rrubenlol"><i class="fa fa-steam-square fa-2x" aria-hidden="true"></i></a>',
-    "Twitch": '<a href="https://www.twitch.tv/rrubenlol"><i class="fa fa-twitch fa-2x"></i></a>',
-    "Youtube": '<a href="https://www.youtube.com/user/rrubencs1"><i class="fa fa-youtube-play fa-2x"></i></a>'
+    "name": "Ruben",
+    "steam": 'rrubenlol',
+    "twitch": 'rrubenlol',
+    "youtube": 'rrubencs1'
   },
   {
-    "Name": "<span>Linus</span>",
-    "Steam": '<a href="https://steamcommunity.com/profiles/76561198004411671/"><i class="fa fa-steam-square fa-2x" aria-hidden="true"></i></a>',
-    "Twitch": '<a href="https://www.twitch.tv/jokkan33"><i class="fa fa-twitch fa-2x"></i></a>'
+    "name": "Linus",
+    "steam": '76561198004411671',
+    "twitch": 'jokkan33'
   },
   {
-    "Name": "<span>Zza</span>",
-    "Steam": '<a href="https://steamcommunity.com/id/pizzafactory/"><i class="fa fa-steam-square fa-2x" aria-hidden="true"></i></a>',
-    "Twitch": '<a href="https://www.twitch.tv/pizzzzasht"><i class="fa fa-twitch fa-2x"></i></a>'
+    "name": "Zza",
+    "steam": 'pizzafactory',
+    "twitch": 'pizzzzasht'
   },
   {
-    "Name": "<span>JWL</span>",
-    "Steam": '<a href="https://steamcommunity.com/id/LucidRainbows"><i class="fa fa-steam-square fa-2x" aria-hidden="true"></i></a>',
-    "Youtube": '<a href="https://www.youtube.com/user/LucidRainbows"><i class="fa fa-youtube-play fa-2x"></i></a>'
+    "name": "JWL",
+    "steam": 'LucidRainbows',
+    "twitch": 'LucidRainbows'
   },
   {
-    "Name": "<span>So0le</span>",
-    "Steam": '<a href="https://steamcommunity.com/id/so0le"><i class="fa fa-steam-square fa-2x" aria-hidden="true"></i></a>'
+    "name": "So0le",
+    "steam": 'so0le'
   },
   {
-    "Name": "<span>Zprince</span>",
-    "Steam": '<a href="https://steamcommunity.com/id/zprince32/"><i class="fa fa-steam-square fa-2x" aria-hidden="true"></i></a>'
+    "name": "Zprince",
+    "steam": 'zprince32'
   },
   {
-    "Name": "<span>1NutWonder</span>",
-    "Steam": '<a href="https://steamcommunity.com/profiles/76561198107281573/"><i class="fa fa-steam-square fa-2x" aria-hidden="true"></i></a>'
+    "name": "1NutWonder",
+    "steam": '76561198107281573'
   },
   {
-    "Name": "<span>Kenneth</span>",
-    "Steam": '<a href="https://steamcommunity.com/id/KennethDota"><i class="fa fa-steam-square fa-2x" aria-hidden="true"></i></a>'
+    "name": "Kenneth",
+    "steam": 'KennethDota'
   },
   {
-    "Name": "<span>Supa</span>",
-    "Steam": '<a href="https://steamcommunity.com/id/supa"><i class="fa fa-steam-square fa-2x" aria-hidden="true"></i></a>'
+    "name": "Supa",
+    "steam": 'supa'
   },
   {
-    "Name": "<span>Haru</span>",
-    "Steam": '<a href="https://steamcommunity.com/id/haruozzie"><i class="fa fa-steam-square fa-2x" aria-hidden="true"></i></a>'
+    "name": "Haru",
+    "steam": 'haruozzie'
   },
   {
-    "Name": "<span>Sikari</span>",
-    "Steam": '<a href="https://steamcommunity.com/id/SikariCSGO"><i class="fa fa-steam-square fa-2x" aria-hidden="true"></i></a>'
+    "name": "Sikari",
+    "steam": 'SikariCSGO'
   }
 ];
 
@@ -119,6 +126,26 @@ function dropDown() {
 }
 
 
+function parsePlayer(player) {
+  var tr = $('<tr>');
+
+  if(player.steam) {
+    tr.append('<a href="https://steamcommunity.com/id/'+player.steam+'"><i class="fa fa-steam-square fa-2x" aria-hidden="true"></i></a>');
+  }
+  if(player.twitch) {
+    tr.append('<a href="https://twitch.tv/'+player.twitch+'"><i class="fa fa-twitch fa-2x" aria-hidden="true"></i></a>');
+  }
+  if(player.youtube) {
+    tr.append('<a href="https://www.youtube.com/user/'+player.youtube+'"><i class="fa fa-youtube-play fa-2x"></i></a>');
+  }
+  if(player.name) {
+    tr.append('<span>'+player.name+'</span>');
+  }
+
+  return tr;
+}
+
+
 
 // Gets information from array, then fills the tables in html with data
 $(document).ready(function() {
@@ -129,32 +156,20 @@ $(document).ready(function() {
   var globalList = $('#globalAdminList');
 
   $.each(globalAdmins, function(i, player) {
-    var tr = $('<tr>');
-    $.each(info, function(i, info) {
-      $('<td>').html(player[info]).appendTo(tr);
-    });
-    globalList.append(tr);
+    globalList.append(parsePlayer(player));
   });
 
   // Fills Map Tester drop down menu with Map Testers Array
   var mapTesterList = $('#mapTestersList');
 
   $.each(mapTesters, function(i, player) {
-    var tr = $('<tr>');
-    $.each(info, function(i, info) {
-      $('<td>').html(player[info]).appendTo(tr);
-    });
-    mapTesterList.append(tr);
+    mapTesterList.append(parsePlayer(player));
   });
 
   // Fills Notable Players drop down menu with Notable Players Array
   var notablePlayerList = $('#notablePlayersList');
 
   $.each(notablePlayers, function(i, player) {
-    var tr = $('<tr>');
-    $.each(info, function(i, info) {
-      $('<td>').html(player[info]).appendTo(tr);
-    });
-    notablePlayerList.append(tr);
+    notablePlayerList.append(parsePlayer(player));
   });
 });
