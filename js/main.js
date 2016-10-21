@@ -201,7 +201,11 @@ var quotes = [
   },
   {
     name: "Sachburger",
-    quote: "so if someone is having a stroke you toss them an aspirin",
+    quote: "so if someone is having a stroke you toss them an aspirin"
+  },
+  {
+    name: "Zpamm",
+    quote: "Holy fuck, look at the block! Look where you're jumping! Do you fucking cross the road without looking, you're just like ayy YOLO!",
   }
 ]
 
