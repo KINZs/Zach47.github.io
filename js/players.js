@@ -1,8 +1,3 @@
-// {
-//   "Name": "<span>Klyve</span>",
-//   "Steam": '<a href="https://steamcommunity.com/id/officialKlyve"><i class="fa fa-steam-square fa-2x" aria-hidden="true"></i></a>',
-//   "Twitch": '<a href="https://twitch.tv/klyve"><i class="fa fa-twitch fa-2x" aria-hidden="true"></i></a>',
-// },
 
 // Array of Global admins
 var globalAdmins = [
