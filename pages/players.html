@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+
+	  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	  <!-- link to main stylesheet -->
+	  <link rel="stylesheet" type="text/css" href="css/players.css">
+  </head>
+
+  <body translate="no" >
+
+    <link href="https://fonts.googleapis.com/css?family=Copse" rel="stylesheet">
+<link rel="stylesheet" href="C:/Users/BarrettSSD/Documents/Website/font-awesome-4.6.3/css/font-awesome.min.css"/>
+
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="https://github.com/Zach47">Jacob Barrett</a>
+        </div>
+        <ul class="nav navbar-nav">
+          <li><a href="index.html">Home</a></li>
+          <li class="active"><a href="pages/players.html">Players</a></li>
+          <li><a href="pages/contact.html">Contact Me</a></li>
+        </ul>
+      </div>
+    </nav>
+
+	  <h1 class="text-center">Community Members</h1>
+
+<div class="quote-box container-fluid">
+  <div class="panel-group" id="accordion">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse1"><h4>Global Admins</h4></a>
+        </h4>
+      </div>
+      <div id="collapse1" class="panel-collapse collapse in">
+        <div class="panel-body">
+          <table id="globalAdminList">
+          </table>
+        </div>
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse2"><h4>Map Testers</h4></a>
+        </h4>
+      </div>
+      <div id="collapse2" class="panel-collapse collapse">
+        <div class="panel-body">
+          <table id="mapTestersList">
+          </table>
+        </div>
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse3"><h4>Notable Players</h4></a>
+        </h4>
+      </div>
+      <div id="collapse3" class="panel-collapse collapse">
+        <div class="panel-body">
+          <table id="notablePlayersList">
+          </table>
+        </div>
+      </div>
+    </div>
+</div>
+</div>
+
+
+
+  <!-- Load scripts at the bottom of the body tag -->
+  <script type="text/javascript" src="js/players.js"></script>
+  </body>
+</html>
