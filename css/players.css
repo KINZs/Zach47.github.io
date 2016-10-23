@@ -28,6 +28,13 @@ span {
   color: #222222;
 }
 
+.fa-youtube-play {
+    color: #bb0000;
+}
+
+.fa-twitch {
+  color: #6441a5;
+}
 
 .panel-heading {
   background-color: #f7d0a0 !important;
