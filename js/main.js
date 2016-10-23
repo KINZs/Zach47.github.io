@@ -205,7 +205,11 @@ var quotes = [
   },
   {
     name: "Zpamm",
-    quote: "Holy fuck, look at the block! Look where you're jumping! Do you fucking cross the road without looking, you're just like ayy YOLO!",
+    quote: "Holy fuck, look at the block! Look where you're jumping! Do you fucking cross the road without looking, you're just like ayy YOLO!"
+  },
+  {
+    name: "Sachburger",
+    quote: "I dont know anything about gameplay I just shit talk gameplay.",
   }
 ]
 
