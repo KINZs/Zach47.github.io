@@ -1,15 +1,15 @@
-
 // Array of Global admins
 var globalAdmins = [
-  {
-    "name": "Klyve",
-    "steam": 'officialKlyve',
-    "twitch": 'klyve',
-  },
   {
     "name": "Sachburger",
     "steam": 'Sachburger',
     "twitch": 'Sachburger',
+    "youtube": 'Specialized',
+  },
+  {
+    "name": "Klyve",
+    "steam": 'officialKlyve',
+    "twitch": 'klyve',
   },
   {
     "name": "Zpamm",
@@ -47,7 +47,8 @@ var mapTesters = [
   {
     "name": "Sachburger",
     "steam": 'Sachburger',
-    "twitch": 'Sachburger'
+    "twitch": 'Sachburger',
+    "youtube": 'Specialized'
   }
 ];
 
@@ -125,7 +126,7 @@ function parsePlayer(player) {
   var tr = $('<tr>');
 
   if(player.steam) {
-    tr.append('<a href="https://steamcommunity.com/id/'+player.steam+'"><i class="fa fa-steam-square fa-2x" aria-hidden="true"></i></a>');
+    tr.append('<a href="https://steamcommunity.com/id/'+player.steam+'"><i class="fa fa-steam-square fa-2x" style="color:black" aria-hidden="true"></i></a>');
   }
   if(player.twitch) {
     tr.append('<a href="https://twitch.tv/'+player.twitch+'"><i class="fa fa-twitch fa-2x" aria-hidden="true"></i></a>');
