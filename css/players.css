@@ -1,5 +1,8 @@
+
 body {
   background: #C63D0F;
+  height: 100%;
+  padding-bottom: 60px;
 }
 
 .quote-box {
@@ -7,25 +10,18 @@ body {
   background-color: #FDF3E7;
   margin: auto;
   width: 60%;
-  height: 800px;
   padding: 10px;
 }
 
 h1 {
   text-align: center;
-  font-family: 'Copse', serif;
+  font-family: 'Work Sans', sans-serif;
   color: #F9BF3B;
 }
 
 a:link, a:hover, a:visited {
-    color: black;
+    color: orange;
     text-decoration: none;
-}
-
-span {
-  font-family: "Orbitron", sans-serif;
-  font-size: 14pt;
-  color: #222222;
 }
 
 .fa-youtube-play {
@@ -43,13 +39,51 @@ span {
   background-color: #FDF3E7 !important;
 }
 
+span {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 14pt;
+  color: #222222;
+}
+
 h2 {
-  font-family: 'Copse', serif;
+  font-family: 'Work Sans', sans-serif;
   color: #3B3738;
+  text-align: left;
 }
 
 h4 {
-  font-family: 'Orbitron', sans-serif;
+  font-family: 'Work Sans', sans-serif;
   color: #3B3738;
   font-size: 16pt;
+}
+
+p {
+
+  font-family: 'Work Sans', sans-serif;
+  color: #3B3738;
+  font-size: 14pt;
+  text-align: left;
+}
+
+p span.firstWord {
+  font-size: 24pt;
+}
+
+hr {
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 1px;
+}
+
+
+footer {
+  color: white;
+  text-align: center;
+  background-color: #222222;
+  height: 60px;
+  bottom: 0;
 }
