@@ -4,7 +4,7 @@ var globalAdmins = [
     "name": "Sachburger",
     "steam": 'Sachburger',
     "twitch": 'Sachburger',
-    "youtube": 'Specialized',
+    "youtube": 'SpeciaIized',
   },
   {
     "name": "Klyve",
