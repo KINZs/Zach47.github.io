@@ -12,8 +12,8 @@
 
   <body translate="no" >
 
-    <link href="https://fonts.googleapis.com/css?family=Copse" rel="stylesheet">
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="C:/Users/BarrettSSD/Documents/Website/font-awesome-4.6.3/css/font-awesome.min.css"/>
 
     <nav class="navbar navbar-inverse">
       <div class="container-fluid">
@@ -23,7 +23,15 @@
         <ul class="nav navbar-nav">
           <li><a href="/index.html">Home</a></li>
           <li class="active"><a href="/pages/players.html">Players</a></li>
-          <li><a href="/pages/contact.html">Contact Me</a></li>
+          <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Guides
+            <span style='color: #9D9D9D' class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="/pages/maintenance.html">Beginner</a></li>
+              <li><a href="/pages/maintenance.html">Advanced</a></li>
+              <li><a href="/pages/maintenance.html">Miscellanous</a></li>
+            </ul>
+          </li>
+          <li><a href="/pages/contact.html">About</a></li>
         </ul>
       </div>
     </nav>
@@ -46,7 +54,7 @@
       </div>
     </div>
     <div class="panel panel-default">
-      <div class="panel-heading"> 
+      <div class="panel-heading">
         <h4 class="panel-title">
           <a data-toggle="collapse" data-parent="#accordion" href="#collapse2"><h4>Map Testers</h4></a>
         </h4>
@@ -61,7 +69,7 @@
     <div class="panel panel-default">
       <div class="panel-heading">
         <h4 class="panel-title">
-          <a data-toggle="collapse" data-parent="#accordion" href="#collapse3"><h4>Notable Community Members</h4></a>
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse3"><h4>Notable Players</h4></a>
         </h4>
       </div>
       <div id="collapse3" class="panel-collapse collapse">
@@ -71,12 +79,14 @@
         </div>
       </div>
     </div>
-</div>
-</div>
 
 
+
+
+</div>
+</div>
 
   <!-- Load scripts at the bottom of the body tag -->
   <script type="text/javascript" src="/js/players.js"></script>
-  </body>
+</body>
 </html>
