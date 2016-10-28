@@ -209,8 +209,13 @@ var quotes = [
   },
   {
     name: "Sachburger",
-    quote: "I dont know anything about gameplay I just shit talk gameplay.",
+    quote: "I dont know anything about gameplay I just shit talk gameplay."
+  },
+  {
+    name: "Sachburger",
+    quote: "Sachburger: im a unique snowflake at least. at least thats what my mom said",
   }
+
 ]
 
 // Functions
