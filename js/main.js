@@ -213,7 +213,11 @@ var quotes = [
   },
   {
     name: "Sachburger",
-    quote: "Sachburger: im a unique snowflake at least. at least thats what my mom said",
+    quote: "Sachburger: im a unique snowflake at least. at least thats what my mom said"
+  },
+  {
+    name: "Joshua",
+    quote: "Im doing my best to convince everyone that traps can be cute",
   }
 
 ]
