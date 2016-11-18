@@ -4,7 +4,7 @@ var globalAdmins = [
     "name": "Sachburger",
     "steam": 'Sachburger',
     "twitch": 'Sachburger',
-    "youtube": 'SpeciaIized',
+    "youtube": '/user/SpeciaIized',
   },
   {
     "name": "Klyve",
@@ -36,19 +36,19 @@ var mapTesters = [
     "name": "Zach47",
     "steam": 'Zach47',
     "twitch": 'ijjust',
-    "youtube": 'UCMNFbj_kGdJ4QcAAjsGI3Ew'
+    "youtube": '/c/Zach47'
   },
   {
     "name": "DanZay",
     "steam": 'DanZay',
     "twitch": 'danzayau',
-    "youtube": 'UCZs3cFXfMIY6l3yXT3ooHVQ'
+    "youtube": '/channel/UCZs3cFXfMIY6l3yXT3ooHVQ'
   },
   {
     "name": "Sachburger",
     "steam": 'Sachburger',
     "twitch": 'Sachburger',
-    "youtube": 'Specialized'
+    "youtube": '/user/SpeciaIized'
   }
 ];
 
@@ -59,13 +59,13 @@ var notablePlayers = [
     "name": "Launders",
     "steam": 'csboxr',
     "twitch": 'launders',
-    "youtube": 'csboxr'
+    "youtube": '/user/csboxr'
   },
   {
     "name": "Ruben",
     "steam": 'rrubenlol',
     "twitch": 'rrubenlol',
-    "youtube": 'rrubencs1'
+    "youtube": '/user/rrubencs1'
   },
   {
     "name": "Linus",
@@ -132,7 +132,7 @@ function parsePlayer(player) {
     tr.append('<a href="https://twitch.tv/'+player.twitch+'"><i class="fa fa-twitch fa-2x" aria-hidden="true"></i></a>');
   }
   if(player.youtube) {
-    tr.append('<a href="https://www.youtube.com/user/'+player.youtube+'"><i class="fa fa-youtube-play fa-2x"></i></a>');
+    tr.append('<a href="https://www.youtube.com/'+player.youtube+'"><i class="fa fa-youtube-play fa-2x"></i></a>');
   }
   if(player.name) {
     tr.append('<span>'+player.name+'</span>');
