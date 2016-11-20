@@ -54,3 +54,11 @@ textarea {
   width: 50%;
   height: 90px;
 }
+
+footer {
+  color: white;
+  text-align: center;
+  background-color: #222222;
+  height: 60px;
+  bottom: 0;
+}
