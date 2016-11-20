@@ -37,9 +37,11 @@
 }, {
 	"name": "bkz_uninspired_trash"
 }, {
-	"name": "kz_21loop_final_fix"
+	"name": "kz_2seasons_spring_fix"
 }, {
-	"name": "kz_420b"
+	"name": "kz_2seasons_winter_fix"
+}, {
+	"name": "kz_21loop_final_fix"
 }, {
 	"name": "kz_7in1_go"
 }, {
@@ -49,19 +51,17 @@
 }, {
 	"name": "kz_adv_cursedjourney"
 }, {
+	"name": "kz_after_agitation_easy_fix"
+}, {
 	"name": "kz_agility_v2_fix"
 }, {
 	"name": "kz_ahful"
 }, {
 	"name": "kz_akrh_warehouse"
 }, {
-	"name": "kz_alice_final_v3"
-}, {
 	"name": "kz_alouette"
 }, {
 	"name": "kz_ancient_v3"
-}, {
-	"name": "kz_ascend"
 }, {
 	"name": "kz_asphyxiate"
 }, {
@@ -76,6 +76,8 @@
 	"name": "kz_betterdunjun"
 }, {
 	"name": "kz_basicnoon"
+}, {
+	"name": "kz_bhop_essence"
 }, {
 	"name": "kz_bhop_forchi"
 }, {
@@ -92,8 +94,6 @@
 	"name": "kz_blindcity_easy_fix"
 }, {
 	"name": "kz_blindcity_hard_final"
-}, {
-	"name": "kz_bluehop_mq"
 }, {
 	"name": "kz_brickblock_v2"
 }, {
@@ -275,8 +275,6 @@
 }, {
 	"name": "kz_gonbe"
 }, {
-	"name": "kz_goodluck_mq"
-}, {
 	"name": "kz_grass_hard"
 }, {
 	"name": "kz_green"
@@ -316,8 +314,6 @@
 	"name": "kz_j2s_westbl0ck"
 }, {
 	"name": "kz_janpu_final_fix"
-}, {
-	"name": "kz_jg_ditch"
 }, {
 	"name": "kz_jumpspace_easy"
 }, {
@@ -377,11 +373,7 @@
 }, {
 	"name": "kz_ominous2"
 }, {
-	"name": "kz_orangejuice_fix"
-}, {
 	"name": "kz_orbolution_v2"
-}, {
-	"name": "kz_panda"
 }, {
 	"name": "kz_pantheism_p02"
 }, {
@@ -477,8 +469,6 @@
 }, {
 	"name": "kz_stuff_final"
 }, {
-	"name": "kz_sugar_dreamland"
-}, {
 	"name": "kz_sukblock_v2_fixed"
 }, {
 	"name": "kz_summercliff2_go"
@@ -523,6 +513,8 @@
 }, {
 	"name": "kz_violet_fix"
 }, {
+	"name": "kz_void"
+}, {
 	"name": "kz_walpurgisnacht"
 }, {
 	"name": "kz_warehouse"
@@ -542,6 +534,8 @@
 	"name": "kz_za_tileblock"
 }, {
 	"name": "kz_zeta_z3"
+}, {
+	"name": "kz_ziggurath_final"
 }, {
 	"name": "kz_zhop_freestyle"
 }, {
