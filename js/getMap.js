@@ -4,13 +4,13 @@
 $(document).ready(function(){
 
     $("#mapChoose").click(function(){
-      // Change 285 to map length -1
-      var randomGet = Math.round( Math.random() * (285) );
       $.ajax({
         url: "https://zach47.github.io/js/mapList.js",
         dataType: "text",
         success: function(mapList) {
           var json = $.parseJSON(mapList);
+          var mapListCount = Object.keys(json).length;
+          var randomGet = Math.round( Math.random() * (mapListCount - 1) );
           $('#mapPost').html('Map name: ' + json[randomGet].name);
         }
       });
