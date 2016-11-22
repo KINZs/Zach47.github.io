@@ -80,10 +80,19 @@ hr {
 }
 
 
+
+.socialImg {
+  padding: 5px;
+}
+
 footer {
   color: white;
   text-align: center;
   background-color: #222222;
-  height: 60px;
+  height: 30px;
   bottom: 0;
+}
+
+textarea {
+  resize: none;
 }
