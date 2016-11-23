@@ -45,7 +45,7 @@ var mapTesters = [
     "youtube": '/channel/UCZs3cFXfMIY6l3yXT3ooHVQ'
   },
   {
-    "name": "Sachburger",
+    "name": "<a href='http://zach47.github.io/pages/players/sachburger.html'>Sachburger</a>",
     "steam": 'Sachburger',
     "twitch": 'Sachburger',
     "youtube": '/user/SpeciaIized'
