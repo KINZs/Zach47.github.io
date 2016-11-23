@@ -1,7 +1,7 @@
 // Array of Global admins
 var globalAdmins = [
   {
-    "name": "Sachburger",
+    "name": "<a href='http://zach47.github.io/pages/players/sachburger.html'>Sachburger</a>",
     "steam": 'Sachburger',
     "twitch": 'Sachburger',
     "youtube": '/user/SpeciaIized',
