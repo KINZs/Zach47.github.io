@@ -63,7 +63,9 @@
 }, {
 	"name": "kz_ancient_v3"
 }, {
-	"name": "kz_asphyxiate"
+  "name": "kz_ascend_hv"
+}, {
+  "name": "kz_asphyxiate"
 }, {
 	"name": "kz_asteroid_field_go"
 }, {
@@ -275,6 +277,8 @@
 }, {
 	"name": "kz_gonbe"
 }, {
+  "name": "kz_goodluck_p"
+}, {
 	"name": "kz_grass_hard"
 }, {
 	"name": "kz_green"
@@ -388,6 +392,8 @@
 	"name": "kz_phaztec"
 }, {
 	"name": "kz_pianoclimb_go"
+}, {
+  "name": "kz_pineforest"
 }, {
 	"name": "kz_pollution"
 }, {
@@ -559,7 +565,7 @@
 }, {
 	"name": "bkz_karo4_global"
 }, {
-	"name": "bkz_lucid_global"
+	"name": "xc_lucid_global"
 }, {
 	"name": "bkz_minecraft2_global"
 }, {
