@@ -11,7 +11,7 @@ $(document).ready(function(){
           var json = $.parseJSON(mapList);
           var mapListCount = Object.keys(json).length;
           var randomGet = Math.round( Math.random() * (mapListCount - 1) );
-          $('#mapPost').html('Map name: ' + json[randomGet].name);
+          $('#mapPost').html(json[randomGet].name);
         }
       });
     });
