@@ -4,7 +4,7 @@ var globalAdmins = [
     "name": "<a href='http://zach47.github.io/kreedz/players/sachburger.html'>Sachburger</a>",
     "steam": 'Sachburger',
     "twitch": 'Sachburger',
-    "youtube": '/user/SpeciaIized',
+    "youtube": 'user/SpeciaIized',
   },
   {
     "name": "Klyve",
@@ -36,19 +36,19 @@ var mapTesters = [
     "name": "Zach47",
     "steam": 'Zach47',
     "twitch": 'ijjust',
-    "youtube": '/c/Zach47'
+    "youtube": 'c/Zach47'
   },
   {
     "name": "DanZay",
     "steam": 'DanZay',
     "twitch": 'danzayau',
-    "youtube": '/channel/UCZs3cFXfMIY6l3yXT3ooHVQ'
+    "youtube": 'channel/UCZs3cFXfMIY6l3yXT3ooHVQ'
   },
   {
     "name": "<a href='http://zach47.github.io/pages/players/sachburger.html'>Sachburger</a>",
     "steam": 'Sachburger',
     "twitch": 'Sachburger',
-    "youtube": '/user/SpeciaIized'
+    "youtube": 'user/SpeciaIized'
   }
 ];
 
@@ -59,13 +59,13 @@ var notablePlayers = [
     "name": "Launders",
     "steam": 'csboxr',
     "twitch": 'launders',
-    "youtube": '/user/csboxr'
+    "youtube": 'user/csboxr'
   },
   {
     "name": "Ruben",
     "steam": 'rrubenlol',
     "twitch": 'rrubenlol',
-    "youtube": '/user/rrubencs1'
+    "youtube": 'user/rrubencs1'
   },
   {
     "name": "Linus",
