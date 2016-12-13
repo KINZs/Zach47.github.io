@@ -78,8 +78,6 @@ hr {
     border-width: 1px;
 }
 
-
-
 .socialImg {
   padding: 5px;
 }
@@ -94,4 +92,20 @@ footer {
 
 textarea {
   resize: none;
+}
+
+
+
+img {
+    opacity: 1;
+    display: inline;
+    float: left;
+}
+
+img:hover {
+    opacity: 0.8;
+    transition: opacity .5s ease-out;
+    -moz-transition: opacity .5s ease-out;
+    -webkit-transition: opacity .5s ease-out;
+    -o-transition: opacity .5s ease-out;
 }
