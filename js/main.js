@@ -217,7 +217,47 @@ var quotes = [
   },
   {
     name: "Joshua",
-    quote: "Im doing my best to convince everyone that traps can be cute",
+    quote: "Im doing my best to convince everyone that traps can be cute"
+  },
+  {
+    name: "Ivansky",
+    quote: "C S G O K Z S U C K S B O Y S"
+  },
+  {
+    name: "LUq",
+    quote: "I dont have a ruler, but my dick is about 1.5 iphone"
+  },
+  {
+    name: "Joshua",
+    quote: "i love when sach says fuck me, turns me on"
+  },
+  {
+    name: "Nexus",
+    quote: "This really gets my juices smoking"
+  },
+  {
+    name: "Nexus",
+    quote: "Im on a new level of retarded",
+  },
+  {
+    name: "sQQuared",
+    quote: "i'd have sexual relations with plekz. The butt stuff."
+  },
+  {
+    name: "sQQuared",
+    quote: "yeah, but what's your apricity/lucid time?"
+  },
+  {
+    name: "8b0",
+    quote: "Do you even economy, im muting you"
+  },
+  {
+    name: "Zpamm",
+    quote: "Dude, Sachburger's clothes is like the Orbit of Kreedz maps"
+  },
+  {
+    name: "Poxxa",
+    quote: "Some maps are without the bind impossible.",
   }
 
 ]
