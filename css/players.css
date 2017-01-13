@@ -80,6 +80,12 @@ hr {
 
 .socialImg {
   padding: 5px;
+  display: inline-block;
+}
+
+.socialMedia {
+  width: 100%;
+  text-align: center;
 }
 
 footer {
