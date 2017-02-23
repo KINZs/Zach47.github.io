@@ -21,6 +21,10 @@ var globalAdmins = [
     "steam": 'ChucklesHoC',
   },
   {
+    "name": "Sikari",
+    "steam": 'SikariCSGO',
+  },
+  {
     "name": "Plekz",
     "steam": 'pLekz',
   },
@@ -75,7 +79,7 @@ var notablePlayers = [
   {
     "name": "Zza",
     "steam": 'pizzafactory',
-    "twitch": 'pizzzzasht'
+    "twitch": 'zza_ow'
   },
   {
     "name": "JWL",
@@ -105,10 +109,6 @@ var notablePlayers = [
   {
     "name": "Haru",
     "steam": 'haruozzie'
-  },
-  {
-    "name": "Sikari",
-    "steam": 'SikariCSGO'
   }
 ];
 
