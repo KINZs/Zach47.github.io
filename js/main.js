@@ -257,7 +257,27 @@ var quotes = [
   },
   {
     name: "Poxxa",
-    quote: "Some maps are without the bind impossible.",
+    quote: "Some maps are without the bind impossible."
+  },
+  {
+    name: "Burhac",
+    quote: "I got predicted from the next dimension.",
+  },
+  {
+    name: "Froast",
+    quote: "hold the bind boys, smile and wave!"
+  },
+  {
+    name: "Sachburger",
+    quote: "I'm an expert when it comes to females"
+  },
+  {
+    name: "Burhac",
+    quote: "I'm from hungary and I'm HUNGARY for World Records"
+  },
+  {
+    name: "Burhac",
+    quote: "Now those are some burhops!",
   }
 
 ]
