@@ -1,5 +1,11 @@
-// Array of Global admins
+// Global Admins
 var globalAdmins = [
+  {
+    "name": "Zach47",
+    "steam": 'Zach47',
+    "twitch": 'ijjust',
+    "youtube": 'c/Zach47'
+  },
   {
     "name": "<a href='http://zach47.github.io/kreedz/players/sachburger.html'>Sachburger</a>",
     "steam": 'Sachburger',
@@ -31,10 +37,10 @@ var globalAdmins = [
   {
     "name": "Funk",
     "steam": 'uwatm8lelele',
-  },
+  }
 ];
 
-// Array of map testers
+// Map Testers
 var mapTesters = [
   {
     "name": "Zach47",
@@ -53,10 +59,14 @@ var mapTesters = [
     "steam": 'Sachburger',
     "twitch": 'Sachburger',
     "youtube": 'user/SpeciaIized'
+  },
+  {
+    "name" : "Lillen",
+    "steam" : "lillencsgo"
   }
 ];
 
-// Array of notable players
+// Notable Players
 var notablePlayers = [
 
   {
