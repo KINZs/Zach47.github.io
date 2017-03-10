@@ -173,6 +173,8 @@ button:focus {
   margin-bottom: 1%;
 }
 
+/* Response Design Grid Layout */
+
 /* For mobile phones: */
 [class*="col-"] {
     width: 100%;
