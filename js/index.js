@@ -4,13 +4,31 @@ var globalAdmins = [
     "name": "Zach47",
     "steam": 'Zach47',
     "twitch": 'ijjust',
-    "youtube": 'c/Zach47'
+    "youtube": 'Zach47'
   },
   {
-    "name": "<a href='http://zach47.github.io/kreedz/players/sachburger.html'>Sachburger</a>",
+    "name": "Sachburger",
     "steam": 'Sachburger',
     "twitch": 'Sachburger',
-    "youtube": 'user/SpeciaIized',
+    "youtube": 'SpeciaIized',
+  },
+  {
+    "name": "Zpamm",
+    "steam": 'Zpamm',
+    "twitch": 'zpammm',
+    "youtube": 'channel/UCxmjF8QocRc_pOfxGFPI4bw'
+  },
+  {
+    "name": "pLekz",
+    "steam": 'pLekz',
+    "twitch": 'plekkz',
+    "youtube": 'channel/UCV-ey-ESmR9dO_KyEqVcQIA'
+  },
+  {
+    "name": "Sikari",
+    "steam": 'SikariCSGO',
+    "twitch": 'OfficialSikari',
+    "youtube": 'SikariCSGO'
   },
   {
     "name": "Klyve",
@@ -18,21 +36,9 @@ var globalAdmins = [
     "twitch": 'klyve',
   },
   {
-    "name": "Zpamm",
-    "steam": 'Zpamm',
-    "twitch": 'zpammm',
-  },
-  {
     "name": "Chuckles",
     "steam": 'ChucklesHoC',
-  },
-  {
-    "name": "Sikari",
-    "steam": 'SikariCSGO',
-  },
-  {
-    "name": "Plekz",
-    "steam": 'pLekz',
+    "twitch": 'chuckiechuck'
   },
   {
     "name": "Funk",
@@ -46,7 +52,7 @@ var mapTesters = [
     "name": "Zach47",
     "steam": 'Zach47',
     "twitch": 'ijjust',
-    "youtube": 'c/Zach47'
+    "youtube": 'Zach47'
   },
   {
     "name": "DanZay",
@@ -55,14 +61,16 @@ var mapTesters = [
     "youtube": 'channel/UCZs3cFXfMIY6l3yXT3ooHVQ'
   },
   {
-    "name": "<a href='http://zach47.github.io/pages/players/sachburger.html'>Sachburger</a>",
-    "steam": 'Sachburger',
-    "twitch": 'Sachburger',
-    "youtube": 'user/SpeciaIized'
+    "name" : "Lillen",
+    "steam" : "lillencsgo",
+    "twitch" : "lillenen",
+    "youtube" : "lillencsgo"
   },
   {
-    "name" : "Lillen",
-    "steam" : "lillencsgo"
+    "name": "Sachburger",
+    "steam": 'Sachburger',
+    "twitch": 'Sachburger',
+    "youtube": 'SpeciaIized'
   }
 ];
 
@@ -73,23 +81,7 @@ var notablePlayers = [
     "name": "Launders",
     "steam": 'csboxr',
     "twitch": 'launders',
-    "youtube": 'user/csboxr'
-  },
-  {
-    "name": "Ruben",
-    "steam": 'rrubenlol',
-    "twitch": 'rrubenlol',
-    "youtube": 'user/rrubencs1'
-  },
-  {
-    "name": "Linus",
-    "steam": '76561198004411671',
-    "twitch": 'jokkan33'
-  },
-  {
-    "name": "Zza",
-    "steam": 'pizzafactory',
-    "twitch": 'zza_ow'
+    "youtube": 'csboxr'
   },
   {
     "name": "JWL",
@@ -98,11 +90,8 @@ var notablePlayers = [
   },
   {
     "name": "So0le",
-    "steam": 'so0le'
-  },
-  {
-    "name": "Zprince",
-    "steam": 'zprince32'
+    "steam": 'so0le',
+    "youtube": 'channel/UCK9hSqAXYzIi7u3CS5CZvcQ'
   },
   {
     "name": "1NutWonder",
@@ -111,14 +100,6 @@ var notablePlayers = [
   {
     "name": "Kenneth",
     "steam": 'KennethDota'
-  },
-  {
-    "name": "Supa",
-    "steam": 'supa'
-  },
-  {
-    "name": "Haru",
-    "steam": 'haruozzie'
   }
 ];
 
@@ -177,5 +158,21 @@ $(document).ready(function() {
 
   $.each(notablePlayers, function(i, player) {
     notablePlayerList.append(parsePlayer(player));
+  });
+});
+
+// My immersive scrolling experience
+$(function() {
+  $('a[href*="#"]:not([href="#"])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html, body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
   });
 });
