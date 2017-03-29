@@ -31,11 +31,6 @@ var globalAdmins = [
     "youtube": 'SikariCSGO'
   },
   {
-    "name": "Klyve",
-    "steam": 'officialKlyve',
-    "twitch": 'klyve',
-  },
-  {
     "name": "Chuckles",
     "steam": 'ChucklesHoC',
     "twitch": 'chuckiechuck'
