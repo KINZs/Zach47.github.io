@@ -1,0 +1,201 @@
+
+body {
+  background: #F6F6F4;
+  margin: 0;
+  padding: 0;
+  font-size: 17px;
+}
+
+
+/* Navbar */
+
+ul {
+  list-style-type: none;
+  overflow: hidden;
+  padding: 0;
+}
+
+li a {
+  display: block;
+  text-decoration: none;
+  color: #F1F1F1;
+}
+
+li a:hover {
+  background-color: #2C2C2A;
+}
+
+li a.active {
+  background-color: grey;
+}
+
+@media only screen and (max-width: 768px) {
+  ul {
+    display: flex;
+    justify-content: space-around;
+    background-color: #1A1C1E;
+    margin-bottom: -4em;
+  }
+
+  li {
+    display: inline-block;
+    float: left;
+  }
+
+  li a {
+    display: block;
+    padding: 1em 1.5em;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+
+  ul {
+    position: fixed;
+    width: 10em;
+    box-shadow: 0 0 0.2em grey;
+  }
+
+  li a {
+    background-color: #1A1C1E;
+    padding: .5em 1em;
+  }
+}
+
+
+/* Special Classes */
+
+.center {
+  display: flex;
+  justify-content: center;
+}
+
+.quote {
+  font-size: 1em;
+  text-indent: 0;
+  text-align: center;
+}
+
+@media only screen and (min-width: 768px) {
+  .quote {
+    text-align: right;
+  }
+}
+
+
+/* Font and Type */
+
+h1 {
+  display: flex;
+  justify-content: center;
+  font-size: 2.7em;
+  font-family: 'Raleway', sans-serif;
+  letter-spacing: 0.1em;
+  color: #2C2C2A;
+}
+
+h2 {
+  font-family: 'Raleway', sans-serif;
+  letter-spacing: 0.1em;
+  color: #2C2C2A;
+}
+
+h2 a {
+  text-decoration: none;
+}
+
+p {
+  text-align: justify;
+  font-size: 1.2em;
+  text-indent: 2em;
+  font-family: 'Source Sans Pro', sans-serif;
+  letter-spacing: 0.05em;
+  color: #1A1C1E;
+}
+
+
+/* Ids */
+
+#content {
+  margin-top: 4em;
+  padding: 0.5em;
+  position: relative;
+}
+
+#title {
+  font-size: 1em;
+  background-color: #F1F1F1;
+}
+
+#navbar {
+  text-align: center;
+}
+
+#footer {
+  background-color: #F1F1F1;
+  box-shadow: 0 0 0.2em grey;
+  padding: 1em;
+  margin-bottom: auto;
+  text-align: center;
+}
+
+@media only screen and (min-width: 768px) {
+
+  #title {
+    position: absolute;
+    left: 0;
+    right: 0;
+    background-color: #F1F1F1;
+    box-shadow: 0px 0px 4px grey;
+  }
+
+  #content {
+    padding: 1em;
+    margin-top: 6em;
+    background-color: #F7F7F7;
+    box-shadow: 0 0 2.5em #E3E8EF;
+  }
+
+  #footer {
+    position: absolute;
+    left: 0;
+    right: 0;
+  }
+
+  #navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 25em;
+  }
+}
+
+
+
+
+
+/* Response Design Grid Layout */
+
+/* For mobile phones: */
+[class*="col-"] {
+    width: 100%;
+}
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  [class*="col-"] {
+    float: left;
+  }
+
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+}
