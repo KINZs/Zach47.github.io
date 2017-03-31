@@ -31,20 +31,11 @@ li a.active {
 
 @media only screen and (max-width: 768px) {
   ul {
-    display: flex;
-    justify-content: space-around;
-    background-color: #1A1C1E;
-    margin-bottom: -4em;
-  }
-
-  li {
     display: inline-block;
-    float: left;
+    background-color: #1A1C1E;
   }
-
   li a {
-    display: block;
-    padding: 1em 1.5em;
+    padding: 8px 16px;
   }
 }
 
@@ -117,13 +108,13 @@ p {
 /* Ids */
 
 #content {
-  margin-top: 4em;
-  padding: 0.5em;
+  padding: 1em;
   position: relative;
 }
 
 #title {
-  font-size: 1em;
+  padding-top: 0.05em;
+  font-size: .75em;
   background-color: #F1F1F1;
 }
 
@@ -142,6 +133,7 @@ p {
 @media only screen and (min-width: 768px) {
 
   #title {
+    font-size: 1em;
     position: absolute;
     left: 0;
     right: 0;
