@@ -66,6 +66,11 @@ var mapTesters = [
     "steam": 'Sachburger',
     "twitch": 'Sachburger',
     "youtube": 'SpeciaIized'
+  },
+  {
+    "name": "Krushed",
+    "steam": 'krrushed',
+    "twitch": 'Krrushed',
   }
 ];
 
