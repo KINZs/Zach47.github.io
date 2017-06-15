@@ -1,132 +1,2858 @@
-[
-  {
-    "players": [
-		{"steam_id": "STEAM_1:1:48182","name":"»Rizor"},
-		{"steam_id": "STEAM_1:0:73927","name":"Supa"},
-		{"steam_id": "STEAM_1:0:200995","name":":thinking:"},
-		{"steam_id": "STEAM_1:1:2561690","name":"pano"},
-		{"steam_id": "STEAM_1:0:3341365","name":"Klvsched"},
-		{"steam_id": "STEAM_1:0:3395649","name":"g-Lp"},
-		{"steam_id": "STEAM_1:1:5255363","name":"Rebmaa"},
-		{"steam_id": "STEAM_1:0:5294555","name":"8ball"},
-		{"steam_id": "STEAM_1:0:7966008","name":"sLowi_^"},
-		{"steam_id": "STEAM_1:1:11374239","name":"Zach47"},
-		{"steam_id": "STEAM_1:1:11393731","name":"jolleboff"},
-		{"steam_id": "STEAM_1:1:11972563","name":"b0utamine"},
-		{"steam_id": "STEAM_1:1:12868383","name":"Half Man, Half Scout ☂"},
-		{"steam_id": "STEAM_1:1:13465569","name":"EphNey"},
-		{"steam_id": "STEAM_1:1:13601106","name":"fonseca"},
-		{"steam_id": "STEAM_1:1:13756412","name":"Cloudff7tm"},
-		{"steam_id": "STEAM_1:1:14303991","name":"interloper"},
-		{"steam_id": "STEAM_1:0:14776127","name":"dzy"},
-		{"steam_id": "STEAM_1:1:16411902","name":"VertikO"},
-		{"steam_id": "STEAM_1:0:16599865","name":"Chuckles"},
-		{"steam_id": "STEAM_1:1:17160289","name":"MachineChaos"},
-		{"steam_id": "STEAM_1:1:18281596","name":"blasdfa"},
-		{"steam_id": "STEAM_1:1:19210276","name":"сука Scammer блять"},
-		{"steam_id": "STEAM_1:0:19212210","name":"Carrier"},
-		{"steam_id": "STEAM_1:1:20944688","name":"krein"},
-		{"steam_id": "STEAM_1:0:21596928","name":"Sylcf (dean) ^w^"},
-		{"steam_id": "STEAM_1:0:21813241","name":"Xvizion"},
-		{"steam_id": "STEAM_1:1:22072971","name":"linus"},
-		{"steam_id": "STEAM_1:0:23242770","name":"PlastiS^ ♥"},
-		{"steam_id": "STEAM_1:0:23831608","name":"Cou"},
-		{"steam_id": "STEAM_1:1:24818350","name":"GnagarN^"},
-		{"steam_id": "STEAM_1:0:25248155","name":"eightbO"},
-		{"steam_id": "STEAM_1:1:25813124","name":"SpookyStyle 不気味なスタイル"},
-		{"steam_id": "STEAM_1:1:25822362","name":"low n schlow"},
-		{"steam_id": "STEAM_1:0:26488799","name":"Aleksib"},
-		{"steam_id": "STEAM_1:1:26914658","name":"Ivan"},
-		{"steam_id": "STEAM_1:1:27112765","name":"nykaN"},
-		{"steam_id": "STEAM_1:0:31861748","name":"pLekz"},
-		{"steam_id": "STEAM_1:1:33594951","name":"burhác"},
-		{"steam_id": "STEAM_1:0:34149499","name":"Ebarf"},
-		{"steam_id": "STEAM_1:0:34721083","name":"mistersisterfister"},
-		{"steam_id": "STEAM_1:1:35068110","name":"jukk3lis"},
-		{"steam_id": "STEAM_1:0:36598024","name":"Gwooky"},
-		{"steam_id": "STEAM_1:1:38365989","name":"satan"},
-		{"steam_id": "STEAM_1:0:38383699","name":"Lolofaf"},
-		{"steam_id": "STEAM_1:0:38430740","name":"ThriftyDust"},
-		{"steam_id": "STEAM_1:0:39561365","name":"finckelton"},
-		{"steam_id": "STEAM_1:0:39854753","name":"zShippi ☺"},
-		{"steam_id": "STEAM_1:0:40088536","name":"Apryze"},
-		{"steam_id": "STEAM_1:1:40213130","name":"FluXe"},
-		{"steam_id": "STEAM_1:1:42801678","name":"m_rk"},
-		{"steam_id": "STEAM_1:1:43259299","name":"Sachburger"},
-		{"steam_id": "STEAM_1:0:43708540","name":"bowsr"},
-		{"steam_id": "STEAM_1:0:44397973","name":"maniac nosound"},
-		{"steam_id": "STEAM_1:1:46574979","name":"ZoSo"},
-		{"steam_id": "STEAM_1:1:46894255","name":"lord poxxa"},
-		{"steam_id": "STEAM_1:0:48501837","name":"Orbro"},
-		{"steam_id": "STEAM_1:0:48904952","name":"pqqqp"},
-		{"steam_id": "STEAM_1:1:49540815","name":"dedi"},
-		{"steam_id": "STEAM_1:1:49543244","name":"breaky"},
-		{"steam_id": "STEAM_1:1:50004736","name":"sadf"},
-		{"steam_id": "STEAM_1:1:50045448","name":"soda"},
-		{"steam_id": "STEAM_1:1:50623124","name":"fika"},
-		{"steam_id": "STEAM_1:1:51229523","name":"fFfffF"},
-		{"steam_id": "STEAM_1:1:51369212","name":"Katten"},
-		{"steam_id": "STEAM_1:0:51921141","name":"いずみ さぎり"},
-		{"steam_id": "STEAM_1:1:53536966","name":"⁞☁ EvanSTEP ☁⁞"},
-		{"steam_id": "STEAM_1:1:54561971","name":"mano sim taxe"},
-		{"steam_id": "STEAM_1:0:55856712","name":"Mike Smiff"},
-		{"steam_id": "STEAM_1:0:55972459","name":"InfiniteUltimateExtremer"},
-		{"steam_id": "STEAM_1:0:56246927","name":"Ailwyn ^w^"},
-		{"steam_id": "STEAM_1:1:57952252","name":"cL1p"},
-		{"steam_id": "STEAM_1:0:58009192","name":"cfrbhy6gv"},
-		{"steam_id": "STEAM_1:1:58185673","name":"Afflicts"},
-		{"steam_id": "STEAM_1:0:58438106","name":"Casey"},
-		{"steam_id": "STEAM_1:1:58468954","name":"kaz0rdawg"},
-		{"steam_id": "STEAM_1:1:58796604","name":"lillen"},
-		{"steam_id": "STEAM_1:0:59547664","name":"KÖPI"},
-		{"steam_id": "STEAM_1:1:60387861","name":"DikaRb"},
-		{"steam_id": "STEAM_1:1:61502105","name":"lusikka"},
-		{"steam_id": "STEAM_1:1:61701059","name":"f1r CSGO500"},
-		{"steam_id": "STEAM_1:0:64663431","name":"oll9abc"},
-		{"steam_id": "STEAM_1:0:65138678","name":"Moxzy"},
-		{"steam_id": "STEAM_1:0:65238967","name":"_TOM #summershredding"},
-		{"steam_id": "STEAM_1:0:66454985","name":"nohate x)"},
-		{"steam_id": "STEAM_1:0:66928809","name":"ÞÀ†Îk©"},
-		{"steam_id": "STEAM_1:0:67855790","name":"西木野妮可"},
-		{"steam_id": "STEAM_1:0:69958832","name":"ruben ♥"},
-		{"steam_id": "STEAM_1:1:70729938","name":"eks"},
-		{"steam_id": "STEAM_1:0:71375927","name":"Shard Xd #tj0"},
-		{"steam_id": "STEAM_1:1:73455479","name":"Akie"},
-		{"steam_id": "STEAM_1:1:78210041","name":"ruL3z"},
-		{"steam_id": "STEAM_1:1:79882647","name":"NINELIE"},
-		{"steam_id": "STEAM_1:0:81771156","name":"LAWDOG"},
-		{"steam_id": "STEAM_1:1:84052891","name":"HEREWEGO!"},
-		{"steam_id": "STEAM_1:0:84690156","name":"Hero Spammer"},
-		{"steam_id": "STEAM_1:1:87725444","name":": OSsloth"},
-		{"steam_id": "STEAM_1:1:88616513","name":"Neuro"},
-		{"steam_id": "STEAM_1:0:88685863","name":"Agi0"},
-		{"steam_id": "STEAM_1:1:88846128","name":"haru 🔥"},
-		{"steam_id": "STEAM_1:0:88872467","name":"Fiphfil"},
-		{"steam_id": "STEAM_1:1:90377113","name":"CMJ"},
-		{"steam_id": "STEAM_1:1:90616758","name":"salamisoturi csgoblocks.com"},
-		{"steam_id": "STEAM_1:0:90813497","name":"Spookystyle^Yarrak"},
-		{"steam_id": "STEAM_1:1:91115785","name":"far beyond the moonlight -"},
-		{"steam_id": "STEAM_1:1:91469801","name":"so"},
-		{"steam_id": "STEAM_1:0:92323950","name":"-_-"},
-		{"steam_id": "STEAM_1:0:93814773","name":"LUq"},
-		{"steam_id": "STEAM_1:0:93986345","name":"✦"},
-		{"steam_id": "STEAM_1:1:103209531","name":"snyy"},
-		{"steam_id": "STEAM_1:0:103429899","name":"JJ"},
-		{"steam_id": "STEAM_1:1:103935804","name":"| ¥ |_€"},
-		{"steam_id": "STEAM_1:1:105764483","name":"flojl."},
-		{"steam_id": "STEAM_1:1:108712224","name":"infuzed"},
-		{"steam_id": "STEAM_1:1:113563959","name":"froast"},
-		{"steam_id": "STEAM_1:1:117414665","name":"Isk"},
-		{"steam_id": "STEAM_1:0:122816464","name":"GiimPy"},
-		{"steam_id": "STEAM_1:0:124876204","name":"dziggetai"},
-		{"steam_id": "STEAM_1:0:128415106","name":"bombu ):v"},
-		{"steam_id": "STEAM_1:1:151053468","name":"iEatCrayons"},
-		{"steam_id": "STEAM_1:0:151503275","name":"OneeeeeSamaaaaaa"},
-		{"steam_id": "STEAM_1:0:151883347","name":"sЯc"},
-		{"steam_id": "STEAM_1:0:171380896","name":"Anq"},
-		{"steam_id": "STEAM_1:1:188709422","name":"Aspergerus"},
-		{"steam_id": "STEAM_1:0:195650542","name":"Korahamu"},
-		{"steam_id": "STEAM_0:1:91469801","name":"Persona"}
+[  
+   {  
+      "players":[  
+         {  
+            "steam_id":"STEAM_1:0:114230",
+            "name":"pLex"
+         },
+         {  
+            "steam_id":"STEAM_1:0:200995",
+            "name":"xyz"
+         },
+         {  
+            "steam_id":"STEAM_1:0:1173820",
+            "name":"pizzadust"
+         },
+         {  
+            "steam_id":"STEAM_1:0:10178689",
+            "name":"Tommo t wallband"
+         },
+         {  
+            "steam_id":"STEAM_1:0:10473417",
+            "name":"Cr sh"
+         },
+         {  
+            "steam_id":"STEAM_1:0:10523680",
+            "name":"twitch.tv kemboi"
+         },
+         {  
+            "steam_id":"STEAM_1:0:11211775",
+            "name":"Map 3Anya"
+         },
+         {  
+            "steam_id":"STEAM_1:0:11346325",
+            "name":"✪V_T_I_O"
+         },
+         {  
+            "steam_id":"STEAM_1:0:11513801",
+            "name":"Lazy_^ 3 pLekz"
+         },
+         {  
+            "steam_id":"STEAM_1:0:11529348",
+            "name":"sentatox"
+         },
+         {  
+            "steam_id":"STEAM_1:0:11928583",
+            "name":"tyskis"
+         },
+         {  
+            "steam_id":"STEAM_1:0:12033771",
+            "name":"SushiViking"
+         },
+         {  
+            "steam_id":"STEAM_1:0:12669059",
+            "name":"Chris"
+         },
+         {  
+            "steam_id":"STEAM_1:0:12856856",
+            "name":"Artful"
+         },
+         {  
+            "steam_id":"STEAM_1:0:13391158",
+            "name":"Aux"
+         },
+         {  
+            "steam_id":"STEAM_1:0:13408534",
+            "name":"so0le"
+         },
+         {  
+            "steam_id":"STEAM_1:0:13617911",
+            "name":"SvL"
+         },
+         {  
+            "steam_id":"STEAM_1:0:13631540",
+            "name":"HasseHandled"
+         },
+         {  
+            "steam_id":"STEAM_1:0:13720189",
+            "name":"rocket"
+         },
+         {  
+            "steam_id":"STEAM_1:0:14138529",
+            "name":"✪ Katt T"
+         },
+         {  
+            "steam_id":"STEAM_1:0:14406887",
+            "name":"🅱️ᴀɢᴀʀɴ"
+         },
+         {  
+            "steam_id":"STEAM_1:0:14613480",
+            "name":"this - ing guy"
+         },
+         {  
+            "steam_id":"STEAM_1:0:14776127",
+            "name":"dzy"
+         },
+         {  
+            "steam_id":"STEAM_1:0:14863469",
+            "name":"OLDMIKE^"
+         },
+         {  
+            "steam_id":"STEAM_1:0:15029861",
+            "name":"Laksy"
+         },
+         {  
+            "steam_id":"STEAM_1:0:15365006",
+            "name":"dafps"
+         },
+         {  
+            "steam_id":"STEAM_1:0:17177317",
+            "name":"hateR #B2A"
+         },
+         {  
+            "steam_id":"STEAM_1:0:17303752",
+            "name":"LittleGlobal~"
+         },
+         {  
+            "steam_id":"STEAM_1:0:17467489",
+            "name":"TØDу1337™"
+         },
+         {  
+            "steam_id":"STEAM_1:0:18142828",
+            "name":"life is strange"
+         },
+         {  
+            "steam_id":"STEAM_1:0:18288583",
+            "name":"chad - twitch.tv exist73"
+         },
+         {  
+            "steam_id":"STEAM_1:0:18408241",
+            "name":"sQuared - ʙ ᴜ ɴ ɢ ᴇ ᴇ"
+         },
+         {  
+            "steam_id":"STEAM_1:0:18739078",
+            "name":"moozey"
+         },
+         {  
+            "steam_id":"STEAM_1:0:19092530",
+            "name":"^w^ Julianio ^w^"
+         },
+         {  
+            "steam_id":"STEAM_1:0:19212210",
+            "name":"Carrier"
+         },
+         {  
+            "steam_id":"STEAM_1:0:19413633",
+            "name":"PavLe"
+         },
+         {  
+            "steam_id":"STEAM_1:0:19858331",
+            "name":"JWL"
+         },
+         {  
+            "steam_id":"STEAM_1:0:19957865",
+            "name":"Tallah"
+         },
+         {  
+            "steam_id":"STEAM_1:0:20215734",
+            "name":"Edaji"
+         },
+         {  
+            "steam_id":"STEAM_1:0:20457132",
+            "name":"Taydolf"
+         },
+         {  
+            "steam_id":"STEAM_1:0:20649299",
+            "name":"xBones"
+         },
+         {  
+            "steam_id":"STEAM_1:0:21596928",
+            "name":"Sylcf (dean)"
+         },
+         {  
+            "steam_id":"STEAM_1:0:21813241",
+            "name":"Xvizion"
+         },
+         {  
+            "steam_id":"STEAM_1:0:22604383",
+            "name":"fractaL"
+         },
+         {  
+            "steam_id":"STEAM_1:0:100356964",
+            "name":"br"
+         },
+         {  
+            "steam_id":"STEAM_1:0:102468802",
+            "name":"GameChaos"
+         },
+         {  
+            "steam_id":"STEAM_1:0:102927738",
+            "name":"GDZJ"
+         },
+         {  
+            "steam_id":"STEAM_1:0:103429899",
+            "name":"JJ"
+         },
+         {  
+            "steam_id":"STEAM_1:0:104610822",
+            "name":"8 乡"
+         },
+         {  
+            "steam_id":"STEAM_1:0:107325351",
+            "name":"- edUpHorse"
+         },
+         {  
+            "steam_id":"STEAM_1:0:107365157",
+            "name":"IIIIIlllIII"
+         },
+         {  
+            "steam_id":"STEAM_1:0:107893245",
+            "name":"ash"
+         },
+         {  
+            "steam_id":"STEAM_1:0:109297321",
+            "name":"donutman"
+         },
+         {  
+            "steam_id":"STEAM_1:0:112866369",
+            "name":"Musicbot"
+         },
+         {  
+            "steam_id":"STEAM_1:0:115013571",
+            "name":"h3r0[1n] csgo500 cs.money"
+         },
+         {  
+            "steam_id":"STEAM_1:0:118023825",
+            "name":"Phil"
+         },
+         {  
+            "steam_id":"STEAM_1:0:120622061",
+            "name":"Jumpump"
+         },
+         {  
+            "steam_id":"STEAM_1:0:122816464",
+            "name":"GiimPy"
+         },
+         {  
+            "steam_id":"STEAM_1:0:124297308",
+            "name":"Larmy"
+         },
+         {  
+            "steam_id":"STEAM_1:0:124876204",
+            "name":"dziggetai"
+         },
+         {  
+            "steam_id":"STEAM_1:0:125566606",
+            "name":"Mistersisterfister"
+         },
+         {  
+            "steam_id":"STEAM_1:0:126536922",
+            "name":"Destroyer"
+         },
+         {  
+            "steam_id":"STEAM_1:0:127137028",
+            "name":"[HT]#Raskol Ｎ4xＹ"
+         },
+         {  
+            "steam_id":"STEAM_1:0:128415106",
+            "name":"bombu ):v"
+         },
+         {  
+            "steam_id":"STEAM_1:0:130428520",
+            "name":"björnnn"
+         },
+         {  
+            "steam_id":"STEAM_1:0:133266432",
+            "name":"RaM#NEWMOUSE"
+         },
+         {  
+            "steam_id":"STEAM_1:0:134525536",
+            "name":"꧀"
+         },
+         {  
+            "steam_id":"STEAM_1:0:135552204",
+            "name":"iTburnZwenEyeP"
+         },
+         {  
+            "steam_id":"STEAM_1:0:136949746",
+            "name":"Cawfee"
+         },
+         {  
+            "steam_id":"STEAM_1:0:137866470",
+            "name":"huncho"
+         },
+         {  
+            "steam_id":"STEAM_1:0:140986277",
+            "name":"Gameplay Booster"
+         },
+         {  
+            "steam_id":"STEAM_1:0:141906567",
+            "name":"KFC"
+         },
+         {  
+            "steam_id":"STEAM_1:0:143528074",
+            "name":"Boony"
+         },
+         {  
+            "steam_id":"STEAM_1:0:143593386",
+            "name":"NiceGuy™"
+         },
+         {  
+            "steam_id":"STEAM_1:0:144015727",
+            "name":"苏"
+         },
+         {  
+            "steam_id":"STEAM_1:0:144216299",
+            "name":"ag"
+         },
+         {  
+            "steam_id":"STEAM_1:0:145519399",
+            "name":"tricky ;j ♥ JULIA"
+         },
+         {  
+            "steam_id":"STEAM_1:0:151503275",
+            "name":"OneeeeeSamaaaaaa"
+         },
+         {  
+            "steam_id":"STEAM_1:0:151883347",
+            "name":"sЯc"
+         },
+         {  
+            "steam_id":"STEAM_1:0:156226738",
+            "name":"zxc"
+         },
+         {  
+            "steam_id":"STEAM_1:0:157667135",
+            "name":"298 frames"
+         },
+         {  
+            "steam_id":"STEAM_1:0:160424772",
+            "name":"Pham Thanh Hung"
+         },
+         {  
+            "steam_id":"STEAM_1:0:163374113",
+            "name":"CORNHOLIO"
+         },
+         {  
+            "steam_id":"STEAM_1:0:167151366",
+            "name":"Summer♥"
+         },
+         {  
+            "steam_id":"STEAM_1:0:171380896",
+            "name":"Anq"
+         },
+         {  
+            "steam_id":"STEAM_1:0:171606431",
+            "name":"Rewized"
+         },
+         {  
+            "steam_id":"STEAM_1:0:171907547",
+            "name":"alexS"
+         },
+         {  
+            "steam_id":"STEAM_1:0:172793584",
+            "name":"ip`"
+         },
+         {  
+            "steam_id":"STEAM_1:0:174272637",
+            "name":"HEyGuys"
+         },
+         {  
+            "steam_id":"STEAM_1:0:176165991",
+            "name":"PAPA SCHLUMPF"
+         },
+         {  
+            "steam_id":"STEAM_1:0:177298174",
+            "name":"kurumi - 22"
+         },
+         {  
+            "steam_id":"STEAM_1:0:195650542",
+            "name":"Korahamu"
+         },
+         {  
+            "steam_id":"STEAM_1:0:2606780",
+            "name":"Extremerz"
+         },
+         {  
+            "steam_id":"STEAM_1:0:2641461",
+            "name":"eVo.aka.Arkos"
+         },
+         {  
+            "steam_id":"STEAM_1:0:2896477",
+            "name":"Yorton"
+         },
+         {  
+            "steam_id":"STEAM_1:0:3104500",
+            "name":"sfn"
+         },
+         {  
+            "steam_id":"STEAM_1:0:3341365",
+            "name":"Klvsched"
+         },
+         {  
+            "steam_id":"STEAM_1:0:3395649",
+            "name":"g-Lp"
+         },
+         {  
+            "steam_id":"STEAM_1:0:4629093",
+            "name":"Master 3 g3sg1"
+         },
+         {  
+            "steam_id":"STEAM_1:0:5252917",
+            "name":"Ravil"
+         },
+         {  
+            "steam_id":"STEAM_1:0:5294555",
+            "name":"8ball"
+         },
+         {  
+            "steam_id":"STEAM_1:0:23242770",
+            "name":"PlastiS^ ♥"
+         },
+         {  
+            "steam_id":"STEAM_1:0:23831608",
+            "name":"Cou"
+         },
+         {  
+            "steam_id":"STEAM_1:0:23859673",
+            "name":"CAMMA"
+         },
+         {  
+            "steam_id":"STEAM_1:0:24439303",
+            "name":"keybode"
+         },
+         {  
+            "steam_id":"STEAM_1:0:25248155",
+            "name":"eightbO"
+         },
+         {  
+            "steam_id":"STEAM_1:0:25688770",
+            "name":"wilito"
+         },
+         {  
+            "steam_id":"STEAM_1:0:25956767",
+            "name":"skz"
+         },
+         {  
+            "steam_id":"STEAM_1:0:26225188",
+            "name":"colony"
+         },
+         {  
+            "steam_id":"STEAM_1:0:26488799",
+            "name":"Aleksib"
+         },
+         {  
+            "steam_id":"STEAM_1:0:27350180",
+            "name":"dizzyassassin"
+         },
+         {  
+            "steam_id":"STEAM_1:0:27965625",
+            "name":"Atlas"
+         },
+         {  
+            "steam_id":"STEAM_1:0:28189358",
+            "name":"HeavenS"
+         },
+         {  
+            "steam_id":"STEAM_1:0:29122831",
+            "name":"Boux"
+         },
+         {  
+            "steam_id":"STEAM_1:0:29376392",
+            "name":"El Queso"
+         },
+         {  
+            "steam_id":"STEAM_1:0:29502012",
+            "name":"JULZ"
+         },
+         {  
+            "steam_id":"STEAM_1:0:30176216",
+            "name":"Tas Weapon"
+         },
+         {  
+            "steam_id":"STEAM_1:0:30275537",
+            "name":"MULLEN"
+         },
+         {  
+            "steam_id":"STEAM_1:0:31339383",
+            "name":"Funk"
+         },
+         {  
+            "steam_id":"STEAM_1:0:31771110",
+            "name":"✯JerK▒┓"
+         },
+         {  
+            "steam_id":"STEAM_1:0:31861748",
+            "name":"pLekz"
+         },
+         {  
+            "steam_id":"STEAM_1:0:32232012",
+            "name":"trist"
+         },
+         {  
+            "steam_id":"STEAM_1:0:32837804",
+            "name":"Wizzee"
+         },
+         {  
+            "steam_id":"STEAM_1:0:33058080",
+            "name":"splætt"
+         },
+         {  
+            "steam_id":"STEAM_1:0:33075021",
+            "name":"dMNP"
+         },
+         {  
+            "steam_id":"STEAM_1:0:33121068",
+            "name":"Inquisitor"
+         },
+         {  
+            "steam_id":"STEAM_1:0:33428188",
+            "name":"browni"
+         },
+         {  
+            "steam_id":"STEAM_1:0:33620671",
+            "name":"Dutch"
+         },
+         {  
+            "steam_id":"STEAM_1:0:33835728",
+            "name":"mx"
+         },
+         {  
+            "steam_id":"STEAM_1:0:33893745",
+            "name":"bryan"
+         },
+         {  
+            "steam_id":"STEAM_1:0:33974783",
+            "name":"dobreva"
+         },
+         {  
+            "steam_id":"STEAM_1:0:34593422",
+            "name":"°︿°"
+         },
+         {  
+            "steam_id":"STEAM_1:0:34721083",
+            "name":"mistersisterfister"
+         },
+         {  
+            "steam_id":"STEAM_1:0:35591591",
+            "name":"Evagreen"
+         },
+         {  
+            "steam_id":"STEAM_1:0:35660934",
+            "name":"duxx"
+         },
+         {  
+            "steam_id":"STEAM_1:0:36548901",
+            "name":"insanee"
+         },
+         {  
+            "steam_id":"STEAM_1:0:36598024",
+            "name":"Gwooky"
+         },
+         {  
+            "steam_id":"STEAM_1:0:36758625",
+            "name":"dewarn"
+         },
+         {  
+            "steam_id":"STEAM_1:0:37729934",
+            "name":"star platinum"
+         },
+         {  
+            "steam_id":"STEAM_1:0:37968004",
+            "name":"kuzco.♛☹"
+         },
+         {  
+            "steam_id":"STEAM_1:0:38383699",
+            "name":"Lolofmeister"
+         },
+         {  
+            "steam_id":"STEAM_1:0:38430740",
+            "name":"ThriftyDust"
+         },
+         {  
+            "steam_id":"STEAM_1:0:39034392",
+            "name":"blob omb"
+         },
+         {  
+            "steam_id":"STEAM_1:0:39428324",
+            "name":"Kashtanero"
+         },
+         {  
+            "steam_id":"STEAM_1:0:39561365",
+            "name":"finckelton"
+         },
+         {  
+            "steam_id":"STEAM_1:0:39815535",
+            "name":"hz"
+         },
+         {  
+            "steam_id":"STEAM_1:0:39854753",
+            "name":"zShippi ☺"
+         },
+         {  
+            "steam_id":"STEAM_1:0:39963010",
+            "name":"tohameister DDD"
+         },
+         {  
+            "steam_id":"STEAM_1:0:40088536",
+            "name":"Apryze"
+         },
+         {  
+            "steam_id":"STEAM_1:0:40247521",
+            "name":"Shoulda Had a V8, Bitch."
+         },
+         {  
+            "steam_id":"STEAM_1:0:40373678",
+            "name":"Sera"
+         },
+         {  
+            "steam_id":"STEAM_1:0:40787505",
+            "name":"~NiGhT~>۞ ۞ ۞۞ ۞۞۞ ۞۞"
+         },
+         {  
+            "steam_id":"STEAM_1:0:40811915",
+            "name":"fx)"
+         },
+         {  
+            "steam_id":"STEAM_1:0:40915973",
+            "name":"T.w² | Diplo"
+         },
+         {  
+            "steam_id":"STEAM_1:0:41004089",
+            "name":"dani3losss"
+         },
+         {  
+            "steam_id":"STEAM_1:0:41353755",
+            "name":"Ped"
+         },
+         {  
+            "steam_id":"STEAM_1:0:41376337",
+            "name":"rosencrantz"
+         },
+         {  
+            "steam_id":"STEAM_1:0:41655138",
+            "name":"JabberJack"
+         },
+         {  
+            "steam_id":"STEAM_1:0:41750845",
+            "name":"Bafflegab"
+         },
+         {  
+            "steam_id":"STEAM_1:0:42048280",
+            "name":"Ballistic Bacon"
+         },
+         {  
+            "steam_id":"STEAM_1:0:42147267",
+            "name":"cHaos"
+         },
+         {  
+            "steam_id":"STEAM_1:0:42898772",
+            "name":"seanders"
+         },
+         {  
+            "steam_id":"STEAM_1:0:43020865",
+            "name":"crixzzi"
+         },
+         {  
+            "steam_id":"STEAM_1:0:43708540",
+            "name":"bowsr"
+         },
+         {  
+            "steam_id":"STEAM_1:0:44220121",
+            "name":"hEcTic LoRd"
+         },
+         {  
+            "steam_id":"STEAM_1:0:44269283",
+            "name":"♥theorii"
+         },
+         {  
+            "steam_id":"STEAM_1:0:44358139",
+            "name":"stn"
+         },
+         {  
+            "steam_id":"STEAM_1:0:44397973",
+            "name":"maniac nosound"
+         },
+         {  
+            "steam_id":"STEAM_1:0:44416107",
+            "name":"suiraD"
+         },
+         {  
+            "steam_id":"STEAM_1:0:44739485",
+            "name":"Grey man"
+         },
+         {  
+            "steam_id":"STEAM_1:0:44797895",
+            "name":"basic"
+         },
+         {  
+            "steam_id":"STEAM_1:0:45329354",
+            "name":"☼ASi mit Niwoh☼"
+         },
+         {  
+            "steam_id":"STEAM_1:0:45668386",
+            "name":"fl1po"
+         },
+         {  
+            "steam_id":"STEAM_1:0:46985884",
+            "name":"spike"
+         },
+         {  
+            "steam_id":"STEAM_1:0:47676519",
+            "name":"DONKEHH"
+         },
+         {  
+            "steam_id":"STEAM_1:0:47721677",
+            "name":"Temo"
+         },
+         {  
+            "steam_id":"STEAM_1:0:47853445",
+            "name":"Etro"
+         },
+         {  
+            "steam_id":"STEAM_1:0:47933948",
+            "name":"KraFteR"
+         },
+         {  
+            "steam_id":"STEAM_1:0:48204549",
+            "name":"Chickenwangz"
+         },
+         {  
+            "steam_id":"STEAM_1:0:48334015",
+            "name":"Scyther"
+         },
+         {  
+            "steam_id":"STEAM_1:0:48501837",
+            "name":"Orbro"
+         },
+         {  
+            "steam_id":"STEAM_1:0:48904952",
+            "name":"pqqqp"
+         },
+         {  
+            "steam_id":"STEAM_1:0:49132556",
+            "name":"Pädro"
+         },
+         {  
+            "steam_id":"STEAM_1:0:49420041",
+            "name":"xD"
+         },
+         {  
+            "steam_id":"STEAM_1:0:49561250",
+            "name":"Cthulhu"
+         },
+         {  
+            "steam_id":"STEAM_1:0:50071035",
+            "name":"lightes"
+         },
+         {  
+            "steam_id":"STEAM_1:0:50291697",
+            "name":"Lepton"
+         },
+         {  
+            "steam_id":"STEAM_1:0:51568226",
+            "name":"night"
+         },
+         {  
+            "steam_id":"STEAM_1:0:51921141",
+            "name":".."
+         },
+         {  
+            "steam_id":"STEAM_1:0:53278635",
+            "name":"Jaz ♛"
+         },
+         {  
+            "steam_id":"STEAM_1:0:53343549",
+            "name":"jord"
+         },
+         {  
+            "steam_id":"STEAM_1:0:53440872",
+            "name":"Fluqz;v"
+         },
+         {  
+            "steam_id":"STEAM_1:0:73927",
+            "name":"Supa"
+         },
+         {  
+            "steam_id":"STEAM_1:0:784954",
+            "name":"༼ʘ̚ل͜ʘ̚༽ #KZvengers"
+         },
+         {  
+            "steam_id":"STEAM_1:0:6821863",
+            "name":"Cake"
+         },
+         {  
+            "steam_id":"STEAM_1:0:6935418",
+            "name":"zzz"
+         },
+         {  
+            "steam_id":"STEAM_1:0:7308943",
+            "name":"See"
+         },
+         {  
+            "steam_id":"STEAM_1:0:7966008",
+            "name":"sLowi_^"
+         },
+         {  
+            "steam_id":"STEAM_1:0:8845346",
+            "name":"Zpamm OSsloth"
+         },
+         {  
+            "steam_id":"STEAM_1:0:8933927",
+            "name":"Excusetoi"
+         },
+         {  
+            "steam_id":"STEAM_1:0:8965817",
+            "name":"TheDumek27 iwnl"
+         },
+         {  
+            "steam_id":"STEAM_1:0:9770836",
+            "name":"ymh"
+         },
+         {  
+            "steam_id":"STEAM_1:0:9795733",
+            "name":"Scratche"
+         },
+         {  
+            "steam_id":"STEAM_1:0:54161742",
+            "name":"balto"
+         },
+         {  
+            "steam_id":"STEAM_1:0:55458211",
+            "name":"JMonsted"
+         },
+         {  
+            "steam_id":"STEAM_1:0:55483861",
+            "name":"Tickarish"
+         },
+         {  
+            "steam_id":"STEAM_1:0:55856712",
+            "name":"Mike Smiff"
+         },
+         {  
+            "steam_id":"STEAM_1:0:55972459",
+            "name":"InfiniteUltimateExtremer"
+         },
+         {  
+            "steam_id":"STEAM_1:0:56027994",
+            "name":"liazz 13"
+         },
+         {  
+            "steam_id":"STEAM_1:0:56246927",
+            "name":"Ailwyn ^w^"
+         },
+         {  
+            "steam_id":"STEAM_1:0:56932588",
+            "name":"rick"
+         },
+         {  
+            "steam_id":"STEAM_1:0:57622391",
+            "name":"prospectator"
+         },
+         {  
+            "steam_id":"STEAM_1:0:57749170",
+            "name":"✪ TemPo"
+         },
+         {  
+            "steam_id":"STEAM_1:0:58009192",
+            "name":"cfrbhy6gv"
+         },
+         {  
+            "steam_id":"STEAM_1:0:58356013",
+            "name":"vgsi(:"
+         },
+         {  
+            "steam_id":"STEAM_1:0:58438106",
+            "name":"Casey"
+         },
+         {  
+            "steam_id":"STEAM_1:0:58614630",
+            "name":"kevin"
+         },
+         {  
+            "steam_id":"STEAM_1:0:59475083",
+            "name":"erectus"
+         },
+         {  
+            "steam_id":"STEAM_1:0:59533502",
+            "name":"LQ"
+         },
+         {  
+            "steam_id":"STEAM_1:0:59547664",
+            "name":"KÖPI"
+         },
+         {  
+            "steam_id":"STEAM_1:0:59582723",
+            "name":"vilhehe"
+         },
+         {  
+            "steam_id":"STEAM_1:0:60433240",
+            "name":"ynneK"
+         },
+         {  
+            "steam_id":"STEAM_1:0:60513645",
+            "name":"Jewbag"
+         },
+         {  
+            "steam_id":"STEAM_1:0:60593568",
+            "name":"p A n t s"
+         },
+         {  
+            "steam_id":"STEAM_1:0:61020558",
+            "name":"AREDONE"
+         },
+         {  
+            "steam_id":"STEAM_1:0:61776754",
+            "name":"dobLe L♛"
+         },
+         {  
+            "steam_id":"STEAM_1:0:61830961",
+            "name":"Dale"
+         },
+         {  
+            "steam_id":"STEAM_1:0:62096165",
+            "name":"Schwifty CSGO500"
+         },
+         {  
+            "steam_id":"STEAM_1:0:62162849",
+            "name":"✪ Heia"
+         },
+         {  
+            "steam_id":"STEAM_1:0:62721903",
+            "name":"******"
+         },
+         {  
+            "steam_id":"STEAM_1:0:62968659",
+            "name":"Kamui [NM]"
+         },
+         {  
+            "steam_id":"STEAM_1:0:64663431",
+            "name":"oll9abc"
+         },
+         {  
+            "steam_id":"STEAM_1:0:65138678",
+            "name":"Moxzy"
+         },
+         {  
+            "steam_id":"STEAM_1:0:65238967",
+            "name":"_TOM #summershredding"
+         },
+         {  
+            "steam_id":"STEAM_1:0:65320695",
+            "name":"Hunter S. Thompson"
+         },
+         {  
+            "steam_id":"STEAM_1:0:66454985",
+            "name":"nohate x)"
+         },
+         {  
+            "steam_id":"STEAM_1:0:66928809",
+            "name":"ÞÀ†Îk©"
+         },
+         {  
+            "steam_id":"STEAM_1:0:67855790",
+            "name":"西木野妮可"
+         },
+         {  
+            "steam_id":"STEAM_1:0:67946800",
+            "name":"lingeR"
+         },
+         {  
+            "steam_id":"STEAM_1:0:68579983",
+            "name":"Dom Perignon"
+         },
+         {  
+            "steam_id":"STEAM_1:0:69103392",
+            "name":"the uh react"
+         },
+         {  
+            "steam_id":"STEAM_1:0:69958832",
+            "name":"ruben ♥"
+         },
+         {  
+            "steam_id":"STEAM_1:0:71375927",
+            "name":"Shard Xd #tj0"
+         },
+         {  
+            "steam_id":"STEAM_1:0:72616731",
+            "name":"Jho"
+         },
+         {  
+            "steam_id":"STEAM_1:0:74973458",
+            "name":"Grendor"
+         },
+         {  
+            "steam_id":"STEAM_1:0:75204262",
+            "name":"BASED"
+         },
+         {  
+            "steam_id":"STEAM_1:0:75901607",
+            "name":"summertime"
+         },
+         {  
+            "steam_id":"STEAM_1:0:76312537",
+            "name":"okada,fans"
+         },
+         {  
+            "steam_id":"STEAM_1:0:76561246",
+            "name":"yungmosa"
+         },
+         {  
+            "steam_id":"STEAM_1:0:77449768",
+            "name":"Salmoncow"
+         },
+         {  
+            "steam_id":"STEAM_1:0:77477349",
+            "name":"frostie"
+         },
+         {  
+            "steam_id":"STEAM_1:0:77997576",
+            "name":"「§NG」| Concrete"
+         },
+         {  
+            "steam_id":"STEAM_1:0:80631796",
+            "name":"ddly ☠"
+         },
+         {  
+            "steam_id":"STEAM_1:0:81206583",
+            "name":"✪ Wabbit"
+         },
+         {  
+            "steam_id":"STEAM_1:0:81771156",
+            "name":"LAWDOG"
+         },
+         {  
+            "steam_id":"STEAM_1:0:82909840",
+            "name":"Elijah"
+         },
+         {  
+            "steam_id":"STEAM_1:0:83008860",
+            "name":"Arkuna"
+         },
+         {  
+            "steam_id":"STEAM_1:0:83379863",
+            "name":"Shiinoy"
+         },
+         {  
+            "steam_id":"STEAM_1:0:84336876",
+            "name":"dekaa|in Japan again brb"
+         },
+         {  
+            "steam_id":"STEAM_1:0:84689677",
+            "name":"ultra"
+         },
+         {  
+            "steam_id":"STEAM_1:0:84690156",
+            "name":"Hero Spammer"
+         },
+         {  
+            "steam_id":"STEAM_1:0:85538923",
+            "name":"Aladin ლ(╹◡╹ლ)"
+         },
+         {  
+            "steam_id":"STEAM_1:0:86061666",
+            "name":"totulotuu"
+         },
+         {  
+            "steam_id":"STEAM_1:0:86506837",
+            "name":"Code++"
+         },
+         {  
+            "steam_id":"STEAM_1:0:87370277",
+            "name":"GRIPEN"
+         },
+         {  
+            "steam_id":"STEAM_1:0:87823646",
+            "name":"RAKAN ♡"
+         },
+         {  
+            "steam_id":"STEAM_1:0:87950310",
+            "name":"Broiler"
+         },
+         {  
+            "steam_id":"STEAM_1:0:88459470",
+            "name":"CompleX |"
+         },
+         {  
+            "steam_id":"STEAM_1:0:88661767",
+            "name":"Gull."
+         },
+         {  
+            "steam_id":"STEAM_1:0:88685863",
+            "name":"Agi0"
+         },
+         {  
+            "steam_id":"STEAM_1:0:88720676",
+            "name":"EQUAKE.zeph"
+         },
+         {  
+            "steam_id":"STEAM_1:0:88872467",
+            "name":"Fiphfil"
+         },
+         {  
+            "steam_id":"STEAM_1:0:89709745",
+            "name":"LoseIsImprove"
+         },
+         {  
+            "steam_id":"STEAM_1:0:89939623",
+            "name":"meepztar"
+         },
+         {  
+            "steam_id":"STEAM_1:0:90656819",
+            "name":"james"
+         },
+         {  
+            "steam_id":"STEAM_1:0:90813497",
+            "name":"Spookystyle^Yarrak"
+         },
+         {  
+            "steam_id":"STEAM_1:0:90917565",
+            "name":"gamer21"
+         },
+         {  
+            "steam_id":"STEAM_1:0:91996811",
+            "name":"zorb"
+         },
+         {  
+            "steam_id":"STEAM_1:0:92323950",
+            "name":"-_-"
+         },
+         {  
+            "steam_id":"STEAM_1:0:92773183",
+            "name":"Ryan"
+         },
+         {  
+            "steam_id":"STEAM_1:0:93283786",
+            "name":"nhuhrd"
+         },
+         {  
+            "steam_id":"STEAM_1:0:93307844",
+            "name":"Халкуся"
+         },
+         {  
+            "steam_id":"STEAM_1:0:93814773",
+            "name":"LUq"
+         },
+         {  
+            "steam_id":"STEAM_1:0:93986345",
+            "name":"๑Ponvi"
+         },
+         {  
+            "steam_id":"STEAM_1:0:94970575",
+            "name":"✪ SCH3N3K3L"
+         },
+         {  
+            "steam_id":"STEAM_1:0:95172718",
+            "name":"Jooy )"
+         },
+         {  
+            "steam_id":"STEAM_1:0:95868252",
+            "name":"I can nothing :)"
+         },
+         {  
+            "steam_id":"STEAM_1:0:97388718",
+            "name":"Heinzelboss"
+         },
+         {  
+            "steam_id":"STEAM_1:0:97795306",
+            "name":"Windows 7 ®"
+         },
+         {  
+            "steam_id":"STEAM_1:0:98819599",
+            "name":"vaapukkamehu"
+         },
+         {  
+            "steam_id":"STEAM_1:0:99341004",
+            "name":"RAAWR EKSDE"
+         },
+         {  
+            "steam_id":"STEAM_1:1:23052",
+            "name":"brwR tf"
+         },
+         {  
+            "steam_id":"STEAM_1:1:215380",
+            "name":"ninjo"
+         },
+         {  
+            "steam_id":"STEAM_1:1:1056680",
+            "name":"Yayo"
+         },
+         {  
+            "steam_id":"STEAM_1:1:1630744",
+            "name":"Flibo"
+         },
+         {  
+            "steam_id":"STEAM_1:1:11065039",
+            "name":"crab1kkk"
+         },
+         {  
+            "steam_id":"STEAM_1:1:11374239",
+            "name":"Zach47"
+         },
+         {  
+            "steam_id":"STEAM_1:1:11393731",
+            "name":"jolleboff"
+         },
+         {  
+            "steam_id":"STEAM_1:1:11617541",
+            "name":"mytH Mr.305 DALE"
+         },
+         {  
+            "steam_id":"STEAM_1:1:11972563",
+            "name":"b0utamine"
+         },
+         {  
+            "steam_id":"STEAM_1:1:12777640",
+            "name":"haXy"
+         },
+         {  
+            "steam_id":"STEAM_1:1:12868383",
+            "name":"Half Man, Half Scout ☂"
+         },
+         {  
+            "steam_id":"STEAM_1:1:13018104",
+            "name":"Amélie"
+         },
+         {  
+            "steam_id":"STEAM_1:1:13465569",
+            "name":"EphNey"
+         },
+         {  
+            "steam_id":"STEAM_1:1:13601106",
+            "name":"fonseca"
+         },
+         {  
+            "steam_id":"STEAM_1:1:13756412",
+            "name":"Cloudff7tm"
+         },
+         {  
+            "steam_id":"STEAM_1:1:14093664",
+            "name":"esk"
+         },
+         {  
+            "steam_id":"STEAM_1:1:14303991",
+            "name":"interloper"
+         },
+         {  
+            "steam_id":"STEAM_1:1:16411902",
+            "name":"VertikO"
+         },
+         {  
+            "steam_id":"STEAM_1:1:16757810",
+            "name":"WiLLi"
+         },
+         {  
+            "steam_id":"STEAM_1:1:17025094",
+            "name":"SVDDXNLY"
+         },
+         {  
+            "steam_id":"STEAM_1:1:17160289",
+            "name":"MachineChaos"
+         },
+         {  
+            "steam_id":"STEAM_1:1:18281596",
+            "name":"blasdfa"
+         },
+         {  
+            "steam_id":"STEAM_1:1:18515150",
+            "name":"My Wife s Son"
+         },
+         {  
+            "steam_id":"STEAM_1:1:19210276",
+            "name":"сука Scammer блять"
+         },
+         {  
+            "steam_id":"STEAM_1:1:19279237",
+            "name":"fiveenr"
+         },
+         {  
+            "steam_id":"STEAM_1:1:19323988",
+            "name":"mandom"
+         },
+         {  
+            "steam_id":"STEAM_1:1:20282000",
+            "name":"ㄴㅇㄴ"
+         },
+         {  
+            "steam_id":"STEAM_1:1:20366888",
+            "name":"T^^"
+         },
+         {  
+            "steam_id":"STEAM_1:1:20647853",
+            "name":"trollezad"
+         },
+         {  
+            "steam_id":"STEAM_1:1:20944688",
+            "name":"krein"
+         },
+         {  
+            "steam_id":"STEAM_1:1:21505111",
+            "name":"$ikari"
+         },
+         {  
+            "steam_id":"STEAM_1:1:21807449",
+            "name":"KnazeX"
+         },
+         {  
+            "steam_id":"STEAM_1:1:22072971",
+            "name":"linus"
+         },
+         {  
+            "steam_id":"STEAM_1:1:22112980",
+            "name":"Panda ツ"
+         },
+         {  
+            "steam_id":"STEAM_1:1:22170464",
+            "name":"kalsd :"
+         },
+         {  
+            "steam_id":"STEAM_1:1:22590307",
+            "name":"Szrh"
+         },
+         {  
+            "steam_id":"STEAM_1:1:23276860",
+            "name":"Adec"
+         },
+         {  
+            "steam_id":"STEAM_1:1:24388452",
+            "name":"Thomas"
+         },
+         {  
+            "steam_id":"STEAM_1:1:24396335",
+            "name":"Bron Yr Aur"
+         },
+         {  
+            "steam_id":"STEAM_1:1:24417013",
+            "name":"jeppe"
+         },
+         {  
+            "steam_id":"STEAM_1:1:24657283",
+            "name":"Lugle (>)^ .^)>"
+         },
+         {  
+            "steam_id":"STEAM_1:1:24818350",
+            "name":"GnagarN^"
+         },
+         {  
+            "steam_id":"STEAM_1:1:100904333",
+            "name":"Zyzz"
+         },
+         {  
+            "steam_id":"STEAM_1:1:102813110",
+            "name":"Tigrevurmud Vorn"
+         },
+         {  
+            "steam_id":"STEAM_1:1:103171896",
+            "name":"Aura"
+         },
+         {  
+            "steam_id":"STEAM_1:1:103209531",
+            "name":"snyy"
+         },
+         {  
+            "steam_id":"STEAM_1:1:103935804",
+            "name":"| ¥ |_€"
+         },
+         {  
+            "steam_id":"STEAM_1:1:104177857",
+            "name":"Freeman"
+         },
+         {  
+            "steam_id":"STEAM_1:1:105164813",
+            "name":"El Kappa"
+         },
+         {  
+            "steam_id":"STEAM_1:1:105583500",
+            "name":"dane"
+         },
+         {  
+            "steam_id":"STEAM_1:1:105764483",
+            "name":"flojl."
+         },
+         {  
+            "steam_id":"STEAM_1:1:105981371",
+            "name":"EmokeZ"
+         },
+         {  
+            "steam_id":"STEAM_1:1:106397075",
+            "name":"its is me, daniel"
+         },
+         {  
+            "steam_id":"STEAM_1:1:107575728",
+            "name":"wstrafe"
+         },
+         {  
+            "steam_id":"STEAM_1:1:107624363",
+            "name":"alex."
+         },
+         {  
+            "steam_id":"STEAM_1:1:108712224",
+            "name":"infuzed"
+         },
+         {  
+            "steam_id":"STEAM_1:1:109110981",
+            "name":"tilt"
+         },
+         {  
+            "steam_id":"STEAM_1:1:111852863",
+            "name":"黑恶势力P&A"
+         },
+         {  
+            "steam_id":"STEAM_1:1:111856783",
+            "name":"not your average joe"
+         },
+         {  
+            "steam_id":"STEAM_1:1:113563959",
+            "name":"froast"
+         },
+         {  
+            "steam_id":"STEAM_1:1:117414665",
+            "name":"Isk"
+         },
+         {  
+            "steam_id":"STEAM_1:1:117510495",
+            "name":"Rigatoni"
+         },
+         {  
+            "steam_id":"STEAM_1:1:117581081",
+            "name":"Gekkouga"
+         },
+         {  
+            "steam_id":"STEAM_1:1:119239055",
+            "name":"Owen"
+         },
+         {  
+            "steam_id":"STEAM_1:1:120403095",
+            "name":"Dosia x God"
+         },
+         {  
+            "steam_id":"STEAM_1:1:120679536",
+            "name":"kos"
+         },
+         {  
+            "steam_id":"STEAM_1:1:120773791",
+            "name":"Aljona3"
+         },
+         {  
+            "steam_id":"STEAM_1:1:122227044",
+            "name":"WITDASHOT"
+         },
+         {  
+            "steam_id":"STEAM_1:1:122532369",
+            "name":"sure"
+         },
+         {  
+            "steam_id":"STEAM_1:1:123652042",
+            "name":"Senox"
+         },
+         {  
+            "steam_id":"STEAM_1:1:123853829",
+            "name":"K..."
+         },
+         {  
+            "steam_id":"STEAM_1:1:125195631",
+            "name":"pumuckl ︻芫═—— ***"
+         },
+         {  
+            "steam_id":"STEAM_1:1:126297216",
+            "name":"salami"
+         },
+         {  
+            "steam_id":"STEAM_1:1:126571282",
+            "name":"咸鱼๑The Eyes"
+         },
+         {  
+            "steam_id":"STEAM_1:1:127840749",
+            "name":"AmaNoJyaku♪♬"
+         },
+         {  
+            "steam_id":"STEAM_1:1:129024143",
+            "name":"OlofMeister"
+         },
+         {  
+            "steam_id":"STEAM_1:1:146851623",
+            "name":"ok"
+         },
+         {  
+            "steam_id":"STEAM_1:1:150020340",
+            "name":"evie"
+         },
+         {  
+            "steam_id":"STEAM_1:1:151053468",
+            "name":"iEatCrayons"
+         },
+         {  
+            "steam_id":"STEAM_1:1:151539025",
+            "name":"9521"
+         },
+         {  
+            "steam_id":"STEAM_1:1:151625789",
+            "name":"✞ pvrvnormvl ✞"
+         },
+         {  
+            "steam_id":"STEAM_1:1:151923459",
+            "name":"Blizzard Man"
+         },
+         {  
+            "steam_id":"STEAM_1:1:151975975",
+            "name":"✪ HR!-"
+         },
+         {  
+            "steam_id":"STEAM_1:1:152116727",
+            "name":"NoZzle&&"
+         },
+         {  
+            "steam_id":"STEAM_1:1:153536544",
+            "name":"NEETONY"
+         },
+         {  
+            "steam_id":"STEAM_1:1:157492131",
+            "name":"【CG】ScblzcenR"
+         },
+         {  
+            "steam_id":"STEAM_1:1:170407121",
+            "name":"Alx"
+         },
+         {  
+            "steam_id":"STEAM_1:1:176847909",
+            "name":"Jenny KZ"
+         },
+         {  
+            "steam_id":"STEAM_1:1:180456952",
+            "name":"Ricky"
+         },
+         {  
+            "steam_id":"STEAM_1:1:188709422",
+            "name":"Aspergerus"
+         },
+         {  
+            "steam_id":"STEAM_1:1:206453742",
+            "name":"o o"
+         },
+         {  
+            "steam_id":"STEAM_1:1:48182",
+            "name":"»Rizor"
+         },
+         {  
+            "steam_id":"STEAM_1:1:49055",
+            "name":"Pizurin"
+         },
+         {  
+            "steam_id":"STEAM_1:1:281053",
+            "name":"Kramne"
+         },
+         {  
+            "steam_id":"STEAM_1:1:2561690",
+            "name":"pano"
+         },
+         {  
+            "steam_id":"STEAM_1:1:3527227",
+            "name":"♥Z$"
+         },
+         {  
+            "steam_id":"STEAM_1:1:4044675",
+            "name":"owen wilson s nose"
+         },
+         {  
+            "steam_id":"STEAM_1:1:4397886",
+            "name":"coach"
+         },
+         {  
+            "steam_id":"STEAM_1:1:5255363",
+            "name":"Rebmaa"
+         },
+         {  
+            "steam_id":"STEAM_1:1:25182001",
+            "name":"✪ paawp"
+         },
+         {  
+            "steam_id":"STEAM_1:1:25672441",
+            "name":"Kami nee sama"
+         },
+         {  
+            "steam_id":"STEAM_1:1:25813124",
+            "name":"SpookyStyle 不気味なスタイル"
+         },
+         {  
+            "steam_id":"STEAM_1:1:25822362",
+            "name":"low n schlow"
+         },
+         {  
+            "steam_id":"STEAM_1:1:26914658",
+            "name":"Ivan"
+         },
+         {  
+            "steam_id":"STEAM_1:1:27112765",
+            "name":"nykaN"
+         },
+         {  
+            "steam_id":"STEAM_1:1:27551695",
+            "name":"apA✔"
+         },
+         {  
+            "steam_id":"STEAM_1:1:28369422",
+            "name":"I miss the old Sam"
+         },
+         {  
+            "steam_id":"STEAM_1:1:29867327",
+            "name":"sG | KiD Fearless"
+         },
+         {  
+            "steam_id":"STEAM_1:1:30031380",
+            "name":"cs_venice"
+         },
+         {  
+            "steam_id":"STEAM_1:1:30887444",
+            "name":"Curry"
+         },
+         {  
+            "steam_id":"STEAM_1:1:33473118",
+            "name":"Role Model"
+         },
+         {  
+            "steam_id":"STEAM_1:1:33594951",
+            "name":"burhác"
+         },
+         {  
+            "steam_id":"STEAM_1:1:33597443",
+            "name":"Ritsu chan ホットドッグ"
+         },
+         {  
+            "steam_id":"STEAM_1:1:33618742",
+            "name":"prey"
+         },
+         {  
+            "steam_id":"STEAM_1:1:34047858",
+            "name":"dm"
+         },
+         {  
+            "steam_id":"STEAM_1:1:34351544",
+            "name":"文东#开挂脚本死全家"
+         },
+         {  
+            "steam_id":"STEAM_1:1:35068110",
+            "name":"jukk3lis"
+         },
+         {  
+            "steam_id":"STEAM_1:1:35071661",
+            "name":"NE KOROVA"
+         },
+         {  
+            "steam_id":"STEAM_1:1:35438192",
+            "name":"freddex ツ"
+         },
+         {  
+            "steam_id":"STEAM_1:1:35593379",
+            "name":"skitty"
+         },
+         {  
+            "steam_id":"STEAM_1:1:36104121",
+            "name":"k3R"
+         },
+         {  
+            "steam_id":"STEAM_1:1:36117565",
+            "name":"wizwardo"
+         },
+         {  
+            "steam_id":"STEAM_1:1:36517131",
+            "name":"DoveeN"
+         },
+         {  
+            "steam_id":"STEAM_1:1:36925186",
+            "name":"sjp"
+         },
+         {  
+            "steam_id":"STEAM_1:1:37356984",
+            "name":"Not a Weeaboo Desu"
+         },
+         {  
+            "steam_id":"STEAM_1:1:37428938",
+            "name":"anttidea"
+         },
+         {  
+            "steam_id":"STEAM_1:1:38000222",
+            "name":"Džeko^"
+         },
+         {  
+            "steam_id":"STEAM_1:1:38365989",
+            "name":"satan"
+         },
+         {  
+            "steam_id":"STEAM_1:1:38859681",
+            "name":"Strogglok` x`"
+         },
+         {  
+            "steam_id":"STEAM_1:1:38954915",
+            "name":"Bev"
+         },
+         {  
+            "steam_id":"STEAM_1:1:39061360",
+            "name":"Danvari"
+         },
+         {  
+            "steam_id":"STEAM_1:1:40213130",
+            "name":"FluXe"
+         },
+         {  
+            "steam_id":"STEAM_1:1:40216599",
+            "name":"ShinichEE (▰˘◡˘▰)"
+         },
+         {  
+            "steam_id":"STEAM_1:1:40712467",
+            "name":"xXGorgonzolaXx"
+         },
+         {  
+            "steam_id":"STEAM_1:1:41179168",
+            "name":"-duck"
+         },
+         {  
+            "steam_id":"STEAM_1:1:42052143",
+            "name":"puluJe$uS"
+         },
+         {  
+            "steam_id":"STEAM_1:1:42306169",
+            "name":"Kilawila"
+         },
+         {  
+            "steam_id":"STEAM_1:1:42537018",
+            "name":"lemonA"
+         },
+         {  
+            "steam_id":"STEAM_1:1:42694301",
+            "name":"segl"
+         },
+         {  
+            "steam_id":"STEAM_1:1:43259299",
+            "name":"Sachburger"
+         },
+         {  
+            "steam_id":"STEAM_1:1:43493432",
+            "name":"itzme"
+         },
+         {  
+            "steam_id":"STEAM_1:1:43713464",
+            "name":"(´・◡・｀) skinsjar.com"
+         },
+         {  
+            "steam_id":"STEAM_1:1:43807457",
+            "name":"Nerezo"
+         },
+         {  
+            "steam_id":"STEAM_1:1:43812031",
+            "name":"Tanskin"
+         },
+         {  
+            "steam_id":"STEAM_1:1:43949933",
+            "name":"Lone Wanderer"
+         },
+         {  
+            "steam_id":"STEAM_1:1:44039501",
+            "name":"silv"
+         },
+         {  
+            "steam_id":"STEAM_1:1:44691858",
+            "name":"Ryan"
+         },
+         {  
+            "steam_id":"STEAM_1:1:45421221",
+            "name":"Jak"
+         },
+         {  
+            "steam_id":"STEAM_1:1:46307132",
+            "name":"versaceLORD"
+         },
+         {  
+            "steam_id":"STEAM_1:1:46574979",
+            "name":"ZoSo"
+         },
+         {  
+            "steam_id":"STEAM_1:1:46894255",
+            "name":"Legenden"
+         },
+         {  
+            "steam_id":"STEAM_1:1:47694997",
+            "name":"drone"
+         },
+         {  
+            "steam_id":"STEAM_1:1:49163789",
+            "name":"MA BURFDAY :D:D"
+         },
+         {  
+            "steam_id":"STEAM_1:1:49540815",
+            "name":"dedi"
+         },
+         {  
+            "steam_id":"STEAM_1:1:49543244",
+            "name":"break"
+         },
+         {  
+            "steam_id":"STEAM_1:1:49899055",
+            "name":"flamio hotman"
+         },
+         {  
+            "steam_id":"STEAM_1:1:50004736",
+            "name":"sadf"
+         },
+         {  
+            "steam_id":"STEAM_1:1:50045448",
+            "name":"soda"
+         },
+         {  
+            "steam_id":"STEAM_1:1:50132674",
+            "name":"yoony"
+         },
+         {  
+            "steam_id":"STEAM_1:1:50167205",
+            "name":"Bic"
+         },
+         {  
+            "steam_id":"STEAM_1:1:50440654",
+            "name":"Noo"
+         },
+         {  
+            "steam_id":"STEAM_1:1:50543599",
+            "name":"NoEyes"
+         },
+         {  
+            "steam_id":"STEAM_1:1:50623124",
+            "name":"fika"
+         },
+         {  
+            "steam_id":"STEAM_1:1:50897929",
+            "name":"hade"
+         },
+         {  
+            "steam_id":"STEAM_1:1:51059339",
+            "name":"cybur"
+         },
+         {  
+            "steam_id":"STEAM_1:1:51229523",
+            "name":"fFfffF"
+         },
+         {  
+            "steam_id":"STEAM_1:1:51369212",
+            "name":"Katten"
+         },
+         {  
+            "steam_id":"STEAM_1:1:51603996",
+            "name":"LoSt BoY"
+         },
+         {  
+            "steam_id":"STEAM_1:1:51653737",
+            "name":")(alves"
+         },
+         {  
+            "steam_id":"STEAM_1:1:52761802",
+            "name":"Keylor"
+         },
+         {  
+            "steam_id":"STEAM_1:1:53394409",
+            "name":"4000"
+         },
+         {  
+            "steam_id":"STEAM_1:1:53536966",
+            "name":"⁞☁ EvanSTEP ☁⁞"
+         },
+         {  
+            "steam_id":"STEAM_1:1:53639832",
+            "name":"Hu1k"
+         },
+         {  
+            "steam_id":"STEAM_1:1:54378762",
+            "name":"mybox"
+         },
+         {  
+            "steam_id":"STEAM_1:1:54561971",
+            "name":"mano sim taxe"
+         },
+         {  
+            "steam_id":"STEAM_1:1:54718464",
+            "name":"ω天然呆"
+         },
+         {  
+            "steam_id":"STEAM_1:1:55050994",
+            "name":"DillY"
+         },
+         {  
+            "steam_id":"STEAM_1:1:55284911",
+            "name":"Nalluu (:"
+         },
+         {  
+            "steam_id":"STEAM_1:1:56034069",
+            "name":"JULZ"
+         },
+         {  
+            "steam_id":"STEAM_1:1:56157835",
+            "name":"Tommy Wiseau"
+         },
+         {  
+            "steam_id":"STEAM_1:1:56203877",
+            "name":"Rust Y"
+         },
+         {  
+            "steam_id":"STEAM_1:1:56472331",
+            "name":"The Worst CS:GO Player"
+         },
+         {  
+            "steam_id":"STEAM_1:1:56711699",
+            "name":"oinkydoodle"
+         },
+         {  
+            "steam_id":"STEAM_1:1:56759647",
+            "name":"Glew"
+         },
+         {  
+            "steam_id":"STEAM_1:1:56783642",
+            "name":"kee P¿?"
+         },
+         {  
+            "steam_id":"STEAM_1:1:56901170",
+            "name":"dima"
+         },
+         {  
+            "steam_id":"STEAM_1:1:57815146",
+            "name":"Alambique"
+         },
+         {  
+            "steam_id":"STEAM_1:1:57952252",
+            "name":"cL1p"
+         },
+         {  
+            "steam_id":"STEAM_1:1:58052146",
+            "name":"henry"
+         },
+         {  
+            "steam_id":"STEAM_1:1:58185673",
+            "name":"Afflicts"
+         },
+         {  
+            "steam_id":"STEAM_1:1:58468954",
+            "name":"kaz0rdawg"
+         },
+         {  
+            "steam_id":"STEAM_1:1:98412",
+            "name":"Pilgrim"
+         },
+         {  
+            "steam_id":"STEAM_1:1:804915",
+            "name":"TomTomasson"
+         },
+         {  
+            "steam_id":"STEAM_1:1:5946194",
+            "name":"KELLZ"
+         },
+         {  
+            "steam_id":"STEAM_1:1:6269984",
+            "name":"seppohovi"
+         },
+         {  
+            "steam_id":"STEAM_1:1:7271678",
+            "name":"JustPlainGoat"
+         },
+         {  
+            "steam_id":"STEAM_1:1:7349412",
+            "name":"Dev^"
+         },
+         {  
+            "steam_id":"STEAM_1:1:7513816",
+            "name":"twitch.tv dESTROVER"
+         },
+         {  
+            "steam_id":"STEAM_1:1:9585303",
+            "name":"msq"
+         },
+         {  
+            "steam_id":"STEAM_1:0:10999122",
+            "name":"popes"
+         },
+         {  
+            "steam_id":"STEAM_1:0:11294864",
+            "name":"Fafner"
+         },
+         {  
+            "steam_id":"STEAM_1:1:58796604",
+            "name":"lillen"
+         },
+         {  
+            "steam_id":"STEAM_1:1:59499974",
+            "name":"jiggle"
+         },
+         {  
+            "steam_id":"STEAM_1:1:60247149",
+            "name":"Chiefhero"
+         },
+         {  
+            "steam_id":"STEAM_1:1:60387861",
+            "name":"DikaRb"
+         },
+         {  
+            "steam_id":"STEAM_1:1:60433408",
+            "name":"Drag"
+         },
+         {  
+            "steam_id":"STEAM_1:1:60533783",
+            "name":"Kuro"
+         },
+         {  
+            "steam_id":"STEAM_1:1:60663490",
+            "name":"Jumbo"
+         },
+         {  
+            "steam_id":"STEAM_1:1:60842138",
+            "name":"Spleef"
+         },
+         {  
+            "steam_id":"STEAM_1:1:60870243",
+            "name":"sorash"
+         },
+         {  
+            "steam_id":"STEAM_1:1:60923218",
+            "name":"77 enough"
+         },
+         {  
+            "steam_id":"STEAM_1:1:61502105",
+            "name":"narly charlie"
+         },
+         {  
+            "steam_id":"STEAM_1:1:61701059",
+            "name":"f1r CSGO500"
+         },
+         {  
+            "steam_id":"STEAM_1:1:64278814",
+            "name":"spef ^w^"
+         },
+         {  
+            "steam_id":"STEAM_1:1:64280927",
+            "name":"Multen"
+         },
+         {  
+            "steam_id":"STEAM_1:1:64300257",
+            "name":"stalker398"
+         },
+         {  
+            "steam_id":"STEAM_1:1:64464675",
+            "name":"Rufouz"
+         },
+         {  
+            "steam_id":"STEAM_1:1:66429773",
+            "name":"Miix"
+         },
+         {  
+            "steam_id":"STEAM_1:1:66714060",
+            "name":"Slumpfy"
+         },
+         {  
+            "steam_id":"STEAM_1:1:67058378",
+            "name":"xq"
+         },
+         {  
+            "steam_id":"STEAM_1:1:67626592",
+            "name":"Swizzy"
+         },
+         {  
+            "steam_id":"STEAM_1:1:67688020",
+            "name":"natedogg"
+         },
+         {  
+            "steam_id":"STEAM_1:1:67922034",
+            "name":"Heinoen"
+         },
+         {  
+            "steam_id":"STEAM_1:1:68621570",
+            "name":"$ne$nusarn DD"
+         },
+         {  
+            "steam_id":"STEAM_1:1:68860612",
+            "name":"Moose -"
+         },
+         {  
+            "steam_id":"STEAM_1:1:70729938",
+            "name":"eks"
+         },
+         {  
+            "steam_id":"STEAM_1:1:71155034",
+            "name":"Rosquilla Guy"
+         },
+         {  
+            "steam_id":"STEAM_1:1:71381382",
+            "name":"Zallopomo"
+         },
+         {  
+            "steam_id":"STEAM_1:1:72199683",
+            "name":"Blubo"
+         },
+         {  
+            "steam_id":"STEAM_1:1:72308315",
+            "name":"SilenT"
+         },
+         {  
+            "steam_id":"STEAM_1:1:73455479",
+            "name":"Akie"
+         },
+         {  
+            "steam_id":"STEAM_1:1:74321223",
+            "name":"Smallzz ༼ つ ◕_◕ ༽つ"
+         },
+         {  
+            "steam_id":"STEAM_1:1:75631276",
+            "name":"vippa"
+         },
+         {  
+            "steam_id":"STEAM_1:1:76335442",
+            "name":"RUMME >"
+         },
+         {  
+            "steam_id":"STEAM_1:1:76420800",
+            "name":"karma"
+         },
+         {  
+            "steam_id":"STEAM_1:1:76444044",
+            "name":"Super Dank"
+         },
+         {  
+            "steam_id":"STEAM_1:1:76762842",
+            "name":"Dipak"
+         },
+         {  
+            "steam_id":"STEAM_1:1:76910192",
+            "name":"Obly"
+         },
+         {  
+            "steam_id":"STEAM_1:1:77835578",
+            "name":"knight"
+         },
+         {  
+            "steam_id":"STEAM_1:1:78045183",
+            "name":"MyNameIsBlurryFace._. hh"
+         },
+         {  
+            "steam_id":"STEAM_1:1:78210041",
+            "name":"ruL3z"
+         },
+         {  
+            "steam_id":"STEAM_1:1:79234577",
+            "name":"senzoshi"
+         },
+         {  
+            "steam_id":"STEAM_1:1:79490327",
+            "name":"Benjamin Francis Leftwich"
+         },
+         {  
+            "steam_id":"STEAM_1:1:79882647",
+            "name":"RFB"
+         },
+         {  
+            "steam_id":"STEAM_1:1:80074340",
+            "name":"JohnnyOldman"
+         },
+         {  
+            "steam_id":"STEAM_1:1:80540308",
+            "name":"Haggal"
+         },
+         {  
+            "steam_id":"STEAM_1:1:82467326",
+            "name":"bear"
+         },
+         {  
+            "steam_id":"STEAM_1:1:82708394",
+            "name":"jeru"
+         },
+         {  
+            "steam_id":"STEAM_1:1:84052891",
+            "name":"HEREWEGO!"
+         },
+         {  
+            "steam_id":"STEAM_1:1:84625551",
+            "name":"sleeeeeeepy"
+         },
+         {  
+            "steam_id":"STEAM_1:1:86567551",
+            "name":"Fargoth"
+         },
+         {  
+            "steam_id":"STEAM_1:1:87093764",
+            "name":"David"
+         },
+         {  
+            "steam_id":"STEAM_1:1:87123705",
+            "name":"Half Man, Half Hat ♞"
+         },
+         {  
+            "steam_id":"STEAM_1:1:87683349",
+            "name":"Ik OSpamm"
+         },
+         {  
+            "steam_id":"STEAM_1:1:87725444",
+            "name":": OSsloth"
+         },
+         {  
+            "steam_id":"STEAM_1:1:87800719",
+            "name":"hAven(IN KOREA TILL 4 29)❤"
+         },
+         {  
+            "steam_id":"STEAM_1:1:88616513",
+            "name":"Neuro"
+         },
+         {  
+            "steam_id":"STEAM_1:1:88846128",
+            "name":"haru 🔥"
+         },
+         {  
+            "steam_id":"STEAM_1:1:89100289",
+            "name":"gaiyik"
+         },
+         {  
+            "steam_id":"STEAM_1:1:89863564",
+            "name":"nexus"
+         },
+         {  
+            "steam_id":"STEAM_1:1:90377113",
+            "name":"CMJ"
+         },
+         {  
+            "steam_id":"STEAM_1:1:90420694",
+            "name":"-__-"
+         },
+         {  
+            "steam_id":"STEAM_1:1:90616758",
+            "name":"salamisoturi csgoblocks.com"
+         },
+         {  
+            "steam_id":"STEAM_1:1:90716592",
+            "name":"MnD"
+         },
+         {  
+            "steam_id":"STEAM_1:1:91115785",
+            "name":"far beyond the moonlight -"
+         },
+         {  
+            "steam_id":"STEAM_1:1:91271807",
+            "name":"Overdo$e"
+         },
+         {  
+            "steam_id":"STEAM_1:1:91469801",
+            "name":"so"
+         },
+         {  
+            "steam_id":"STEAM_1:1:93799146",
+            "name":"✿william"
+         },
+         {  
+            "steam_id":"STEAM_1:1:93799196",
+            "name":"マ ルイ Squuuidd 6.83d"
+         },
+         {  
+            "steam_id":"STEAM_1:1:94281905",
+            "name":"N ig ger"
+         },
+         {  
+            "steam_id":"STEAM_1:1:94716284",
+            "name":"zScrippi ☺"
+         },
+         {  
+            "steam_id":"STEAM_1:1:95545718",
+            "name":"Amena koi"
+         },
+         {  
+            "steam_id":"STEAM_1:1:96503430",
+            "name":"Outcast"
+         },
+         {  
+            "steam_id":"STEAM_1:1:97186245",
+            "name":"TheMagicBeef"
+         },
+         {  
+            "steam_id":"STEAM_1:1:97483042",
+            "name":"Bakabakaba"
+         },
+         {  
+            "steam_id":"STEAM_1:1:98414003",
+            "name":"liq"
+         },
+         {  
+            "steam_id":"STEAM_1:1:98649963",
+            "name":"Ori"
+         },
+         {  
+            "steam_id":"STEAM_1:1:99603470",
+            "name":"Rea"
+         },
+         {  
+            "steam_id":"STEAM_1:0:101759373",
+            "name":"jarsko"
+         },
+         {  
+            "steam_id":"STEAM_1:0:108156167",
+            "name":"ASSASIAN"
+         },
+         {  
+            "steam_id":"STEAM_1:0:108358135",
+            "name":"MASTER Flex"
+         },
+         {  
+            "steam_id":"STEAM_1:0:114998493",
+            "name":"cara"
+         },
+         {  
+            "steam_id":"STEAM_1:0:122547132",
+            "name":"Самый сакура"
+         },
+         {  
+            "steam_id":"STEAM_1:0:132825976",
+            "name":"1Tap"
+         },
+         {  
+            "steam_id":"STEAM_1:0:133032030",
+            "name":"silent"
+         },
+         {  
+            "steam_id":"STEAM_1:0:355037",
+            "name":"Poojen"
+         },
+         {  
+            "steam_id":"STEAM_1:1:439634",
+            "name":"Finn ߷"
+         },
+         {  
+            "steam_id":"STEAM_1:0:836483",
+            "name":"calner"
+         },
+         {  
+            "steam_id":"STEAM_1:1:1463712",
+            "name":"kefa"
+         },
+         {  
+            "steam_id":"STEAM_1:0:2638705",
+            "name":"Aki"
+         },
+         {  
+            "steam_id":"STEAM_1:0:3652912",
+            "name":"zbot"
+         },
+         {  
+            "steam_id":"STEAM_1:0:4078557",
+            "name":"72"
+         },
+         {  
+            "steam_id":"STEAM_1:1:4951946",
+            "name":"ben"
+         },
+         {  
+            "steam_id":"STEAM_1:0:9941705",
+            "name":"mat"
+         },
+         {  
+            "steam_id":"STEAM_1:1:12595386",
+            "name":"Fresh"
+         },
+         {  
+            "steam_id":"STEAM_1:0:14595848",
+            "name":"burny"
+         },
+         {  
+            "steam_id":"STEAM_1:1:15708063",
+            "name":"rookie"
+         },
+         {  
+            "steam_id":"STEAM_1:1:15708423",
+            "name":"PurpleLiquiD TaylorSwift 3"
+         },
+         {  
+            "steam_id":"STEAM_1:0:15934180",
+            "name":"Pαrαdοχ"
+         },
+         {  
+            "steam_id":"STEAM_1:0:16229735",
+            "name":"Yamaan"
+         },
+         {  
+            "steam_id":"STEAM_1:1:16285956",
+            "name":"Evenement"
+         },
+         {  
+            "steam_id":"STEAM_1:1:16419599",
+            "name":"bt"
+         },
+         {  
+            "steam_id":"STEAM_1:1:18764752",
+            "name":"Aukto"
+         },
+         {  
+            "steam_id":"STEAM_1:1:19885712",
+            "name":"RaT"
+         },
+         {  
+            "steam_id":"STEAM_1:0:20028312",
+            "name":"havui"
+         },
+         {  
+            "steam_id":"STEAM_1:1:26606277",
+            "name":"nebeL"
+         },
+         {  
+            "steam_id":"STEAM_1:0:27002650",
+            "name":"ΠεопΖ"
+         },
+         {  
+            "steam_id":"STEAM_1:1:28091059",
+            "name":"Sobirayuse"
+         },
+         {  
+            "steam_id":"STEAM_1:0:28386806",
+            "name":"Vopla twitch.tv vopla"
+         },
+         {  
+            "steam_id":"STEAM_1:0:28482806",
+            "name":"Mexico will pay for it"
+         },
+         {  
+            "steam_id":"STEAM_1:0:28573878",
+            "name":"Blixx ༼つ ◕_◕ ༽つ"
+         },
+         {  
+            "steam_id":"STEAM_1:0:28737797",
+            "name":"Ricin"
+         },
+         {  
+            "steam_id":"STEAM_1:0:33895118",
+            "name":"Banana"
+         },
+         {  
+            "steam_id":"STEAM_1:0:34149499",
+            "name":"Ebarf"
+         },
+         {  
+            "steam_id":"STEAM_1:1:34284397",
+            "name":"dejwid"
+         },
+         {  
+            "steam_id":"STEAM_1:0:35541014",
+            "name":"Steroid"
+         },
+         {  
+            "steam_id":"STEAM_1:0:35778028",
+            "name":"seveN"
+         },
+         {  
+            "steam_id":"STEAM_1:1:36978359",
+            "name":"eibweNi #0.5"
+         },
+         {  
+            "steam_id":"STEAM_1:0:38037571",
+            "name":"Legendary Seagull Master"
+         },
+         {  
+            "steam_id":"STEAM_1:0:40685836",
+            "name":"Zucchini"
+         },
+         {  
+            "steam_id":"STEAM_1:0:41247056",
+            "name":"Morty"
+         },
+         {  
+            "steam_id":"STEAM_1:1:42066553",
+            "name":"rambolo"
+         },
+         {  
+            "steam_id":"STEAM_1:1:42801678",
+            "name":"lft anygame"
+         },
+         {  
+            "steam_id":"STEAM_1:1:43135980",
+            "name":"SYzAxBEAST"
+         },
+         {  
+            "steam_id":"STEAM_1:0:43236011",
+            "name":"frepy"
+         },
+         {  
+            "steam_id":"STEAM_1:0:43399242",
+            "name":"kiap"
+         },
+         {  
+            "steam_id":"STEAM_1:1:44349843",
+            "name":"GSU"
+         },
+         {  
+            "steam_id":"STEAM_1:0:44962341",
+            "name":"Farth"
+         },
+         {  
+            "steam_id":"STEAM_1:1:45377636",
+            "name":"『Zekken』"
+         },
+         {  
+            "steam_id":"STEAM_1:1:49233951",
+            "name":"Mugi"
+         },
+         {  
+            "steam_id":"STEAM_1:0:51664248",
+            "name":"Fl0master 3"
+         },
+         {  
+            "steam_id":"STEAM_1:1:52003502",
+            "name":"middy🔰"
+         },
+         {  
+            "steam_id":"STEAM_1:1:52032498",
+            "name":"Buddy"
+         },
+         {  
+            "steam_id":"STEAM_1:0:52957969",
+            "name":"胖次喵nya~"
+         },
+         {  
+            "steam_id":"STEAM_1:0:53383654",
+            "name":"¨vesq_"
+         },
+         {  
+            "steam_id":"STEAM_1:0:54804699",
+            "name":"oyAnN"
+         },
+         {  
+            "steam_id":"STEAM_1:0:55736177",
+            "name":"3-year-old baby"
+         },
+         {  
+            "steam_id":"STEAM_1:0:55815944",
+            "name":"Faker"
+         },
+         {  
+            "steam_id":"STEAM_1:0:61007284",
+            "name":"hellcat"
+         },
+         {  
+            "steam_id":"STEAM_1:0:61091701",
+            "name":"Fill"
+         },
+         {  
+            "steam_id":"STEAM_1:0:64613072",
+            "name":"veach"
+         },
+         {  
+            "steam_id":"STEAM_1:0:66145313",
+            "name":"duckwaycool"
+         },
+         {  
+            "steam_id":"STEAM_1:0:70477363",
+            "name":"Original"
+         },
+         {  
+            "steam_id":"STEAM_1:0:75689922",
+            "name":"Stehr"
+         },
+         {  
+            "steam_id":"STEAM_1:0:79228602",
+            "name":"4t35fxcv uijc"
+         },
+         {  
+            "steam_id":"STEAM_1:0:79995257",
+            "name":"TittyTassel#SandyHookSurvivor"
+         },
+         {  
+            "steam_id":"STEAM_1:0:81518785",
+            "name":"Darkmanツ"
+         },
+         {  
+            "steam_id":"STEAM_1:0:82640173",
+            "name":"魔法科高中的优等生"
+         },
+         {  
+            "steam_id":"STEAM_1:0:83222844",
+            "name":"Anekam"
+         },
+         {  
+            "steam_id":"STEAM_1:0:85309285",
+            "name":"fille"
+         },
+         {  
+            "steam_id":"STEAM_1:0:90082471",
+            "name":"๋"
+         },
+         {  
+            "steam_id":"STEAM_1:0:91103263",
+            "name":"slayer"
+         },
+         {  
+            "steam_id":"STEAM_1:0:91599966",
+            "name":"big dick daddy"
+         },
+         {  
+            "steam_id":"STEAM_1:0:91951730",
+            "name":"jk"
+         },
+         {  
+            "steam_id":"STEAM_1:0:97555902",
+            "name":"mandephelps"
+         },
+         {  
+            "steam_id":"STEAM_1:0:98950457",
+            "name":"[-]7[^^"
+         },
+         {  
+            "steam_id":"STEAM_1:0:99359470",
+            "name":"undeniably handsome"
+         },
+         {  
+            "steam_id":"STEAM_1:1:100275056",
+            "name":"Gunde Svan"
+         },
+         {  
+            "steam_id":"STEAM_1:1:101326026",
+            "name":"RABBIT JUMPER"
+         },
+         {  
+            "steam_id":"STEAM_1:1:103005926",
+            "name":"trawka | upgrade.gg"
+         },
+         {  
+            "steam_id":"STEAM_1:1:105259419",
+            "name":"malice"
+         },
+         {  
+            "steam_id":"STEAM_1:1:105584186",
+            "name":"r7xvS"
+         },
+         {  
+            "steam_id":"STEAM_1:1:106341697",
+            "name":"Sneaky Beaky"
+         },
+         {  
+            "steam_id":"STEAM_1:1:110565717",
+            "name":"Joakimsieee"
+         },
+         {  
+            "steam_id":"STEAM_1:1:124122245",
+            "name":"Mr.RIP #ITZrlyRIPhimself"
+         },
+         {  
+            "steam_id":"STEAM_1:0:138965740",
+            "name":"corayy"
+         },
+         {  
+            "steam_id":"STEAM_1:1:148762993",
+            "name":"By #TiNi"
+         },
+         {  
+            "steam_id":"STEAM_1:1:149342165",
+            "name":"I ve never been loved"
+         },
+         {  
+            "steam_id":"STEAM_1:0:151174590",
+            "name":"Tide"
+         },
+         {  
+            "steam_id":"STEAM_1:0:151606380",
+            "name":"vixx"
+         },
+         {  
+            "steam_id":"STEAM_1:0:152902226",
+            "name":"jimp"
+         },
+         {  
+            "steam_id":"STEAM_1:1:167186899",
+            "name":"huso"
+         },
+         {  
+            "steam_id":"STEAM_1:1:169413339",
+            "name":"pinnku"
+         },
+         {  
+            "steam_id":"STEAM_1:1:171793347",
+            "name":"( *・д・)"
+         },
+         {  
+            "steam_id":"STEAM_1:0:177836527",
+            "name":"warmturtle14"
+         },
+         {  
+            "steam_id":"STEAM_1:0:38280598980132864",
+            "name":"NoName"
+         },
+         {  
+            "steam_id":"STEAM_1:1:5602072",
+            "name":"Sushi"
+         },
+         {  
+            "steam_id":"STEAM_1:0:16599865",
+            "name":"Chuckles"
+         },
+         {  
+            "steam_id":"STEAM_1:1:52552284",
+            "name":"๖DoLphie.."
+         },
+         {  
+            "steam_id":"STEAM_1:1:52895101",
+            "name":"DeaD"
+         },
+         {  
+            "steam_id":"STEAM_1:1:53108243",
+            "name":"Matt"
+         },
+         {  
+            "steam_id":"STEAM_1:1:53457662",
+            "name":"{ T W }"
+         },
+         {  
+            "steam_id":"STEAM_1:1:53654317",
+            "name":"✪ Furby tK"
+         },
+         {  
+            "steam_id":"STEAM_1:1:54216474",
+            "name":":0"
+         },
+         {  
+            "steam_id":"STEAM_1:1:54603670",
+            "name":"Cali"
+         },
+         {  
+            "steam_id":"STEAM_1:0:55294851",
+            "name":"Pawla"
+         },
+         {  
+            "steam_id":"STEAM_1:1:56170518",
+            "name":"我真的很坑"
+         },
+         {  
+            "steam_id":"STEAM_1:1:56809331",
+            "name":"Tarinu"
+         },
+         {  
+            "steam_id":"STEAM_1:1:58570604",
+            "name":"catman"
+         },
+         {  
+            "steam_id":"STEAM_1:1:59261877",
+            "name":"Shickle _"
+         },
+         {  
+            "steam_id":"STEAM_1:1:59637502",
+            "name":"AlcoholicSemenThrower"
+         },
+         {  
+            "steam_id":"STEAM_1:1:60474110",
+            "name":"Kyur4 Th Ich"
+         },
+         {  
+            "steam_id":"STEAM_1:1:61107701",
+            "name":"dustykz"
+         },
+         {  
+            "steam_id":"STEAM_1:1:61307424",
+            "name":"lameskydiver (chiken)"
+         },
+         {  
+            "steam_id":"STEAM_1:1:63338471",
+            "name":"sevij"
+         },
+         {  
+            "steam_id":"STEAM_1:1:64395193",
+            "name":"kuj"
+         },
+         {  
+            "steam_id":"STEAM_1:1:64528263",
+            "name":"trevv"
+         },
+         {  
+            "steam_id":"STEAM_1:1:66414815",
+            "name":"smilbur iwhw 🏃"
+         },
+         {  
+            "steam_id":"STEAM_1:1:66741944",
+            "name":"FaZe :thinking:"
+         },
+         {  
+            "steam_id":"STEAM_1:1:66751730",
+            "name":"Lt. Judy Hopps"
+         },
+         {  
+            "steam_id":"STEAM_1:1:68601077",
+            "name":"CraneZ鹤鹤鹤"
+         },
+         {  
+            "steam_id":"STEAM_1:1:70256613",
+            "name":"emptyGR"
+         },
+         {  
+            "steam_id":"STEAM_1:1:76205414",
+            "name":"C Beezy™"
+         },
+         {  
+            "steam_id":"STEAM_1:1:79283947",
+            "name":"FRÄÄÄÄÄSSSSSSSS ;D"
+         },
+         {  
+            "steam_id":"STEAM_1:1:80391780",
+            "name":"chloe"
+         },
+         {  
+            "steam_id":"STEAM_1:1:80527556",
+            "name":"SARAH MIDORI PERRY"
+         },
+         {  
+            "steam_id":"STEAM_1:1:81679260",
+            "name":"Nifty"
+         },
+         {  
+            "steam_id":"STEAM_1:1:83612512",
+            "name":"Osu"
+         },
+         {  
+            "steam_id":"STEAM_1:1:83954395",
+            "name":"Desig"
+         },
+         {  
+            "steam_id":"STEAM_1:1:84677943",
+            "name":"VanHeresy"
+         },
+         {  
+            "steam_id":"STEAM_1:1:84740211",
+            "name":"Professor -"
+         },
+         {  
+            "steam_id":"STEAM_1:1:84854540",
+            "name":"zony"
+         },
+         {  
+            "steam_id":"STEAM_1:1:87430006",
+            "name":"vB"
+         },
+         {  
+            "steam_id":"STEAM_1:1:89390400",
+            "name":"microlepidotus"
+         },
+         {  
+            "steam_id":"STEAM_1:1:90408370",
+            "name":"wuat"
+         },
+         {  
+            "steam_id":"STEAM_1:1:92060165",
+            "name":"Malthael"
+         },
+         {  
+            "steam_id":"STEAM_1:1:93663555",
+            "name":"Swept V"
+         },
+         {  
+            "steam_id":"STEAM_1:1:94782861",
+            "name":"Dolly"
+         },
+         {  
+            "steam_id":"STEAM_1:1:97445155",
+            "name":"うんちのかたまり"
+         },
+         {  
+            "steam_id":"STEAM_1:1:99800365",
+            "name":"whatever."
+         },
+         {  
+            "steam_id":"STEAM_1:1:99963130",
+            "name":"CRBSTR"
+         },
+         {  
+            "steam_id":"STEAM_0:1:91469801",
+            "name":"Persona"
+         }
       ]
-  }
+   }
 ]
