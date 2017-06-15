@@ -126,7 +126,7 @@
 		{"steam_id": "STEAM_1:0:171380896","name":"Anq"},
 		{"steam_id": "STEAM_1:1:188709422","name":"Aspergerus"},
 		{"steam_id": "STEAM_1:0:195650542","name":"Korahamu"},
-		{"steam_id": "STEAM_0:1:91469801","name":"Persona"},
+		{"steam_id": "STEAM_0:1:91469801","name":"Persona"}
       ]
   }
 ]
