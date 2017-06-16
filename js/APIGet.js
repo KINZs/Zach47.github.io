@@ -1,4 +1,4 @@
-var jumpstats_string = "http://kztimerglobal.com/api/v1/jumpstats?";
+var jumpstats_string = "https://kztimerglobal.com/api/v1/jumpstats?";
 var jsonPlayerName = {};
 var jsonPlayerDistance = {};
 
