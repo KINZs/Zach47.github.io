@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+  <!-- link to main stylesheet -->
+  <link rel="stylesheet" type="text/css" href="/css/mapPick.css">
+</head>
+
+<body translate="no" >
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" >
+
+
+  <div class="bg" id="index">
+
+    <div class="menu">
+
+      <!-- Navbar -->
+      <ul class="breadcrumbs">
+        <li><a href="/kreedz/index.html">HOME</a></li>
+        <li><a href="/kreedz/index.html#players">PLAYERS</a></li>
+        <li><a href="/kreedz/index.html#projects">PROJECTS</a></li>
+        <li><a href="/kreedz/index.html#contact">CONTACT</a></li>
+      </ul>
+
+    </div>
+
+
+    <h1 class="subtitle">GET PLAYER'S BEST LJ</h1>
+
+    <div class="col-12 b1">
+      <div class="text-center">
+        <div>
+          Steam ID: <input type="textbox" id=steam_id value="STEAM_1:1:11374239">
+        </div>
+
+
+      <div style="display:none;">
+        <input type="textbox" id="steamid">
+      </div>
+
+      <div>
+        <button onclick="get_playersLJPB();"> Go
+        </button>
+      </div>
+
+      <div class="col-4 col-sm-offset-4" id="APIPost"></div>
+    </div>
+  </div>
+    </div>
+
+
+    <div class="col-12 b1 contactBottom" id="contact">
+      <h1 class="subtitle col-12">CONTACT</h1>
+      <div style="text-align: center" id="socialMedia" class="col-12">
+        <a class="socialImg" href="https://www.twitch.tv/ijjust"><img src="https://i.imgur.com/RYp5ZZz.png" alt="Zach47's steam" style="width:100.2px;height:105px;"></a>
+        <a class="socialImg" href="https://twitter.com/Zach47_"><img src="https://i.imgur.com/kzndW3i.png" alt="Zach47's twitter" style="width:129.1px;height:105px;"></a>
+        <a class="socialImg" href="https://www.youtube.com/c/Zach47"><img src="https://i.imgur.com/4hwjKiE.png" alt="Zach47's youtube" style="width:149.1px;height:105px;"></a>
+        <a class="socialImg" href="https://steamcommunity.com/id/zach47/"><img src="https://i.imgur.com/99J1ueA.png" alt="Zach47's steam" style="width:105px;height:105px;"></a>
+      </div>
+    </div>
+
+
+    <!-- Load scripts at the bottom of the body tag -->
+    <script type="text/javascript" src="/js/APIGet.js"></script>
+  </body>
+  </html>
