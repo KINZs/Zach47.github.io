@@ -1,7 +1,7 @@
 
 // Uses Jquery + JSON to get map list from mapList.js
 $.ajax({
-  url: "https://zach47.github.io/js/mapList.js",
+  url: "http://jacobwbarrett.com/js/mapList.js",
   dataType: "text",
   success: function(mapList) {
     var path = 'http://www.kzstats.com/img/map/';
@@ -17,7 +17,7 @@ $(document).ready(function(){
 
     $("#mapChoose").click(function(){
       $.ajax({
-        url: "https://zach47.github.io/js/mapList.js",
+        url: "http://jacobwbarrett.com/js/mapList.js",
         dataType: "text",
         success: function(mapList) {
           var path = 'http://www.kzstats.com/img/map/';
