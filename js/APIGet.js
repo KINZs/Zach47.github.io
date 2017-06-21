@@ -18,12 +18,4 @@ $(document).ready(function(){
         jsonPlayerName[playerInfo.steam_id] = playerInfo.name;
       });
     }});
-
-  if (table.rows.length === 20) {
-    console.log("full");
-  }
-
-    setTimeout(function(){
-      $(".se-pre-con").fadeOut("slow");;
-    },1000);
   });
