@@ -2872,6 +2872,10 @@
          {
             "steam_id":"STEAM_1:0:91232846",
             "name":"Aris"
+         },
+         {
+            "steam_id":"STEAM_1:1:56338478",
+            "name":"Glory"
          }
       ]
    }
