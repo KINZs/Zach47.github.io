@@ -2864,6 +2864,10 @@
          {
             "steam_id":"STEAM_1:0:191382111",
             "name":"SveJ"
+         },
+         {
+            "steam_id":"STEAM_1:1:179976946",
+            "name":"Snabbis"
          }
       ]
    }
