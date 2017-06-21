@@ -219,6 +219,7 @@ a:link, a:visited {
   }
   h1 {
     font-size: 40px;
+    text-align: center;
   }
   #contact {
     padding: 0%;
