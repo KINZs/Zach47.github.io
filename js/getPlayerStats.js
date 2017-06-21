@@ -17,8 +17,14 @@ function LoadPlayers() {
           var row = table.insertRow(-1);
           var cell1 = row.insertCell(0);
           var cell2 = row.insertCell(1);
-          playerList.push(jsonPlayerName[data[i].steam_id]);
-          cell1.innerHTML = jsonPlayerName[data[i].steam_id];
+
+          if (jsonPlayerName[data[i].steam_id] === undefined) {
+            playerList.push(data[i].steam_id);
+            cell1.innerHTML = data[i].steam_id;
+          } else {
+            playerList.push(jsonPlayerName[data[i].steam_id]);
+            cell1.innerHTML = jsonPlayerName[data[i].steam_id];
+          }
           cell2.innerHTML = data[i].distance;
         }
       }
