@@ -2856,6 +2856,14 @@
          {
             "steam_id":"STEAM_1:1:174686268",
             "name":"Dicky"
+         },
+         {
+            "steam_id":"STEAM_1:1:192864749",
+            "name":"Genio Pacheco"
+         },
+         {
+            "steam_id":"STEAM_1:0:191382111",
+            "name":"SveJ"
          }
       ]
    }
