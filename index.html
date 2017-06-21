@@ -1,52 +1,76 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8">
-
-	  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-	  <!-- link to main stylesheet -->
-	  <link rel="stylesheet" type="text/css" href="https://zach47.github.io/css/players.css">
-  </head>
-
-  <body translate="no" >
-
-    <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"/>
-
-    <nav class="navbar navbar-inverse">
-      <div class="container-fluid">
-        <div class="navbar-header">
-          <a class="navbar-brand" href="https://github.com/Zach47">Jacob Barrett</a>
-        </div>
-        <ul class="nav navbar-nav">
-          <li class="active"><a href="index.html">Home</a></li>
-          <li><a href="school/contact.html">Contact</a></li>
-        </ul>
-      </div>
+<head>
+  <title>Jacob Barrett</title>
+  <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/index.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" >
+  <link rel="icon" type="image/png" href="http://imgur.com/fwYbizK">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"/>
+</head>
+<body>
+  <div id="grad">
+    <nav class="menu">
+      <ul class="navbar margin">
+        <li><a href="#main">Home</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
     </nav>
+  </div>
 
-	  <h1 class="text-center">Welcome</h1>
-
-    <div class="quote-box container-fluid">
-      <a href="school/contact.html">
-        <img src="http://i.imgur.com/VNbAg9A.png" alt="About" style="width:1178px;height:200px">
-      <a href="school/index.html">
-        <img src="http://i.imgur.com/zPQpFbk.png" alt="School" style="width:589px;height:580px;">
-      </a>
-      <a href="kreedz/index.html">
-        <img src="http://i.imgur.com/CU98tdL.png" alt="Kreedz" style="width:589px;height:580px;">
-      </a>
-
+  <div id="sidebar" class="sidenav margin">
+    <img src="http://imgur.com/fwYbizK"></img>
+    <div id="Info">
+      <p>Jacob Barrett</p>
+      <p>University of Iowa Student</p>
+      <p>Kreedz Web Developer</p>
     </div>
 
+    <div id="bars">
+      <p id="skilltypes">HTML</p>
+      <div class="container">
+        <div id="myBarHTML" class="skills html">100%</div>
+      </div>
+      <p id="skilltypes">CSS</p>
+      <div class="container">
+        <div id="myBarCSS" class="skills css">85%</div>
+      </div>
+      <p id="skilltypes">JavaScript</p>
+      <div class="container">
+        <div id="myBarJS" class="skills js">40%</div>
+      </div>
+      <p id="skilltypes">Sourcepawn</p>
+      <div class="container">
+        <div id="myBarSP" class="skills sp">20%</div>
+      </div>
+    </div>
+  </div>
 
-  <script type="text/javascript" src="https://zach47.github.io/js/streaming.js"></script>
-  </body>
-<footer class="navbar-default navbar-inverse navbar-fixed-bottom">
+  <div id="main">
+    <h1 class="margin">About</h1>
+    <p>My name is Jacob Barrett and I'm a University of Iowa CS student who has worked on projects for Counter-Strike: Global Offensive Kreedz, a mod of the original game. I started with programming back in early high school starting with Bash. Then, a few years passed and I decided to take a Python coding class in college. Since then, I've touched Java, Python, HTML/CSS, Javascript, Sourcepawn, Assembly. However, web dev is what I feel most comfortable with, so I've spent most of my focus on front end development. Below are a few projects that I've made for the Kreedz community. If you have any questions, contact me. Thanks!</p>
+  </div>
 
-  Created by Jacob Barrett.
-  If you have questions, please contact me <a style="color: grey" href="school/contact.html">here</a>.
+  <h1 id="main">Projects</h1>
+  <div id="projects" class="KZProjects">
+    <a href="http://jacobwbarrett.com/kreedz/index.html"><img src="http://imgur.com/72dwb79"></img></a>
+    <a href="http://jacobwbarrett.com/KZTimer/Guide/index.html"><img src="http://imgur.com/P8PWlGL"></img></a>
+    <a href="http://jacobwbarrett.com/kreedz/mappick.html"><img src="http://imgur.com/bJ57fq2"></img></a>
+  </div>
+
+  <h1 id="main">Contact</h1>
+  <div id="contact">
+    <div id="socialMedia">
+      <a class="fa fa-twitter fa-3x fa-fw" href="https://twitter.com/Zach47_" aria-hidden="true"></a>
+      <a class="fa fa-steam-square fa-3x fa-fw" href="https://steamcommunity.com/id/zach47/" aria-hidden="true"></a>
+      <a class="fa fa-envelope fa-3x fa-fw" href="mailto:jacobwbarrett@gmail.com" aria-hidden="true"></a>
+      <a class="fa fa-github fa-3x fa-fw" href="https://github.com/Zach47" aria-hidden="true"></a>
+    </div>
+  </div>
+
+
+  <script type="text/javascript" src="js/indexNew.js"></script>
+</body>
+<footer>
 </footer>
-</html>
