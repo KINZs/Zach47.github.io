@@ -7,6 +7,7 @@ function LoadPlayers() {
       var lengthItem = data.length;
       for (i=0;i < lengthItem; i++)  {
         if (table.rows.length > 20) {
+          $(".se-pre-con").fadeOut("slow");;
           break;
         }
         if (playerList.includes(jsonPlayerName[data[i].steam_id])/* || jsonPlayerName[data[i].steam_id] === undefined*/) {
