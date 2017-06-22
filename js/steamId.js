@@ -2931,7 +2931,7 @@
          },
          {
             "steam_id":"STEAM_1:0:82802752",
-            "name":"BananaHelium",
+            "name":"BananaHelium"
          },
          {
             "steam_id":"STEAM_1:0:42220108",
