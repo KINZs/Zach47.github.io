@@ -2952,6 +2952,14 @@
          {
             "steam_id":"STEAM_1:1:55402320",
             "name":"haktraa"
+         },
+         {
+            "steam_id":"STEAM_1:0:162170677",
+            "name":"Soft"
+         },
+         {
+            "steam_id":"STEAM_1:1:84160701",
+            "name":"BBT"
          }
       ]
    }
