@@ -2896,6 +2896,34 @@
          {
             "steam_id":"STEAM_1:1:2392400",
             "name":"Reikobi"
+         },
+         {
+            "steam_id":"STEAM_1:0:13420267",
+            "name":"Deetzy"
+         },
+         {
+            "steam_id":"STEAM_1:0:132710784",
+            "name":"KumpelBlase"
+         },
+         {
+            "steam_id":"STEAM_1:0:84417903",
+            "name":"Tiivi"
+         },
+         {
+            "steam_id":"STEAM_1:1:210365965",
+            "name":"bios(thomas)"
+         },
+         {
+            "steam_id":"STEAM_1:0:102561466",
+            "name":"Niko | lonkero"
+         },
+         {
+            "steam_id":"STEAM_1:1:147657345",
+            "name":"fLzi"
+         },
+         {
+            "steam_id":"STEAM_1:1:81048315",
+            "name":"Rainwäӄer Ϟ"
          }
       ]
    }
