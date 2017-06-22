@@ -2880,6 +2880,22 @@
          {
             "steam_id":"STEAM_1:1:44135187",
             "name":"fdz"
+         },
+         {
+            "steam_id":"STEAM_1:0:85747959",
+            "name":"「§NG」| San.dor"
+         },
+         {
+            "steam_id":"STEAM_1:1:183370302",
+            "name":"bud"
+         },
+         {
+            "steam_id":"STEAM_1:1:22266829",
+            "name":"JimmaYY"
+         },
+         {
+            "steam_id":"STEAM_1:1:2392400",
+            "name":"Reikobi"
          }
       ]
    }
