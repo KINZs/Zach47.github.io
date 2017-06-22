@@ -2924,6 +2924,26 @@
          {
             "steam_id":"STEAM_1:1:81048315",
             "name":"Rainwäӄer Ϟ"
+         },
+         {
+            "steam_id":"STEAM_1:0:62994467",
+            "name":"Toe Knee"
+         },
+         {
+            "steam_id":"STEAM_1:0:82802752",
+            "name":"BananaHelium",
+         },
+         {
+            "steam_id":"STEAM_1:0:42220108",
+            "name":"solipsism"
+         },
+         {
+            "steam_id":"STEAM_1:0:96885750",
+            "name":"Rickling"
+         },
+         {
+            "steam_id":"STEAM_1:0:38854135",
+            "name":"dANNY"
          }
       ]
    }
