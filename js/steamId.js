@@ -2960,6 +2960,14 @@
          {
             "steam_id":"STEAM_1:1:84160701",
             "name":"BBT"
+         },
+         {
+            "steam_id":"STEAM_1:1:98327802",
+            "name":"ploxen"
+         },
+         {
+            "steam_id":"STEAM_1:1:52330348",
+            "name":"CDog"
          }
       ]
    }
