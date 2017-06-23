@@ -183,6 +183,10 @@ tr:nth-child(even) {
   justify-content: center;
 }
 
+#Tables table {
+  padding: 20px;
+}
+
 #myTableLJ, #myTableLAJ, #myTableCJ, #myTableWJ, #myTableBHOP, #myTableDBHOP, #myTableMBHOP {
   display: none;
 }
