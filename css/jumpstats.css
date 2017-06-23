@@ -196,7 +196,6 @@ tr:nth-child(even) {
   flex-direction: row;
   justify-content: center;
   align-self: center;
-
   font-family: 'Lato', sans-serif;
   font-size:16px;
 }
@@ -206,6 +205,11 @@ tr:nth-child(even) {
   background-color: #FFF;
   margin: 5px;
   border: 0;
+}
+
+#buttons button:hover {
+    background: #F5AB35 !important;
+    transition: 0.2s;
 }
 
 /* The ONLY thing this does is that the button doesn't have a blue outline when you click it. That's it. */
