@@ -3008,6 +3008,10 @@
          {
             "steam_id":"STEAM_1:1:23104030",
             "name":"Sid"
+         },
+         {
+            "steam_id":"STEAM_1:0:144971241",
+            "name":"Pause"
          }
       ]
    }
