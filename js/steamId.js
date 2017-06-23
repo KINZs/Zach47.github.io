@@ -2968,6 +2968,30 @@
          {
             "steam_id":"STEAM_1:1:52330348",
             "name":"CDog"
+         },
+         {
+            "steam_id":"STEAM_1:1:121703063",
+            "name":"fuckheeko"
+         },
+         {
+            "steam_id":"STEAM_1:0:47156282",
+            "name":"tricky=D"
+         },
+         {
+            "steam_id":"STEAM_1:0:5354850",
+            "name":"fyf_zsw"
+         },
+         {
+            "steam_id":"STEAM_1:1:76558896",
+            "name":"Portray"
+         },
+         {
+            "steam_id":"STEAM_1:0:43893897",
+            "name":"Crook"
+         },
+         {
+            "steam_id":"STEAM_1:0:86878521",
+            "name":"ruddr"
          }
       ]
    }
