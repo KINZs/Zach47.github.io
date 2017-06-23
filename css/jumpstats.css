@@ -178,17 +178,30 @@ tr:nth-child(even) {
   background-color: #999999;
 }
 
-button {
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-  padding: 16px 32px;
+#Tables {
+  display: flex;
+  justify-content: center;
+}
+
+#myTableLJ, #myTableLAJ, #myTableCJ, #myTableWJ, #myTableBHOP, #myTableDBHOP, #myTableMBHOP {
+  display: none;
+}
+
+#buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-self: center;
+
   font-family: 'Lato', sans-serif;
   font-size:16px;
-  color:#fff;
-  background: #212122;
-  border:0;
+}
+
+#buttons button {
+  padding: 16px 16px;
+  background-color: #FFF;
+  margin: 5px;
+  border: 0;
 }
 
 /* The ONLY thing this does is that the button doesn't have a blue outline when you click it. That's it. */
