@@ -2231,7 +2231,7 @@
          },
          {  
             "steam_id":"STEAM_1:1:91469801",
-            "name":"so"
+            "name":"Persona"
          },
          {  
             "steam_id":"STEAM_1:1:93799146",
