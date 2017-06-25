@@ -3020,6 +3020,10 @@
          {
             "steam_id":"STEAM_1:0:10471001",
             "name":"RidN"
+         },
+         {
+            "steam_id":"STEAM_1:1:197690486",
+            "name":"parnelis"
          }
       ]
    }
