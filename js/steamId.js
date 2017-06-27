@@ -3048,6 +3048,10 @@
          {
             "steam_id":"STEAM_1:0:71700743",
             "name":"sassasas"
+         },
+         {
+            "steam_id":"STEAM_1:1:53282710",
+            "name":"Juliano"
          }
       ]
    }
