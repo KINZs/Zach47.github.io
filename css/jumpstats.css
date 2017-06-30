@@ -88,8 +88,7 @@ ul.breadcrumbs li+li:before {
 }
 .menu a {
   font-size: 16px;
-  padding-left: 15px;
-  padding-right: 10px;
+  padding: 0px 10px 0px 15px;
   color: #212122;
 }
 a:link, a:hover, a:visited {
