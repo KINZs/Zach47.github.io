@@ -23,8 +23,7 @@ body {
   user-select: none;
   /* CSS */
   font-size: 60px;
-  padding: 12px;
-  padding-bottom: 5px;
+  padding: 12px 12px 0px 12px;
   letter-spacing: 10px;
 }
 @keyframes fadein {
