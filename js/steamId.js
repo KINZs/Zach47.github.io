@@ -3108,6 +3108,26 @@
          {
             "steam_id":"STEAM_1:0:24010222",
             "name":"2totwo"
+         },
+         {
+            "steam_id":"STEAM_1:0:94150361",
+            "name":"trueway"
+         },
+         {
+            "steam_id":"STEAM_1:0:187765912",
+            "name":"kokourty"
+         },
+         {
+            "steam_id":"STEAM_1:1:30250862",
+            "name":"Barcode"
+         },
+         {
+            "steam_id":"STEAM_1:0:49617951",
+            "name":"Ocelot"
+         },
+         {
+            "steam_id":"STEAM_1:0:117612709",
+            "name":"Czupakabra"
          }
       ]
    }
