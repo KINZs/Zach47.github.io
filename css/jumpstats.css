@@ -142,13 +142,13 @@ tr:nth-child(even) {
   outline:0;
 }
 
-@media screen and (min-height: 100%) {
+@media screen and (min-height: 900px) {
 	body {
 		overflow: hidden;
 	}
 }
 
-@media screen and (max-height: 100%) {
+@media screen and (max-height: 899px) {
 	body {
 		overflow: auto;
 	}
