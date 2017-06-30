@@ -7,6 +7,9 @@
 	z-index: 9999;
 	background: url(https://upload.wikimedia.org/wikipedia/commons/b/b1/Loading_icon.gif) center no-repeat #fff;
 }
+html {
+	height: 100%;
+}
 body {
   height: 100%;
   background: #EEE;
@@ -139,13 +142,13 @@ tr:nth-child(even) {
   outline:0;
 }
 
-@media screen and (min-width: 1920px) {
+@media screen and (min-height: 100%) {
 	body {
 		overflow: hidden;
 	}
 }
 
-@media screen and (max-width: 1919px) {
+@media screen and (max-height: 100%) {
 	body {
 		overflow: auto;
 	}
