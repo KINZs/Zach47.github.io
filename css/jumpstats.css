@@ -10,7 +10,6 @@
 body {
   height: 100%;
   background: #EEE;
-  overflow: hidden;
 }
 .subtitle {
   /* This makes it so you cannot highlight the navbar */
@@ -138,4 +137,16 @@ tr:nth-child(even) {
 }
 #buttons button:focus {
   outline:0;
+}
+
+@media screen and (min-width: 1079px) {
+	body {
+		overflow: hidden;
+	}
+}
+
+@media screen and (max-width: 1079px) {
+	body {
+		overflow: auto;
+	}
 }
