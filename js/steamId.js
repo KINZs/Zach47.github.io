@@ -3140,6 +3140,26 @@
          {
             "steam_id":"STEAM_1:0:105728833",
             "name":"DarkLight"
+         },
+         {
+            "steam_id":"STEAM_1:0:14028909",
+            "name":"inso"
+         },
+         {
+            "steam_id":"STEAM_1:1:151062938",
+            "name":"tony"
+         },
+         {
+            "steam_id":"STEAM_1:0:35721256",
+            "name":"Supa"
+         },
+         {
+            "steam_id":"STEAM_1:1:86737065",
+            "name":"waxman5000"
+         },
+         {
+            "steam_id":"STEAM_1:0:16786700",
+            "name":"LegendeN ツ."
          }
       ]
    }
