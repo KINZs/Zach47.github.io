@@ -3160,6 +3160,22 @@
          {
             "steam_id":"STEAM_1:0:16786700",
             "name":"LegendeN ツ."
+         },
+         {
+            "steam_id":"STEAM_1:1:425401",
+            "name":"Maddew"
+         },
+         {
+            "steam_id":"STEAM_1:1:52094083",
+            "name":"philpai"
+         },
+         {
+            "steam_id":"STEAM_1:1:218859499",
+            "name":"негр"
+         },
+         {
+            "steam_id":"STEAM_1:1:48802784",
+            "name":"VankoBEAST"
          }
       ]
    }
