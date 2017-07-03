@@ -3176,6 +3176,10 @@
          {
             "steam_id":"STEAM_1:1:48802784",
             "name":"VankoBEAST"
+         },
+         {
+            "steam_id":"STEAM_1:1:63647025",
+            "name":"lopedog"
          }
       ]
    }
