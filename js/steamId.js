@@ -3236,6 +3236,10 @@
          {
             "steam_id":"STEAM_1:1:38038405",
             "name":"sAWWL"
+         },
+         {
+            "steam_id":"STEAM_1:0:27115504",
+            "name":"nck"
          }
       ]
    }
