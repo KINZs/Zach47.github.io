@@ -2883,7 +2883,7 @@
          },
          {
             "steam_id":"STEAM_1:0:85747959",
-            "name":"「§NG」| San.dor"
+            "name":"San.dor"
          },
          {
             "steam_id":"STEAM_1:1:183370302",
