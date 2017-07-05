@@ -3159,7 +3159,7 @@
          },
          {
             "steam_id":"STEAM_1:0:16786700",
-            "name":"LegendeN ツ."
+            "name":"LegendeN."
          },
          {
             "steam_id":"STEAM_1:1:425401",
