@@ -3240,6 +3240,10 @@
          {
             "steam_id":"STEAM_1:0:27115504",
             "name":"nck"
+         },
+         {
+            "steam_id":"STEAM_1:0:34553668",
+            "name":"BalticFist"
          }
       ]
    }
