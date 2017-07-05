@@ -3228,6 +3228,14 @@
          {
             "steam_id":"STEAM_1:0:57750003",
             "name":"DarkSmiLe"
+         },
+         {
+            "steam_id":"STEAM_1:0:142786951",
+            "name":"Emjayce"
+         },
+         {
+            "steam_id":"STEAM_1:1:38038405",
+            "name":"sAWWL"
          }
       ]
    }
