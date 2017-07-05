@@ -3244,6 +3244,10 @@
          {
             "steam_id":"STEAM_1:0:34553668",
             "name":"BalticFist"
+         },
+         {
+            "steam_id":"STEAM_1:1:39675479",
+            "name":"Prod."
          }
       ]
    }
