@@ -3212,6 +3212,22 @@
          {
             "steam_id":"STEAM_1:0:57114925",
             "name":"NOBODIEE"
+         },
+         {
+            "steam_id":"STEAM_1:1:79314854",
+            "name":"Maxi"
+         },
+         {
+            "steam_id":"STEAM_1:1:117958437",
+            "name":"Ruleh"
+         },
+         {
+            "steam_id":"STEAM_1:1:49080470",
+            "name":"Opstin"
+         },
+         {
+            "steam_id":"STEAM_1:0:57750003",
+            "name":"DarkSmiLe"
          }
       ]
    }
