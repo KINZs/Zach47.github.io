@@ -3252,6 +3252,10 @@
          {
             "steam_id":"STEAM_1:0:71536188",
             "name":"Djupingen"
+         },
+         {
+            "steam_id":"STEAM_1:1:81466749",
+            "name":"Camo"
          }
       ]
    }
