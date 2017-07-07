@@ -3256,6 +3256,14 @@
          {
             "steam_id":"STEAM_1:1:81466749",
             "name":"Camo"
+         },
+         {
+            "steam_id":"STEAM_1:1:109648969",
+            "name":"Lemonz"
+         },
+         {
+            "steam_id":"STEAM_1:1:68061988",
+            "name":"NeoS"
          }
       ]
    }
