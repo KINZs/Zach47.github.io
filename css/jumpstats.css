@@ -264,7 +264,11 @@ td {
     font-size: 28px;
     border: none;
   }
-
+  
+  .dropbtn:hover {
+    transition: .5s ease;
+    color: #ffa787 !important;
+  }
 
   .header {
     color: #dddfd4;
