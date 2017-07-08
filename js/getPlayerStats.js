@@ -4,13 +4,17 @@ function LoadPlayersLJ() {
     type: "GET",
     url: "http://kztimerglobal.com/api/v1/jumpstats?jumptype=longjump&limit=5000",
     success: function(data) {
+
       $(".se-pre-con").fadeOut("slow");
-      var lengthItem = data.result.length;
+
+      var position = 0;
+      var data = data.result;
+      var lengthItem = data.length;
       for (i=0;i < lengthItem; i++)  {
         if (tableLJ.rows.length > 20) {
           break;
         }
-        if (playerListLJ.includes(jsonPlayerName[data.result[i].steam_id])) {
+        if (playerListLJ.includes(jsonPlayerName[data[i].steam_id])) {
           continue;
         }
         else {
@@ -18,14 +22,16 @@ function LoadPlayersLJ() {
           var cell1 = row.insertCell(0);
           var cell2 = row.insertCell(1);
 
-          if (jsonPlayerName[data.result[i].steam_id] === undefined) {
-            playerListLJ.push(data.result[i].steam_id);
-            cell1.innerHTML = data.result[i].steam_id;
+          if (jsonPlayerName[data[i].steam_id] === undefined) {
+            position++;
+            playerListLJ.push(data[i].steam_id);
+            cell1.innerHTML = data[i].steam_id;
           } else {
-            playerListLJ.push(jsonPlayerName[data.result[i].steam_id]);
-            cell1.innerHTML = jsonPlayerName[data.result[i].steam_id];
+            position++;
+            playerListLJ.push(jsonPlayerName[data[i].steam_id]);
+            cell1.innerHTML = "<p style='color:#ff7f50; display:inline;'>" + position + "</p>" + ". " + jsonPlayerName[data[i].steam_id];
           }
-          cell2.innerHTML = data.result[i].distance;
+          cell2.innerHTML = data[i].distance;
         }
       }
       if (tableLJ.rows.length > 20
@@ -34,9 +40,7 @@ function LoadPlayersLJ() {
         && tableWJ.rows.length > 20
         && tableDBHOP.rows.length > 20
         && tableCJ.rows.length > 20
-        && tableLAJ.rows.length > 10) { // There is literally not 20 unique players with Ladderjumps. What the fuck.
-
-          $(".se-pre-con").fadeOut("slow");
+        && tableLAJ.rows.length > 20) { // There is literally not 20 unique players with Ladderjumps. What the fuck.
         }
     },
   });
@@ -45,12 +49,15 @@ function LoadPlayersLJ() {
     type: "GET",
     url: "http://kztimerglobal.com/api/v1/jumpstats?jumptype=bhop&limit=5000",
     success: function(data) {
-      var lengthItem = data.result.length;
+
+      var position = 0;
+      var data = data.result;
+      var lengthItem = data.length;
       for (i=0;i < lengthItem; i++)  {
         if (tableBHOP.rows.length > 20) {
           break;
         }
-        if (playerListBHOP.includes(jsonPlayerName[data.result[i].steam_id])) {
+        if (playerListBHOP.includes(jsonPlayerName[data[i].steam_id])) {
           continue;
         }
         else {
@@ -58,14 +65,16 @@ function LoadPlayersLJ() {
           var cell1 = row.insertCell(0);
           var cell2 = row.insertCell(1);
 
-          if (jsonPlayerName[data.result[i].steam_id] === undefined) {
-            playerListBHOP.push(data.result[i].steam_id);
-            cell1.innerHTML = data.result[i].steam_id;
+          if (jsonPlayerName[data[i].steam_id] === undefined) {
+            position++;
+            playerListBHOP.push(data[i].steam_id);
+            cell1.innerHTML = data[i].steam_id;
           } else {
-            playerListBHOP.push(jsonPlayerName[data.result[i].steam_id]);
-            cell1.innerHTML = jsonPlayerName[data.result[i].steam_id];
+            position++;
+            playerListBHOP.push(jsonPlayerName[data[i].steam_id]);
+            cell1.innerHTML = "<p style='color:#ff7f50; display:inline;'>" + position + "</p>" + ". " + jsonPlayerName[data[i].steam_id];
           }
-          cell2.innerHTML = data.result[i].distance;
+          cell2.innerHTML = data[i].distance;
         }
       }
     },
@@ -75,12 +84,15 @@ function LoadPlayersLJ() {
     type: "GET",
     url: "http://kztimerglobal.com/api/v1/jumpstats?jumptype=multibhop&limit=5000",
     success: function(data) {
-      var lengthItem = data.result.length;
+
+      var position = 0;
+      var data = data.result;
+      var lengthItem = data.length;
       for (i=0;i < lengthItem; i++)  {
         if (tableMBHOP.rows.length > 20) {
           break;
         }
-        if (playerListMBHOP.includes(jsonPlayerName[data.result[i].steam_id])) {
+        if (playerListMBHOP.includes(jsonPlayerName[data[i].steam_id])) {
           continue;
         }
         else {
@@ -88,14 +100,16 @@ function LoadPlayersLJ() {
           var cell1 = row.insertCell(0);
           var cell2 = row.insertCell(1);
 
-          if (jsonPlayerName[data.result[i].steam_id] === undefined) {
-            playerListMBHOP.push(data.result[i].steam_id);
-            cell1.innerHTML = data.result[i].steam_id;
+          if (jsonPlayerName[data[i].steam_id] === undefined) {
+            position++;
+            playerListMBHOP.push(data[i].steam_id);
+            cell1.innerHTML = data[i].steam_id;
           } else {
-            playerListMBHOP.push(jsonPlayerName[data.result[i].steam_id]);
-            cell1.innerHTML = jsonPlayerName[data.result[i].steam_id];
+            position++;
+            playerListMBHOP.push(jsonPlayerName[data[i].steam_id]);
+            cell1.innerHTML = "<p style='color:#ff7f50; display:inline;'>" + position + "</p>" + ". " + jsonPlayerName[data[i].steam_id];
           }
-          cell2.innerHTML = data.result[i].distance;
+          cell2.innerHTML = data[i].distance;
         }
       }
     },
@@ -105,12 +119,15 @@ function LoadPlayersLJ() {
     type: "GET",
     url: "http://kztimerglobal.com/api/v1/jumpstats?jumptype=weirdjump&limit=5000",
     success: function(data) {
-      var lengthItem = data.result.length;
+
+      var position = 0;
+      var data = data.result;
+      var lengthItem = data.length;
       for (i=0;i < lengthItem; i++)  {
         if (tableWJ.rows.length > 20) {
           break;
         }
-        if (playerListWJ.includes(jsonPlayerName[data.result[i].steam_id])) {
+        if (playerListWJ.includes(jsonPlayerName[data[i].steam_id])) {
           continue;
         }
         else {
@@ -118,14 +135,16 @@ function LoadPlayersLJ() {
           var cell1 = row.insertCell(0);
           var cell2 = row.insertCell(1);
 
-          if (jsonPlayerName[data.result[i].steam_id] === undefined) {
-            playerListWJ.push(data.result[i].steam_id);
-            cell1.innerHTML = data.result[i].steam_id;
+          if (jsonPlayerName[data[i].steam_id] === undefined) {
+            position++;
+            playerListWJ.push(data[i].steam_id);
+            cell1.innerHTML = data[i].steam_id;
           } else {
-            playerListWJ.push(jsonPlayerName[data.result[i].steam_id]);
-            cell1.innerHTML = jsonPlayerName[data.result[i].steam_id];
+            position++;
+            playerListWJ.push(jsonPlayerName[data[i].steam_id]);
+            cell1.innerHTML = "<p style='color:#ff7f50; display:inline;'>" + position + "</p>" + ". " + jsonPlayerName[data[i].steam_id];
           }
-          cell2.innerHTML = data.result[i].distance;
+          cell2.innerHTML = data[i].distance;
         }
       }
     },
@@ -135,12 +154,15 @@ function LoadPlayersLJ() {
     type: "GET",
     url: "http://kztimerglobal.com/api/v1/jumpstats?jumptype=dropbhop&limit=5000",
     success: function(data) {
-      var lengthItem = data.result.length;
+
+      var position = 0;
+      var data = data.result;
+      var lengthItem = data.length;
       for (i=0;i < lengthItem; i++)  {
         if (tableDBHOP.rows.length > 20) {
           break;
         }
-        if (playerListDBHOP.includes(jsonPlayerName[data.result[i].steam_id])) {
+        if (playerListDBHOP.includes(jsonPlayerName[data[i].steam_id])) {
           continue;
         }
         else {
@@ -148,14 +170,16 @@ function LoadPlayersLJ() {
           var cell1 = row.insertCell(0);
           var cell2 = row.insertCell(1);
 
-          if (jsonPlayerName[data.result[i].steam_id] === undefined) {
-            playerListDBHOP.push(data.result[i].steam_id);
-            cell1.innerHTML = data.result[i].steam_id;
+          if (jsonPlayerName[data[i].steam_id] === undefined) {
+            position++;
+            playerListDBHOP.push(data[i].steam_id);
+            cell1.innerHTML = data[i].steam_id;
           } else {
-            playerListDBHOP.push(jsonPlayerName[data.result[i].steam_id]);
-            cell1.innerHTML = jsonPlayerName[data.result[i].steam_id];
+            position++;
+            playerListDBHOP.push(jsonPlayerName[data[i].steam_id]);
+            cell1.innerHTML = "<p style='color:#ff7f50; display:inline;'>" + position + "</p>" + ". " + jsonPlayerName[data[i].steam_id];
           }
-          cell2.innerHTML = data.result[i].distance;
+          cell2.innerHTML = data[i].distance;
         }
       }
     },
@@ -165,12 +189,15 @@ function LoadPlayersLJ() {
     type: "GET",
     url: "http://kztimerglobal.com/api/v1/jumpstats?jumptype=countjump&limit=5000",
     success: function(data) {
-      var lengthItem = data.result.length;
+
+      var position = 0;
+      var data = data.result;
+      var lengthItem = data.length;
       for (i=0;i < lengthItem; i++)  {
         if (tableCJ.rows.length > 20) {
           break;
         }
-        if (playerListCJ.includes(jsonPlayerName[data.result[i].steam_id])) {
+        if (playerListCJ.includes(jsonPlayerName[data[i].steam_id])) {
           continue;
         }
         else {
@@ -178,14 +205,16 @@ function LoadPlayersLJ() {
           var cell1 = row.insertCell(0);
           var cell2 = row.insertCell(1);
 
-          if (jsonPlayerName[data.result[i].steam_id] === undefined) {
-            playerListCJ.push(data.result[i].steam_id);
-            cell1.innerHTML = data.result[i].steam_id;
+          if (jsonPlayerName[data[i].steam_id] === undefined) {
+            position++;
+            playerListCJ.push(data[i].steam_id);
+            cell1.innerHTML = data[i].steam_id;
           } else {
-            playerListCJ.push(jsonPlayerName[data.result[i].steam_id]);
-            cell1.innerHTML = jsonPlayerName[data.result[i].steam_id];
+            position++;
+            playerListCJ.push(jsonPlayerName[data[i].steam_id]);
+            cell1.innerHTML = "<p style='color:#ff7f50; display:inline;'>" + position + "</p>" + ". " + jsonPlayerName[data[i].steam_id];
           }
-          cell2.innerHTML = data.result[i].distance;
+          cell2.innerHTML = data[i].distance;
         }
       }
     },
@@ -195,12 +224,15 @@ function LoadPlayersLJ() {
     type: "GET",
     url: "http://kztimerglobal.com/api/v1/jumpstats?jumptype=ladderjump&limit=5000",
     success: function(data) {
-      var lengthItem = data.result.length;
+
+      var position = 0;
+      var data = data.result;
+      var lengthItem = data.length;
       for (i=0;i < lengthItem; i++)  {
         if (tableLAJ.rows.length > 20) {
           break;
         }
-        if (playerListLAJ.includes(jsonPlayerName[data.result[i].steam_id])) {
+        if (playerListLAJ.includes(jsonPlayerName[data[i].steam_id])) {
           continue;
         }
         else {
@@ -208,14 +240,16 @@ function LoadPlayersLJ() {
           var cell1 = row.insertCell(0);
           var cell2 = row.insertCell(1);
 
-          if (jsonPlayerName[data.result[i].steam_id] === undefined) {
-            playerListLAJ.push(data.result[i].steam_id);
-            cell1.innerHTML = data.result[i].steam_id;
+          if (jsonPlayerName[data[i].steam_id] === undefined) {
+            position++;
+            playerListLAJ.push(data[i].steam_id);
+            cell1.innerHTML = position + ". " + data[i].steam_id;
           } else {
-            playerListLAJ.push(jsonPlayerName[data.result[i].steam_id]);
-            cell1.innerHTML = jsonPlayerName[data.result[i].steam_id];
+            position++;
+            playerListLAJ.push(jsonPlayerName[data[i].steam_id]);
+            cell1.innerHTML = "<p style='color:#ff7f50; display:inline;'>" + position + "</p>" + ". " + jsonPlayerName[data[i].steam_id];
           }
-          cell2.innerHTML = data.result[i].distance;
+          cell2.innerHTML = data[i].distance;
         }
       }
     },
