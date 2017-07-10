@@ -3294,7 +3294,7 @@
             "name":"SIickSIoth"
          },
          {
-            "steam_id":"STEAM_1:1:59532783"
+            "steam_id":"STEAM_1:1:59532783",
             "name":"Apeloff"
          },
          {
