@@ -3280,6 +3280,34 @@
          {
             "steam_id":"STEAM_1:1:79287752",
             "name":"Lami"
+         },
+         {
+            "steam_id":"STEAM_1:1:120494461",
+            "name":"xd"
+         },
+         {
+            "steam_id":"STEAM_1:0:211898738",
+            "name":"tommi"
+         },
+         {
+            "steam_id":"STEAM_1:0:182948977",
+            "name":"SIickSIoth"
+         },
+         {
+            "steam_id":"STEAM_1:1:59532783"
+            "name":"Apeloff"
+         },
+         {
+            "steam_id":"STEAM_1:1:25265765",
+            "name":"Minhyme"
+         },
+         {
+            "steam_id":"STEAM_1:0:97345144",
+            "name":"arl3z"
+         },
+         {
+            "steam_id":"STEAM_1:1:4734523",
+            "name":"Loki"
          }
       ]
    }
