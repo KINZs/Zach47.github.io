@@ -8,7 +8,6 @@ function LoadPlayersLJ() {
       $(".se-pre-con").fadeOut("slow");
 
       var position = 0;
-      var data = data.result;
       var lengthItem = data.length;
       for (i=0;i < lengthItem; i++)  {
         if (tableLJ.rows.length > 20) {
@@ -51,7 +50,6 @@ function LoadPlayersLJ() {
     success: function(data) {
 
       var position = 0;
-      var data = data.result;
       var lengthItem = data.length;
       for (i=0;i < lengthItem; i++)  {
         if (tableBHOP.rows.length > 20) {
@@ -86,7 +84,6 @@ function LoadPlayersLJ() {
     success: function(data) {
 
       var position = 0;
-      var data = data.result;
       var lengthItem = data.length;
       for (i=0;i < lengthItem; i++)  {
         if (tableMBHOP.rows.length > 20) {
@@ -121,7 +118,6 @@ function LoadPlayersLJ() {
     success: function(data) {
 
       var position = 0;
-      var data = data.result;
       var lengthItem = data.length;
       for (i=0;i < lengthItem; i++)  {
         if (tableWJ.rows.length > 20) {
@@ -156,7 +152,6 @@ function LoadPlayersLJ() {
     success: function(data) {
 
       var position = 0;
-      var data = data.result;
       var lengthItem = data.length;
       for (i=0;i < lengthItem; i++)  {
         if (tableDBHOP.rows.length > 20) {
@@ -191,7 +186,6 @@ function LoadPlayersLJ() {
     success: function(data) {
 
       var position = 0;
-      var data = data.result;
       var lengthItem = data.length;
       for (i=0;i < lengthItem; i++)  {
         if (tableCJ.rows.length > 20) {
@@ -226,7 +220,6 @@ function LoadPlayersLJ() {
     success: function(data) {
 
       var position = 0;
-      var data = data.result;
       var lengthItem = data.length;
       for (i=0;i < lengthItem; i++)  {
         if (tableLAJ.rows.length > 20) {
