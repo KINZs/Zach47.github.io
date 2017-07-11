@@ -3308,6 +3308,22 @@
          {
             "steam_id":"STEAM_1:1:4734523",
             "name":"Loki"
+         },
+         {
+            "steam_id":"STEAM_1:1:83261880",
+            "name":"Blade"
+         },
+         {
+            "steam_id":"STEAM_1:0:102845404",
+            "name":"I'm not a Smurf"
+         },
+         {
+            "steam_id":"STEAM_1:1:101872572",
+            "name":"Abbe"
+         },
+         {
+            "steam_id":"STEAM_1:1:119737399",
+            "name":"Direx"
          }
       ]
    }
