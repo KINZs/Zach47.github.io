@@ -3324,6 +3324,10 @@
          {
             "steam_id":"STEAM_1:1:119737399",
             "name":"Direx"
+         },
+         {
+            "steam_id":"STEAM_1:0:31269989",
+            "name":"Gryphon"
          }
       ]
    }
