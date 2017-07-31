@@ -5,7 +5,7 @@ function LoadPlayersLJ() {
   // Longjump
   $.ajax({
     type: "GET",
-    url: "http://kztimerglobal.com/api/v1/jumpstats?jumptype=longjump&limit=5000",
+    url: "https://kztimerglobal.com/api/v1/jumpstats?jumptype=longjump&limit=5000",
     success: function(data) {
 
       $(".se-pre-con").fadeOut("slow");
@@ -62,7 +62,7 @@ function LoadPlayersLJ() {
 
     $.ajax({
       type: "GET",
-      url: "http://kztimerglobal.com/api/v1/jumpstats?jumptype=bhop&limit=5000",
+      url: "https://kztimerglobal.com/api/v1/jumpstats?jumptype=bhop&limit=5000",
       success: function(data) {
 
         var position = 0;
@@ -108,7 +108,7 @@ function LoadPlayersLJ() {
 
     $.ajax({
       type: "GET",
-      url: "http://kztimerglobal.com/api/v1/jumpstats?jumptype=multibhop&limit=5000",
+      url: "https://kztimerglobal.com/api/v1/jumpstats?jumptype=multibhop&limit=5000",
       success: function(data) {
 
         var position = 0;
@@ -154,7 +154,7 @@ function LoadPlayersLJ() {
 
     $.ajax({
       type: "GET",
-      url: "http://kztimerglobal.com/api/v1/jumpstats?jumptype=weirdjump&limit=5000",
+      url: "https://kztimerglobal.com/api/v1/jumpstats?jumptype=weirdjump&limit=5000",
       success: function(data) {
 
         var position = 0;
@@ -200,7 +200,7 @@ function LoadPlayersLJ() {
 
     $.ajax({
       type: "GET",
-      url: "http://kztimerglobal.com/api/v1/jumpstats?jumptype=dropbhop&limit=5000",
+      url: "https://kztimerglobal.com/api/v1/jumpstats?jumptype=dropbhop&limit=5000",
       success: function(data) {
 
         var position = 0;
@@ -246,7 +246,7 @@ function LoadPlayersLJ() {
 
     $.ajax({
       type: "GET",
-      url: "http://kztimerglobal.com/api/v1/jumpstats?jumptype=countjump&limit=5000",
+      url: "https://kztimerglobal.com/api/v1/jumpstats?jumptype=countjump&limit=5000",
       success: function(data) {
 
         var position = 0;
@@ -292,7 +292,7 @@ function LoadPlayersLJ() {
 
     $.ajax({
       type: "GET",
-      url: "http://kztimerglobal.com/api/v1/jumpstats?jumptype=ladderjump&limit=5000",
+      url: "https://kztimerglobal.com/api/v1/jumpstats?jumptype=ladderjump&limit=5000",
       success: function(data) {
 
         var position = 0;
