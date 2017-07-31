@@ -1,4 +1,4 @@
-var jumpstats_string = "http://kztimerglobal.com/api/v1/jumpstats?";
+var jumpstats_string = "https://kztimerglobal.com/api/v1/jumpstats?";
 var jsonPlayerName = {};
 var playerListLJ = [];
 var playerListBHOP = [];
@@ -21,7 +21,7 @@ $(document).ready(function(){
   LoadPlayersLJ();
 
   $.ajax({
-    url: "http://jacobwbarrett.com/js/steamId.js",
+    url: "https://jacobwbarrett.com/js/steamId.js",
     success: function(player) {
       data = JSON.parse(player);
       data[0].players.forEach(function (playerInfo) {
