@@ -21,7 +21,7 @@ $(document).ready(function(){
   LoadPlayersLJ();
 
   $.ajax({
-    url: "https://jacobwbarrett.com/js/steamId.js",
+    url: "../js/steamId.js",
     success: function(player) {
       data = JSON.parse(player);
       data[0].players.forEach(function (playerInfo) {
