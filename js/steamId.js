@@ -3424,6 +3424,18 @@
          {
            "steam_id":"STEAM_1:0:80382481",
            "name":"Turosh"
+         },
+         {
+           "steam_id":"STEAM_1:0:207033414",
+           "name":"Missilemaniakv2"
+         },
+         {
+           "steam_id":"STEAM_1:0:32100267",
+           "name":"rele"
+         },
+         {
+           "steam_id":"STEAM_1:0:22666919",
+           "name":"Powerful"
          }
       ]
    }
