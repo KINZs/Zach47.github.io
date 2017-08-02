@@ -1,0 +1,419 @@
+html, body {
+  background-color: #393E46;
+  height: 100%;
+  margin: 0;
+}
+
+.navbar {
+  display: none;
+}
+
+.title {
+  display: none;
+}
+
+.mobile-nav {
+  color: #DDDFD4;
+  height: 34px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.mobile-nav-icon, .mobile-nav-logo {
+  padding-top: 6px;
+  margin: auto;
+  z-index: 1;
+}
+
+.mobile-nav-logo {
+  height: 35px;
+  width: auto;
+}
+
+#search {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  transition: 0.5s;
+  width: 10%;
+  height: 40px;
+}
+
+#search-input {
+  text-indent: 20px;
+  font-size: 25px;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  transition: 0.5s;
+  width: 0%;
+  height: 40px;
+  z-index: 5;
+  overflow: hidden;
+  display: none;
+}
+
+#close-search {
+  padding: 6px 10px 0px 0px;
+  z-index: 6;
+  position: absolute;
+  top: 0px;
+  right: 0;
+  overflow: hidden;
+  display: none;
+}
+
+
+.sidenav {
+  background-color: #EEE;
+  height: 100%;
+  left: 0%;
+  overflow-x: hidden;
+  padding-top: 60px;
+  position: fixed;
+  transition: 0.5s;
+  width: 0%;
+  z-index: 2;
+}
+
+.sidenav a {
+  color: #151315;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-family: 'Lalezar', cursive;
+  font-size: 45px;
+  text-decoration: none;
+}
+
+.sidenav a:hover {
+  color: #FE3100;
+}
+
+.sidenav .closebtn {
+  font-size: 60px;
+  margin-left: 50px;
+  padding: 0;
+  position: absolute;
+  right: 25px;
+  top: 0;
+}
+
+.dropbtn-mobile {
+  position: relative;
+  background-color: #222831;
+  color: #E45051;
+  width: 100%;
+  font-family: 'Lalezar', cursive;
+  font-size: 27px;
+  border: none;
+}
+
+.btn {
+  display: none;
+}
+
+.dropdown-difficulty {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.difficulties-content {
+  position: absolute;
+  left: 0;
+  top: 80px;
+  display: none;
+  flex-direction: column;
+  background-color: #131E20;
+  font-family: 'Lalezar', cursive;
+  overflow: auto;
+  width: 100%;
+  z-index: 1;
+}
+
+.difficulties-content a {
+  align-items: center;
+  color: #DDDFD4;
+  display: flex;
+  flex-direction: column;
+  font-size: 4vh;
+  padding: 10px 0px 10px 0px;
+  text-decoration: none;
+  border: none;
+  width: 100%;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.image {
+  width: 95%;
+  box-shadow: 0px 3px 20px black;
+}
+
+.imgResize {
+  align-self: center;
+  width: 100%;
+  display: flex;
+}
+
+.content {
+  line-height: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+p {
+  color: #DDDFD4;
+  display: flex;
+  font-family: 'Lalezar', cursive;
+}
+
+/* Linking to steamcommunity for map */
+p a {
+  text-decoration: none;
+  outline: none;
+  color: #DDDFD4;
+}
+
+#mapPost {
+  margin-bottom: 4px;
+  font-size: 4.5vh;
+  color: #DDDFD4;
+}
+
+#mapAvgTP, #mapAvgPRO, #mapFilesize, #mapDifficulty {
+  margin-bottom: 8px;
+  font-size: 3.5vh;
+  color: #DDDFD4;
+}
+
+#mapDescription {
+  display: none;
+}
+
+#mapFilesize {
+  display: none;
+}
+
+#mapAvgTP {
+  color: orange;
+}
+
+#mapAvgPRO {
+  color: #3498DB;
+}
+
+#mapChoose {
+  position: fixed;
+  display: none;
+  justify-content: center;
+  padding: 8px 0px 8px 0px;
+  bottom: 0;
+  width: 100%;
+  font-family: 'Lalezar', cursive;
+  font-size: 27px;
+  color: #DDDFD4;
+  background: #212122;
+  border:0;
+}
+
+button:focus {
+  outline:0;
+}
+
+
+.banner {
+  background-color: #222831;
+  height: 40px;
+  width: 100%;
+  z-index: 5;
+}
+
+.header {
+  display:none;
+}
+
+/* ``````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````*/
+@media (min-width: 1000px) {
+
+  /* Navbar */
+  .navbar {
+    display: flex;
+    margin: 0;
+  }
+
+  .dropbtn-mobile {
+    display: none;
+  }
+
+  .difficulty-types {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    background-color: #222831;
+  }
+
+  .btn {
+    font-size: 25px;
+    font-family: 'Lalezar', cursive;
+    text-shadow: 2px 2px black;
+    display: flex;
+    color: #E45051;
+    background-color: transparent;
+    border: none;
+    margin: 5px;
+  }
+
+  ul.breadcrumbs {
+    /* This makes it so you cannot highlight the navbar */
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: -moz-none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    /* CSS */
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    margin: 0;
+    text-align: center;
+    font-family: 'Lalezar', cursive;
+    padding-top: 8px;
+    padding-left: 0px;
+    background-color: #222831;
+    list-style: none;
+    z-index: 2; /* This is used so that the navbar is above the title */
+    -webkit-animation: fadein 1s;
+    -moz-animation: fadein 1s;
+    -ms-animation: fadein 1s;
+    -o-animation: fadein 1s;
+    animation: fadein 1s;
+  }
+  ul.breadcrumbs li+li:before {
+    display: inline;
+    padding: 8px;
+    color: grey;
+    content: "/";
+  }
+  .navbar li {
+    display: inline;
+    text-align: center;
+    background-color: #222831;
+    color: #EEE;
+  }
+  .navbar a {
+    font-size: 16px;
+    padding-left: 15px;
+    padding-right: 10px;
+    color: #EEE;
+  }
+
+  .navbar a:link, a:hover, a:visited {
+    text-decoration: none;
+  }
+
+  .mobile-nav {
+    display: none;
+  }
+
+  .banner {
+    display: flex;
+    flex-direction: column;
+    background-color: #222831;
+    height: 140px;
+  }
+
+  .title {
+    color: #DDDFD4;
+    display: flex;
+    font-family: 'Lalezar', cursive;
+    padding-top: 33px;
+    align-self: center;
+    font-size: 75px;
+    justify-content: center;
+    margin: 0px;
+  }
+
+  .main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .image {
+    box-shadow: none;
+    padding-top: 10px;
+    padding-left: 6vh;
+    width: 115vh;
+    align-items: flex-end;
+  }
+
+  .imgResize {
+    width: 95%;
+    border-width: 4px;
+    border-style: dotted solid;
+    border-color: #E45051;
+    display: flex;
+  }
+
+  .content {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    min-width: 35%;
+    max-width: 50%;
+  }
+
+  #mapPost {
+    font-size: 4vh;
+  }
+
+  #mapPost a {
+    color: #E45051;
+  }
+
+  #mapAvgTP, #mapAvgPRO, #mapFilesize, #mapDifficulty {
+    margin-bottom: 8px;
+    font-size: 2.5vh;
+    color: #DDDFD4;
+  }
+
+  #mapAvgTP {
+    color: orange;
+  }
+
+  #mapAvgPRO {
+    color: #3498DB;
+  }
+
+  #mapFilesize {
+    display: flex;
+  }
+
+  #mapDescription {
+    font-size: 1.8vh;
+    margin: 11px 0px 3px 0px;
+    line-height: 100%;
+    width: 60%;
+    display: flex;
+  }
+
+  button {
+    position: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+}
