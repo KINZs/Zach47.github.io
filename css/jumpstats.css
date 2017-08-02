@@ -1,16 +1,20 @@
 html, body {
-  background-color: #173e43;
+  background-color: #393E46;
   height: 100%;
   margin: 0;
 }
 
+.navbar {
+  display: none;
+}
+
 .profile {
-  color: #dddfd4;
+  color: #DDDFD4;
   text-decoration: none;
 }
 
 .mobile-nav {
-  color: #dddfd4;
+  color: #DDDFD4;
   padding: 6px;
   display: flex;
   flex-direction: row;
@@ -27,7 +31,7 @@ html, body {
 }
 
 .sidenav {
-  background-color: #eee;
+  background-color: #EEE;
   height: 100%;
   left: 0%;
   overflow-x: hidden;
@@ -35,7 +39,7 @@ html, body {
   position: fixed;
   transition: 0.5s;
   width: 0%;
-  z-index: 1;
+  z-index: 2;
 }
 
 .sidenav a {
@@ -49,7 +53,7 @@ html, body {
 }
 
 .sidenav a:hover {
-  color: #fe3100;
+  color: #FE3100;
 }
 
 .sidenav .closebtn {
@@ -62,7 +66,7 @@ html, body {
 }
 
 .sideSettings {
-  background-color: #eee;
+  background-color: #EEE;
   height: 100%;
   right: 0%;
   overflow-x: hidden;
@@ -70,7 +74,7 @@ html, body {
   position: fixed;
   transition: 0.5s;
   width: 0%;
-  z-index: 1;
+  z-index: 2;
 }
 
 .sideSettings a {
@@ -84,7 +88,7 @@ html, body {
 }
 
 .sideSettings a:hover {
-  color: #fe3100;
+  color: #FE3100;
 }
 
 .sideSettings .closebtn {
@@ -97,7 +101,7 @@ html, body {
 }
 
 .banner {
-  background-color: #494037;
+  background-color: #222831;
   height: 60px;
   width: 100%;
   z-index: 5;
@@ -112,8 +116,8 @@ html, body {
 
 .dropbtn {
   position: relative;
-  background-color: #494037;
-  color: #dddfd4;
+  background-color: #222831;
+  color: #DDDFD4;
   width: 100%;
   font-family: 'Lalezar', cursive;
   font-size: 35px;
@@ -146,17 +150,14 @@ html, body {
 
 .dropdown-content a {
   align-items: center;
-  color: #dddfd4;
+  color: #DDDFD4;
   display: flex;
   flex-direction: column;
   font-size: 4vh;
   padding: 10px 0px 10px 0px;
   text-decoration: none;
   border: none;
-}
-
-.show {
-  display:flex;
+  width: 100%;
 }
 
 h2 {
@@ -203,7 +204,7 @@ td {
 
 #Tables {
   font-family: 'Lalezar', cursive;
-  color: #dddfd4;
+  color: #DDDFD4;
 }
 
 #myTableLJ {
@@ -221,19 +222,63 @@ td {
   display:none;
 }
 
-.se-pre-con {
-  position: fixed;
-  left: 0px;
-  top: 0px;
-  width: 100%;
-  height: 100%;
-  background: url(https://upload.wikimedia.org/wikipedia/commons/b/b1/Loading_icon.gif) center no-repeat #fff;
-  z-index: 9999;
-}
-
 @media (min-width: 1000px) {
   body {
-    background-color: #173e43;
+    background-color: #393E46;
+  }
+
+  .navbar {
+    display: flex;
+    margin: 0;
+  }
+
+  ul.breadcrumbs {
+    /* This makes it so you cannot highlight the navbar */
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: -moz-none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    /* CSS */
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    margin: 0;
+    text-align: center;
+    font-family: 'Lalezar', cursive;
+    padding-top: 8px;
+    padding-left: 0px;
+    background-color: #222831;
+    list-style: none;
+    z-index: 2; /* This is used so that the navbar is above the title */
+    -webkit-animation: fadein 1s;
+    -moz-animation: fadein 1s;
+    -ms-animation: fadein 1s;
+    -o-animation: fadein 1s;
+    animation: fadein 1s;
+  }
+  ul.breadcrumbs li+li:before {
+    display: inline;
+    padding: 8px;
+    color: grey;
+    content: "/";
+  }
+  .navbar li {
+    display: inline;
+    text-align: center;
+    background-color: #222831;
+    color: #EEE;
+  }
+  .navbar a {
+    font-size: 16px;
+    padding-left: 15px;
+    padding-right: 10px;
+    color: #EEE;
+  }
+  .navbar a:link, a:hover, a:visited {
+    text-decoration: none;
   }
 
   #jumptype-button {
@@ -246,6 +291,7 @@ td {
 
   .button-types {
     display: flex;
+    justify-content: center;
   }
 
   .mobile-nav {
@@ -255,14 +301,14 @@ td {
   .banner {
     display: flex;
     flex-direction: column;
-    background-color: #173e43;
-    height: 240px;
+    background-color: #222831;
+    height: 200px;
   }
 
   .dropbtn {
     position: flex;
-    background-color: #173e43;
-    color: #dddfd4;
+    background-color: #393E46;
+    color: #DDDFD4;
     width: auto;
     padding: 0px 10px 0px 10px;
     font-family: 'Lalezar', cursive;
@@ -272,54 +318,60 @@ td {
 
   .dropbtn:hover {
     transition: .5s ease;
-    color: #ffa787 !important;
+    color: #E45051 !important;
   }
 
-
-
-  .header {
-    color: #dddfd4;
+  .title {
+    color: #DDDFD4;
     display: flex;
     font-family: 'Lalezar', cursive;
-    font-size: 80px;
-    justify-content: flex-start;
-    padding: 2% 0% 0% 5%;
+    padding-top: 33px;
+    align-self: center;
+    font-size: 75px;
+    justify-content: center;
     margin: 0px;
   }
 
   .Select {
-    color: #dddfd4;
+    color: #DDDFD4;
     display: flex;
     font-family: 'Lalezar', cursive;
     font-size: 2em;
-    justify-content: flex-start;
-    margin: 0px;
-    padding: 0% 0% 0% 10%;
+    justify-content: center;
+    margin: 0px;;
   }
 
+  /* Pray to your god(s) that you don't have to modify below this line */
   #Tables {
     display: flex;
     justify-content: center;
     flex-direction: row;
+    flex-wrap: wrap;
+    margin: -10px 0 0 -10px;
+    width: 70%;
+    padding-left: 15%;
   }
 
   #myTableLJ, #myTableBHOP, #myTableMBHOP, #myTableWJ, #myTableDBHOP, #myTableCJ {
-    border-color: #131e20;
+    border-color: #131E20;
     border-width: 2px;
     border-style: none solid none none;
     box-shadow: 3px 8px 15px #212122;
+    margin: 25px 0 25px 10px;
+    box-sizing: border-box;
   }
 
   #myTableLAJ {
     border-color: #131e20;
     border-width: 2px;
     box-shadow: 3px 8px 15px #212122;
+    margin: 25px 0 25px 10px;
+    box-sizing: border-box;
   }
 
   #Longjump, #Bhop, #MultiBhop, #Weirdjump, #DropBhop, #Countjump, #Ladderjump {
     display: flex;
   }
-
 
   td {
     padding-left: 20px;
