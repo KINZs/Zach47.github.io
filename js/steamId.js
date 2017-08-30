@@ -3436,6 +3436,82 @@
          {
            "steam_id":"STEAM_1:0:22666919",
            "name":"Powerful"
+         },
+         {
+           "steam_id":"STEAM_1:0:43121445",
+           "name":"reedhoven"
+         },
+         {
+           "steam_id":"STEAM_1:0:163191773",
+           "name":"Swegmaman42"
+         },
+         {
+           "steam_id":"STEAM_1:0:138014795",
+           "name":"skux"
+         },
+         {
+           "steam_id":"STEAM_1:1:66195921",
+           "name":"DMITRIY"
+         },
+         {
+           "steam_id":"STEAM_1:1:183537738",
+           "name":"froth"
+         },
+         {
+           "steam_id":"STEAM_1:1:55313694",
+           "name":"kerosin123"
+         },
+         {
+           "steam_id":"STEAM_1:0:3005352",
+           "name":"rvso"
+         },
+         {
+           "steam_id":"STEAM_1:0:66513326",
+           "name":"IceQ"
+         },
+         {
+           "steam_id":"STEAM_1:0:77806168",
+           "name":"Diablo"
+         },
+         {
+           "steam_id":"STEAM_1:0:96899845",
+           "name":"kooksey99"
+         },
+         {
+           "steam_id":"STEAM_1:0:93637248",
+           "name":"henn1"
+         },
+         {
+           "steam_id":"STEAM_1:1:37565695",
+           "name":"Boshmak"
+         },
+         {
+           "steam_id":"STEAM_1:0:61167784",
+           "name":"YureeV"
+         },
+         {
+           "steam_id":"STEAM_1:1:41582673",
+           "name":"The Slapstick Dictator"
+         },
+         {
+           "steam_id":"STEAM_1:1:169680558",
+           "name":"Phenom"
+         },
+         {
+           "steam_id":"STEAM_1:1:106530939",
+           "name":"Extremelul"
+         },
+         {
+           "steam_id":"STEAM_1:1:86503191",
+           "name":"Korbo"
+         },
+         {
+           "steam_id":"STEAM_1:0:117714621",
+           "name":"Reddfy"
+         },
+         {
+           "steam_id":"STEAM_1:0:176614419",
+           "name":"sherms"
          }
       ]
    }
