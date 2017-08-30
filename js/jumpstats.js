@@ -1,35 +1,20 @@
-function openNav() {
-  document.getElementById("nav-leftside").style.width = "100%";
-}
-
-function closeNav() {
-  document.getElementById("nav-leftside").style.width = "0%";
-}
-
-function openSettings() {
-  document.getElementById("nav-rightside").style.width = "100%";
-}
-
-function closeSettings() {
-  document.getElementById("nav-rightside").style.width = "0%";
-}
-
 function showjumptypes() {
-  document.getElementById("dropdown").classList.toggle("show");
+  document.getElementById("dropdown").style.display = "flex";
 }
 
 function DropDown() {
-  if (!(document.getElementById("dropdown").classList.toggle("show"))) {
-    return;
-  }
-  else {
-    document.getElementById("dropdown").classList.toggle("show");
+  if (document.getElementById("dropdown").style.display === "flex") {
+    document.getElementById("dropdown").style.display = "none";
+  } else if (width >= 770) {
+    document.getElementById("dropdown").style.display = "none";
+  } else {
+    document.getElementById("dropdown").style.display = "flex";
   }
 }
 
-
-
 function showLJ() {
+  $(".se-pre-con").fadeIn("slow");
+  LoadPlayersLJ();
   if (width < 769) {
     document.getElementById("jumptype-button").innerHTML = "Longjump";
     document.getElementById("myTableLJ").style.display = "flex";
@@ -44,12 +29,13 @@ function showLJ() {
     document.getElementById("jumptype-button-lj").style.color = "#dddfd4";
   } else {
     document.getElementById("myTableLJ").style.display = "flex";
-    document.getElementById("jumptype-button-lj").style.color = "#FF7F50";
+    document.getElementById("jumptype-button-lj").style.color = "#E45051";
   }
   DropDown()
 }
 
 function showBHOP() {
+  LoadPlayersBHOP();
   if (width < 769) {
     document.getElementById("jumptype-button").innerHTML = "Bhop";
     document.getElementById("myTableLJ").style.display = "none";
@@ -64,12 +50,13 @@ function showBHOP() {
     document.getElementById("jumptype-button-bhop").style.color = "#dddfd4";
   } else {
     document.getElementById("myTableBHOP").style.display = "flex";
-    document.getElementById("jumptype-button-bhop").style.color = "#FF7F50";
+    document.getElementById("jumptype-button-bhop").style.color = "#E45051";
   }
   DropDown()
 }
 
 function showMBHOP() {
+  LoadPlayersMBHOP();
   if (width < 769) {
     document.getElementById("jumptype-button").innerHTML = "Multibhop";
     document.getElementById("myTableLJ").style.display = "none";
@@ -84,12 +71,13 @@ function showMBHOP() {
     document.getElementById("jumptype-button-mbhop").style.color = "#dddfd4";
   } else {
     document.getElementById("myTableMBHOP").style.display = "flex";
-    document.getElementById("jumptype-button-mbhop").style.color = "#FF7F50";
+    document.getElementById("jumptype-button-mbhop").style.color = "#E45051";
   }
   DropDown()
 }
 
 function showWJ() {
+  LoadPlayersWJ();
   if (width < 769) {
     document.getElementById("jumptype-button").innerHTML = "Weirdjump";
     document.getElementById("myTableLJ").style.display = "none";
@@ -104,12 +92,13 @@ function showWJ() {
     document.getElementById("jumptype-button-wj").style.color = "#dddfd4";
   } else {
     document.getElementById("myTableWJ").style.display = "flex";
-    document.getElementById("jumptype-button-wj").style.color = "#FF7F50";
+    document.getElementById("jumptype-button-wj").style.color = "#E45051";
   }
   DropDown()
 }
 
 function showDBHOP() {
+  LoadPlayersDBHOP();
   if (width < 769) {
     document.getElementById("jumptype-button").innerHTML = "Drop Bhop";
     document.getElementById("myTableLJ").style.display = "none";
@@ -124,12 +113,13 @@ function showDBHOP() {
     document.getElementById("jumptype-button-dbhop").style.color = "#dddfd4";
   } else {
     document.getElementById("myTableDBHOP").style.display = "flex";
-    document.getElementById("jumptype-button-dbhop").style.color = "#FF7F50";
+    document.getElementById("jumptype-button-dbhop").style.color = "#E45051";
   }
   DropDown()
 }
 
 function showCJ() {
+  LoadPlayersCJ();
   if (width < 769) {
     document.getElementById("jumptype-button").innerHTML = "Countjump";
     document.getElementById("myTableLJ").style.display = "none";
@@ -144,12 +134,13 @@ function showCJ() {
     document.getElementById("jumptype-button-cj").style.color = "#dddfd4";
   } else {
     document.getElementById("myTableCJ").style.display = "flex";
-    document.getElementById("jumptype-button-cj").style.color = "#FF7F50";
+    document.getElementById("jumptype-button-cj").style.color = "#E45051";
   }
   DropDown()
 }
 
 function showLAJ() {
+  LoadPlayersLAJ();
   if (width < 769) {
     document.getElementById("jumptype-button").innerHTML = "Ladderjump";
     document.getElementById("myTableLJ").style.display = "none";
@@ -164,7 +155,7 @@ function showLAJ() {
     document.getElementById("jumptype-button-laj").style.color = "#dddfd4";
   } else {
     document.getElementById("myTableLAJ").style.display = "flex";
-    document.getElementById("jumptype-button-laj").style.color = "#FF7F50";
+    document.getElementById("jumptype-button-laj").style.color = "#E45051";
   }
   DropDown()
 }
