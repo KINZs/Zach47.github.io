@@ -11,7 +11,7 @@
     "workshop_id": 408339325
   },
   {
-    "id": 203,
+    "id": 201,
     "Global": "1",
     "mapname": "bkz_blackrockshooter_vzp",
     "description": "A long, hallway-style, bhop map that heavily depends on perfect bhops to save time. The spacing between blocks is generous that you won't need to bhop on a block more than once. This is a great map for beginners to practice bhopping with scroll wheel.",
@@ -22,7 +22,7 @@
     "workshop_id": 491358151
   },
   {
-    "id": 204,
+    "id": 202,
     "Global": "1",
     "mapname": "bkz_bonus_z1",
     "description": "A short, flat-textured, blue and white map thats meant for new players, bkz_bonus_z1 features short-spaced bhop blocks designed for new players. ",
@@ -33,7 +33,7 @@
     "workshop_id": 509297499
   },
   {
-    "id": 205,
+    "id": 203,
     "Global": "1",
     "mapname": "bkz_cauz_final",
     "description": "No description available.",
@@ -44,7 +44,18 @@
     "workshop_id": 535665232
   },
   {
-    "id": 206,
+    "id": 204,
+    "Global": "1",
+    "mapname": "bkz_cauz_short",
+    "description": "No description available.",
+    "Avg_maptime_pro": 397.670235504975,
+    "Avg_maptime_tp": 465.650146460971,
+    "filesize": 25592556,
+    "difficulty_id": 4,
+    "workshop_id": " "
+  },
+  {
+    "id": 205,
     "Global": "1",
     "mapname": "bkz_caves_go",
     "description": "No description available.",
@@ -55,7 +66,7 @@
     "workshop_id": 395902107
   },
   {
-    "id": 207,
+    "id": 206,
     "Global": "1",
     "mapname": "bkz_cg_coldbhop",
     "description": "No description available.",
@@ -66,7 +77,7 @@
     "workshop_id": 346170878
   },
   {
-    "id": 208,
+    "id": 207,
     "Global": "1",
     "mapname": "bkz_chillhop_go",
     "description": "No description available.",
@@ -77,7 +88,29 @@
     "workshop_id": 418435525
   },
   {
+    "id": 208,
+    "Global": "1",
+    "mapname": "bkz_dydhop",
+    "description": "No description available.",
+    "Avg_maptime_pro": "NA",
+    "Avg_maptime_tp": "NA",
+    "filesize": 47462731,
+    "difficulty_id": 3,
+    "workshop_id": " "
+  },
+  {
     "id": 209,
+    "Global": "1",
+    "mapname": "bkz_evanstep",
+    "description": "No description available.",
+    "Avg_maptime_pro": "NA",
+    "Avg_maptime_tp": "NA",
+    "filesize": 30269796,
+    "difficulty_id": 4,
+    "workshop_id": " "
+  },
+  {
+    "id": 210,
     "Global": "1",
     "mapname": "bkz_goldbhop_csgo",
     "description": "No description available.",
@@ -88,7 +121,7 @@
     "workshop_id": 245286254
   },
   {
-    "id": 210,
+    "id": 211,
     "Global": "1",
     "mapname": "bkz_goldbhop_v2go",
     "description": "No description available.",
@@ -154,7 +187,7 @@
     "workshop_id": 498288711
   },
   {
-    "id": 217,
+    "id": 9999,
     "Global": "1",
     "mapname": "bkz_nocturns_blue",
     "description": "No description available.",
@@ -165,7 +198,7 @@
     "workshop_id": 706885909
   },
   {
-    "id": 219,
+    "id": 218,
     "Global": "1",
     "mapname": "bkz_sahara_v2",
     "description": "No description available.",
@@ -176,7 +209,7 @@
     "workshop_id": 688361667
   },
   {
-    "id": 220,
+    "id": 219,
     "Global": "1",
     "mapname": "bkz_synergy_ez",
     "description": "No description available.",
@@ -187,7 +220,7 @@
     "workshop_id": 510097469
   },
   {
-    "id": 221,
+    "id": 220,
     "Global": "1",
     "mapname": "bkz_synergy_x",
     "description": "No description available.",
@@ -198,7 +231,7 @@
     "workshop_id": 510097976
   },
   {
-    "id": 222,
+    "id": 221,
     "Global": "1",
     "mapname": "bkz_underground_crypt_v3",
     "description": "No description available.",
@@ -209,7 +242,7 @@
     "workshop_id": 491359928
   },
   {
-    "id": 223,
+    "id": 222,
     "Global": "1",
     "mapname": "bkz_uninspired_trash",
     "description": "No description available.",
@@ -220,7 +253,7 @@
     "workshop_id": 406053096
   },
   {
-    "id": 224,
+    "id": 223,
     "Global": "1",
     "mapname": "bkz_volcanohop",
     "description": "No description available.",
@@ -231,7 +264,7 @@
     "workshop_id": 868101976
   },
   {
-    "id": 227,
+    "id": 224,
     "Global": "1",
     "mapname": "kzpro_concrete_c02",
     "description": "No description available.",
@@ -242,7 +275,7 @@
     "workshop_id": 519499196
   },
   {
-    "id": 228,
+    "id": 225,
     "Global": "1",
     "mapname": "kzpro_gull_pidr_reborn",
     "description": "No description available.",
@@ -253,7 +286,7 @@
     "workshop_id": 642418824
   },
   {
-    "id": 229,
+    "id": 226,
     "Global": "1",
     "mapname": "kz_21loop_final_fix",
     "description": "No description available.",
@@ -264,7 +297,7 @@
     "workshop_id": 431789622
   },
   {
-    "id": 231,
+    "id": 227,
     "Global": "1",
     "mapname": "kz_2seasons_spring_fix",
     "description": "No description available.",
@@ -275,8 +308,8 @@
     "workshop_id": 793413175
   },
   {
-    "id": 232,
-    "Global": "1",
+    "id": 9999,
+    "Global": "0",
     "mapname": "kz_2seasons_winter_fix",
     "description": "No description available.",
     "Avg_maptime_pro": "NA",
@@ -286,7 +319,7 @@
     "workshop_id": 793414645
   },
   {
-    "id": 234,
+    "id": 228,
     "Global": "1",
     "mapname": "kz_4u_nature",
     "description": "No description available.",
@@ -297,7 +330,7 @@
     "workshop_id": "#"
   },
   {
-    "id": 235,
+    "id": 229,
     "Global": "1",
     "mapname": "kz_7in1_go",
     "description": "No description available.",
@@ -308,7 +341,7 @@
     "workshop_id": 156057317
   },
   {
-    "id": 237,
+    "id": 230,
     "Global": "1",
     "mapname": "kz_abstruse_od2",
     "description": "No description available.",
@@ -319,7 +352,7 @@
     "workshop_id": 841710228
   },
   {
-    "id": 239,
+    "id": 231,
     "Global": "1",
     "mapname": "kz_adventure",
     "description": "No description available.",
@@ -330,7 +363,7 @@
     "workshop_id": 320750771
   },
   {
-    "id": 240,
+    "id": 232,
     "Global": "1",
     "mapname": "kz_adv_cursedjourney",
     "description": "No description available.",
@@ -341,7 +374,7 @@
     "workshop_id": 248583000
   },
   {
-    "id": 241,
+    "id": 233,
     "Global": "1",
     "mapname": "kz_after_agitation_easy_fix",
     "description": "No description available.",
@@ -352,7 +385,7 @@
     "workshop_id": 793417352
   },
   {
-    "id": 244,
+    "id": 234,
     "Global": "1",
     "mapname": "kz_agility_v2_fix",
     "description": "No description available.",
@@ -363,7 +396,7 @@
     "workshop_id": 392863247
   },
   {
-    "id": 245,
+    "id": 235,
     "Global": "1",
     "mapname": "kz_ahful",
     "description": "No description available.",
@@ -374,7 +407,7 @@
     "workshop_id": 580309446
   },
   {
-    "id": 246,
+    "id": 236,
     "Global": "1",
     "mapname": "kz_akrh_warehouse",
     "description": "No description available.",
@@ -385,7 +418,7 @@
     "workshop_id": 342409639
   },
   {
-    "id": 247,
+    "id": 237,
     "Global": "1",
     "mapname": "kz_alice_fix",
     "description": "No description available.",
@@ -396,7 +429,7 @@
     "workshop_id": 478203041
   },
   {
-    "id": 249,
+    "id": 238,
     "Global": "1",
     "mapname": "kz_ancient_v3",
     "description": "No description available.",
@@ -407,7 +440,29 @@
     "workshop_id": 576216273
   },
   {
-    "id": 252,
+    "id": 239,
+    "Global": "1",
+    "mapname": "kz_arcadium",
+    "description": "No description available.",
+    "Avg_maptime_pro": "NA",
+    "Avg_maptime_tp": "NA",
+    "filesize": 15358048,
+    "difficulty_id": 3,
+    "workshop_id": " "
+  },
+  {
+    "id": 240,
+    "Global": "1",
+    "mapname": "kz_arrebol",
+    "description": "No description available.",
+    "Avg_maptime_pro": "NA",
+    "Avg_maptime_tp": "NA",
+    "filesize": 60834376,
+    "difficulty_id": 3,
+    "workshop_id": " "
+  },
+  {
+    "id": 241,
     "Global": "1",
     "mapname": "kz_ascend_hv",
     "description": "No description available.",
@@ -418,7 +473,7 @@
     "workshop_id": 357729700
   },
   {
-    "id": 253,
+    "id": 242,
     "Global": "1",
     "mapname": "kz_asphyxiate",
     "description": "No description available.",
@@ -429,7 +484,7 @@
     "workshop_id": 690937957
   },
   {
-    "id": 254,
+    "id": 243,
     "Global": "1",
     "mapname": "kz_asteroid_field_go",
     "description": "No description available.",
@@ -440,7 +495,29 @@
     "workshop_id": 333421749
   },
   {
-    "id": 256,
+    "id": 244,
+    "Global": "1",
+    "mapname": "kz_autobadges",
+    "description": "No description available.",
+    "Avg_maptime_pro": "NA",
+    "Avg_maptime_tp": "NA",
+    "filesize": 5116048,
+    "difficulty_id": 1,
+    "workshop_id": " "
+  },
+  {
+    "id": 245,
+    "Global": "1",
+    "mapname": "kz_avoria",
+    "description": "No description available.",
+    "Avg_maptime_pro": "NA",
+    "Avg_maptime_tp": "NA",
+    "filesize": 53688060,
+    "difficulty_id": 4,
+    "workshop_id": " "
+  },
+  {
+    "id": 246,
     "Global": "1",
     "mapname": "kz_aztec",
     "description": "No description available.",
@@ -451,7 +528,18 @@
     "workshop_id": 156057488
   },
   {
-    "id": 258,
+    "id": 247,
+    "Global": "1",
+    "mapname": "kz_bananaysoda",
+    "description": "No description available.",
+    "Avg_maptime_pro": "NA",
+    "Avg_maptime_tp": "NA",
+    "filesize": 46678604,
+    "difficulty_id": 5,
+    "workshop_id": " "
+  },
+  {
+    "id": 248,
     "Global": "1",
     "mapname": "kz_basicnoon",
     "description": "No description available.",
@@ -462,7 +550,7 @@
     "workshop_id": 379026993
   },
   {
-    "id": 260,
+    "id": 249,
     "Global": "1",
     "mapname": "kz_basics_b02",
     "description": "No description available.",
@@ -473,7 +561,7 @@
     "workshop_id": 519499813
   },
   {
-    "id": 262,
+    "id": 250,
     "Global": "1",
     "mapname": "kz_beginnerblock_go",
     "description": "No description available.",
@@ -484,7 +572,7 @@
     "workshop_id": 156057667
   },
   {
-    "id": 263,
+    "id": 251,
     "Global": "1",
     "mapname": "kz_betterdunjun",
     "description": "No description available.",
@@ -495,7 +583,7 @@
     "workshop_id": 523852277
   },
   {
-    "id": 264,
+    "id": 252,
     "Global": "1",
     "mapname": "kz_bhop_essence",
     "description": "No description available.",
@@ -506,7 +594,7 @@
     "workshop_id": 788665755
   },
   {
-    "id": 265,
+    "id": 253,
     "Global": "1",
     "mapname": "kz_bhop_forchi",
     "description": "No description available.",
@@ -517,7 +605,7 @@
     "workshop_id": 632791805
   },
   {
-    "id": 266,
+    "id": 254,
     "Global": "1",
     "mapname": "kz_bhop_lj",
     "description": "No description available.",
@@ -528,7 +616,7 @@
     "workshop_id": 406077055
   },
   {
-    "id": 267,
+    "id": 255,
     "Global": "1",
     "mapname": "kz_bhop_mosaic_od",
     "description": "No description available.",
@@ -539,7 +627,7 @@
     "workshop_id": 646510868
   },
   {
-    "id": 268,
+    "id": 256,
     "Global": "1",
     "mapname": "kz_bhop_northface",
     "description": "No description available.",
@@ -550,7 +638,7 @@
     "workshop_id": 642020842
   },
   {
-    "id": 269,
+    "id": 257,
     "Global": "1",
     "mapname": "kz_bhop_skyworld_go",
     "description": "No description available.",
@@ -561,7 +649,7 @@
     "workshop_id": 678315907
   },
   {
-    "id": 270,
+    "id": 258,
     "Global": "1",
     "mapname": "kz_bhop_watertemple",
     "description": "No description available.",
@@ -572,7 +660,7 @@
     "workshop_id": 519457034
   },
   {
-    "id": 271,
+    "id": 259,
     "Global": "1",
     "mapname": "kz_bionic",
     "description": "No description available.",
@@ -583,7 +671,18 @@
     "workshop_id": 598309769
   },
   {
-    "id": 272,
+    "id": 260,
+    "Global": "1",
+    "mapname": "kz_blatherskite_v1",
+    "description": "No description available.",
+    "Avg_maptime_pro": "NA",
+    "Avg_maptime_tp": "NA",
+    "filesize": 96881024,
+    "difficulty_id": 3,
+    "workshop_id": " "
+  },
+  {
+    "id": 261,
     "Global": "1",
     "mapname": "kz_blindcity_easy_fix",
     "description": "No description available.",
@@ -594,7 +693,7 @@
     "workshop_id": 673671001
   },
   {
-    "id": 273,
+    "id": 262,
     "Global": "1",
     "mapname": "kz_blindcity_hard_final",
     "description": "No description available.",
@@ -605,7 +704,7 @@
     "workshop_id": 450945426
   },
   {
-    "id": 274,
+    "id": 263,
     "Global": "1",
     "mapname": "kz_bluehop_mq",
     "description": "No description available.",
@@ -616,7 +715,18 @@
     "workshop_id": 415686903
   },
   {
-    "id": 997,
+    "id": 264,
+    "Global": "1",
+    "mapname": "kz_bluerace_v1",
+    "description": "No description available.",
+    "Avg_maptime_pro": "NA",
+    "Avg_maptime_tp": "NA",
+    "filesize": 15302924,
+    "difficulty_id": 2,
+    "workshop_id": " "
+  },
+  {
+    "id": 265,
     "Global": "1",
     "mapname": "kz_breezeblocks",
     "description": "No description available.",
@@ -627,7 +737,7 @@
     "workshop_id": 898027127
   },
   {
-    "id": 277,
+    "id": 266,
     "Global": "1",
     "mapname": "kz_brickblock_v2",
     "description": "No description available.",
@@ -638,7 +748,7 @@
     "workshop_id": 621434939
   },
   {
-    "id": 279,
+    "id": 267,
     "Global": "1",
     "mapname": "kz_brightblock",
     "description": "No description available.",
@@ -649,7 +759,7 @@
     "workshop_id": 653272914
   },
   {
-    "id": 280,
+    "id": 268,
     "Global": "1",
     "mapname": "kz_buildings_final",
     "description": "No description available.",
@@ -660,7 +770,7 @@
     "workshop_id": 406077441
   },
   {
-    "id": 281,
+    "id": 269,
     "Global": "1",
     "mapname": "kz_cakewalk",
     "description": "No description available.",
@@ -671,7 +781,18 @@
     "workshop_id": 491408821
   },
   {
-    "id": 283,
+    "id": 270,
+    "Global": "1",
+    "mapname": "kz_camembert",
+    "description": "No description available.",
+    "Avg_maptime_pro": "NA",
+    "Avg_maptime_tp": "NA",
+    "filesize": 10111916,
+    "difficulty_id": 3,
+    "workshop_id": " "
+  },
+  {
+    "id": 271,
     "Global": "1",
     "mapname": "kz_canyon",
     "description": "No description available.",
@@ -682,8 +803,19 @@
     "workshop_id": 621630951
   },
   {
-    "id": 285,
+    "id": 272,
     "Global": "1",
+    "mapname": "kz_cartooncastle_go",
+    "description": "No description available.",
+    "Avg_maptime_pro": "NA",
+    "Avg_maptime_tp": "NA",
+    "filesize": 12979948,
+    "difficulty_id": 2,
+    "workshop_id": " "
+  },
+  {
+    "id": 9999,
+    "Global": "0",
     "mapname": "kz_cargo",
     "description": "No description available.",
     "Avg_maptime_pro": 575.801685333252,
@@ -693,7 +825,7 @@
     "workshop_id": 279210694
   },
   {
-    "id": 287,
+    "id": 273,
     "Global": "1",
     "mapname": "kz_cascade_v3",
     "description": "No description available.",
@@ -704,7 +836,7 @@
     "workshop_id": 638212929
   },
   {
-    "id": 288,
+    "id": 274,
     "Global": "1",
     "mapname": "kz_cataclysm",
     "description": "No description available.",
@@ -715,7 +847,7 @@
     "workshop_id": 370545981
   },
   {
-    "id": 289,
+    "id": 275,
     "Global": "1",
     "mapname": "kz_catalyst",
     "description": "No description available.",
@@ -726,7 +858,7 @@
     "workshop_id": 406077618
   },
   {
-    "id": 290,
+    "id": 276,
     "Global": "1",
     "mapname": "kz_catharsis_global",
     "description": "No description available.",
@@ -737,7 +869,7 @@
     "workshop_id": 615332047
   },
   {
-    "id": 292,
+    "id": 277,
     "Global": "1",
     "mapname": "kz_caulis_v2",
     "description": "No description available.",
@@ -748,7 +880,7 @@
     "workshop_id": 156058093
   },
   {
-    "id": 294,
+    "id": 278,
     "Global": "1",
     "mapname": "kz_cellblock_go2",
     "description": "No description available.",
@@ -759,7 +891,7 @@
     "workshop_id": 156058850
   },
   {
-    "id": 295,
+    "id": 279,
     "Global": "1",
     "mapname": "kz_cg_brick_rmk",
     "description": "No description available.",
@@ -770,7 +902,7 @@
     "workshop_id": 688171253
   },
   {
-    "id": 296,
+    "id": 280,
     "Global": "1",
     "mapname": "kz_cg_lighthops_go",
     "description": "No description available.",
@@ -781,18 +913,29 @@
     "workshop_id": 352286796
   },
   {
-    "id": 297,
+    "id": 281,
+    "Global": "1",
+    "mapname": "kz_cheetos",
+    "description": "No description available.",
+    "Avg_maptime_pro": "NA",
+    "Avg_maptime_tp": "NA",
+    "filesize": 3904512,
+    "difficulty_id": 2,
+    "workshop_id": " "
+  },
+  {
+    "id": 282,
     "Global": "1",
     "mapname": "kz_chessblock",
     "description": "No description available.",
-    "Avg_maptime_pro": 456.742059952173,
-    "Avg_maptime_tp": 595.555803988085,
+    "Avg_maptime_pro": "NA",
+    "Avg_maptime_tp": "NA",
     "filesize": 27637164,
     "difficulty_id": 1,
-    "workshop_id": 576215645
+    "workshop_id": " "
   },
   {
-    "id": 298,
+    "id": 283,
     "Global": "1",
     "mapname": "kz_chinablock",
     "description": "No description available.",
@@ -803,7 +946,7 @@
     "workshop_id": 279166189
   },
   {
-    "id": 299,
+    "id": 284,
     "Global": "1",
     "mapname": "kz_christmas_fix",
     "description": "No description available.",
@@ -814,7 +957,7 @@
     "workshop_id": 669198796
   },
   {
-    "id": 300,
+    "id": 285,
     "Global": "1",
     "mapname": "kz_cliffhanger_go_global",
     "description": "No description available.",
@@ -825,7 +968,7 @@
     "workshop_id": 504851319
   },
   {
-    "id": 302,
+    "id": 286,
     "Global": "1",
     "mapname": "kz_colorcode",
     "description": "No description available.",
@@ -836,7 +979,7 @@
     "workshop_id": 528597060
   },
   {
-    "id": 305,
+    "id": 287,
     "Global": "1",
     "mapname": "kz_colors_v2",
     "description": "No description available.",
@@ -847,7 +990,18 @@
     "workshop_id": 325027910
   },
   {
-    "id": 306,
+    "id": 288,
+    "Global": "1",
+    "mapname": "kz_combobreaker",
+    "description": "No description available.",
+    "Avg_maptime_pro": "NA",
+    "Avg_maptime_tp": "NA",
+    "filesize": 62235088,
+    "difficulty_id": 2,
+    "workshop_id": " "
+  },
+  {
+    "id": 289,
     "Global": "1",
     "mapname": "kz_combohop_c02",
     "description": "No description available.",
@@ -858,7 +1012,7 @@
     "workshop_id": 519498732
   },
   {
-    "id": 309,
+    "id": 290,
     "Global": "1",
     "mapname": "kz_communityjump3",
     "description": "No description available.",
@@ -869,7 +1023,7 @@
     "workshop_id": 659804813
   },
   {
-    "id": 310,
+    "id": 291,
     "Global": "1",
     "mapname": "kz_complex",
     "description": "No description available.",
@@ -880,7 +1034,7 @@
     "workshop_id": 386875795
   },
   {
-    "id": 311,
+    "id": 292,
     "Global": "1",
     "mapname": "kz_comp_global",
     "description": "No description available.",
@@ -891,7 +1045,7 @@
     "workshop_id": 406053614
   },
   {
-    "id": 998,
+    "id": 293,
     "Global": "1",
     "mapname": "kz_concept",
     "description": "No description available.",
@@ -902,7 +1056,7 @@
     "workshop_id": 903732207
   },
   {
-    "id": 312,
+    "id": 294,
     "Global": "1",
     "mapname": "kz_concretejungle",
     "description": "No description available.",
@@ -913,7 +1067,7 @@
     "workshop_id": 506427184
   },
   {
-    "id": 313,
+    "id": 295,
     "Global": "1",
     "mapname": "kz_conrun_mq",
     "description": "No description available.",
@@ -924,7 +1078,7 @@
     "workshop_id": 381648804
   },
   {
-    "id": 314,
+    "id": 296,
     "Global": "1",
     "mapname": "kz_conrun_scrub",
     "description": "No description available.",
@@ -935,7 +1089,18 @@
     "workshop_id": 382262763
   },
   {
-    "id": 315,
+    "id": 297,
+    "Global": "1",
+    "mapname": "kz_conspiracy",
+    "description": "No description available.",
+    "Avg_maptime_pro": "NA",
+    "Avg_maptime_tp": "NA",
+    "filesize": 2666548,
+    "difficulty_id": 2,
+    "workshop_id": " "
+  },
+  {
+    "id": 298,
     "Global": "1",
     "mapname": "kz_construction",
     "description": "No description available.",
@@ -946,7 +1111,7 @@
     "workshop_id": 499184114
   },
   {
-    "id": 317,
+    "id": 299,
     "Global": "1",
     "mapname": "kz_cratespeed",
     "description": "No description available.",
@@ -957,7 +1122,7 @@
     "workshop_id": 689965741
   },
   {
-    "id": 318,
+    "id": 300,
     "Global": "1",
     "mapname": "kz_crate_delight_go",
     "description": "No description available.",
@@ -968,7 +1133,7 @@
     "workshop_id": 491405849
   },
   {
-    "id": 320,
+    "id": 301,
     "Global": "1",
     "mapname": "kz_crypt_final",
     "description": "No description available.",
@@ -979,7 +1144,7 @@
     "workshop_id": 528128872
   },
   {
-    "id": 321,
+    "id": 302,
     "Global": "1",
     "mapname": "kz_crysis",
     "description": "No description available.",
@@ -990,7 +1155,18 @@
     "workshop_id": 387238555
   },
   {
-    "id": 323,
+    "id": 303,
+    "Global": "1",
+    "mapname": "kz_custos",
+    "description": "No description available.",
+    "Avg_maptime_pro": "NA",
+    "Avg_maptime_tp": "NA",
+    "filesize": 15927252,
+    "difficulty_id": 4,
+    "workshop_id": " "
+  },
+  {
+    "id": 304,
     "Global": "1",
     "mapname": "kz_cyb_adrenaline",
     "description": "No description available.",
@@ -1001,7 +1177,7 @@
     "workshop_id": 689982897
   },
   {
-    "id": 324,
+    "id": 305,
     "Global": "1",
     "mapname": "kz_dam",
     "description": "No description available.",
@@ -1012,7 +1188,29 @@
     "workshop_id": 647694230
   },
   {
-    "id": 326,
+    "id": 306,
+    "Global": "1",
+    "mapname": "kz_daniel",
+    "description": "No description available.",
+    "Avg_maptime_pro": "NA",
+    "Avg_maptime_tp": "NA",
+    "filesize": 5996716,
+    "difficulty_id": 2,
+    "workshop_id": " "
+  },
+  {
+    "id": 307,
+    "Global": "1",
+    "mapname": "kz_date2",
+    "description": "No description available.",
+    "Avg_maptime_pro": "NA",
+    "Avg_maptime_tp": "NA",
+    "filesize": 18065544,
+    "difficulty_id": 3,
+    "workshop_id": " "
+  },
+  {
+    "id": 308,
     "Global": "1",
     "mapname": "kz_default",
     "description": "No description available.",
@@ -1023,7 +1221,7 @@
     "workshop_id": 382377001
   },
   {
-    "id": 327,
+    "id": 309,
     "Global": "1",
     "mapname": "kz_depot",
     "description": "No description available.",
@@ -1034,7 +1232,7 @@
     "workshop_id": 738046973
   },
   {
-    "id": 329,
+    "id": 310,
     "Global": "1",
     "mapname": "kz_de_bhop",
     "description": "No description available.",
@@ -1045,7 +1243,7 @@
     "workshop_id": 509624659
   },
   {
-    "id": 332,
+    "id": 311,
     "Global": "1",
     "mapname": "kz_dimensions_v1",
     "description": "No description available.",
@@ -1056,7 +1254,7 @@
     "workshop_id": 491411804
   },
   {
-    "id": 333,
+    "id": 312,
     "Global": "1",
     "mapname": "kz_district_d01",
     "description": "No description available.",
@@ -1067,7 +1265,7 @@
     "workshop_id": 421427380
   },
   {
-    "id": 335,
+    "id": 313,
     "Global": "1",
     "mapname": "kz_doubletake",
     "description": "No description available.",
@@ -1078,7 +1276,7 @@
     "workshop_id": 491377297
   },
   {
-    "id": 336,
+    "id": 314,
     "Global": "1",
     "mapname": "kz_doveen",
     "description": "No description available.",
@@ -1089,7 +1287,7 @@
     "workshop_id": 391996291
   },
   {
-    "id": 338,
+    "id": 315,
     "Global": "1",
     "mapname": "kz_drops_od",
     "description": "No description available.",
@@ -1100,7 +1298,7 @@
     "workshop_id": 631559848
   },
   {
-    "id": 339,
+    "id": 316,
     "Global": "1",
     "mapname": "kz_dryness",
     "description": "No description available.",
@@ -1111,7 +1309,7 @@
     "workshop_id": 611091154
   },
   {
-    "id": 340,
+    "id": 317,
     "Global": "1",
     "mapname": "kz_duality",
     "description": "No description available.",
@@ -1122,7 +1320,7 @@
     "workshop_id": 619979540
   },
   {
-    "id": 341,
+    "id": 318,
     "Global": "1",
     "mapname": "kz_dungeon",
     "description": "No description available.",
@@ -1133,7 +1331,7 @@
     "workshop_id": 515635506
   },
   {
-    "id": 342,
+    "id": 319,
     "Global": "1",
     "mapname": "kz_dvn_cube_fixed",
     "description": "No description available.",
@@ -1144,7 +1342,7 @@
     "workshop_id": 498765580
   },
   {
-    "id": 343,
+    "id": 320,
     "Global": "1",
     "mapname": "kz_dvn_dull",
     "description": "No description available.",
@@ -1155,7 +1353,7 @@
     "workshop_id": 483073135
   },
   {
-    "id": 344,
+    "id": 321,
     "Global": "1",
     "mapname": "kz_dvn_redcarpet",
     "description": "No description available.",
@@ -1166,7 +1364,7 @@
     "workshop_id": 605822998
   },
   {
-    "id": 346,
+    "id": 322,
     "Global": "1",
     "mapname": "kz_dzy_beyond_v2",
     "description": "No description available.",
@@ -1177,7 +1375,7 @@
     "workshop_id": 454227310
   },
   {
-    "id": 347,
+    "id": 9999,
     "Global": "0",
     "mapname": "kz_dzy_reach",
     "description": "No description available.",
@@ -1188,7 +1386,18 @@
     "workshop_id": 673887976
   },
   {
-    "id": 348,
+    "id": 323,
+    "Global": "1",
+    "mapname": "kz_dzy_reach_v2",
+    "description": "No description available.",
+    "Avg_maptime_pro": 311.347339914805,
+    "Avg_maptime_tp": 533.811733401199,
+    "filesize": 65659096,
+    "difficulty_id": 3,
+    "workshop_id": 673887976
+  },
+  {
+    "id": 324,
     "Global": "1",
     "mapname": "kz_ea_beneath_go",
     "description": "No description available.",
@@ -1199,7 +1408,7 @@
     "workshop_id": 338561631
   },
   {
-    "id": 999,
+    "id": 325,
     "Global": "1",
     "mapname": "kz_edifice",
     "description": "No description available.",
@@ -1210,7 +1419,7 @@
     "workshop_id": 930321498
   },
   {
-    "id": 349,
+    "id": 326,
     "Global": "1",
     "mapname": "kz_emblem",
     "description": "No description available.",
@@ -1221,7 +1430,7 @@
     "workshop_id": 489591399
   },
   {
-    "id": 350,
+    "id": 327,
     "Global": "1",
     "mapname": "kz_emblem_bonus",
     "description": "No description available.",
@@ -1232,7 +1441,7 @@
     "workshop_id": 491412109
   },
   {
-    "id": 351,
+    "id": 328,
     "Global": "1",
     "mapname": "kz_ephemeral",
     "description": "No description available.",
@@ -1243,7 +1452,7 @@
     "workshop_id": 692077375
   },
   {
-    "id": 352,
+    "id": 329,
     "Global": "1",
     "mapname": "kz_epusbridge",
     "description": "No description available.",
@@ -1254,7 +1463,7 @@
     "workshop_id": 406079728
   },
   {
-    "id": 353,
+    "id": 330,
     "Global": "1",
     "mapname": "kz_erinome",
     "description": "No description available.",
@@ -1265,7 +1474,7 @@
     "workshop_id": 568096729
   },
   {
-    "id": 354,
+    "id": 331,
     "Global": "1",
     "mapname": "kz_eros_v2",
     "description": "No description available.",
@@ -1276,7 +1485,7 @@
     "workshop_id": 791910412
   },
   {
-    "id": 355,
+    "id": 332,
     "Global": "1",
     "mapname": "kz_excape",
     "description": "No description available.",
@@ -1287,7 +1496,7 @@
     "workshop_id": 406079956
   },
   {
-    "id": 356,
+    "id": 333,
     "Global": "1",
     "mapname": "kz_excavate",
     "description": "No description available.",
@@ -1298,7 +1507,7 @@
     "workshop_id": 406079956
   },
   {
-    "id": 357,
+    "id": 334,
     "Global": "1",
     "mapname": "kz_exoteric",
     "description": "No description available.",
@@ -1309,7 +1518,7 @@
     "workshop_id": 380505617
   },
   {
-    "id": 358,
+    "id": 335,
     "Global": "1",
     "mapname": "kz_experiment",
     "description": "No description available.",
@@ -1320,7 +1529,7 @@
     "workshop_id": 398489890
   },
   {
-    "id": 359,
+    "id": 336,
     "Global": "1",
     "mapname": "kz_exps_cursedjourney",
     "description": "No description available.",
@@ -1331,7 +1540,7 @@
     "workshop_id": 525288912
   },
   {
-    "id": 361,
+    "id": 337,
     "Global": "1",
     "mapname": "kz_ext_bblocks",
     "description": "No description available.",
@@ -1342,7 +1551,7 @@
     "workshop_id": 352448183
   },
   {
-    "id": 362,
+    "id": 338,
     "Global": "1",
     "mapname": "kz_fabrik",
     "description": "No description available.",
@@ -1353,7 +1562,7 @@
     "workshop_id": 221328962
   },
   {
-    "id": 363,
+    "id": 339,
     "Global": "1",
     "mapname": "kz_failed_fastrun_rt",
     "description": "No description available.",
@@ -1364,7 +1573,7 @@
     "workshop_id": 688361058
   },
   {
-    "id": 365,
+    "id": 340,
     "Global": "1",
     "mapname": "kz_fastcombomap",
     "description": "No description available.",
@@ -1375,7 +1584,7 @@
     "workshop_id": 760052560
   },
   {
-    "id": 366,
+    "id": 341,
     "Global": "1",
     "mapname": "kz_fatigue_v2",
     "description": "No description available.",
@@ -1386,7 +1595,7 @@
     "workshop_id": 375133191
   },
   {
-    "id": 367,
+    "id": 342,
     "Global": "1",
     "mapname": "kz_fikablock",
     "description": "No description available.",
@@ -1397,7 +1606,7 @@
     "workshop_id": 674086581
   },
   {
-    "id": 368,
+    "id": 343,
     "Global": "1",
     "mapname": "kz_final_ascension",
     "description": "No description available.",
@@ -1408,7 +1617,7 @@
     "workshop_id": 551807622
   },
   {
-    "id": 369,
+    "id": 344,
     "Global": "1",
     "mapname": "kz_floatingislands",
     "description": "No description available.",
@@ -1419,7 +1628,18 @@
     "workshop_id": 738956347
   },
   {
-    "id": 372,
+    "id": 345,
+    "Global": "1",
+    "mapname": "kz_foggywarehouse_v2",
+    "description": "No description available.",
+    "Avg_maptime_pro": "NA",
+    "Avg_maptime_tp": "NA",
+    "filesize": 13460648,
+    "difficulty_id": 1,
+    "workshop_id": " "
+  },
+  {
+    "id": 346,
     "Global": "1",
     "mapname": "kz_forestrace_go",
     "description": "No description available.",
@@ -1430,7 +1650,18 @@
     "workshop_id": 337879628
   },
   {
-    "id": 375,
+    "id": 347,
+    "Global": "1",
+    "mapname": "kz_free_ahful",
+    "description": "No description available.",
+    "Avg_maptime_pro": "NA",
+    "Avg_maptime_tp": "NA",
+    "filesize": 19513236,
+    "difficulty_id": 4,
+    "workshop_id": " "
+  },
+  {
+    "id": 348,
     "Global": "1",
     "mapname": "kz_frozen_go",
     "description": "No description available.",
@@ -1441,7 +1672,7 @@
     "workshop_id": 156066122
   },
   {
-    "id": 378,
+    "id": 349,
     "Global": "1",
     "mapname": "kz_futureblock",
     "description": "No description available.",
@@ -1452,7 +1683,7 @@
     "workshop_id": 320897168
   },
   {
-    "id": 379,
+    "id": 350,
     "Global": "1",
     "mapname": "kz_galaxy_go2",
     "description": "No description available.",
@@ -1463,7 +1694,7 @@
     "workshop_id": 156066234
   },
   {
-    "id": 381,
+    "id": 351,
     "Global": "1",
     "mapname": "kz_genesis_go2",
     "description": "No description available.",
@@ -1474,7 +1705,7 @@
     "workshop_id": 491406427
   },
   {
-    "id": 382,
+    "id": 352,
     "Global": "1",
     "mapname": "kz_gfy_blueberry",
     "description": "No description available.",
@@ -1485,7 +1716,7 @@
     "workshop_id": 336069751
   },
   {
-    "id": 383,
+    "id": 353,
     "Global": "1",
     "mapname": "kz_gfy_c0mb0king",
     "description": "No description available.",
@@ -1496,7 +1727,7 @@
     "workshop_id": 352458126
   },
   {
-    "id": 384,
+    "id": 354,
     "Global": "1",
     "mapname": "kz_gfy_devcastle",
     "description": "No description available.",
@@ -1507,7 +1738,7 @@
     "workshop_id": 399926903
   },
   {
-    "id": 385,
+    "id": 355,
     "Global": "1",
     "mapname": "kz_gfy_final",
     "description": "No description available.",
@@ -1518,7 +1749,7 @@
     "workshop_id": 438483912
   },
   {
-    "id": 386,
+    "id": 356,
     "Global": "1",
     "mapname": "kz_gfy_fortroca_finallll",
     "description": "No description available.",
@@ -1529,7 +1760,7 @@
     "workshop_id": 352459359
   },
   {
-    "id": 387,
+    "id": 357,
     "Global": "1",
     "mapname": "kz_gfy_limit",
     "description": "No description available.",
@@ -1540,7 +1771,18 @@
     "workshop_id": 441312733
   },
   {
-    "id": 389,
+    "id": 358,
+    "Global": "1",
+    "mapname": "kz_gfy_strawberry_",
+    "description": "No description available.",
+    "Avg_maptime_pro": "NA",
+    "Avg_maptime_tp": "NA",
+    "filesize": 5462276,
+    "difficulty_id": 5,
+    "workshop_id": " "
+  },
+  {
+    "id": 359,
     "Global": "1",
     "mapname": "kz_gfy_tech",
     "description": "No description available.",
@@ -1551,7 +1793,18 @@
     "workshop_id": 409983599
   },
   {
-    "id": 390,
+    "id": 360,
+    "Global": "1",
+    "mapname": "kz_ggurk",
+    "description": "No description available.",
+    "Avg_maptime_pro": "NA",
+    "Avg_maptime_tp": "NA",
+    "filesize": 33925736,
+    "difficulty_id": 2,
+    "workshop_id": " "
+  },
+  {
+    "id": 361,
     "Global": "1",
     "mapname": "kz_giantbean",
     "description": "No description available.",
@@ -1562,7 +1815,7 @@
     "workshop_id": 156066438
   },
   {
-    "id": 391,
+    "id": 362,
     "Global": "1",
     "mapname": "kz_gigablock_go",
     "description": "No description available.",
@@ -1573,7 +1826,7 @@
     "workshop_id": 219883470
   },
   {
-    "id": 392,
+    "id": 363,
     "Global": "1",
     "mapname": "kz_gitgud_final",
     "description": "No description available.",
@@ -1584,7 +1837,7 @@
     "workshop_id": 370366679
   },
   {
-    "id": 393,
+    "id": 364,
     "Global": "1",
     "mapname": "kz_glassesospa_v1",
     "description": "No description available.",
@@ -1595,7 +1848,7 @@
     "workshop_id": 212501969
   },
   {
-    "id": 394,
+    "id": 365,
     "Global": "1",
     "mapname": "kz_goldenroad",
     "description": "No description available.",
@@ -1606,7 +1859,7 @@
     "workshop_id": 227198727
   },
   {
-    "id": 395,
+    "id": 366,
     "Global": "1",
     "mapname": "kz_gonbe",
     "description": "No description available.",
@@ -1617,7 +1870,7 @@
     "workshop_id": 388981512
   },
   {
-    "id": 396,
+    "id": 367,
     "Global": "1",
     "mapname": "kz_goodluck_p",
     "description": "No description available.",
@@ -1628,7 +1881,7 @@
     "workshop_id": 315108801
   },
   {
-    "id": 398,
+    "id": 368,
     "Global": "1",
     "mapname": "kz_grass_hard",
     "description": "No description available.",
@@ -1639,7 +1892,7 @@
     "workshop_id": 491359087
   },
   {
-    "id": 399,
+    "id": 369,
     "Global": "1",
     "mapname": "kz_green",
     "description": "No description available.",
@@ -1650,18 +1903,7 @@
     "workshop_id": 425209295
   },
   {
-    "id": 401,
-    "Global": "1",
-    "mapname": "kz_gurk",
-    "description": "No description available.",
-    "Avg_maptime_pro": 71.3010101089934,
-    "Avg_maptime_tp": 105.692223675842,
-    "filesize": 17888532,
-    "difficulty_id": 2,
-    "workshop_id": 422192410
-  },
-  {
-    "id": 402,
+    "id": 370,
     "Global": "1",
     "mapname": "kz_gy_agitation",
     "description": "No description available.",
@@ -1672,7 +1914,7 @@
     "workshop_id": 444123619
   },
   {
-    "id": 403,
+    "id": 371,
     "Global": "1",
     "mapname": "kz_haki_v2",
     "description": "No description available.",
@@ -1683,7 +1925,18 @@
     "workshop_id": 156066638
   },
   {
-    "id": 405,
+    "id": 372,
+    "Global": "1",
+    "mapname": "kz_hate",
+    "description": "No description available.",
+    "Avg_maptime_pro": "NA",
+    "Avg_maptime_tp": "NA",
+    "filesize": 3620584,
+    "difficulty_id": 0,
+    "workshop_id": " "
+  },
+  {
+    "id": 373,
     "Global": "1",
     "mapname": "kz_heatvents_mq",
     "description": "No description available.",
@@ -1694,7 +1947,7 @@
     "workshop_id": 459351652
   },
   {
-    "id": 406,
+    "id": 374,
     "Global": "1",
     "mapname": "kz_hellinashop",
     "description": "No description available.",
@@ -1705,7 +1958,7 @@
     "workshop_id": 515649978
   },
   {
-    "id": 407,
+    "id": 375,
     "Global": "1",
     "mapname": "kz_highland",
     "description": "No description available.",
@@ -1716,7 +1969,7 @@
     "workshop_id": 656212893
   },
   {
-    "id": 408,
+    "id": 376,
     "Global": "1",
     "mapname": "kz_high_tech",
     "description": "No description available.",
@@ -1727,7 +1980,7 @@
     "workshop_id": 714387970
   },
   {
-    "id": 410,
+    "id": 377,
     "Global": "1",
     "mapname": "kz_hillside",
     "description": "No description available.",
@@ -1738,7 +1991,18 @@
     "workshop_id": 414544226
   },
   {
-    "id": 413,
+    "id": 378,
+    "Global": "1",
+    "mapname": "kz_ickkck",
+    "description": "No description available.",
+    "Avg_maptime_pro": "NA",
+    "Avg_maptime_tp": "NA",
+    "filesize": 38795160,
+    "difficulty_id": 3,
+    "workshop_id": " "
+  },
+  {
+    "id": 379,
     "Global": "1",
     "mapname": "kz_illusion",
     "description": "No description available.",
@@ -1749,7 +2013,7 @@
     "workshop_id": 661556681
   },
   {
-    "id": 414,
+    "id": 380,
     "Global": "1",
     "mapname": "kz_iluvprok_global",
     "description": "No description available.",
@@ -1760,7 +2024,7 @@
     "workshop_id": 406053852
   },
   {
-    "id": 415,
+    "id": 381,
     "Global": "1",
     "mapname": "kz_imaginary_final",
     "description": "No description available.",
@@ -1771,7 +2035,18 @@
     "workshop_id": 843659203
   },
   {
-    "id": 416,
+    "id": 382,
+    "Global": "1",
+    "mapname": "kz_innit",
+    "description": "No description available.",
+    "Avg_maptime_pro": "NA",
+    "Avg_maptime_tp": "NA",
+    "filesize": 4881732,
+    "difficulty_id": 0,
+    "workshop_id": " "
+  },
+  {
+    "id": 383,
     "Global": "1",
     "mapname": "kz_insomnia_fix",
     "description": "No description available.",
@@ -1782,7 +2057,7 @@
     "workshop_id": 594168198
   },
   {
-    "id": 417,
+    "id": 384,
     "Global": "1",
     "mapname": "kz_inspired",
     "description": "No description available.",
@@ -1793,7 +2068,7 @@
     "workshop_id": 370117755
   },
   {
-    "id": 418,
+    "id": 385,
     "Global": "1",
     "mapname": "kz_internatus",
     "description": "No description available.",
@@ -1804,7 +2079,7 @@
     "workshop_id": 551443219
   },
   {
-    "id": 420,
+    "id": 386,
     "Global": "1",
     "mapname": "kz_island",
     "description": "No description available.",
@@ -1815,7 +2090,7 @@
     "workshop_id": 357579568
   },
   {
-    "id": 422,
+    "id": 387,
     "Global": "1",
     "mapname": "kz_j2s_cupblock_go_fix2",
     "description": "No description available.",
@@ -1826,7 +2101,7 @@
     "workshop_id": 156908740
   },
   {
-    "id": 423,
+    "id": 388,
     "Global": "1",
     "mapname": "kz_j2s_tetris_go",
     "description": "No description available.",
@@ -1837,7 +2112,7 @@
     "workshop_id": 279998195
   },
   {
-    "id": 424,
+    "id": 389,
     "Global": "1",
     "mapname": "kz_j2s_westbl0ck",
     "description": "No description available.",
@@ -1848,7 +2123,7 @@
     "workshop_id": 625392149
   },
   {
-    "id": 425,
+    "id": 390,
     "Global": "1",
     "mapname": "kz_janpu_final_fix",
     "description": "No description available.",
@@ -1859,7 +2134,7 @@
     "workshop_id": 357085110
   },
   {
-    "id": 426,
+    "id": 391,
     "Global": "1",
     "mapname": "kz_jg_ditch",
     "description": "No description available.",
@@ -1870,7 +2145,7 @@
     "workshop_id": 459365356
   },
   {
-    "id": 428,
+    "id": 392,
     "Global": "1",
     "mapname": "kz_jump_n_run",
     "description": "No description available.",
@@ -1881,7 +2156,7 @@
     "workshop_id": 629040765
   },
   {
-    "id": 430,
+    "id": 393,
     "Global": "1",
     "mapname": "kz_kingsbay_v2",
     "description": "No description available.",
@@ -1892,7 +2167,7 @@
     "workshop_id": 653576717
   },
   {
-    "id": 431,
+    "id": 394,
     "Global": "1",
     "mapname": "kz_kzinga_fixed",
     "description": "No description available.",
@@ -1903,7 +2178,7 @@
     "workshop_id": 455178914
   },
   {
-    "id": 432,
+    "id": 395,
     "Global": "1",
     "mapname": "kz_kzse_aztectemple",
     "description": "No description available.",
@@ -1914,7 +2189,7 @@
     "workshop_id": 302894093
   },
   {
-    "id": 434,
+    "id": 396,
     "Global": "1",
     "mapname": "kz_lavablock_global",
     "description": "No description available.",
@@ -1925,7 +2200,7 @@
     "workshop_id": 406054554
   },
   {
-    "id": 435,
+    "id": 397,
     "Global": "1",
     "mapname": "kz_lego",
     "description": "No description available.",
@@ -1936,7 +2211,7 @@
     "workshop_id": 351298054
   },
   {
-    "id": 437,
+    "id": 398,
     "Global": "1",
     "mapname": "kz_lego_two_redux_v3",
     "description": "No description available.",
@@ -1947,7 +2222,7 @@
     "workshop_id": 515550870
   },
   {
-    "id": 438,
+    "id": 399,
     "Global": "1",
     "mapname": "kz_levels",
     "description": "No description available.",
@@ -1958,7 +2233,18 @@
     "workshop_id": 635973918
   },
   {
-    "id": 441,
+    "id": 400,
+    "Global": "1",
+    "mapname": "kz_life_final",
+    "description": "No description available.",
+    "Avg_maptime_pro": "NA",
+    "Avg_maptime_tp": "NA",
+    "filesize": 150056328,
+    "difficulty_id": 3,
+    "workshop_id": " "
+  },
+  {
+    "id": 401,
     "Global": "1",
     "mapname": "kz_littlerock_v2",
     "description": "No description available.",
@@ -1969,7 +2255,18 @@
     "workshop_id": 156067138
   },
   {
-    "id": 447,
+    "id": 402,
+    "Global": "1",
+    "mapname": "kz_lost_marketplace_v1",
+    "description": "No description available.",
+    "Avg_maptime_pro": "NA",
+    "Avg_maptime_tp": "NA",
+    "filesize": 26285416,
+    "difficulty_id": 2,
+    "workshop_id": " "
+  },
+  {
+    "id": 403,
     "Global": "1",
     "mapname": "kz_lume",
     "description": "No description available.",
@@ -1980,7 +2277,18 @@
     "workshop_id": 717341154
   },
   {
-    "id": 449,
+    "id": 404,
+    "Global": "1",
+    "mapname": "kz_luonto",
+    "description": "No description available.",
+    "Avg_maptime_pro": "NA",
+    "Avg_maptime_tp": "NA",
+    "filesize": 25291448,
+    "difficulty_id": 0,
+    "workshop_id": " "
+  },
+  {
+    "id": 405,
     "Global": "1",
     "mapname": "kz_mac",
     "description": "No description available.",
@@ -1991,7 +2299,7 @@
     "workshop_id": 336084898
   },
   {
-    "id": 450,
+    "id": 406,
     "Global": "1",
     "mapname": "kz_magus",
     "description": "No description available.",
@@ -2002,7 +2310,18 @@
     "workshop_id": 401088222
   },
   {
-    "id": 452,
+    "id": 407,
+    "Global": "1",
+    "mapname": "kz_man_everest_go_fix",
+    "description": "No description available.",
+    "Avg_maptime_pro": "NA",
+    "Avg_maptime_tp": "NA",
+    "filesize": 11577340,
+    "difficulty_id": 2,
+    "workshop_id": " "
+  },
+  {
+    "id": 408,
     "Global": "1",
     "mapname": "kz_marblewalls_fixed",
     "description": "No description available.",
@@ -2013,7 +2332,40 @@
     "workshop_id": 391298485
   },
   {
-    "id": 456,
+    "id": 409,
+    "Global": "1",
+    "mapname": "kz_matilda_v2",
+    "description": "No description available.",
+    "Avg_maptime_pro": "NA",
+    "Avg_maptime_tp": "NA",
+    "filesize": "NA",
+    "difficulty_id": 3,
+    "workshop_id": " "
+  },
+  {
+    "id": 410,
+    "Global": "1",
+    "mapname": "kz_megabhop_ch",
+    "description": "No description available.",
+    "Avg_maptime_pro": "NA",
+    "Avg_maptime_tp": "NA",
+    "filesize": 5091704,
+    "difficulty_id": 2,
+    "workshop_id": " "
+  },
+  {
+    "id": 411,
+    "Global": "1",
+    "mapname": "kz_megalodon",
+    "description": "No description available.",
+    "Avg_maptime_pro": "NA",
+    "Avg_maptime_tp": "NA",
+    "filesize": 17028108,
+    "difficulty_id": 0,
+    "workshop_id": " "
+  },
+  {
+    "id": 412,
     "Global": "1",
     "mapname": "kz_metalrun_global",
     "description": "No description available.",
@@ -2024,7 +2376,7 @@
     "workshop_id": 406054781
   },
   {
-    "id": 457,
+    "id": 413,
     "Global": "1",
     "mapname": "kz_mike_v4",
     "description": "No description available.",
@@ -2035,7 +2387,18 @@
     "workshop_id": 352438024
   },
   {
-    "id": 462,
+    "id": 414,
+    "Global": "1",
+    "mapname": "kz_minimalism",
+    "description": "No description available.",
+    "Avg_maptime_pro": "NA",
+    "Avg_maptime_tp": "NA",
+    "filesize": 19717522,
+    "difficulty_id": 3,
+    "workshop_id": " "
+  },
+  {
+    "id": 415,
     "Global": "1",
     "mapname": "kz_minimountain",
     "description": "No description available.",
@@ -2046,7 +2409,7 @@
     "workshop_id": 868440732
   },
   {
-    "id": 464,
+    "id": 416,
     "Global": "1",
     "mapname": "kz_module",
     "description": "No description available.",
@@ -2057,7 +2420,7 @@
     "workshop_id": 531121171
   },
   {
-    "id": 465,
+    "id": 417,
     "Global": "1",
     "mapname": "kz_moonlight",
     "description": "No description available.",
@@ -2068,7 +2431,7 @@
     "workshop_id": 653958895
   },
   {
-    "id": 466,
+    "id": 418,
     "Global": "1",
     "mapname": "kz_morebricks_msq",
     "description": "No description available.",
@@ -2079,7 +2442,7 @@
     "workshop_id": 624692501
   },
   {
-    "id": 468,
+    "id": 419,
     "Global": "1",
     "mapname": "kz_msp_comatose",
     "description": "No description available.",
@@ -2090,7 +2453,7 @@
     "workshop_id": 418089472
   },
   {
-    "id": 470,
+    "id": 420,
     "Global": "1",
     "mapname": "kz_natureblock_go",
     "description": "No description available.",
@@ -2101,7 +2464,7 @@
     "workshop_id": 156067357
   },
   {
-    "id": 471,
+    "id": 421,
     "Global": "1",
     "mapname": "kz_nature_csgo",
     "description": "No description available.",
@@ -2112,7 +2475,7 @@
     "workshop_id": 406080089
   },
   {
-    "id": 472,
+    "id": 422,
     "Global": "1",
     "mapname": "kz_neon_portal",
     "description": "No description available.",
@@ -2123,7 +2486,7 @@
     "workshop_id": 427001332
   },
   {
-    "id": 474,
+    "id": 423,
     "Global": "1",
     "mapname": "kz_nightfall_fixed",
     "description": "No description available.",
@@ -2134,7 +2497,7 @@
     "workshop_id": 451894224
   },
   {
-    "id": 475,
+    "id": 424,
     "Global": "1",
     "mapname": "kz_nightmare_v2",
     "description": "No description available.",
@@ -2145,7 +2508,7 @@
     "workshop_id": 386548794
   },
   {
-    "id": 477,
+    "id": 425,
     "Global": "1",
     "mapname": "kz_nyc_v1",
     "description": "No description available.",
@@ -2156,7 +2519,7 @@
     "workshop_id": 498308628
   },
   {
-    "id": 478,
+    "id": 426,
     "Global": "1",
     "mapname": "kz_oasis",
     "description": "No description available.",
@@ -2167,7 +2530,7 @@
     "workshop_id": 650371940
   },
   {
-    "id": 480,
+    "id": 427,
     "Global": "1",
     "mapname": "kz_obsidian",
     "description": "No description available.",
@@ -2178,7 +2541,29 @@
     "workshop_id": 418449564
   },
   {
-    "id": 482,
+    "id": 428,
+    "Global": "1",
+    "mapname": "kz_oldstuff",
+    "description": "No description available.",
+    "Avg_maptime_pro": "NA",
+    "Avg_maptime_tp": "NA",
+    "filesize": 29801164,
+    "difficulty_id": 2,
+    "workshop_id": " "
+  },
+  {
+    "id": 429,
+    "Global": "1",
+    "mapname": "kz_olympus",
+    "description": "No description available.",
+    "Avg_maptime_pro": "NA",
+    "Avg_maptime_tp": "NA",
+    "filesize": 22855608,
+    "difficulty_id": 2,
+    "workshop_id": " "
+  },
+  {
+    "id": 430,
     "Global": "1",
     "mapname": "kz_ominous2",
     "description": "No description available.",
@@ -2189,7 +2574,7 @@
     "workshop_id": 782868988
   },
   {
-    "id": 484,
+    "id": 431,
     "Global": "1",
     "mapname": "kz_orangejuice_v2",
     "description": "No description available.",
@@ -2200,7 +2585,7 @@
     "workshop_id": 813837226
   },
   {
-    "id": 485,
+    "id": 432,
     "Global": "1",
     "mapname": "kz_orbolution_v2",
     "description": "No description available.",
@@ -2211,7 +2596,18 @@
     "workshop_id": 644224500
   },
   {
-    "id": 489,
+    "id": 433,
+    "Global": "1",
+    "mapname": "kz_overgrowth",
+    "description": "No description available.",
+    "Avg_maptime_pro": "NA",
+    "Avg_maptime_tp": "NA",
+    "filesize": 38363532,
+    "difficulty_id": 3,
+    "workshop_id": " "
+  },
+  {
+    "id": 434,
     "Global": "1",
     "mapname": "kz_pantheism_p02",
     "description": "No description available.",
@@ -2222,7 +2618,7 @@
     "workshop_id": 519500089
   },
   {
-    "id": 490,
+    "id": 435,
     "Global": "1",
     "mapname": "kz_paradise",
     "description": "No description available.",
@@ -2233,7 +2629,7 @@
     "workshop_id": 636580309
   },
   {
-    "id": 491,
+    "id": 436,
     "Global": "1",
     "mapname": "kz_peak_global",
     "description": "No description available.",
@@ -2244,7 +2640,7 @@
     "workshop_id": 419054557
   },
   {
-    "id": 492,
+    "id": 437,
     "Global": "1",
     "mapname": "kz_phamous",
     "description": "No description available.",
@@ -2255,7 +2651,7 @@
     "workshop_id": 404322417
   },
   {
-    "id": 493,
+    "id": 438,
     "Global": "1",
     "mapname": "kz_pharaoh_csgo",
     "description": "No description available.",
@@ -2266,7 +2662,7 @@
     "workshop_id": 377402121
   },
   {
-    "id": 494,
+    "id": 439,
     "Global": "1",
     "mapname": "kz_phaztec",
     "description": "No description available.",
@@ -2277,7 +2673,7 @@
     "workshop_id": 399418936
   },
   {
-    "id": 495,
+    "id": 440,
     "Global": "1",
     "mapname": "kz_pianoclimb_go",
     "description": "No description available.",
@@ -2288,7 +2684,7 @@
     "workshop_id": 230274161
   },
   {
-    "id": 496,
+    "id": 441,
     "Global": "1",
     "mapname": "kz_pineforest_v2",
     "description": "No description available.",
@@ -2299,7 +2695,62 @@
     "workshop_id": 778556068
   },
   {
-    "id": 501,
+    "id": 442,
+    "Global": "1",
+    "mapname": "kz_piranha",
+    "description": "No description available.",
+    "Avg_maptime_pro": "NA",
+    "Avg_maptime_tp": "NA",
+    "filesize": 3252136,
+    "difficulty_id": 0,
+    "workshop_id": " "
+  },
+  {
+    "id": 443,
+    "Global": "1",
+    "mapname": "kz_pixelrun_v2",
+    "description": "No description available.",
+    "Avg_maptime_pro": "NA",
+    "Avg_maptime_tp": "NA",
+    "filesize": 9797920,
+    "difficulty_id": 3,
+    "workshop_id": " "
+  },
+  {
+    "id": 444,
+    "Global": "1",
+    "mapname": "kz_plains",
+    "description": "No description available.",
+    "Avg_maptime_pro": "NA",
+    "Avg_maptime_tp": "NA",
+    "filesize": 8160620,
+    "difficulty_id": 0,
+    "workshop_id": " "
+  },
+  {
+    "id": 445,
+    "Global": "1",
+    "mapname": "kz_pollution",
+    "description": "No description available.",
+    "Avg_maptime_pro": "NA",
+    "Avg_maptime_tp": "NA",
+    "filesize": 35616872,
+    "difficulty_id": 3,
+    "workshop_id": " "
+  },
+  {
+    "id": 446,
+    "Global": "1",
+    "mapname": "kz_prima",
+    "description": "No description available.",
+    "Avg_maptime_pro": "NA",
+    "Avg_maptime_tp": "NA",
+    "filesize": 14195244,
+    "difficulty_id": 0,
+    "workshop_id": " "
+  },
+  {
+    "id": 447,
     "Global": "1",
     "mapname": "kz_prismus",
     "description": "No description available.",
@@ -2310,7 +2761,7 @@
     "workshop_id": 406080437
   },
   {
-    "id": 502,
+    "id": 448,
     "Global": "1",
     "mapname": "kz_project",
     "description": "No description available.",
@@ -2321,7 +2772,7 @@
     "workshop_id": 656536301
   },
   {
-    "id": 504,
+    "id": 449,
     "Global": "1",
     "mapname": "kz_psytime_go",
     "description": "No description available.",
@@ -2332,7 +2783,7 @@
     "workshop_id": 623887144
   },
   {
-    "id": 505,
+    "id": 450,
     "Global": "1",
     "mapname": "kz_quadrablock",
     "description": "No description available.",
@@ -2343,7 +2794,7 @@
     "workshop_id": 156068013
   },
   {
-    "id": 506,
+    "id": 451,
     "Global": "1",
     "mapname": "kz_quadrant",
     "description": "No description available.",
@@ -2354,7 +2805,7 @@
     "workshop_id": 406399306
   },
   {
-    "id": 508,
+    "id": 452,
     "Global": "1",
     "mapname": "kz_quick7_v2",
     "description": "No description available.",
@@ -2365,7 +2816,7 @@
     "workshop_id": 562956061
   },
   {
-    "id": 509,
+    "id": 453,
     "Global": "1",
     "mapname": "kz_quickshot",
     "description": "No description available.",
@@ -2376,7 +2827,7 @@
     "workshop_id": 437195052
   },
   {
-    "id": 510,
+    "id": 454,
     "Global": "1",
     "mapname": "kz_quixotic",
     "description": "No description available.",
@@ -2387,7 +2838,7 @@
     "workshop_id": 596600491
   },
   {
-    "id": 511,
+    "id": 455,
     "Global": "1",
     "mapname": "kz_railings",
     "description": "No description available.",
@@ -2398,7 +2849,7 @@
     "workshop_id": 301219724
   },
   {
-    "id": 513,
+    "id": 456,
     "Global": "1",
     "mapname": "kz_rainrun_kn_f",
     "description": "No description available.",
@@ -2409,7 +2860,29 @@
     "workshop_id": 509126081
   },
   {
-    "id": 514,
+    "id": 457,
+    "Global": "1",
+    "mapname": "kz_rcn_impermanence",
+    "description": "No description available.",
+    "Avg_maptime_pro": "NA",
+    "Avg_maptime_tp": "NA",
+    "filesize": 11392352,
+    "difficulty_id": 0,
+    "workshop_id": " "
+  },
+  {
+    "id": 458,
+    "Global": "1",
+    "mapname": "kz_rcn_optimisery",
+    "description": "No description available.",
+    "Avg_maptime_pro": "NA",
+    "Avg_maptime_tp": "NA",
+    "filesize": 24871724,
+    "difficulty_id": 0,
+    "workshop_id": " "
+  },
+  {
+    "id": 459,
     "Global": "1",
     "mapname": "kz_reach_v2",
     "description": "No description available.",
@@ -2420,7 +2893,7 @@
     "workshop_id": 421596934
   },
   {
-    "id": 515,
+    "id": 460,
     "Global": "1",
     "mapname": "kz_redemption_csgo",
     "description": "No description available.",
@@ -2431,7 +2904,7 @@
     "workshop_id": 269756340
   },
   {
-    "id": 516,
+    "id": 461,
     "Global": "1",
     "mapname": "kz_redline",
     "description": "No description available.",
@@ -2442,7 +2915,7 @@
     "workshop_id": 366676291
   },
   {
-    "id": 517,
+    "id": 462,
     "Global": "1",
     "mapname": "kz_remedy_v2",
     "description": "No description available.",
@@ -2453,7 +2926,7 @@
     "workshop_id": 458847658
   },
   {
-    "id": 518,
+    "id": 463,
     "Global": "1",
     "mapname": "kz_retribution_v2_final",
     "description": "No description available.",
@@ -2464,7 +2937,7 @@
     "workshop_id": 535037159
   },
   {
-    "id": 519,
+    "id": 464,
     "Global": "1",
     "mapname": "kz_return",
     "description": "No description available.",
@@ -2475,7 +2948,7 @@
     "workshop_id": 610279618
   },
   {
-    "id": 521,
+    "id": 465,
     "Global": "1",
     "mapname": "kz_rockclimb",
     "description": "No description available.",
@@ -2486,7 +2959,7 @@
     "workshop_id": 294354248
   },
   {
-    "id": 523,
+    "id": 466,
     "Global": "1",
     "mapname": "kz_rockjungle_v2",
     "description": "No description available.",
@@ -2497,7 +2970,7 @@
     "workshop_id": 706798826
   },
   {
-    "id": 524,
+    "id": 467,
     "Global": "1",
     "mapname": "kz_rocks_global",
     "description": "No description available.",
@@ -2508,7 +2981,7 @@
     "workshop_id": 684748407
   },
   {
-    "id": 525,
+    "id": 468,
     "Global": "1",
     "mapname": "kz_sanctuary",
     "description": "No description available.",
@@ -2519,7 +2992,7 @@
     "workshop_id": 387095066
   },
   {
-    "id": 526,
+    "id": 469,
     "Global": "1",
     "mapname": "kz_sandstone_mq",
     "description": "No description available.",
@@ -2530,7 +3003,18 @@
     "workshop_id": 318255698
   },
   {
-    "id": 528,
+    "id": 470,
+    "Global": "1",
+    "mapname": "kz_sandstorm_ez",
+    "description": "No description available.",
+    "Avg_maptime_pro": "NA",
+    "Avg_maptime_tp": "NA",
+    "filesize": 75379383,
+    "difficulty_id": 3,
+    "workshop_id": " "
+  },
+  {
+    "id": 471,
     "Global": "1",
     "mapname": "kz_sandyhill_hoc",
     "description": "No description available.",
@@ -2541,7 +3025,7 @@
     "workshop_id": 156068273
   },
   {
-    "id": 530,
+    "id": 472,
     "Global": "1",
     "mapname": "kz_sendhelp_final",
     "description": "No description available.",
@@ -2552,7 +3036,7 @@
     "workshop_id": 414276208
   },
   {
-    "id": 531,
+    "id": 473,
     "Global": "1",
     "mapname": "kz_serenity",
     "description": "No description available.",
@@ -2563,7 +3047,7 @@
     "workshop_id": 564068433
   },
   {
-    "id": 532,
+    "id": 474,
     "Global": "1",
     "mapname": "kz_shark",
     "description": "No description available.",
@@ -2574,7 +3058,7 @@
     "workshop_id": 770686793
   },
   {
-    "id": 533,
+    "id": 475,
     "Global": "1",
     "mapname": "kz_signs_v2",
     "description": "No description available.",
@@ -2585,7 +3069,7 @@
     "workshop_id": 570362293
   },
   {
-    "id": 534,
+    "id": 476,
     "Global": "1",
     "mapname": "kz_simplicity_v2",
     "description": "No description available.",
@@ -2596,7 +3080,7 @@
     "workshop_id": 596881274
   },
   {
-    "id": 535,
+    "id": 477,
     "Global": "1",
     "mapname": "kz_skyhotel",
     "description": "No description available.",
@@ -2607,7 +3091,7 @@
     "workshop_id": 508852626
   },
   {
-    "id": 536,
+    "id": 478,
     "Global": "1",
     "mapname": "kz_skytower_final",
     "description": "No description available.",
@@ -2618,7 +3102,18 @@
     "workshop_id": 605347241
   },
   {
-    "id": 538,
+    "id": 479,
+    "Global": "1",
+    "mapname": "kz_slate",
+    "description": "No description available.",
+    "Avg_maptime_pro": "NA",
+    "Avg_maptime_tp": "NA",
+    "filesize": 30393360,
+    "difficulty_id": 2,
+    "workshop_id": " "
+  },
+  {
+    "id": 480,
     "Global": "1",
     "mapname": "kz_snowman_v2",
     "description": "No description available.",
@@ -2629,7 +3124,7 @@
     "workshop_id": 337956674
   },
   {
-    "id": 540,
+    "id": 481,
     "Global": "1",
     "mapname": "kz_solidarity_v2",
     "description": "No description available.",
@@ -2640,7 +3135,7 @@
     "workshop_id": 580922647
   },
   {
-    "id": 543,
+    "id": 482,
     "Global": "1",
     "mapname": "kz_spacus",
     "description": "No description available.",
@@ -2651,7 +3146,7 @@
     "workshop_id": 522846216
   },
   {
-    "id": 544,
+    "id": 483,
     "Global": "1",
     "mapname": "kz_spiritblockv2",
     "description": "No description available.",
@@ -2662,7 +3157,18 @@
     "workshop_id": 156068550
   },
   {
-    "id": 545,
+    "id": 484,
+    "Global": "1",
+    "mapname": "kz_spores_go",
+    "description": "No description available.",
+    "Avg_maptime_pro": "NA",
+    "Avg_maptime_tp": "NA",
+    "filesize": 26353596,
+    "difficulty_id": 2,
+    "workshop_id": " "
+  },
+  {
+    "id": 485,
     "Global": "1",
     "mapname": "kz_sqrdsucks",
     "description": "No description available.",
@@ -2673,7 +3179,18 @@
     "workshop_id": 870091342
   },
   {
-    "id": 548,
+    "id": 486,
+    "Global": "1",
+    "mapname": "kz_strafehop_fix",
+    "description": "No description available.",
+    "Avg_maptime_pro": "NA",
+    "Avg_maptime_tp": "NA",
+    "filesize": 64087176,
+    "difficulty_id": 5,
+    "workshop_id": " "
+  },
+  {
+    "id": 487,
     "Global": "1",
     "mapname": "kz_stranded",
     "description": "No description available.",
@@ -2684,7 +3201,7 @@
     "workshop_id": 881021394
   },
   {
-    "id": 549,
+    "id": 488,
     "Global": "1",
     "mapname": "kz_streetblock_go",
     "description": "No description available.",
@@ -2695,7 +3212,7 @@
     "workshop_id": 340164148
   },
   {
-    "id": 551,
+    "id": 489,
     "Global": "1",
     "mapname": "kz_strun_mq",
     "description": "No description available.",
@@ -2706,7 +3223,7 @@
     "workshop_id": 522194087
   },
   {
-    "id": 552,
+    "id": 490,
     "Global": "1",
     "mapname": "kz_stuff_final",
     "description": "No description available.",
@@ -2717,7 +3234,7 @@
     "workshop_id": 397542914
   },
   {
-    "id": 554,
+    "id": 491,
     "Global": "1",
     "mapname": "kz_sukblock_v2_fixed",
     "description": "No description available.",
@@ -2728,7 +3245,7 @@
     "workshop_id": 511719435
   },
   {
-    "id": 555,
+    "id": 492,
     "Global": "1",
     "mapname": "kz_summercliff2_go",
     "description": "No description available.",
@@ -2739,7 +3256,7 @@
     "workshop_id": 201718436
   },
   {
-    "id": 556,
+    "id": 493,
     "Global": "1",
     "mapname": "kz_sunset_od",
     "description": "No description available.",
@@ -2750,7 +3267,7 @@
     "workshop_id": 645013164
   },
   {
-    "id": 559,
+    "id": 494,
     "Global": "1",
     "mapname": "kz_surf_kim_hana_gl",
     "description": "No description available.",
@@ -2761,7 +3278,18 @@
     "workshop_id": 846934364
   },
   {
-    "id": 560,
+    "id": 495,
+    "Global": "1",
+    "mapname": "kz_swamped_v3",
+    "description": "No description available.",
+    "Avg_maptime_pro": "NA",
+    "Avg_maptime_tp": "NA",
+    "filesize": 71968808,
+    "difficulty_id": 4,
+    "workshop_id": " "
+  },
+  {
+    "id": 496,
     "Global": "1",
     "mapname": "kz_symbiosis_final",
     "description": "No description available.",
@@ -2772,7 +3300,7 @@
     "workshop_id": 407752167
   },
   {
-    "id": 561,
+    "id": 497,
     "Global": "1",
     "mapname": "kz_synthesis_v2",
     "description": "No description available.",
@@ -2783,7 +3311,18 @@
     "workshop_id": 524273901
   },
   {
-    "id": 562,
+    "id": 498,
+    "Global": "1",
+    "mapname": "kz_sz_goldenbean",
+    "description": "No description available.",
+    "Avg_maptime_pro": "NA",
+    "Avg_maptime_tp": "NA",
+    "filesize": 138280380,
+    "difficulty_id": 3,
+    "workshop_id": " "
+  },
+  {
+    "id": 499,
     "Global": "1",
     "mapname": "kz_sz_halicarnassus",
     "description": "No description available.",
@@ -2794,7 +3333,7 @@
     "workshop_id": 278483104
   },
   {
-    "id": 563,
+    "id": 500,
     "Global": "1",
     "mapname": "kz_talltreeforest_v3",
     "description": "No description available.",
@@ -2805,7 +3344,7 @@
     "workshop_id": 353767057
   },
   {
-    "id": 564,
+    "id": 501,
     "Global": "1",
     "mapname": "kz_talmaniac",
     "description": "No description available.",
@@ -2816,7 +3355,7 @@
     "workshop_id": 875664112
   },
   {
-    "id": 566,
+    "id": 502,
     "Global": "1",
     "mapname": "kz_terablock",
     "description": "No description available.",
@@ -2827,7 +3366,29 @@
     "workshop_id": 269563440
   },
   {
-    "id": 571,
+    "id": 503,
+    "Global": "1",
+    "mapname": "kz_timescape_zero",
+    "description": "No description available.",
+    "Avg_maptime_pro": "NA",
+    "Avg_maptime_tp": "NA",
+    "filesize": 59156792,
+    "difficulty_id": 3,
+    "workshop_id": " "
+  },
+  {
+    "id": 504,
+    "Global": "1",
+    "mapname": "kz_tomb_fix",
+    "description": "No description available.",
+    "Avg_maptime_pro": "NA",
+    "Avg_maptime_tp": "NA",
+    "filesize": 10626332,
+    "difficulty_id": 2,
+    "workshop_id": " "
+  },
+  {
+    "id": 505,
     "Global": "1",
     "mapname": "kz_toonadventure_go",
     "description": "No description available.",
@@ -2838,7 +3399,7 @@
     "workshop_id": 156068846
   },
   {
-    "id": 576,
+    "id": 506,
     "Global": "1",
     "mapname": "kz_toonrun_final",
     "description": "No description available.",
@@ -2849,7 +3410,7 @@
     "workshop_id": 375234842
   },
   {
-    "id": 577,
+    "id": 507,
     "Global": "1",
     "mapname": "kz_toughluck_v2",
     "description": "No description available.",
@@ -2860,7 +3421,7 @@
     "workshop_id": 418445797
   },
   {
-    "id": 578,
+    "id": 508,
     "Global": "1",
     "mapname": "kz_tour_de_nuke_global",
     "description": "No description available.",
@@ -2871,7 +3432,7 @@
     "workshop_id": 406055304
   },
   {
-    "id": 579,
+    "id": 509,
     "Global": "1",
     "mapname": "kz_tradeblock_go",
     "description": "No description available.",
@@ -2882,7 +3443,7 @@
     "workshop_id": 352763435
   },
   {
-    "id": 582,
+    "id": 510,
     "Global": "1",
     "mapname": "kz_trashsurf",
     "description": "No description available.",
@@ -2893,7 +3454,18 @@
     "workshop_id": 419954977
   },
   {
-    "id": 589,
+    "id": 511,
+    "Global": "1",
+    "mapname": "kz_tribute",
+    "description": "No description available.",
+    "Avg_maptime_pro": "NA",
+    "Avg_maptime_tp": "NA",
+    "filesize": 26792772,
+    "difficulty_id": 3,
+    "workshop_id": " "
+  },
+  {
+    "id": 512,
     "Global": "1",
     "mapname": "kz_tron_global",
     "description": "No description available.",
@@ -2904,7 +3476,7 @@
     "workshop_id": 406055395
   },
   {
-    "id": 600,
+    "id": 513,
     "Global": "1",
     "mapname": "kz_unity_u01",
     "description": "No description available.",
@@ -2915,7 +3487,7 @@
     "workshop_id": 519498299
   },
   {
-    "id": 602,
+    "id": 514,
     "Global": "1",
     "mapname": "kz_vci_apprentice",
     "description": "No description available.",
@@ -2926,7 +3498,7 @@
     "workshop_id": 685276922
   },
   {
-    "id": 606,
+    "id": 515,
     "Global": "1",
     "mapname": "kz_verv3_gg",
     "description": "No description available.",
@@ -2937,7 +3509,7 @@
     "workshop_id": 568150287
   },
   {
-    "id": 612,
+    "id": 516,
     "Global": "1",
     "mapname": "kz_violet_fix",
     "description": "No description available.",
@@ -2948,7 +3520,7 @@
     "workshop_id": 603787190
   },
   {
-    "id": 613,
+    "id": 517,
     "Global": "1",
     "mapname": "kz_void",
     "description": "No description available.",
@@ -2959,8 +3531,8 @@
     "workshop_id": 789833143
   },
   {
-    "id": 614,
-    "Global": "1",
+    "id": 9999,
+    "Global": "0",
     "mapname": "kz_walpurgisnacht",
     "description": "No description available.",
     "Avg_maptime_pro": "NA",
@@ -2970,7 +3542,7 @@
     "workshop_id": 401750932
   },
   {
-    "id": 616,
+    "id": 518,
     "Global": "1",
     "mapname": "kz_warehouse",
     "description": "No description available.",
@@ -2981,7 +3553,7 @@
     "workshop_id": 288587982
   },
   {
-    "id": 630,
+    "id": 519,
     "Global": "1",
     "mapname": "kz_whatever_v2",
     "description": "No description available.",
@@ -2992,7 +3564,7 @@
     "workshop_id": 439146522
   },
   {
-    "id": 653,
+    "id": 520,
     "Global": "1",
     "mapname": "kz_woodstock_v2",
     "description": "No description available.",
@@ -3003,7 +3575,7 @@
     "workshop_id": 620160091
   },
   {
-    "id": 655,
+    "id": 521,
     "Global": "1",
     "mapname": "kz_woodstonegrass_final",
     "description": "No description available.",
@@ -3014,7 +3586,7 @@
     "workshop_id": 594369922
   },
   {
-    "id": 657,
+    "id": 522,
     "Global": "1",
     "mapname": "kz_woodworld",
     "description": "No description available.",
@@ -3025,7 +3597,7 @@
     "workshop_id": 306647639
   },
   {
-    "id": 658,
+    "id": 523,
     "Global": "1",
     "mapname": "kz_xand",
     "description": "No description available.",
@@ -3036,7 +3608,7 @@
     "workshop_id": 387908744
   },
   {
-    "id": 659,
+    "id": 524,
     "Global": "1",
     "mapname": "kz_xtremeblock_v2",
     "description": "No description available.",
@@ -3047,7 +3619,7 @@
     "workshop_id": 156069128
   },
   {
-    "id": 665,
+    "id": 525,
     "Global": "1",
     "mapname": "kz_za_tileblock",
     "description": "No description available.",
@@ -3058,7 +3630,7 @@
     "workshop_id": 406080925
   },
   {
-    "id": 668,
+    "id": 526,
     "Global": "1",
     "mapname": "kz_zhop_freestyle",
     "description": "No description available.",
@@ -3069,7 +3641,7 @@
     "workshop_id": 685863435
   },
   {
-    "id": 671,
+    "id": 527,
     "Global": "1",
     "mapname": "kz_zhop_function3",
     "description": "No description available.",
@@ -3080,7 +3652,7 @@
     "workshop_id": 606199162
   },
   {
-    "id": 673,
+    "id": 528,
     "Global": "1",
     "mapname": "kz_zhop_son_fix",
     "description": "No description available.",
@@ -3091,7 +3663,7 @@
     "workshop_id": 580178806
   },
   {
-    "id": 676,
+    "id": 529,
     "Global": "1",
     "mapname": "kz_ziggurath_final",
     "description": "No description available.",
@@ -3102,7 +3674,7 @@
     "workshop_id": 684097443
   },
   {
-    "id": 679,
+    "id": 530,
     "Global": "1",
     "mapname": "kz_zxp_final4",
     "description": "No description available.",
@@ -3113,7 +3685,7 @@
     "workshop_id": 632673660
   },
   {
-    "id": 681,
+    "id": 531,
     "Global": "1",
     "mapname": "kz_zxp_undia",
     "description": "No description available.",
@@ -3124,8 +3696,8 @@
     "workshop_id": 639874816
   },
   {
-    "id": 686,
-    "Global": "1",
+    "id": 9999,
+    "Global": "0",
     "mapname": "xc_dreamland_global",
     "description": "No description available.",
     "Avg_maptime_pro": 618.260074756763,
@@ -3135,8 +3707,8 @@
     "workshop_id": 406056102
   },
   {
-    "id": 689,
-    "Global": "1",
+    "id": 9999,
+    "Global": "0",
     "mapname": "xc_fox_shrine_japan_go2",
     "description": "No description available.",
     "Avg_maptime_pro": 1178.98670372596,
@@ -3146,7 +3718,7 @@
     "workshop_id": 491404731
   },
   {
-    "id": 690,
+    "id": 9999,
     "Global": "1",
     "mapname": "xc_karo4_global",
     "description": "No description available.",
@@ -3157,7 +3729,18 @@
     "workshop_id": 406056376
   },
   {
-    "id": 691,
+    "id": 532,
+    "Global": "1",
+    "mapname": "xc_karo4",
+    "description": "No description available.",
+    "Avg_maptime_pro": 542.144965277777,
+    "Avg_maptime_tp": 665.855570344002,
+    "filesize": 14673116,
+    "difficulty_id": 3,
+    "workshop_id": 406056376
+  },
+  {
+    "id": 533,
     "Global": "1",
     "mapname": "xc_lucid_global",
     "description": "No description available.",
@@ -3168,7 +3751,7 @@
     "workshop_id": 406056737
   },
   {
-    "id": 694,
+    "id": 534,
     "Global": "1",
     "mapname": "xc_minecraft2_global",
     "description": "No description available.",
@@ -3179,7 +3762,7 @@
     "workshop_id": 419053494
   },
   {
-    "id": 696,
+    "id": 535,
     "Global": "1",
     "mapname": "xc_minecraft3_global",
     "description": "No description available.",
@@ -3190,7 +3773,7 @@
     "workshop_id": 406057063
   },
   {
-    "id": 697,
+    "id": 536,
     "Global": "1",
     "mapname": "xc_nephilim",
     "description": "No description available.",
@@ -3201,7 +3784,7 @@
     "workshop_id": 320752458
   },
   {
-    "id": 699,
+    "id": 537,
     "Global": "1",
     "mapname": "xc_powerblock_rc1",
     "description": "No description available.",
@@ -3212,7 +3795,7 @@
     "workshop_id": 156206701
   },
   {
-    "id": 701,
+    "id": 538,
     "Global": "1",
     "mapname": "xc_secret_valley_global_fix",
     "description": "No description available.",
@@ -3223,7 +3806,7 @@
     "workshop_id": 451014834
   },
   {
-    "id": 703,
+    "id": 539,
     "Global": "1",
     "mapname": "xc_skycastle_go_b2",
     "description": "No description available.",
@@ -3234,7 +3817,7 @@
     "workshop_id": 344531966
   },
   {
-    "id": 704,
+    "id": 540,
     "Global": "1",
     "mapname": "xc_supermario_go",
     "description": "No description available.",
@@ -3245,7 +3828,7 @@
     "workshop_id": 406080817
   },
   {
-    "id": 708,
+    "id": 541,
     "Global": "1",
     "mapname": "xc_umbrella_global",
     "description": "No description available.",
