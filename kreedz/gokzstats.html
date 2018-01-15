@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>GOKZ Stats</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="A website for GOKZ Stats made to work with the CSGO Kreedz API - kztimerglobal.com" content="GOKZ Stats">
+  <meta name="Jacob Barrett" content="www.jacobwbarrett.com">
+  <link rel="icon" type="image/png" href="../Pictures/LogoSpace.png">
+  <link href="https://fonts.googleapis.com/css?family=Lalezar" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../css/gokz.css">
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-102102591-3"></script>
+  <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-102102591-3');
+  </script>
+
+</head>
+
+<body>
+  <div id="nav-leftside" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="fa fa-times" aria-hidden="true"></i></a>
+    <a href="../index.html">Home</a>
+    <a href="../index.html">Projects</a>
+    <a href="../index.html">Contact</a>
+  </div>
+
+
+  <div class="navbar">
+    <ul class="breadcrumbs">
+      <li><a href="../">HOME</a></li>
+      <li><a href="../">PROJECTS</a></li>
+      <li><a href="../">CONTACT</a></li>
+    </ul>
+  </div>
+
+  <div class="banner">
+    <div class="mobile-nav">
+      <i class="mobile-nav-icon fa fa-bars fa-2x" aria-hidden="true" onclick="openNav()"></i>
+      <img class="mobile-nav-logo" src="../Pictures/LogoSpace.png"></img>
+    </div>
+    <!--Page Title-->
+    <h1 class="title">GOKZ Stats</h1>
+  </div>
+
+  <div class="modes">
+    <button id="mode-kz_vanilla-desktop" class="btn">Vanilla</button>
+    <button id="mode-kz_simple-desktop" class="btn">SimpleKZ</button>
+    <button id="mode-kz_timer-desktop" class="btn">KZTimer</button>
+  </div>
+
+  <div id="searchBar">
+    <input contenteditable="true" type="search" id="searchMap" placeholder="Search by map"></input>
+  </div>
+
+  <div id="displayTimes">
+    <div id="recentTimes">
+      <h2 style="color: white;">RECENT TIMES</h2>
+    </div>
+
+    <div id="topTimes">
+      <h2 style="color: white;">WORLD RECORDS</h2>
+    </div>
+  </div>
+
+  <div id="displayMapTimes">
+    <div id="recentMapTimes">
+      <h2 style="color: white;">PRO TIMES</h2>
+      <div id="PROMapTimesAjax"></div>
+    </div>
+
+    <div id="topMapTimes">
+      <h2 style="color: white;">OVERALL TIMES</h2>
+      <div id="TPMapTimesAjax"></div>
+    </div>
+  </div>
+
+  <div id="pagination">
+    <ul>
+      <a id="previous">Prev</a>
+      <a id="next">Next</a>
+    </ul>
+  </div>
+
+  <script type="text/javascript" src="../js/gokz.js"></script>
+  <script type="text/javascript" src="../js/biginteger.js"></script>
+  <script type="text/javascript" src="../js/mobile.js"></script>
+
+
+</body>
+</html>
