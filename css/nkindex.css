@@ -1,0 +1,395 @@
+html, body {
+  background-color: #393E46;
+  height: 100%;
+  margin: 0;
+}
+
+.navbar {
+  display: none;
+}
+
+.title {
+  display: none;
+}
+
+.mobile-nav {
+  color: #DDDFD4;
+  height: 34px;
+  display: flex;
+}
+
+.mobile-nav-icon {
+  margin: auto;
+  z-index: 1;
+}
+
+.mobile-nav-logo {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  height: 36px;
+  width: auto;
+}
+
+.sidenav {
+  background-color: #222831;
+  height: 100%;
+  left: 0%;
+  overflow-x: hidden;
+  padding-top: 60px;
+  position: fixed;
+  transition: 0.5s;
+  width: 0%;
+  z-index: 3;
+}
+
+.sidenav a {
+  color: #E45051;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-family: 'Lalezar', cursive;
+  font-size: 35px;
+  text-decoration: none;
+}
+
+.sidenav .fa-times {
+  color: #DDDFD4;
+}
+
+.sidenav .closebtn {
+  font-size: 35px;
+  right: 20px;
+  margin: 6px;
+  padding: 0;
+  position: absolute;
+  top: 0;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner {
+  background-color: #222831;
+  height: 40px;
+  width: auto;
+  z-index: 5;
+  border-bottom: 4px #393E46 solid;
+  display: flex;
+  justify-content: flex-start;
+  padding: 3px 15px 3px 55px;
+}
+
+.header {
+  display:none;
+}
+
+/* ``````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````*/
+#body {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+
+#information {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border-top-right-radius: 25px;
+  border-top-left-radius: 25px;
+  background-color: #222831;
+  width: 95%;
+  max-width: 1300px;
+  height: auto;
+  min-height: 100%;
+}
+
+#personalInfo {
+  display: none;
+  flex-direction: column;
+  color: white;
+  font-family: 'Lalezar', cursive;
+  font-size: 14px;
+  text-align: center;
+  max-width: 1300px;
+  width: 90%;
+  padding-bottom: 26px;
+}
+
+#projects {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+#projects img {
+  padding: 5px;
+  border-radius: 7px;
+  width: 90%;
+  height: auto;
+}
+
+.WebImages {
+  text-align: center;
+  position: relative;
+  outline: none;
+  text-decoration: none;
+  border-bottom: 4px #E45051 dotted;
+  width: 95%;
+}
+.WebImages img {
+  z-index: 1;
+  filter: blur(2px);
+}
+.WebImages span {
+  z-index: 2;
+  outline: none;
+  text-decoration: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Rubik', sans-serif;
+  font-size: 30px;
+  background: #E45051;
+  border-radius: 4px;
+  color: black;
+  padding: 15px;
+}
+
+#contact {
+  padding: 26px;
+}
+
+.socialMedia a {
+  color: white;
+  text-decoration: none;
+}
+
+
+
+.description {
+  display: none;
+  min-width: 0;
+}
+/* ``````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````*/
+@media (min-width: 1000px) {
+
+  /* Navbar */
+  .navbar {
+    display: flex;
+    margin: 0;
+  }
+
+  ul.breadcrumbs {
+    /* This makes it so you cannot highlight the navbar */
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: -moz-none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    /* CSS */
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    margin: 0;
+    text-align: center;
+    font-family: 'Lalezar', cursive;
+    padding-top: 8px;
+    padding-left: 0px;
+    background-color: #222831;
+    list-style: none;
+    z-index: 2; /* This is used so that the navbar is above the title */
+    -webkit-animation: fadein 1s;
+    -moz-animation: fadein 1s;
+    -ms-animation: fadein 1s;
+    -o-animation: fadein 1s;
+    animation: fadein 1s;
+  }
+  ul.breadcrumbs li+li:before {
+    display: inline;
+    padding: 8px;
+    color: grey;
+    content: "/";
+  }
+  .navbar li {
+    display: inline;
+    text-align: center;
+    background-color: #222831;
+    color: #EEE;
+  }
+  .navbar a {
+    font-size: 16px;
+    padding-left: 15px;
+    padding-right: 10px;
+    color: #EEE;
+  }
+
+  .navbar a:link, a:hover, a:visited {
+    text-decoration: none;
+  }
+
+  .mobile-nav {
+    display: none;
+  }
+
+  .banner {
+    display: flex;
+    flex-direction: column;
+    background-color: #222831;
+    height: 140px;
+  }
+
+  .title {
+    color: #DDDFD4;
+    display: flex;
+    font-family: 'Lalezar', cursive;
+    padding-top: 33px;
+    align-self: center;
+    font-size: 75px;
+    justify-content: center;
+    margin: 0px;
+  }
+
+  .main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+/* ````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````*/
+.banner {
+  display: none;
+}
+
+.breadcrumbs {
+  display: none;
+}
+
+#body {
+  padding-top: 25px;
+}
+
+#information {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border-top-right-radius: 25px;
+  border-top-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+  background-color: #222831;
+  width: 70%;
+  max-width: 1300px;
+  height: auto;
+  min-height: 100%;
+}
+
+#personalInfo {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  font-family: 'Lalezar', cursive;
+  font-size: 1.7vh;
+  text-align: center;
+  max-width: 1300px;
+  width: 40%;
+  min-width: 400px;
+  padding-top: 26px;
+  padding-bottom: 26px;
+}
+
+#personalInfo a {
+  color: white;
+  text-decoration: underline;
+}
+
+#projects {
+  border-top: 4px #E45051 dotted;
+  border-bottom: 4px #E45051 dotted;
+  padding: 26px 0px 26px 0px;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+#projects img {
+  padding: 5px;
+  border-radius: 12px;
+  width: 500px;
+  height: 290px;
+}
+
+.WebImages {
+  text-align: center;
+  position: relative;
+  outline: none;
+  text-decoration: none;
+  width: auto;
+  border-bottom: none;
+}
+.WebImages img {
+  z-index: 1;
+  filter: blur(4px) grayscale(100%);
+  transition: .5s;
+}
+.WebImages:hover img {
+  filter: blur(0px) grayscale(0%);
+  transition: .5s;
+}
+.WebImages span {
+  z-index: 2;
+  outline: none;
+  text-decoration: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Rubik', sans-serif;
+  font-size: 30px;
+  background: #E45051;
+  border-radius: 4px;
+  color: black;
+  padding: 15px;
+}
+
+.WebImages:hover .description {
+  opacity: 1;
+  transition: 0.5s;
+  background: rgba(228,80,81,1);
+  padding: 25px 15px 25px 15px;
+}
+.description {
+  display: flex;
+  text-align: center;
+  opacity: 0;
+  z-index: 3;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Rubik', sans-serif;
+  color: black;
+  min-width: 350px;
+  transition: 0.5s;
+  border-radius: 5px;
+}
+
+#contact {
+  padding-top: 26px;
+}
+
+.socialMedia a {
+  color: white;
+  text-decoration: none;
+}
