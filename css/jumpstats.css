@@ -9,13 +9,13 @@ html, body {
 }
 
 .profile {
-  color: #DDDFD4;
+  color: #FFF;
   text-decoration: none;
 }
 
 .mobile-nav {
   background-color: #222831;
-  color: #DDDFD4;
+  color: #FFF;
   padding: 6px;
   display: flex;
   flex-direction: row;
@@ -27,12 +27,12 @@ html, body {
 }
 
 .mobile-nav-logo {
-  height: 48px;
+  height: 36px;
   width: auto;
 }
 
 .sidenav {
-  background-color: #EEE;
+  background-color: #222831;
   height: 100%;
   left: 0%;
   overflow-x: hidden;
@@ -44,13 +44,17 @@ html, body {
 }
 
 .sidenav a {
-  color: #151315;
+  color: #E45051;
   display: flex;
   align-items: center;
   flex-direction: column;
-  font-family: 'Lalezar', cursive;
-  font-size: 45px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 35px;
   text-decoration: none;
+}
+
+.sidenav .fa-times {
+  color: #FFF;
 }
 
 .sidenav a:hover {
@@ -58,16 +62,15 @@ html, body {
 }
 
 .sidenav .closebtn {
-  font-size: 60px;
-  margin-left: 50px;
+  right: 20px;
+  margin: 6px;
   padding: 0;
   position: absolute;
-  right: 25px;
   top: 0;
 }
 
 .sideSettings {
-  background-color: #EEE;
+  background-color: #222831;
   height: 100%;
   right: 0%;
   overflow-x: hidden;
@@ -80,32 +83,28 @@ html, body {
 
 .sideSettings a {
   align-items: center;
-  color: #151315;
+  color: #FFF;
   display: flex;
   flex-direction: column;
-  font-family: 'Lalezar', cursive;
-  font-size: 45px;
+  font-family: 'Archivo Black', sans-serif;
+  font-size: 35px;
   text-decoration: none;
 }
 
-.sideSettings a:hover {
-  color: #FE3100;
-}
-
 .sideSettings .closebtn {
-  font-size: 60px;
-  margin-right: 50px;
+  left: 20px;
+  margin: 6px;
   padding: 0;
   position: absolute;
-  left: 25px;
   top: 0;
 }
 
 .banner {
   background-color: #222831;
-  height: 60px;
+  height: 40px;
   width: 100%;
   z-index: 5;
+  border-bottom: 4px #393E46 solid;
 }
 
 .header {
@@ -118,10 +117,10 @@ html, body {
 .dropbtn {
   position: relative;
   background-color: #222831;
-  color: #DDDFD4;
+  color: #FFF;
   width: 100%;
-  font-family: 'Lalezar', cursive;
-  font-size: 35px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 30px;
   border: none;
 }
 
@@ -139,11 +138,11 @@ html, body {
 .dropdown-content {
   position: absolute;
   left: 0;
-  top: 115px;
+  top: 80px;
   display: none;
   flex-direction: column;
-  background-color: #131E20;
-  font-family: 'Lalezar', cursive;
+  background-color: #222831;
+  font-family: 'Archivo Black', sans-serif;
   overflow: auto;
   width: 100%;
   z-index: 1;
@@ -159,6 +158,9 @@ html, body {
   text-decoration: none;
   border: none;
   width: 100%;
+}
+h1 {
+  display: none;
 }
 
 h2 {
@@ -176,6 +178,7 @@ table {
 }
 
 th {
+  display: none;
   font-size: 3.8vh;
   padding-left: 50px;
   text-align: left;
@@ -183,12 +186,22 @@ th {
 }
 
 tr:nth-child(even) {
-  background-color: #131E20;
+  background-color: #222831;
 }
 
 tr {
   text-align: left;
   vertical-align: middle;
+}
+
+tr:nth-child(2) {
+  color: gold;
+}
+tr:nth-child(3) {
+  color: #E9E9E9;
+}
+tr:nth-child(4) {
+  color: #cd7f32;
 }
 
 tbody {
@@ -204,23 +217,41 @@ td {
 }
 
 #Tables {
-  font-family: 'Lalezar', cursive;
-  color: #DDDFD4;
+  font-family: 'Montserrat', sans-serif;
+  color: #FFF;
 }
 
-#myTableLJ {
+#TableLJ {
   display: flex;
 }
 
-#myTableBHOP, #myTableMBHOP, #myTableWJ, #myTableDBHOP, #myTableCJ, #myTableLAJ,
+#TableBHOP, #TableMBHOP, #TableWJ, #TableDBHOP, #TableCJ, #TableLAJ,
 #Longjump, #Bhop, #MultiBhop, #Weirdjump, #DropBhop, #Countjump, #Ladderjump {
   display: none;
 }
 
-
-
 .button-types {
   display:none;
+}
+
+::-webkit-scrollbar-track
+{
+  border-radius: 2px;
+  background: -webkit-linear-gradient(#222831, #393E46); /* For Safari 5.1 to 6.0 */
+  background: linear-gradient(#222831, #393E46); /* Standard syntax */
+}
+
+::-webkit-scrollbar
+{
+  width: 12px;
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb
+{
+  border-radius: 2px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+  background-color: #E45051;
 }
 
 @media (min-width: 1000px) {
@@ -248,17 +279,12 @@ td {
     width: 100%;
     margin: 0;
     text-align: center;
-    font-family: 'Lalezar', cursive;
+    font-family: 'Archivo Black', sans-serif;
     padding-top: 8px;
     padding-left: 0px;
     background-color: #222831;
     list-style: none;
     z-index: 2; /* This is used so that the navbar is above the title */
-    -webkit-animation: fadein 1s;
-    -moz-animation: fadein 1s;
-    -ms-animation: fadein 1s;
-    -o-animation: fadein 1s;
-    animation: fadein 1s;
   }
   ul.breadcrumbs li+li:before {
     display: inline;
@@ -273,7 +299,7 @@ td {
     color: #EEE;
   }
   .navbar a {
-    font-size: 16px;
+    font-size: calc(12px + .15vh);
     padding-left: 15px;
     padding-right: 10px;
     color: #EEE;
@@ -286,7 +312,7 @@ td {
     display: none;
   }
 
-  #myTableLJ {
+  #TableLJ {
     display: none;
   }
 
@@ -303,17 +329,17 @@ td {
     display: flex;
     flex-direction: column;
     background-color: #222831;
-    height: 200px;
+    height: 180px;
   }
 
   .dropbtn {
     position: flex;
     background-color: #393E46;
-    color: #DDDFD4;
+    color: #FFF;
     width: auto;
     padding: 0px 10px 0px 10px;
-    font-family: 'Lalezar', cursive;
-    font-size: 28px;
+    font-family: 'Archivo Black', sans-serif;
+    font-size: calc(18px + .35vh);
     border: none;
   }
 
@@ -325,7 +351,7 @@ td {
   .title {
     color: #DDDFD4;
     display: flex;
-    font-family: 'Lalezar', cursive;
+    font-family: 'Archivo Black', sans-serif;
     padding-top: 33px;
     align-self: center;
     font-size: 75px;
@@ -336,37 +362,25 @@ td {
   .Select {
     color: #DDDFD4;
     display: flex;
-    font-family: 'Lalezar', cursive;
-    font-size: 2em;
+    font-family: 'Montserrat', sans-serif;
+    font-size: calc(24px + .15vh);
     justify-content: center;
     margin: 0px;;
   }
 
-  /* Pray to your god(s) that you don't have to modify below this line */
   #Tables {
     display: flex;
     justify-content: center;
     flex-direction: row;
     flex-wrap: wrap;
-    margin: -10px 0 0 -10px;
+    margin: auto;
     width: 70%;
-    padding-left: 15%;
   }
 
-  #myTableLJ, #myTableBHOP, #myTableMBHOP, #myTableWJ, #myTableDBHOP, #myTableCJ {
-    border-color: #131E20;
-    border-width: 2px;
+  #TableLJ, #TableBHOP, #TableMBHOP, #TableWJ, #TableDBHOP, #TableCJ, #TableLAJ {
     border-style: none solid none none;
     box-shadow: 3px 8px 15px #212122;
-    margin: 25px 0 25px 10px;
-    box-sizing: border-box;
-  }
-
-  #myTableLAJ {
-    border-color: #131e20;
-    border-width: 2px;
-    box-shadow: 3px 8px 15px #212122;
-    margin: 25px 0 25px 10px;
+    margin: 25px 10px 25px 10px;
     box-sizing: border-box;
   }
 
@@ -374,15 +388,32 @@ td {
     display: flex;
   }
 
-  td {
+  tr td {
     padding-left: 20px;
-    padding-top: 0;
-    padding-bottom: 0;
-    font-size: 17px;
-    width: 50%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: calc(12px + .25vh);
+    width: 60%;
   }
+
+  tr td:nth-child(2) {
+    text-align: left;
+  }
+
+  tr:nth-child(2) {
+    color: gold;
+  }
+  tr:nth-child(3) {
+    color: #EEBA11;
+  }
+  tr:nth-child(4) {
+    color: #cd7f32;
+  }
+
+
   th {
-    font-size: 25px;
+    display: flex;
+    font-size: calc(18px + .15vh);
     padding-left: 20px;
   }
 }
