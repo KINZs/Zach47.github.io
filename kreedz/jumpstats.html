@@ -4,11 +4,11 @@
   <meta charset="utf-8">
   <title>Jumpstats</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="A website for getting the top jumpstats for CS:GO Players" content="Top 20 Jumpstats">
+  <meta name="A website for getting the top jumpstats for CS:GO Players" content="Top Jumpstats">
   <meta name="Jacob Barrett" content="www.jacobwbarrett.com">
   <link rel="icon" type="image/png" href="/Pictures/LogoSpace.png">
-  <link href="https://fonts.googleapis.com/css?family=Lalezar" rel="stylesheet">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Archivo+Black|Montserrat:300" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="../css/jumpstats.css">
   <script>
@@ -32,11 +32,7 @@
 
   <div id="nav-rightside" class="sideSettings">
     <a href="javascript:void(0)" class="closebtn" onclick="closeSettings()"><i class="fa fa-times" aria-hidden="true"></i></a>
-    <a href="#">Oh</a>
-    <a href="#">I</a>
-    <a href="#">Should</a>
-    <a href="#">Finish</a>
-    <a href="#">This</a>
+    <button id="bindmobile" onclick="Bind()" class="dropbtn">Not Binded</button>
   </div>
 
   <div class="navbar">
@@ -49,15 +45,18 @@
 
   <div class="banner">
     <div class="mobile-nav">
-      <i class="mobile-nav-icon fa fa-bars fa-3x" aria-hidden="true" onclick="openNav()"></i>
-      <img class="mobile-nav-logo" src="/Pictures/LogoSpace.png"></img>
-      <i class="mobile-nav-icon fa fa-cog fa-3x" aria-hidden="true" onclick="openSettings()"></i>
+      <i class="mobile-nav-icon fa fa-bars fa-2x" aria-hidden="true" onclick="openNav()"></i>
+      <img class="mobile-nav-logo" src="../Pictures/LogoSpace.png"></img>
+      <i class="mobile-nav-icon fa fa-cog fa-2x" aria-hidden="true" onclick="openSettings()"></i>
     </div>
 
     <h1 class="title">Top Jumpstats</h1>
     <h2 class="Select">Select which jumpstats you'd like to see</h2>
   </div>
 
+  <div class="button-types">
+    <button id="jumptype-button-bind" class="dropbtn">Not Binded</button>
+  </div>
   <div class="button-types">
     <button id="jumptype-button-lj" class="dropbtn">Longjump</button>
     <button id="jumptype-button-bhop" class="dropbtn">Bhop</button>
@@ -82,30 +81,29 @@
   </div>
 
   <div id="Tables">
-    <table id="myTableLJ">
+    <table id="TableLJ">
       <th id="Longjump" colspan="2">Longjump</th>
     </table>
-    <table id="myTableBHOP">
+    <table id="TableBHOP">
       <th id="Bhop" colspan="2">Bhop</th>
     </table>
-    <table id="myTableMBHOP">
+    <table id="TableMBHOP">
       <th id="MultiBhop" colspan="2">Multibhop</th>
     </table>
-    <table id="myTableWJ">
+    <table id="TableWJ">
       <th id="Weirdjump" colspan="2">Weirdjump</th>
     </table>
-    <table id="myTableDBHOP">
+    <table id="TableDBHOP">
       <th id="DropBhop" colspan="2">Dropbhop</th>
     </table>
-    <table id="myTableCJ">
+    <table id="TableCJ">
       <th id="Countjump" colspan="2">Countjump</th>
     </table>
-    <table id="myTableLAJ">
+    <table id="TableLAJ">
       <th id="Ladderjump" colspan="2">Ladderjump</th>
     </table>
   </div>
 
-  <!-- run javascript at the end -->
   <script type="text/javascript" src="../js/biginteger.js"></script>
   <script type="text/javascript" src="../js/jumpstats.js"></script>
   <script type="text/javascript" src="../js/APIGet.js"></script>
