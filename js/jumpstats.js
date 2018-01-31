@@ -12,150 +12,242 @@ function DropDown() {
   }
 }
 
+function Reset() {
+  // Reset everything
+  document.getElementById("TableLJ").style.display = "none";
+  document.getElementById("jumptype-button-lj").style.color = "#dddfd4";
+  document.getElementById("TableBHOP").style.display = "none";
+  document.getElementById("jumptype-button-bhop").style.color = "#dddfd4";
+  document.getElementById("TableMBHOP").style.display = "none";
+  document.getElementById("jumptype-button-mbhop").style.color = "#dddfd4";
+  document.getElementById("TableWJ").style.display = "none";
+  document.getElementById("jumptype-button-wj").style.color = "#dddfd4";
+  document.getElementById("TableDBHOP").style.display = "none";
+  document.getElementById("jumptype-button-dbhop").style.color = "#dddfd4";
+  document.getElementById("TableCJ").style.display = "none";
+  document.getElementById("jumptype-button-cj").style.color = "#dddfd4";
+  document.getElementById("TableLAJ").style.display = "none";
+  document.getElementById("jumptype-button-laj").style.color = "#dddfd4";
+}
+
+function Bind() {
+  // if you want bind jumps to show up
+  if (document.getElementById("jumptype-button-bind").innerHTML === "Not Binded" || document.getElementById("bindmobile").innerHTML === "Not Binded") {
+    document.getElementById("jumptype-button-bind").style.color = "#E45051";
+    document.getElementById("jumptype-button-bind").innerHTML = "Binded";
+    document.getElementById("bindmobile").style.color = "#E45051";
+    document.getElementById("bindmobile").innerHTML = "Binded";
+    document.getElementById("jumptype-button-laj").style.display = "none";
+    document.getElementById("dropdown-laj").style.display = "none";
+    LJurl = "https://staging.kztimerglobal.com/api/v1/jumpstats/longjump/top?is_crouch_boost=true&limit=2000";
+    BHOPurl = "https://staging.kztimerglobal.com/api/v1/jumpstats/bhop/top?is_crouch_boost=true&limit=2000";
+    MBHOPurl = "https://staging.kztimerglobal.com/api/v1/jumpstats/multibhop/top?is_crouch_boost=true&limit=2000";
+    WJurl = "https://staging.kztimerglobal.com/api/v1/jumpstats/weirdjump/top?is_crouch_boost=true&limit=2000";
+    DBHOPurl = "https://staging.kztimerglobal.com/api/v1/jumpstats/dropbhop/top?is_crouch_boost=true&limit=2000";
+    CJurl = "https://staging.kztimerglobal.com/api/v1/jumpstats/countjump/top?is_crouch_boost=true&limit=2000";
+    playerListLJ = [];
+    playerListBHOP = [];
+    playerListMBHOP = [];
+    playerListWJ = [];
+    playerListDBHOP = [];
+    playerListCJ = [];
+    playerListLAJ = [];
+    $("#TableLJ tr:not(:first)").remove();
+    $("#TableBHOP tr:not(:first)").remove();
+    $("#TableMBHOP tr:not(:first)").remove();
+    $("#TableWJ tr:not(:first)").remove();
+    $("#TableDBHOP tr:not(:first)").remove();
+    $("#TableCJ tr:not(:first)").remove();
+    $("#TableLAJ tr:not(:first)").remove();
+
+    // Reset everything
+    Reset();
+  }
+  // if you dont want bind jumps to show up
+  else if (document.getElementById("jumptype-button-bind").innerHTML === "Binded" || document.getElementById("bindmobile").innerHTML === "Binded") {
+    document.getElementById("jumptype-button-bind").style.color = "#DDDFD4";
+    document.getElementById("jumptype-button-bind").innerHTML = "Not Binded";
+    document.getElementById("bindmobile").style.color = "#DDDFD4";
+    document.getElementById("bindmobile").innerHTML = "Not Binded";
+    document.getElementById("jumptype-button-laj").style.display = "flex";
+    document.getElementById("dropdown-laj").style.display = "flex";
+    LJurl = "https://staging.kztimerglobal.com/api/v1.0/jumpstats/longjump/top?is_crouch_boost=false";
+    BHOPurl = "https://staging.kztimerglobal.com/api/v1.0/jumpstats?jumptype=bhop&is_crouch_boost=false";
+    MBHOPurl = "https://staging.kztimerglobal.com/api/v1.0/jumpstats?jumptype=multibhop&is_crouch_boost=false";
+    WJurl = "https://staging.kztimerglobal.com/api/v1.0/jumpstats?jumptype=weirdjump&is_crouch_boost=false";
+    DBHOPurl = "https://staging.kztimerglobal.com/api/v1.0/jumpstats?jumptype=dropbhop&is_crouch_boost=false";
+    CJurl = "https://staging.kztimerglobal.com/api/v1.0/jumpstats?jumptype=countjump&is_crouch_boost=false";
+    LAJurl = "https://staging.kztimerglobal.com/api/v1.0/jumpstats?jumptype=ladderjump&is_crouch_boost=false";
+    playerListLJ = [];
+    playerListBHOP = [];
+    playerListMBHOP = [];
+    playerListWJ = [];
+    playerListDBHOP = [];
+    playerListCJ = [];
+    playerListLAJ = [];
+    $("#TableLJ tr:not(:first)").remove();
+    $("#TableBHOP tr:not(:first)").remove();
+    $("#TableMBHOP tr:not(:first)").remove();
+    $("#TableWJ tr:not(:first)").remove();
+    $("#TableDBHOP tr:not(:first)").remove();
+    $("#TableCJ tr:not(:first)").remove();
+    $("#TableLAJ tr:not(:first)").remove();
+
+    // Reset everything
+    Reset();
+  }
+}
+
 function showLJ() {
-  $(".se-pre-con").fadeIn("slow");
-  LoadPlayersLJ();
-  if (width < 769) {
+  $("#TableLJ tr:not(:first)").remove();
+  LoadTable();
+  if( /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ) {
     document.getElementById("jumptype-button").innerHTML = "Longjump";
-    document.getElementById("myTableLJ").style.display = "flex";
-    document.getElementById("myTableBHOP").style.display = "none";
-    document.getElementById("myTableMBHOP").style.display = "none";
-    document.getElementById("myTableWJ").style.display = "none";
-    document.getElementById("myTableDBHOP").style.display = "none";
-    document.getElementById("myTableCJ").style.display = "none";
-    document.getElementById("myTableLAJ").style.display = "none";
-  } else if (document.getElementById("myTableLJ").style.display === "flex") {
-    document.getElementById("myTableLJ").style.display = "none";
+    document.getElementById("TableLJ").style.display = "flex";
+    document.getElementById("TableBHOP").style.display = "none";
+    document.getElementById("TableMBHOP").style.display = "none";
+    document.getElementById("TableWJ").style.display = "none";
+    document.getElementById("TableDBHOP").style.display = "none";
+    document.getElementById("TableCJ").style.display = "none";
+    document.getElementById("TableLAJ").style.display = "none";
+  } else if (document.getElementById("TableLJ").style.display === "flex") {
+    document.getElementById("TableLJ").style.display = "none";
     document.getElementById("jumptype-button-lj").style.color = "#dddfd4";
   } else {
-    document.getElementById("myTableLJ").style.display = "flex";
+    document.getElementById("TableLJ").style.display = "flex";
     document.getElementById("jumptype-button-lj").style.color = "#E45051";
   }
-  DropDown()
+  DropDown();
 }
 
 function showBHOP() {
-  LoadPlayersBHOP();
-  if (width < 769) {
+  $("#TableBHOP tr:not(:first)").remove();
+  LoadTable();
+  if( /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ) {
     document.getElementById("jumptype-button").innerHTML = "Bhop";
-    document.getElementById("myTableLJ").style.display = "none";
-    document.getElementById("myTableBHOP").style.display = "flex";
-    document.getElementById("myTableMBHOP").style.display = "none";
-    document.getElementById("myTableWJ").style.display = "none";
-    document.getElementById("myTableDBHOP").style.display = "none";
-    document.getElementById("myTableCJ").style.display = "none";
-    document.getElementById("myTableLAJ").style.display = "none";
-  } else if (document.getElementById("myTableBHOP").style.display === "flex") {
-    document.getElementById("myTableBHOP").style.display = "none";
+    document.getElementById("TableLJ").style.display = "none";
+    document.getElementById("TableBHOP").style.display = "flex";
+    document.getElementById("TableMBHOP").style.display = "none";
+    document.getElementById("TableWJ").style.display = "none";
+    document.getElementById("TableDBHOP").style.display = "none";
+    document.getElementById("TableCJ").style.display = "none";
+    document.getElementById("TableLAJ").style.display = "none";
+  } else if (document.getElementById("TableBHOP").style.display === "flex") {
+    document.getElementById("TableBHOP").style.display = "none";
     document.getElementById("jumptype-button-bhop").style.color = "#dddfd4";
   } else {
-    document.getElementById("myTableBHOP").style.display = "flex";
+    document.getElementById("TableBHOP").style.display = "flex";
     document.getElementById("jumptype-button-bhop").style.color = "#E45051";
   }
-  DropDown()
+  DropDown();
 }
 
 function showMBHOP() {
-  LoadPlayersMBHOP();
-  if (width < 769) {
+  $("#TableMBHOP tr:not(:first)").remove();
+  LoadTable();
+  if( /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ) {
     document.getElementById("jumptype-button").innerHTML = "Multibhop";
-    document.getElementById("myTableLJ").style.display = "none";
-    document.getElementById("myTableBHOP").style.display = "none";
-    document.getElementById("myTableMBHOP").style.display = "flex";
-    document.getElementById("myTableWJ").style.display = "none";
-    document.getElementById("myTableDBHOP").style.display = "none";
-    document.getElementById("myTableCJ").style.display = "none";
-    document.getElementById("myTableLAJ").style.display = "none";
-  } else if(document.getElementById("myTableMBHOP").style.display === "flex") {
-    document.getElementById("myTableMBHOP").style.display = "none";
+    document.getElementById("TableLJ").style.display = "none";
+    document.getElementById("TableBHOP").style.display = "none";
+    document.getElementById("TableMBHOP").style.display = "flex";
+    document.getElementById("TableWJ").style.display = "none";
+    document.getElementById("TableDBHOP").style.display = "none";
+    document.getElementById("TableCJ").style.display = "none";
+    document.getElementById("TableLAJ").style.display = "none";
+  } else if(document.getElementById("TableMBHOP").style.display === "flex") {
+    document.getElementById("TableMBHOP").style.display = "none";
     document.getElementById("jumptype-button-mbhop").style.color = "#dddfd4";
   } else {
-    document.getElementById("myTableMBHOP").style.display = "flex";
+    document.getElementById("TableMBHOP").style.display = "flex";
     document.getElementById("jumptype-button-mbhop").style.color = "#E45051";
   }
-  DropDown()
+  DropDown();
 }
 
 function showWJ() {
-  LoadPlayersWJ();
-  if (width < 769) {
+  $("#TableWJ tr:not(:first)").remove();
+  LoadTable();
+  if( /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ) {
     document.getElementById("jumptype-button").innerHTML = "Weirdjump";
-    document.getElementById("myTableLJ").style.display = "none";
-    document.getElementById("myTableBHOP").style.display = "none";
-    document.getElementById("myTableMBHOP").style.display = "none";
-    document.getElementById("myTableWJ").style.display = "flex";
-    document.getElementById("myTableDBHOP").style.display = "none";
-    document.getElementById("myTableCJ").style.display = "none";
-    document.getElementById("myTableLAJ").style.display = "none";
-  } else if (document.getElementById("myTableWJ").style.display === "flex") {
-    document.getElementById("myTableWJ").style.display = "none";
+    document.getElementById("TableLJ").style.display = "none";
+    document.getElementById("TableBHOP").style.display = "none";
+    document.getElementById("TableMBHOP").style.display = "none";
+    document.getElementById("TableWJ").style.display = "flex";
+    document.getElementById("TableDBHOP").style.display = "none";
+    document.getElementById("TableCJ").style.display = "none";
+    document.getElementById("TableLAJ").style.display = "none";
+  } else if (document.getElementById("TableWJ").style.display === "flex") {
+    document.getElementById("TableWJ").style.display = "none";
     document.getElementById("jumptype-button-wj").style.color = "#dddfd4";
   } else {
-    document.getElementById("myTableWJ").style.display = "flex";
+    document.getElementById("TableWJ").style.display = "flex";
     document.getElementById("jumptype-button-wj").style.color = "#E45051";
   }
-  DropDown()
+  DropDown();
 }
 
 function showDBHOP() {
-  LoadPlayersDBHOP();
-  if (width < 769) {
+  $("#TableDBHOP tr:not(:first)").remove();
+  LoadTable();
+  if( /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ) {
     document.getElementById("jumptype-button").innerHTML = "Drop Bhop";
-    document.getElementById("myTableLJ").style.display = "none";
-    document.getElementById("myTableBHOP").style.display = "none";
-    document.getElementById("myTableMBHOP").style.display = "none";
-    document.getElementById("myTableWJ").style.display = "none";
-    document.getElementById("myTableDBHOP").style.display = "flex";
-    document.getElementById("myTableCJ").style.display = "none";
-    document.getElementById("myTableLAJ").style.display = "none";
-  } else if (document.getElementById("myTableDBHOP").style.display === "flex") {
-    document.getElementById("myTableDBHOP").style.display = "none";
+    document.getElementById("TableLJ").style.display = "none";
+    document.getElementById("TableBHOP").style.display = "none";
+    document.getElementById("TableMBHOP").style.display = "none";
+    document.getElementById("TableWJ").style.display = "none";
+    document.getElementById("TableDBHOP").style.display = "flex";
+    document.getElementById("TableCJ").style.display = "none";
+    document.getElementById("TableLAJ").style.display = "none";
+  } else if (document.getElementById("TableDBHOP").style.display === "flex") {
+    document.getElementById("TableDBHOP").style.display = "none";
     document.getElementById("jumptype-button-dbhop").style.color = "#dddfd4";
   } else {
-    document.getElementById("myTableDBHOP").style.display = "flex";
+    document.getElementById("TableDBHOP").style.display = "flex";
     document.getElementById("jumptype-button-dbhop").style.color = "#E45051";
   }
-  DropDown()
+  DropDown();
 }
 
 function showCJ() {
-  LoadPlayersCJ();
-  if (width < 769) {
+  $("#TableCJ tr:not(:first)").remove();
+  LoadTable();
+  if( /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ) {
     document.getElementById("jumptype-button").innerHTML = "Countjump";
-    document.getElementById("myTableLJ").style.display = "none";
-    document.getElementById("myTableBHOP").style.display = "none";
-    document.getElementById("myTableMBHOP").style.display = "none";
-    document.getElementById("myTableWJ").style.display = "none";
-    document.getElementById("myTableDBHOP").style.display = "none";
-    document.getElementById("myTableCJ").style.display = "flex";
-    document.getElementById("myTableLAJ").style.display = "none";
-  } else if (document.getElementById("myTableCJ").style.display === "flex") {
-    document.getElementById("myTableCJ").style.display = "none";
+    document.getElementById("TableLJ").style.display = "none";
+    document.getElementById("TableBHOP").style.display = "none";
+    document.getElementById("TableMBHOP").style.display = "none";
+    document.getElementById("TableWJ").style.display = "none";
+    document.getElementById("TableDBHOP").style.display = "none";
+    document.getElementById("TableCJ").style.display = "flex";
+    document.getElementById("TableLAJ").style.display = "none";
+  } else if (document.getElementById("TableCJ").style.display === "flex") {
+    document.getElementById("TableCJ").style.display = "none";
     document.getElementById("jumptype-button-cj").style.color = "#dddfd4";
   } else {
-    document.getElementById("myTableCJ").style.display = "flex";
+    document.getElementById("TableCJ").style.display = "flex";
     document.getElementById("jumptype-button-cj").style.color = "#E45051";
   }
-  DropDown()
+  DropDown();
 }
 
 function showLAJ() {
-  LoadPlayersLAJ();
-  if (width < 769) {
+  $("#TableLAJ tr:not(:first)").remove();
+  LoadTable();
+  if( /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ) {
     document.getElementById("jumptype-button").innerHTML = "Ladderjump";
-    document.getElementById("myTableLJ").style.display = "none";
-    document.getElementById("myTableBHOP").style.display = "none";
-    document.getElementById("myTableMBHOP").style.display = "none";
-    document.getElementById("myTableWJ").style.display = "none";
-    document.getElementById("myTableDBHOP").style.display = "none";
-    document.getElementById("myTableCJ").style.display = "none";
-    document.getElementById("myTableLAJ").style.display = "flex";
-  } else if (document.getElementById("myTableLAJ").style.display === "flex") {
-    document.getElementById("myTableLAJ").style.display = "none";
+    document.getElementById("TableLJ").style.display = "none";
+    document.getElementById("TableBHOP").style.display = "none";
+    document.getElementById("TableMBHOP").style.display = "none";
+    document.getElementById("TableWJ").style.display = "none";
+    document.getElementById("TableDBHOP").style.display = "none";
+    document.getElementById("TableCJ").style.display = "none";
+    document.getElementById("TableLAJ").style.display = "flex";
+  } else if (document.getElementById("TableLAJ").style.display === "flex") {
+    document.getElementById("TableLAJ").style.display = "none";
     document.getElementById("jumptype-button-laj").style.color = "#dddfd4";
   } else {
-    document.getElementById("myTableLAJ").style.display = "flex";
+    document.getElementById("TableLAJ").style.display = "flex";
     document.getElementById("jumptype-button-laj").style.color = "#E45051";
   }
-  DropDown()
+  DropDown();
 }
