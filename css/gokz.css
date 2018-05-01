@@ -4,6 +4,12 @@ html, body {
   margin: 0;
 }
 
+:root {
+  --font-size: 15px;
+  --height: calc(200px);
+  --width: calc(130px);
+}
+
 .navbar {
   display: none;
 }
@@ -48,7 +54,7 @@ html, body {
   display: flex;
   align-items: center;
   flex-direction: column;
-  font-family: 'Lalezar', cursive;
+  font-family: 'Archivo Black', sans-serif;
   font-size: 35px;
   text-decoration: none;
 }
@@ -80,7 +86,7 @@ html, body {
   z-index: 5;
   display: flex;
   justify-content: flex-start;
-  padding: 3px 15px 3px 55px;
+  padding: 3px 15px 3px 35px;
 }
 
 .header {
@@ -88,15 +94,19 @@ html, body {
 }
 
 .btn {
-  font-size: 25px;
-  font-family: 'Lalezar', cursive;
-  text-shadow: 2px 2px black;
+  font-size: 17px;
+  font-family: 'Archivo Black', sans-serif;
   display: flex;
   color: #E45051;
   background-color: transparent;
   border: none;
   margin: 5px;
   outline: none;
+  cursor: pointer;
+}
+
+td, a, img {
+  cursor: pointer;
 }
 
 .modes {
@@ -106,82 +116,195 @@ html, body {
 }
 
 #displayTimes {
-  border-top-left-radius: 25px;
-  border-top-right-radius: 25px;
+  margin: auto;
   display: flex;
-  flex-direction: row;
+  width: 98%;
   justify-content: center;
-  align-items: flex-start;
-  font-family: 'Lalezar', cursive;
-  height: auto;
-  background-color: #222831;
 }
 
 #recentTimes {
-  border-top-left-radius: 25px;
-  border-right: 4px #E45051 dotted;
-  display: inherit;
-  flex-direction: column;
-  max-width: 510px;
-  width: 50%;
+  border-right: 4px #E45051 inset;
   height: auto;
-  min-height: 800px;
+  width: 100%;
   background-color: #222831;
   text-align: center;
-  font-family: 'Lalezar', cursive;
-  font-size: calc(12px + .8vh);
+  font-family: 'Montserrat', sans-serif;
+  font-size: calc(10px + .05vh);
+}
+
+#recentTimes span {
+  font-size: calc(12px + .1vh);
+  padding: 5px;
 }
 
 #topTimes {
-  border-top-right-radius: 25px;
-  display: inherit;
-  flex-direction: column;
-  max-width: 510px;
-  width: 50%;
   height: auto;
-  min-height: 800px;
+  width: 100%;
   background-color: #222831;
   text-align: center;
-  font-family: 'Lalezar', cursive;
-  font-size: calc(12px + .8vh);
+  font-family: 'Montserrat', sans-serif;
+  font-size: calc(10px + .05vh);
+}
+
+#topTimes span {
+  font-size: calc(12px + .1vh);
+  padding: 5px;
+  padding-bottom: 25px;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+#Tables {
+  border-collapse: collapse;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 10px;
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+
+#Tables tr {
+  color: #FFF;
+  padding: 0px;
+}
+
+#Tables tbody tr {
+  border-bottom: 1px rgba(255, 255, 255, 0.3) solid;
+}
+
+#Tables tbody tr:last-child {
+  border-bottom: none;
+}
+
+#Tables tbody tr td {
+  padding: 5px;
+}
+
+#Tables tbody tr td:first-child {
+  color: #E45051;
 }
 
 #displayMapTimes {
   display: none;
+  margin: auto;
+  width: 98%;
   flex-direction: row;
   justify-content: center;
   align-items: flex-start;
-  font-family: 'Lalezar', cursive;
-  height: 100%;
+  font-family: sans-serif;
 }
 
 #recentMapTimes {
-  border-top-left-radius: 25px;
-  border-right: 4px #E45051 dotted;
+  border-right: 4px #E45051 inset;
   display: flex;
   flex-direction: column;
-  max-width: 650px;
+  max-width: 750px;
   width: 50%;
-  height: auto;
-  min-height: 100%;
+  height: 610px;
   background-color: #222831;
   text-align: center;
-  font-family: 'Lalezar', cursive;
-  font-size: calc(11px + 1vh);
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
 }
 
 #topMapTimes {
-  border-top-right-radius: 25px;
   display: flex;
   flex-direction: column;
-  max-width: 650px;
+  max-width: 750px;
   width: 50%;
-  height: auto;
-  min-height: 100%;
+  height: 610px;
   background-color: #222831;
   text-align: center;
-  font-family: 'Lalezar', cursive;
-  font-size: calc(11px + 1vh);
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px
+}
+
+#displayPlayerProfile {
+  display: none;
+  margin: auto;
+  justify-content: center;
+  width: 98%;
+}
+
+#playerInfo {
+  color: #FFF;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Montserrat', sans-serif;
+  font-size: calc(12px + 0.4vh);
+  padding-top: 15px;
+}
+
+#playerInfo a {
+  font-size: 32px;
+  justify-content: center;
+}
+
+#playerInfo #playerSteamID, #playerInfo div {
+  font-size: 14px;
+  text-align: center;
+}
+
+#displayPlayerTimes {
+  align-items: center;
+  background-color: #222831;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Montserrat', sans-serif;
+  height: 120%;
+  padding-bottom: 30px;
+  width: 100%;
+}
+
+#displayPlayerTimes a {
+  color: #FFF;
+  text-decoration: none;
+}
+
+
+#displayPlayerTimes h2 {
+  text-align: center;
+}
+
+#TablesPlayer {
+  padding-top: 10px;
+  font-size: calc(9px + .5vh);
+}
+
+#TablesPlayer tbody tr td {
+  padding: 8px;
+  color: #FFF;
+  font-family: 'Montserrat', sans-serif;
+}
+
+#TablesPlayer tbody tr {
+  border-bottom: 1px rgba(255, 255, 255, 0.3) solid;
+}
+
+#TablesPlayer tbody tr:first-child, tr:last-child {
+  border-bottom: none;
+}
+
+#TablesPlayer tbody tr td:nth-child(1) {
+  text-align: left;
+}
+
+#TablesPlayer tbody tr td:nth-child(2) {
+  text-align: right;
+}
+
+#TablesPlayer tbody tr td:nth-child(3) {
+  text-align: right;
+}
+
+#TablesPlayer tbody tr td:nth-child(3) {
+  text-align: right;
+}
+
+#TablesPlayer tbody tr td:nth-child(4) {
+  text-align: right;
 }
 
 #PROMapTimesAjax {
@@ -196,14 +319,29 @@ html, body {
   padding-left: 5%;
 }
 
+#TableTimes tr td:nth-child(2) {
+  padding-left: 0px;
+  border-bottom: none;
+}
+
+#TableTimes tr td:nth-child(3) {
+  padding-left: 0px;
+  border-bottom: none;
+}
+
+#TableTimes tr:last-child {
+  border-bottom: none;
+}
+
 .map_div {
+  height: 27vh;
   display: flex;
   flex-direction: column;
   padding-bottom: 3vh;
 }
 
 .map_div span {
-  width: 28vh;
+  width: 23.5vh;
   align-self: center;
 }
 
@@ -214,13 +352,12 @@ html, body {
 
 .map_div img {
   position: relative;
-  border-radius: 6px;
   align-self: center;
-  width: 28vh;
-  height: 16vh;
+  width: 24vh;
+  height: 14vh;
 }
 
-.map_div img:after {
+.map_div img::after {
   color: white;
   display: flex;
   justify-content: center;
@@ -314,7 +451,47 @@ input[type=search]::-webkit-search-cancel-button {
 }
 
 #pagination, #previous, #next {
-  display: none;
+  display: flex;
+}
+
+#pagination {
+  flex-direction: row;
+  justify-content: center;
+}
+
+#previous, #next {
+  display: inline-block;
+}
+
+#pagination ul {
+  padding: 0;
+}
+
+#pagination a {
+  background-color: #222831;
+  color: white;
+  font-family: 'Archivo Black', sans-serif;
+  font-size: calc(12px + .8vh);
+  padding: 8px 32px;
+  text-decoration: none;
+
+  border-width: 2px;
+  border-style: solid;
+  border-color: #E45051;
+}
+
+#pagination #previous {
+  background-color: #cb6f6c;
+}
+
+#pagination ul, #pagination a, .title, .modes, #recentTimes, #topTimes {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently
+  supported by Chrome and Opera */
 }
 
 
@@ -328,9 +505,8 @@ input[type=search]::-webkit-search-cancel-button {
   }
 
   .btn {
-    font-size: 25px;
-    font-family: 'Lalezar', cursive;
-    text-shadow: 2px 2px black;
+    font-size: 18px;
+    font-family: 'Archivo Black', sans-serif;
     display: flex;
     color: #E45051;
     background-color: transparent;
@@ -354,17 +530,12 @@ input[type=search]::-webkit-search-cancel-button {
     width: 100%;
     margin: 0;
     text-align: center;
-    font-family: 'Lalezar', cursive;
+    font-family: 'Archivo Black', sans-serif;
     padding-top: 8px;
     padding-left: 0px;
     background-color: #222831;
     list-style: none;
     z-index: 2; /* This is used so that the navbar is above the title */
-    -webkit-animation: fadein 1s;
-    -moz-animation: fadein 1s;
-    -ms-animation: fadein 1s;
-    -o-animation: fadein 1s;
-    animation: fadein 1s;
   }
   ul.breadcrumbs li+li:before {
     display: inline;
@@ -379,7 +550,7 @@ input[type=search]::-webkit-search-cancel-button {
     color: #EEE;
   }
   .navbar a {
-    font-size: 16px;
+    font-size: calc(12px + .15vh);
     padding-left: 15px;
     padding-right: 10px;
     color: #EEE;
@@ -397,18 +568,16 @@ input[type=search]::-webkit-search-cancel-button {
     display: flex;
     flex-direction: column;
     background-color: #222831;
-    height: 140px;
+    height: 80px;
+    padding: 0px;
   }
 
   .title {
     color: #DDDFD4;
     display: flex;
-    font-family: 'Lalezar', cursive;
-    padding-top: 33px;
-    align-self: center;
-    font-size: 75px;
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 42px;
     justify-content: center;
-    margin: 0px;
   }
 
   .modes {
@@ -422,29 +591,155 @@ input[type=search]::-webkit-search-cancel-button {
     background-color: transparent;
   }
 
-  #recentTimes {
-    font-size: calc(14px + .8vh);
-    border-bottom-left-radius: 25px;
+  #recentTimes, #topTimes {
+    font-size: 16px;
+    height: 600px;
+    width: 550px;
   }
 
-  #topTimes {
-    font-size: calc(14px + .8vh);
-    border-bottom-right-radius: 25px;
+  #recentTimes img::after {
+    font-size: 12px;
+  }
+
+  #recentTimes span {
+    font-size: font-size: calc(var(--font-size));
+    background-color: transparent;
+    padding: 5px;
+    padding-left: 9px;
+  }
+
+  #topTimes img::after {
+    font-size: 12px;
+  }
+
+  #topTimes span {
+    font-size: font-size: calc(var(--font-size));
+    background-color: transparent;
+    padding: 5px;
+    padding-left: 9px;
   }
 
   #displayMapTimes {
-    min-height: 85%;
-    height: 100%;
+    margin: auto;
   }
 
   #recentMapTimes {
-    min-height: 70%;
-    border-bottom-left-radius: 25px;
+    font-size: calc(12px + .5vh);
+    height: 780px;
+  }
+
+  #recentMapTimes h2 {
+    font-size: 20px;
   }
 
   #topMapTimes {
-    min-height: 70%;
-    border-bottom-right-radius: 25px;
+    font-size: calc(12px + .5vh);
+    height: 780px;
+  }
+
+  #topMapTimes h2 {
+    font-size: 20px;
+  }
+
+  #Tables {
+    width: auto;
+    border-collapse: collapse;
+    color: white;
+    display: flex;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    justify-content: center;
+    padding: 0px 50px 0px 50px;
+  }
+
+  #TableTitle td {
+    color: #E45051 !important;
+  }
+
+  #Tables tr {
+    color: #FFF;
+    padding: 0px;
+  }
+
+  #Tables tbody tr td {
+    padding: 8px;
+  }
+
+  #Tables tbody tr {
+    border-bottom: 1px rgba(255, 255, 255, 0.3) solid;
+  }
+
+  #Tables tbody tr:nth-child(even) {
+    background-color: #212A36;
+  }
+
+  #Tables tbody tr:last-child {
+    border-bottom: none;
+  }
+
+  #Tables tbody tr td:first-child {
+    color: #E45051;
+    text-align: left;
+    width: 35px;
+  }
+
+  #Tables tbody tr td:nth-child(2) {
+    text-align: left;
+    width: 160px;
+  }
+
+  #Tables tbody tr td:nth-child(3) {
+    text-align: right;
+    width: 95px;
+  }
+
+  #Tables tbody tr td:nth-child(4) {
+    font-size: 95%;
+    text-align: right;
+    width: 100px;
+  }
+
+  #Tables tbody tr td:last-child {
+    font-size: 85%;
+    text-align: right;
+    width: 160px;
+  }
+
+  #TableTimes tr td:nth-child(2) {
+    padding-left: 45px;
+    border-bottom: none;
+  }
+
+  #TableTimes tr td:nth-child(3) {
+    padding-left: 45px;
+    border-bottom: none;
+  }
+
+  #TableTimes tr:last-child {
+    border-bottom: none;
+  }
+
+  #displayPlayerProfile {
+    height: auto;
+    min-height: 600px;
+  }
+
+  #displayPlayerTimes {
+    align-items: flex-start;
+    flex-direction: row;
+    height: 750px;
+    width: 950px;
+    border-radius: 25px;
+    display: flex;
+    justify-content: space-evenly;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #222831;
+    padding-bottom: 30px;
+  }
+
+  #TablesPlayer {
+    padding-top: 7px;
+    font-size: 14px;
   }
 
   #mode-kz_vanilla-desktop:hover, #mode-kz_simple-desktop:hover, #mode-kz_timer-desktop:hover {
@@ -464,18 +759,18 @@ input[type=search]::-webkit-search-cancel-button {
   }
 
   .map_div {
+    height: 84px;
     display: flex;
     flex-direction: row;
     align-self: flex-start;
-    padding-bottom: 3vh;
-    padding-left: 3vh;
+    padding-bottom: 20px;
+    padding-left: 20px;
   }
 
   .map_div span {
     padding-left: 1vh;
     width: 32vh;
     text-align: left;
-    align-self: flex-start;
   }
 
   .map_div div {
@@ -488,10 +783,12 @@ input[type=search]::-webkit-search-cancel-button {
     border-radius: 4px;
     box-shadow: 1px 1px 5px;
     align-self: center;
-    width: 17vh;
-    max-width: 240px;
-    height: 9vh;
-    max-height: 135px;
+    height: 84px;
+    width: 150px;
+  }
+
+  .map_div img::after {
+    line-height: 5;
   }
 
 
@@ -513,7 +810,7 @@ input[type=search]::-webkit-search-cancel-button {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    padding-bottom: 15px;
+    height: 65px;
   }
 
   #previous, #next {
@@ -527,13 +824,13 @@ input[type=search]::-webkit-search-cancel-button {
   #pagination a {
     background-color: #222831;
     color: white;
-    font-family: 'Lalezar', cursive;
+    font-family: 'Archivo Black', sans-serif;
     font-size: calc(12px + .8vh);
     padding: 8px 32px;
     text-decoration: none;
 
-    border-width: 4px;
-    border-style: dotted solid;
+    border-width: 2px;
+    border-style: solid;
     border-color: #E45051;
   }
 
@@ -561,14 +858,73 @@ input[type=search]::-webkit-search-cancel-button {
 }
 
 /**********************************************************************************************************************************************/
-@media (min-width: 2500px) {
-  #recentTimes {
-    min-height: 930px;
-    max-width: 650px;
+@media (min-width: 1921px) {
+  #recentTimes, #topTimes {
+    height: 725px;
+    width: 600px;
   }
 
-  #topTimes {
-    min-height: 930px;
-    max-width: 650px;
+  #recentMapTimes, #topMapTimes {
+    height: 840px;
+    width: 1000px;
+  }
+
+  #displayMapTimes {
+    height: auto;
+  }
+
+  #Tables {
+    font-size: 16px;
+  }
+
+  #TablesPlayer {
+    font-size: 18px;
+  }
+
+  #displayPlayerProfile {
+    width: 75%;
+    height: auto;
+    min-height: 600px;
+  }
+
+  #displayPlayerTimes {
+    flex-direction: row;
+    height: 60%;
+    min-height: 650px;
+    width: 50%;
+    border-radius: 25px;
+    display: flex;
+    justify-content: space-evenly;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #222831;
+    padding-bottom: 30px;
+  }
+
+  .map_div {
+    height: 112px;
+    display: flex;
+    flex-direction: row;
+    align-self: flex-start;
+    padding-bottom: 20px;
+    padding-left: 20px;
+  }
+
+  .map_div img {
+    position: relative;
+    border-radius: 4px;
+    box-shadow: 1px 1px 5px;
+    align-self: center;
+    width: 200px;
+    height: 102px;
+  }
+
+  .map_div img::after {
+    line-height: 7;
+  }
+
+  #Tables tbody tr td:last-child {
+    font-size: 85%;
+    text-align: right;
+    width: 200px;
   }
 }

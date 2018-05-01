@@ -1,0 +1,174 @@
+html, body {
+  background-color: #393E46;
+  height: 100%;
+  margin: 0;
+}
+
+.navbar {
+  display: none;
+}
+
+.title {
+  display: none;
+}
+
+.mobile-nav {
+  color: #DDDFD4;
+  height: 34px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.mobile-nav-icon, .mobile-nav-logo {
+  padding-top: 6px;
+  margin: auto;
+  z-index: 1;
+}
+
+.mobile-nav-logo {
+  height: 35px;
+  width: auto;
+}
+
+.sidenav {
+  background-color: #EEE;
+  height: 100%;
+  left: 0%;
+  overflow-x: hidden;
+  padding-top: 60px;
+  position: fixed;
+  transition: 0.5s;
+  width: 0%;
+  z-index: 2;
+}
+
+.sidenav a {
+  color: #151315;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-family: 'Lalezar', cursive;
+  font-size: 45px;
+  text-decoration: none;
+}
+
+.sidenav a:hover {
+  color: #FE3100;
+}
+
+.sidenav .closebtn {
+  font-size: 60px;
+  margin-left: 50px;
+  padding: 0;
+  position: absolute;
+  right: 25px;
+  top: 0;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner {
+  background-color: #222831;
+  height: 40px;
+  width: 100%;
+  z-index: 5;
+}
+
+.header {
+  display:none;
+}
+
+
+/* ``````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````*/
+@media (min-width: 1000px) {
+
+  /* Navbar */
+  .navbar {
+    display: flex;
+    margin: 0;
+  }
+
+  ul.breadcrumbs {
+    /* This makes it so you cannot highlight the navbar */
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: -moz-none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    /* CSS */
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    margin: 0;
+    text-align: center;
+    font-family: 'Lalezar', cursive;
+    padding-top: 8px;
+    padding-left: 0px;
+    background-color: #222831;
+    list-style: none;
+    z-index: 2; /* This is used so that the navbar is above the title */
+    -webkit-animation: fadein 1s;
+    -moz-animation: fadein 1s;
+    -ms-animation: fadein 1s;
+    -o-animation: fadein 1s;
+    animation: fadein 1s;
+  }
+  ul.breadcrumbs li+li:before {
+    display: inline;
+    padding: 8px;
+    color: grey;
+    content: "/";
+  }
+  .navbar li {
+    display: inline;
+    text-align: center;
+    background-color: #222831;
+    color: #EEE;
+  }
+  .navbar a {
+    font-size: 16px;
+    padding-left: 15px;
+    padding-right: 10px;
+    color: #EEE;
+  }
+
+  .navbar a:link, a:hover, a:visited {
+    text-decoration: none;
+  }
+
+  .mobile-nav {
+    display: none;
+  }
+
+  .banner {
+    display: flex;
+    flex-direction: column;
+    background-color: #222831;
+    height: 140px;
+  }
+
+  .title {
+    color: #DDDFD4;
+    display: flex;
+    font-family: 'Lalezar', cursive;
+    padding-top: 33px;
+    align-self: center;
+    font-size: 75px;
+    justify-content: center;
+    margin: 0px;
+  }
+
+  .main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+  }

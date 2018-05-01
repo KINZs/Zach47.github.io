@@ -21,13 +21,15 @@ html, body {
 }
 
 .mobile-nav-icon, .mobile-nav-logo {
-  padding-top: 6px;
   margin: auto;
   z-index: 1;
 }
 
 .mobile-nav-logo {
-  height: 35px;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  height: 36px;
   width: auto;
 }
 
@@ -66,7 +68,7 @@ html, body {
 
 
 .sidenav {
-  background-color: #EEE;
+  background-color: #222831;
   height: 100%;
   left: 0%;
   overflow-x: hidden;
@@ -74,16 +76,16 @@ html, body {
   position: fixed;
   transition: 0.5s;
   width: 0%;
-  z-index: 2;
+  z-index: 3;
 }
 
 .sidenav a {
-  color: #151315;
+  color: #E45051;
   display: flex;
   align-items: center;
   flex-direction: column;
   font-family: 'Lalezar', cursive;
-  font-size: 45px;
+  font-size: 35px;
   text-decoration: none;
 }
 
@@ -91,12 +93,16 @@ html, body {
   color: #FE3100;
 }
 
+.sidenav .fa-times {
+  color: #DDDFD4;
+}
+
 .sidenav .closebtn {
-  font-size: 60px;
-  margin-left: 50px;
+  font-size: 35px;
+  right: 20px;
+  margin: 6px;
   padding: 0;
   position: absolute;
-  right: 25px;
   top: 0;
 }
 
@@ -196,11 +202,7 @@ p a {
   color: #DDDFD4;
 }
 
-#mapDescription {
-  display: none;
-}
-
-#mapFilesize {
+#mapDescription, #mapFilesize {
   display: none;
 }
 
@@ -214,7 +216,7 @@ p a {
 
 #mapChoose {
   position: fixed;
-  display: none;
+  display: flex;
   justify-content: center;
   padding: 8px 0px 8px 0px;
   bottom: 0;
@@ -230,12 +232,14 @@ button:focus {
   outline:0;
 }
 
-
 .banner {
   background-color: #222831;
   height: 40px;
-  width: 100%;
+  width: auto;
   z-index: 5;
+  display: flex;
+  justify-content: flex-start;
+  padding: 3px 15px 3px 55px;
 }
 
 .header {
@@ -345,6 +349,13 @@ button:focus {
     margin: 0px;
   }
 
+  #difficulty-random-desktop:hover, #difficulty-ve-desktop:hover, #difficulty-e-desktop:hover, #difficulty-m-desktop:hover,
+  #difficulty-h-desktop:hover, #difficulty-vh-desktop:hover, #difficulty-d-desktop:hover {
+    transition: 0.2s ease;
+    color: orange !important;
+  }
+
+
   .main {
     display: flex;
     flex-direction: row;
@@ -373,7 +384,7 @@ button:focus {
     align-items: flex-start;
     flex-direction: column;
     min-width: 35%;
-    max-width: 50%;
+    max-width: 35%;
   }
 
   #mapPost {
@@ -410,10 +421,13 @@ button:focus {
     display: flex;
   }
 
+  #mapChoose {
+    display: none;
+  }
+
   button {
     position: flex;
     justify-content: center;
     align-items: center;
   }
-
 }
