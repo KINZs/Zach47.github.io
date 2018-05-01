@@ -7,8 +7,8 @@
   <meta name="A website for GOKZ Stats made to work with the CSGO Kreedz API - kztimerglobal.com" content="GOKZ Stats">
   <meta name="Jacob Barrett" content="www.jacobwbarrett.com">
   <link rel="icon" type="image/png" href="../Pictures/LogoSpace.png">
-  <link href="https://fonts.googleapis.com/css?family=Lalezar" rel="stylesheet">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Archivo+Black|Montserrat:300" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="../css/gokz.css">
 
@@ -27,17 +27,18 @@
 <body>
   <div id="nav-leftside" class="sidenav">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="fa fa-times" aria-hidden="true"></i></a>
-    <a href="../index.html">Home</a>
-    <a href="../index.html">Projects</a>
-    <a href="../index.html">Contact</a>
+    <a href="https://www.gokzstats.com/">Home</a>
+    <a href="https://jacobwbarrett.com/">Projects</a>
+    <a href="https://jacobwbarrett.com/">Contact</a>
   </div>
 
 
   <div class="navbar">
     <ul class="breadcrumbs">
-      <li><a href="../">HOME</a></li>
-      <li><a href="../">PROJECTS</a></li>
-      <li><a href="../">CONTACT</a></li>
+      <li><a href="https://www.gokzstats.com/">HOME</a></li>
+      <li><a href="https://jacobwbarrett.com/">PROJECTS</a></li>
+      <li><a href="">LEADERBOARDS (Soon)</a></li>
+      <li><a href="https://jacobwbarrett.com/">CONTACT</a></li>
     </ul>
   </div>
 
@@ -51,9 +52,9 @@
   </div>
 
   <div class="modes">
-    <button id="mode-kz_vanilla-desktop" class="btn">Vanilla</button>
-    <button id="mode-kz_simple-desktop" class="btn">SimpleKZ</button>
-    <button id="mode-kz_timer-desktop" class="btn">KZTimer</button>
+    <button id="mode-kz_vanilla-desktop" onclick="toggle(this);" class="btn">Vanilla</button>
+    <button id="mode-kz_simple-desktop" onclick="toggle(this);" class="btn">SimpleKZ</button>
+    <button id="mode-kz_timer-desktop" onclick="toggle(this);" class="btn">KZTimer</button>
   </div>
 
   <div id="searchBar">
@@ -72,13 +73,30 @@
 
   <div id="displayMapTimes">
     <div id="recentMapTimes">
-      <h2 style="color: white;">PRO TIMES</h2>
-      <div id="PROMapTimesAjax"></div>
+      <h2 style="color: white;">Overall</h2>
+      <div id="Tables">
+        <table cellspacing="0" id="TableOverallTimes"></table>
+      </div>
     </div>
 
     <div id="topMapTimes">
-      <h2 style="color: white;">OVERALL TIMES</h2>
-      <div id="TPMapTimesAjax"></div>
+      <h2 style="color: white;">Pro</h2>
+      <div id="Tables">
+        <table cellspacing="0" id="TableProTimes"></table>
+      </div>
+    </div>
+  </div>
+
+  <div id="displayPlayerProfile">
+    <div id="displayPlayerTimes">
+      <div id="playerInfo">
+        <a id="playerName"></a>
+        <a id="playerSteamID"></a>
+      </div>
+      <div id="TablesPlayer">
+        <table cellspacing="0" id="TableTimes">
+        </table>
+      </div>
     </div>
   </div>
 
@@ -89,10 +107,8 @@
     </ul>
   </div>
 
-  <script type="text/javascript" src="../js/gokz.js"></script>
   <script type="text/javascript" src="../js/biginteger.js"></script>
+  <script type="text/javascript" src="../js/gokz.js"></script>
   <script type="text/javascript" src="../js/mobile.js"></script>
-
-
 </body>
 </html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>GOKZ Leaderboards</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="./Pictures/signature10_222831.png">
+  <link href="https://fonts.googleapis.com/css?family=Lalezar|Rubik" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="./css/leaderboards.css">
+</head>
+<body>
+  <div class="modes">
+    <button id="mode-kz_vanilla-desktop" onclick="test(vanillawrs)" class="btn">Vanilla</button>
+    <button id="mode-kz_simple-desktop" onclick="test(simplekzwrs)" class="btn">SimpleKZ</button>
+    <button id="mode-kz_timer-desktop" onclick="test(kztimerwrs)" class="btn">KZTimer</button>
+  </div>
+
+  <div id="Leaderboards">
+
+    <div id="SimpleKZLeaderboards">
+      <div id="SKZTables">
+        <table cellspacing="0" id="SKZTimes">
+        </table>
+      </div>
+    </div>
+
+  </div>
+  <script type="text/javascript" src="../js/leaderboards.js"></script>
+</body>
+</html>

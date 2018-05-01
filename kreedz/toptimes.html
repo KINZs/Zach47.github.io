@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Top Times</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="A website for getting a random map for CS:GO KZ players" content="Top X Times On X Map">
+  <meta name="Jacob Barrett" content="www.jacobwbarrett.com">
+  <link rel="icon" type="image/png" href="../Pictures/LogoSpace.png">
+  <link href="https://fonts.googleapis.com/css?family=Lalezar" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <link rel="stylesheet" href="../css/randommap.css">
+</head>
+
+<body>
+  <div id="nav-leftside" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="fa fa-times" aria-hidden="true"></i></a>
+    <a href="../index.html">Home</a>
+    <a href="../index.html">Projects</a>
+    <a href="../index.html">Contact</a>
+  </div>
+
+
+  <div class="navbar">
+    <ul class="breadcrumbs">
+      <li><a href="../index.html#index">HOME</a></li>
+      <li><a href="../index.html#projects">PROJECTS</a></li>
+      <li><a href="../index.html#contact">CONTACT</a></li>
+    </ul>
+  </div>
+
+  <div class="banner">
+    <div class="mobile-nav">
+      <i class="mobile-nav-icon fa fa-bars fa-2x" aria-hidden="true" onclick="openNav()"></i>
+      <img class="mobile-nav-logo" src="../Pictures/LogoSpace.png"></img>
+
+      <!--Add a form here that lets you search on icon click for mobile -->
+      <i class="mobile-nav-icon fa fa-search fa-2x" onclick="openSearch()" aria-hidden="true"></i>
+      <form id="search">
+        <input type = "text" id="search-input" placeholder="Not available yet..." disabled>
+        <i class="mobile-nav-icon fa fa-times fa-2x" id="close-search" onclick="closeSearch()" aria-hidden="true"></i>
+      </form>
+    </div>
+    <!--Page Title-->
+    <h1 class="title">Top Times</h1>
+  </div>
+
+  <div id='TopTimesGraph' style='width:90%;height:500px;padding-left:5%;'></div>
+
+
+  <div id="addToThis">
+    <form id="uInput">
+      <input type="text" name"map_name" value="kz_colors_v2"></input>
+      <input type="text" name"max_players" value="20"></input>
+    </form>
+    <button onclick="getInput();getTop()">Get Input</button><br>
+  </div>
+
+
+
+  <!-- Load scripts at the bottom of the body tag -->
+
+  <script type="text/javascript" src="../js/top20.js"></script>
+  <script type="text/javascript" src="../js/biginteger.js"></script>
+
+
+</body>
+</html>

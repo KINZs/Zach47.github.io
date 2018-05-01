@@ -6,15 +6,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="A website for getting a random map for CS:GO KZ players" content="Random Map Generator">
   <meta name="Jacob Barrett" content="www.jacobwbarrett.com">
-  <link rel="icon" type="image/png" href="/Pictures/LogoSpace.png">
+  <link rel="icon" type="image/png" href="../Pictures/LogoSpace.png">
   <link href="https://fonts.googleapis.com/css?family=Lalezar" rel="stylesheet">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="../css/randommap.css">
   <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
   })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
   ga('create', 'UA-102102591-2', 'auto');
@@ -43,29 +44,22 @@
   <div class="banner">
     <div class="mobile-nav">
       <i class="mobile-nav-icon fa fa-bars fa-2x" aria-hidden="true" onclick="openNav()"></i>
-      <img class="mobile-nav-logo" src="/Pictures/LogoSpace.png"></img>
-
-      <!--Add a form here that lets you search on icon click for mobile -->
-      <i class="mobile-nav-icon fa fa-search fa-2x" onclick="openSearch()" aria-hidden="true"></i>
-      <form id="search">
-        <input type = "text" id="search-input" placeholder="Not available yet..." disabled>
-        <i class="mobile-nav-icon fa fa-times fa-2x" id="close-search" onclick="closeSearch()" aria-hidden="true"></i>
-      </form>
+      <img class="mobile-nav-logo" src="../Pictures/LogoSpace.png"></img>
     </div>
     <!--Page Title-->
     <h1 class="title">Random Map Generator</h1>
   </div>
 
   <div class="dropdown-difficulty">
-    <button id="difficulty-button" class="dropbtn-mobile">Select Difficulty</button>
+    <button id="difficulty-button" class="dropbtn-mobile">Any Difficulty</button>
     <div id="dropdown" class="difficulties-content">
-      <a id="difficulty-random">Any</a>
-      <a id="difficulty-ve">Very Easy</a>
-      <a id="difficulty-e">Easy</a>
-      <a id="difficulty-m">Medium</a>
-      <a id="difficulty-h">Hard</a>
-      <a id="difficulty-vh">Very Hard</a>
-      <a id="difficulty-d">Death</a>
+      <a id="difficulty-random-mobile" class="active">Any</a>
+      <a id="difficulty-ve-mobile">Very Easy</a>
+      <a id="difficulty-e-mobile">Easy</a>
+      <a id="difficulty-m-mobile">Medium</a>
+      <a id="difficulty-h-mobile">Hard</a>
+      <a id="difficulty-vh-mobile">Very Hard</a>
+      <a id="difficulty-d-mobile">Death</a>
     </div>
   </div>
 
@@ -83,22 +77,24 @@
   <div class="main">
     <div class="image">
       <img class="imgResize" id="changePicture" alt="If no image loads, send an email to me or submit a picture of the map to kzstats.com!" src=""></img>
+      </div>
+
+      <div class="content">
+        <p id="mapPost"></p>
+        <p id="mapDescription"></p>
+        <p id="mapAvgTP"></p>
+        <p id="mapAvgPRO"></p>
+        <p id="mapFilesize"></p>
+        <p id="mapDifficulty"></p>
+        <br>
+        <div id="graph" style="width:600px;height:250px;"></div>
+        <button id='mapChoose'>New map</button>
+      </div>
     </div>
 
-    <div class="content">
-      <p id="mapPost"></p>
-      <p id="mapDescription"></p>
-      <p id="mapAvgTP"></p>
-      <p id="mapAvgPRO"></p>
-      <p id="mapFilesize"></p>
-      <p id="mapDifficulty"></p>
-      <button id='mapChoose'>New map</button>
-    </div>
-  </div>
-
-  <!-- Load scripts at the bottom of the body tag -->
-  <script type="text/javascript" src="../js/randommap.js"></script>
-  <script type="text/javascript" src="../js/mobile.js"></script>
-  <script type="text/javascript" src="../js/mapchoice.js"></script>
-</body>
-</html>
+    <!-- Load scripts at the bottom of the body tag -->
+    <script type="text/javascript" src="../js/randommap.js"></script>
+    <script type="text/javascript" src="../js/mapchoice.js"></script>
+    <script type="text/javascript" src="../js/mobile.js"></script>
+  </body>
+  </html>
