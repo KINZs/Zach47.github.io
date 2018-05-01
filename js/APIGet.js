@@ -2,13 +2,13 @@
 let playerList = [];
 let TableSelection = "";
 // Links
-let LJurl = "https://staging.kztimerglobal.com/api/v1/jumpstats/longjump/top?is_crouch_boost=false&limit=2000";
-let BHOPurl = "https://staging.kztimerglobal.com/api/v1/jumpstats?jumptype=bhop&is_crouch_boost=false&limit=500";
-let MBHOPurl = "https://staging.kztimerglobal.com/api/v1/jumpstats?jumptype=multibhop&is_crouch_boost=false&limit=500";
-let WJurl = "https://staging.kztimerglobal.com/api/v1/jumpstats?jumptype=weirdjump&is_crouch_boost=false&limit=500";
-let DBHOPurl = "https://staging.kztimerglobal.com/api/v1/jumpstats?jumptype=dropbhop&is_crouch_boost=false&limit=500";
-let CJurl = "https://staging.kztimerglobal.com/api/v1/jumpstats?jumptype=countjump&is_crouch_boost=false&limit=500";
-let LAJurl = "https://staging.kztimerglobal.com/api/v1/jumpstats?jumptype=ladderjump&is_crouch_boost=false&limit=500";
+let LJurl = "https://kztimerglobal.com/api/v1.0/jumpstats/longjump/top?is_crouch_boost=false&limit=20";
+let BHOPurl = "https://kztimerglobal.com/api/v1.0/jumpstats/bhop/top?is_crouch_boost=false&limit=20";
+let MBHOPurl = "https://kztimerglobal.com/api/v1.0/jumpstats/multibhop/top?is_crouch_boost=false&limit=20";
+let WJurl = "https://kztimerglobal.com/api/v1.0/jumpstats/weirdjump/top?is_crouch_boost=false&limit=20";
+let DBHOPurl = "https://kztimerglobal.com/api/v1.0/jumpstats/dropbhop/top?is_crouch_boost=false&limit=20";
+let CJurl = "https://kztimerglobal.com/api/v1.0/jumpstats/countjump/top?is_crouch_boost=false&limit=20";
+let LAJurl = "https://kztimerglobal.com/api/v1.0/jumpstats/ladderjump/top?is_crouch_boost=false&limit=20";
 // Steam
 let steam64;
 let steamBigInt;
@@ -16,6 +16,11 @@ let playerName;
 
 
 $(document).ready(function(){
+  if (/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ) {
+    TableSelection = "TableLJ";
+    url = LJurl;
+    LoadTable();
+  }
 
   document.addEventListener('click', (event) => {
     if (event.target.id === "jumptype-button-bind") {

@@ -299,7 +299,7 @@
   {
     "id": 227,
     "Global": "1",
-    "mapname": "kz_2seasons_spring_fix",
+    "mapname": "kz_2seasons_spring_final",
     "description": "No description available.",
     "Avg_maptime_pro": 695.954723011363,
     "Avg_maptime_tp": 797.413812569478,
@@ -3707,28 +3707,6 @@
     "workshop_id": 406056102
   },
   {
-    "id": 9999,
-    "Global": "0",
-    "mapname": "xc_fox_shrine_japan_go2",
-    "description": "No description available.",
-    "Avg_maptime_pro": 1178.98670372596,
-    "Avg_maptime_tp": 1082.03000641774,
-    "filesize": 36124232,
-    "difficulty_id": 3,
-    "workshop_id": 491404731
-  },
-  {
-    "id": 9999,
-    "Global": "1",
-    "mapname": "xc_karo4_global",
-    "description": "No description available.",
-    "Avg_maptime_pro": 542.144965277777,
-    "Avg_maptime_tp": 665.855570344002,
-    "filesize": 16236324,
-    "difficulty_id": 3,
-    "workshop_id": 406056376
-  },
-  {
     "id": 532,
     "Global": "1",
     "mapname": "xc_karo4",
@@ -3837,5 +3815,214 @@
     "filesize": 44565552,
     "difficulty_id": 3,
     "workshop_id": 419054050
+  },
+  {
+    "id": 542,
+    "Global": "1",
+    "mapname": "bkz_fear4",
+    "description": "No description available.",
+    "Avg_maptime_pro": "NA",
+    "Avg_maptime_tp": "NA",
+    "filesize": 20936652,
+    "difficulty_id": 3,
+    "workshop_id": 1251914494
+  },
+  {
+    "id": 543,
+    "Global": "1",
+    "mapname": "kz_11342",
+    "description": "No description available.",
+    "Avg_maptime_pro": "NA",
+    "Avg_maptime_tp": "NA",
+    "filesize": 19771824,
+    "difficulty_id": 4,
+    "workshop_id": 1155205561
+  },
+  {
+    "id": 544,
+    "Global": "1",
+    "mapname": "kz_bhop_nothing_go",
+    "description": "No description available.",
+    "Avg_maptime_pro": "NA",
+    "Avg_maptime_tp": "NA",
+    "filesize": 108537939,
+    "difficulty_id": 5,
+    "workshop_id": 1204096299
+  },
+  {
+    "id": 545,
+    "Global": "1",
+    "mapname": "kz_cousucks",
+    "description": "No description available.",
+    "Avg_maptime_pro": "NA",
+    "Avg_maptime_tp": "NA",
+    "filesize": 13600856,
+    "difficulty_id": 3,
+    "workshop_id": 1241648205
+  },
+  {
+    "id": 546,
+    "Global": "1",
+    "mapname": "kz_erratum",
+    "description": "No description available.",
+    "Avg_maptime_pro": "NA",
+    "Avg_maptime_tp": "NA",
+    "filesize": 20339436,
+    "difficulty_id": 3,
+    "workshop_id": 1170612689
+  },
+  {
+    "id": 547,
+    "Global": "1",
+    "mapname": "kz_forgotten_fix",
+    "description": "No description available.",
+    "Avg_maptime_pro": "NA",
+    "Avg_maptime_tp": "NA",
+    "filesize": 64843480,
+    "difficulty_id": 4,
+    "workshop_id": 1213870327
+  },
+  {
+    "id": 548,
+    "Global": "1",
+    "mapname": "kz_gallus",
+    "description": "No description available.",
+    "Avg_maptime_pro": "NA",
+    "Avg_maptime_tp": "NA",
+    "filesize": 56587468,
+    "difficulty_id": 3,
+    "workshop_id": 890259285
+  },
+  {
+    "id": 549,
+    "Global": "1",
+    "mapname": "kz_grate",
+    "description": "No description available.",
+    "Avg_maptime_pro": "NA",
+    "Avg_maptime_tp": "NA",
+    "filesize": 5725772,
+    "difficulty_id": 3,
+    "workshop_id": 1092513087
+  },
+  {
+    "id": 550,
+    "Global": "1",
+    "mapname": "kz_grey",
+    "description": "No description available.",
+    "Avg_maptime_pro": "NA",
+    "Avg_maptime_tp": "NA",
+    "filesize": 9368656,
+    "difficulty_id": 3,
+    "workshop_id": 950176350
+  },
+  {
+    "id": 551,
+    "Global": "1",
+    "mapname": "bkz_fapzor",
+    "description": "No description available.",
+    "Avg_maptime_pro": "NA",
+    "Avg_maptime_tp": "NA",
+    "filesize": 77030228,
+    "difficulty_id": 3,
+    "workshop_id": 1304605829
+  },
+  {
+    "id": 552,
+    "Global": "1",
+    "mapname": "kz_coronado",
+    "description": "No description available.",
+    "Avg_maptime_pro": "NA",
+    "Avg_maptime_tp": "NA",
+    "filesize": 48830764,
+    "difficulty_id": 3,
+    "workshop_id": 1312399862
+  },
+  {
+    "id": 553,
+    "Global": "1",
+    "mapname": "kz_dakow",
+    "description": "No description available.",
+    "Avg_maptime_pro": "NA",
+    "Avg_maptime_tp": "NA",
+    "filesize": 18160908,
+    "difficulty_id": 3,
+    "workshop_id": 1278987653
+  },
+  {
+    "id": 554,
+    "Global": "1",
+    "mapname": "kz_dethroned",
+    "description": "No description available.",
+    "Avg_maptime_pro": "NA",
+    "Avg_maptime_tp": "NA",
+    "filesize": 49089312,
+    "difficulty_id": 3,
+    "workshop_id": 1295359223
+  },
+  {
+    "id": 555,
+    "Global": "1",
+    "mapname": "kz_rumzor",
+    "description": "No description available.",
+    "Avg_maptime_pro": "NA",
+    "Avg_maptime_tp": "NA",
+    "filesize": 14509160,
+    "difficulty_id": 3,
+    "workshop_id": 1157701765
+  },
+  {
+    "id": 556,
+    "Global": "1",
+    "mapname": "kz_sky_lake",
+    "description": "No description available.",
+    "Avg_maptime_pro": "NA",
+    "Avg_maptime_tp": "NA",
+    "filesize": 73945640,
+    "difficulty_id": 5,
+    "workshop_id": 1298788457
+  },
+  {
+    "id": 557,
+    "Global": "1",
+    "mapname": "kz_spacemario_h",
+    "description": "No description available.",
+    "Avg_maptime_pro": "NA",
+    "Avg_maptime_tp": "NA",
+    "filesize": 150941940,
+    "difficulty_id": 6,
+    "workshop_id": 685184665
+  },
+  {
+    "id": 558,
+    "Global": "1",
+    "mapname": "skz_sati",
+    "description": "No description available.",
+    "Avg_maptime_pro": "NA",
+    "Avg_maptime_tp": "NA",
+    "filesize": 15886776,
+    "difficulty_id": 3,
+    "workshop_id": 1226660943
+  },
+  {
+    "id": 559,
+    "Global": "1",
+    "mapname": "xc_dtt_nasty_go",
+    "description": "No description available.",
+    "Avg_maptime_pro": "NA",
+    "Avg_maptime_tp": "NA",
+    "filesize": 9368656,
+    "difficulty_id": 3,
+    "workshop_id": 1257230741
+  },
+  {
+    "id": 560,
+    "Global": "1",
+    "mapname": "xc_fox_shrine_japan",
+    "description": "No description available.",
+    "Avg_maptime_pro": "NA",
+    "Avg_maptime_tp": "NA",
+    "filesize": 54611052,
+    "difficulty_id": 3,
+    "workshop_id": 1279693156
   }
 ]

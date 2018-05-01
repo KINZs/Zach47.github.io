@@ -1,4 +1,3 @@
-var pathTo = 'http://www.kzstats.com/img/map/';
 var formatted_time = "";
 var VeryEasyMaps = [];
 var EasyMaps = [];
@@ -11,23 +10,23 @@ var temp_map_array = [];
 function getDifficulty(id) {
   switch(id) {
     case 1:
-      difficulty = "Very Easy";
-      break;
+    difficulty = "Very Easy";
+    break;
     case 2:
-      difficulty = "Easy";
-      break;
+    difficulty = "Easy";
+    break;
     case 3:
-      difficulty = "Medium"
-      break;
+    difficulty = "Medium"
+    break;
     case 4:
-      difficulty = "Hard"
-      break;
+    difficulty = "Hard"
+    break;
     case 5:
-      difficulty = "Very Hard"
-      break;
+    difficulty = "Very Hard"
+    break;
     case 6:
-      difficulty = "Death"
-      break;
+    difficulty = "Death"
+    break;
   }
 }
 
@@ -49,7 +48,7 @@ function timeConvert(time) {
     seconds = Math.floor(time % 60);
     return str_pad_left(hours, '0',2)+':'+str_pad_left(minutes,'0',2)+':'+str_pad_left(seconds,'0',2);
   }
-  else if (time == "NA") {
+  else if (time === "NA") {
     return "NA";
   }
   else {
@@ -67,7 +66,7 @@ function getRandomMap() {
     dataType: "text",
     success: function(Map_info) {
       var data = $.parseJSON(Map_info);
-      var mapCount = Object.keys(data).length;
+      var mapCount = data.length;
       var randomGet = Math.round(Math.random()*(mapCount - 1));
       var randomMap = data[randomGet];
       /* Gets difficulty title */
@@ -76,7 +75,7 @@ function getRandomMap() {
       var time_tp = timeConvert(randomMap.Avg_maptime_tp);
       var time_pro = timeConvert(randomMap.Avg_maptime_pro);
       /* HTML Formatting, gets image url */
-      var imageUrl = pathTo + randomMap.mapname + ".jpg";
+      var imageUrl = 'https://s3.us-east-2.amazonaws.com/gokzstats/mapImages/' + randomMap.mapname + ".jpg";
       $('#mapPost').html("<a href='http://steamcommunity.com/sharedfiles/filedetails/?id=" + randomMap.workshop_id + "'>" + randomMap.mapname + "</a>");
       $('#mapDescription').html(randomMap.description);
       $('#mapAvgTP').html("Average TP Time: " + time_tp);
@@ -84,130 +83,85 @@ function getRandomMap() {
       $('#mapFilesize').html("File size: " + (randomMap.filesize/1000000).toFixed(2) + "mb");
       $('#mapDifficulty').html("Difficulty: " + difficulty);
       $('#changePicture').attr("src", imageUrl);
+
+      let url = 'http://kztimerglobal.com/api/v1.0/records/top/recent?map_name=' + randomMap.mapname + '&tickrate=128&stage=0&modes_list_string=kz_simple&place_top_at_least=1&place_top_overall_at_least=1&has_teleports=false'
+      let xl = []
+      let yl = []
+      Plotly.d3.json(url, function(figure){
+        for (var i=0; i< figure.length; i++){
+          xl.push(figure[i].created_on)
+          yl.push(figure[i].time)
+        }
+        let trace = {
+          x: xl,
+          y: yl
+        }
+        Plotly.plot(document.getElementById('graph'), [trace]);
+      });
     }
   });
+
 }
+
 
 $(document).ready(function(){
   getRandomMap();
 
-  $("#difficulty-random-desktop").on('click', function(){
+  $('#difficulty-random-desktop,#difficulty-ve-desktop,#difficulty-e-desktop,#difficulty-m-desktop,#difficulty-h-desktop,#difficulty-vh-desktop,#difficulty-d-desktop').on('click', function() {
+    $("button[id$='desktop']").css("color","#E45051");
+  });
+  $('#difficulty-random-mobile,#difficulty-ve-mobile,#difficulty-e-mobile,#difficulty-m-mobile,#difficulty-h-mobile,#difficulty-vh-mobile,#difficulty-d-mobile').on('click', function() {
+    $("a[id$='mobile']").removeClass("active");
+  });
+  $("#difficulty-random-desktop,#difficulty-random-mobile").on('click', function(){
     showAny();
   });
-  $("#difficulty-ve-desktop").on('click', function(){
+  $("#difficulty-ve-desktop,#difficulty-ve-mobile").on('click', function(){
     showVeryEasy();
   });
-  $("#difficulty-e-desktop").on('click', function(){
+  $("#difficulty-e-desktop,#difficulty-e-mobile").on('click', function(){
     showEasy();
   });
-  $("#difficulty-m-desktop").on('click', function(){
+  $("#difficulty-m-desktop,#difficulty-m-mobile").on('click', function(){
     showMedium();
   });
-  $("#difficulty-h-desktop").on('click', function(){
+  $("#difficulty-h-desktop,#difficulty-h-mobile").on('click', function(){
     showHard();
   });
-  $("#difficulty-vh-desktop").on('click', function(){
+  $("#difficulty-vh-desktop,#difficulty-vh-mobile").on('click', function(){
     showVeryHard();
   });
-  $("#difficulty-d-desktop").on('click', function(){
+  $("#difficulty-d-desktop,#difficulty-d-mobile").on('click', function(){
     showDeath();
   });
-
-  $("#difficulty-random").on('click', function(){
-    document.getElementById("difficulty-random").classList.add("active");
-
-    if (document.getElementById("difficulty-random").classList.contains("active")) {
-      document.getElementById("difficulty-ve").classList.remove("active");
-      document.getElementById("difficulty-e").classList.remove("active");
-      document.getElementById("difficulty-m").classList.remove("active");
-      document.getElementById("difficulty-h").classList.remove("active");
-      document.getElementById("difficulty-vh").classList.remove("active");
-      document.getElementById("difficulty-d").classList.remove("active");
+  $("#difficulty-button").on('click', function(){
+    if (document.getElementById("dropdown").style.display === "flex") {
+      document.getElementById("dropdown").style.display = "none";
+    } else {
+      document.getElementById("dropdown").style.display = "flex";
     }
-    showAny();
   });
-
-  $("#difficulty-ve").on('click', function(){
-    document.getElementById("difficulty-ve").classList.add("active");
-
-    if (document.getElementById("difficulty-ve").classList.contains("active")) {
-      document.getElementById("difficulty-random").classList.remove("active");
-      document.getElementById("difficulty-e").classList.remove("active");
-      document.getElementById("difficulty-m").classList.remove("active");
-      document.getElementById("difficulty-h").classList.remove("active");
-      document.getElementById("difficulty-vh").classList.remove("active");
-      document.getElementById("difficulty-d").classList.remove("active");
+  $("#mapChoose").on('click', function(){
+    if (document.getElementById("difficulty-random-mobile").classList.contains("active")) {
+      showAny();
     }
-    showVeryEasy();
-  });
-
-  $("#difficulty-e").on('click', function(){
-    document.getElementById("difficulty-e").classList.add("active");
-
-    if (document.getElementById("difficulty-e").classList.contains("active")) {
-      document.getElementById("difficulty-random").classList.remove("active");
-      document.getElementById("difficulty-ve").classList.remove("active");
-      document.getElementById("difficulty-m").classList.remove("active");
-      document.getElementById("difficulty-h").classList.remove("active");
-      document.getElementById("difficulty-vh").classList.remove("active");
-      document.getElementById("difficulty-d").classList.remove("active");
+    else if (document.getElementById("difficulty-ve-mobile").classList.contains("active")) {
+      showVeryEasy();
     }
-    showEasy();
-  });
-
-  $("#difficulty-m").on('click', function(){
-    document.getElementById("difficulty-m").classList.add("active");
-
-    if (document.getElementById("difficulty-m").classList.contains("active")) {
-      document.getElementById("difficulty-random").classList.remove("active");
-      document.getElementById("difficulty-ve").classList.remove("active");
-      document.getElementById("difficulty-e").classList.remove("active");
-      document.getElementById("difficulty-h").classList.remove("active");
-      document.getElementById("difficulty-vh").classList.remove("active");
-      document.getElementById("difficulty-d").classList.remove("active");
+    else if (document.getElementById("difficulty-e-mobile").classList.contains("active")) {
+      showEasy();
     }
-    showMedium();
-  });
-
-  $("#difficulty-h").on('click', function(){
-    document.getElementById("difficulty-h").classList.add("active");
-
-    if (document.getElementById("difficulty-h").classList.contains("active")) {
-      document.getElementById("difficulty-random").classList.remove("active");
-      document.getElementById("difficulty-ve").classList.remove("active");
-      document.getElementById("difficulty-e").classList.remove("active");
-      document.getElementById("difficulty-m").classList.remove("active");
-      document.getElementById("difficulty-vh").classList.remove("active");
-      document.getElementById("difficulty-d").classList.remove("active");
+    else if (document.getElementById("difficulty-m-mobile").classList.contains("active")) {
+      showMedium();
     }
-    showHard();
-  });
-
-  $("#difficulty-vh").on('click', function(){
-    document.getElementById("difficulty-vh").classList.add("active");
-
-    if (document.getElementById("difficulty-vh").classList.contains("active")) {
-      document.getElementById("difficulty-random").classList.remove("active");
-      document.getElementById("difficulty-ve").classList.remove("active");
-      document.getElementById("difficulty-e").classList.remove("active");
-      document.getElementById("difficulty-m").classList.remove("active");
-      document.getElementById("difficulty-h").classList.remove("active");
-      document.getElementById("difficulty-d").classList.remove("active");
+    else if (document.getElementById("difficulty-h-mobile").classList.contains("active")) {
+      showHard();
     }
-    showVeryHard();
-  });
-
-  $("#difficulty-d").on('click', function(){
-    document.getElementById("difficulty-d").classList.add("active");
-
-    if (document.getElementById("difficulty-d").classList.contains("active")) {
-      document.getElementById("difficulty-random").classList.remove("active");
-      document.getElementById("difficulty-ve").classList.remove("active");
-      document.getElementById("difficulty-e").classList.remove("active");
-      document.getElementById("difficulty-m").classList.remove("active");
-      document.getElementById("difficulty-h").classList.remove("active");
-      document.getElementById("difficulty-vh").classList.remove("active");
+    else if (document.getElementById("difficulty-vh-mobile").classList.contains("active")) {
+      showVeryHard();
     }
-    showDeath();
+    else if (document.getElementById("difficulty-d-mobile").classList.contains("active")) {
+      showDeath();
+    }
   });
 });

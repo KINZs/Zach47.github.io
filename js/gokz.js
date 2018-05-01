@@ -1,7 +1,14 @@
 let jsonMapId = {};
 let maplist = [];
+
+// Main Page
 let mostRecentTimes = [];
 let mostRecentTopTimes = [];
+
+// Map Page
+let mapRecentTimes = [];
+let mapProTimes = [];
+
 let usedTopTimes = [];
 let mostRecentTopTimesFiltered = [];
 let usedTimes = [];
@@ -11,9 +18,9 @@ let mapname = "";
 const kz_simpleRecords = "https://kztimerglobal.com/api/v1.0/records/top/recent?stage=0&tickrate=128&modes_list_string=kz_simple&limit=100";
 const kz_timerRecords = "https://kztimerglobal.com/api/v1.0/records/top/recent?stage=0&tickrate=128&modes_list_string=kz_timer&limit=100";
 const kz_vanillaRecords = "https://kztimerglobal.com/api/v1.0/records/top/recent?stage=0&tickrate=128&modes_list_string=kz_vanilla&limit=100";
-const kz_simpleTopRecords = "https://kztimerglobal.com/api/v1.0/records/top/recent?modes_list_string=kz_simple&place_top_at_least=1&has_teleports=false&stage=0&limit=300";
-const kz_timerTopRecords = "https://kztimerglobal.com/api/v1.0/records/top/recent?modes_list_string=kz_timer&place_top_at_least=1&has_teleports=false&stage=0&limit=300";
-const kz_vanillaTopRecords = "https://kztimerglobal.com/api/v1.0/records/top/recent?modes_list_string=kz_vanilla&place_top_at_least=1&has_teleports=false&stage=0&limit=300";
+const kz_simpleTopRecords = "https://kztimerglobal.com/api/v1.0/records/top/recent?modes_list_string=kz_simple&place_top_at_least=1&has_teleports=false&stage=0&limit=300&tickrate=128";
+const kz_timerTopRecords = "https://kztimerglobal.com/api/v1.0/records/top/recent?modes_list_string=kz_timer&place_top_at_least=1&has_teleports=false&stage=0&limit=300&tickrate=128";
+const kz_vanillaTopRecords = "https://kztimerglobal.com/api/v1.0/records/top/recent?modes_list_string=kz_vanilla&place_top_at_least=1&has_teleports=false&stage=0&limit=300&tickrate=128";
 const kz_simpleLoadMap = "https://kztimerglobal.com/api/v1/records/top?modes_list_string=kz_simple";
 const kz_timerLoadMap = "https://kztimerglobal.com/api/v1/records/top?modes_list_string=kz_timer";
 const kz_vanillaLoadMap = "https://kztimerglobal.com/api/v1/records/top?modes_list_string=kz_vanilla";
@@ -29,6 +36,7 @@ function sortArray(array) {
   });
   return array;
 }
+
 /* https://stackoverflow.com/questions/3733227/javascript-seconds-to-minutes-and-seconds */
 function str_pad_left(string,pad,length) {
   return (new Array(length+1).join(pad)+string).slice(-length);
@@ -76,18 +84,55 @@ function dateConvert(time) {
 
   if (parseInt(hour) > 12) {
     hour = parseInt(hour) - 12;
-    time = month + "-" + day + "-" + year + "  " + hour + ":" + (parseInt(minutes) < 10 ? "0" + minutes : minutes) + "pm";
+    time = month + "." + day + "." + year + "  " + hour + ":" + (parseInt(minutes) < 10 ? "0" + minutes : minutes) + "pm";
   }
   else if (hour === 0) {
-    time = month + "-" + day + "-" + year + "  " + 12 + ":" + (parseInt(minutes) < 10 ? "0" + minutes : minutes) + "am";
+    time = month + "." + day + "." + year + "  " + 12 + ":" + (parseInt(minutes) < 10 ? "0" + minutes : minutes) + "am";
+  }
+  else if (hour == 12) {
+    time = month + "." + day + "." + year + "  " + 12 + ":" + (parseInt(minutes) < 10 ? "0" + minutes : minutes) + "pm";
   }
   else {
-    time = month + "-" + day + "-" + year + "  " +  hour + ":" + (parseInt(minutes) < 10 ? "0" + minutes : minutes) + "am";
+    time = month + "." + day + "." + year + "  " +  hour + ":" + (parseInt(minutes) < 10 ? "0" + minutes : minutes) + "am";
   }
   return time;
 }
 
+function checkLength(name) {
+  if( /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ) {
+    if (name.player_name.toString().length > 13) {
+      if (name.player_name.toString().length > 16) {
+        playerName = name.player_name.substr(0,8) + "...";
+      } else { playerName = name.player_name.substr(0,10) + "..."; }
+    } else { playerName = name.player_name; }
+  } else {
+    if (name.player_name.toString().length > 14) {
+      if (name.player_name.toString().length > 17) {
+        playerName = name.player_name.substr(0,9) + "...";
+      } else { playerName = name.player_name.substr(0,11) + "..."; }
+    } else { playerName = name.player_name; }
+  }
+}
+
+function getTimeDifference(time) {
+  timeAchieved = new Date(time);
+  timeAchieved = timeAchieved - timeAchieved.getTimezoneOffset()*60000;
+  timeNow = new Date().toUTCString();
+  let timeDifference = (Date.parse(timeNow) - timeAchieved) / (1000 * 60 * 60);
+
+  if (timeDifference < 1) {
+    return Math.ceil(timeDifference*60) + " minutes ago";
+  }
+  if (timeDifference < 24) {
+    return Math.ceil(timeDifference) + " hours ago";
+  }
+  else if (timeDifference >= 24) {
+    return Math.ceil((timeDifference / 24)) + " days ago";
+  }
+}
+
 function getPlayerInfo(url) {
+  currentpage = 0;
   document.getElementById("displayTimes").style.display = "none";
   document.getElementById("displayMapTimes").style.display = "none";
   usedTimes = [];
@@ -100,6 +145,7 @@ function getPlayerInfo(url) {
   $.ajax({
     url: url,
     success: function(playerInfo) {
+      window.history.replaceState('map', 'Map', '/?name=' + playerInfo[0].steam_id);
       if (playerInfo.length === 0) {
         $("#TableTimes tr").remove();
         let row = document.getElementById("TableTimes").insertRow(-1);
@@ -120,6 +166,7 @@ function getPlayerInfo(url) {
         postTimes.push(playerInfo[i]);
       }
       document.getElementById("playerName").innerHTML = postTimes[0].player_name;
+      document.getElementById("playerSteamID").innerHTML = postTimes[0].steam_id;
 
       // Steam64. 64 bit JS magic. Takes from getPlayerStats.js
       steamid = (playerInfo[0].steam_id).split(":");
@@ -135,7 +182,7 @@ function getPlayerInfo(url) {
 
       if( /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ) {
         $('br').remove();
-        $('#playerInfo').append("<br><br><div>" + postTimes.length + " / " + maplist.length + " Pro Times</div>");
+        $('#playerInfo').append("<br><div>" + postTimes.length + " / " + maplist.length + " Pro Times</div>");
       } else {
         $('#playerInfo').append("<div>" + postTimes.length + " / " + maplist.length + " Pro Times</div>");
       }
@@ -172,17 +219,10 @@ function getPlayerInfo(url) {
         let cell2 = row.insertCell(1);
         let cell3 = row.insertCell(2);
 
-        if( /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ) {
-          cell1.parentNode.id = jsonMapId[postTimes[i].map_id][0];
-          cell1.innerHTML = jsonMapId[postTimes[i].map_id][0];
-          cell2.innerHTML = timeConvert(postTimes[i].time);
-          cell3.innerHTML = dateConvert(postTimes[i].created_on);
-        } else {
-          cell1.parentNode.id = jsonMapId[postTimes[i].map_id][0];
-          cell1.innerHTML = jsonMapId[postTimes[i].map_id][0];
-          cell2.innerHTML = timeConvert(postTimes[i].time);
-          cell3.innerHTML = dateConvert(postTimes[i].created_on);
-        }
+        cell1.parentNode.id = jsonMapId[postTimes[i].map_id][0];
+        cell1.innerHTML = jsonMapId[postTimes[i].map_id][0];
+        cell2.innerHTML = timeConvert(postTimes[i].time);
+        cell3.innerHTML = dateConvert(postTimes[i].created_on);
 
         $('td').click(function(event){
           if (event.target.parentNode.id === "TableTitle") {
@@ -201,21 +241,19 @@ function getPlayerInfo(url) {
   document.getElementById("playerName").style.display = "flex";
   document.getElementById("pagination").style.display = "flex";
   document.getElementById("displayPlayerProfile").style.display = "flex";
-
-  if( /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ) {
-    document.getElementById("pagination").style.display = "none";
-  }
 }
 
 
 function loadMap(map) {
-  document.getElementById("pagination").style.display = "none";
+  currentpage = 0;
+  document.getElementById("previous").style.background = "#cb6f6c";
+  document.getElementById("next").style.background = "#222831";
+  document.getElementById("pagination").style.display = "flex";
   document.getElementById("playerName").style.display = "none";
   document.getElementById("displayPlayerProfile").style.display = "none";
   searchMapName = map.toLowerCase();
   $("#searchMap").val(searchMapName);
   if ($("#searchMap").val().length > 0) {
-
     for (i=0;i<maplist.length;i++) {
       if (maplist[i].includes(searchMapName)) {
         searchMapName = maplist[i];
@@ -223,12 +261,14 @@ function loadMap(map) {
         break;
       }
     }
-    let searchUrlPro = kz_loadmap + "&map_name=" + searchMapName + "&stage=0&has_teleports=false&limit=20&tickrate=128";
-    let searchUrlTP = kz_loadmap + "&map_name=" + searchMapName + "&stage=0&limit=20&tickrate=128";
+    let searchUrlPro = kz_loadmap + "&map_name=" + searchMapName + "&stage=0&has_teleports=false&limit=3000&tickrate=128";
+    let searchUrlTP = kz_loadmap + "&map_name=" + searchMapName + "&stage=0&limit=3000&tickrate=128";
+    window.history.replaceState('map', 'Map', '/?map=' + searchMapName);
     $.ajax({
       url: searchUrlTP,
       success: function(mapTP) {
         $("#TableOverallTimes tr").remove();
+        mapRecentTimes = mapTP.slice();
 
         let position = 0;
         for (i=0;i<maplist.length;i++) {
@@ -245,7 +285,8 @@ function loadMap(map) {
           document.getElementById("displayMapTimes").style.display = "flex";
           return;
         }
-        for (i=0;i<mapTP.length;i++) {
+        let numberOfTPTimes = (mapTP.length < 20 ? mapTP.length : 20)
+        for (i=0;i<numberOfTPTimes;i++) {
           if (jsonMapId[mapTP[i].map_id][0] !== searchMapName) {
             let row = document.getElementById("TableOverallTimes").insertRow(-1);
             let cell1 = row.insertCell(0);
@@ -256,19 +297,7 @@ function loadMap(map) {
           }
           position++;
 
-          if( /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ) {
-            if (mapTP[i].player_name.toString().length > 11) {
-              if (mapTP[i].player_name.toString().length > 14) {
-                playerName = mapTP[i].player_name.substr(0,6) + "...";
-              } else { playerName = mapTP[i].player_name.substr(0,8) + "..."; }
-            } else { playerName = mapTP[i].player_name; }
-          } else {
-            if (mapTP[i].player_name.toString().length > 20) {
-              if (mapTP[i].player_name.toString().length > 23) {
-                playerName = mapTP[i].player_name.substr(0,15) + "...";
-              } else { playerName = mapTP[i].player_name.substr(0,17) + "..."; }
-            } else { playerName = mapTP[i].player_name; }
-          }
+          checkLength(mapTP[i]);
 
           let row = document.getElementById("TableOverallTimes").insertRow(-1);
           let cell1 = row.insertCell(0);
@@ -277,21 +306,18 @@ function loadMap(map) {
           let cell4 = row.insertCell(3);
           let cell5 = row.insertCell(4);
 
-          if( /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ) {
-            row.id = mapTP[i].steam_id;
-            cell2.id = "name";
+          row.id = mapTP[i].steam_id;
+          cell2.id = "name";
+          cell2.innerHTML = playerName;
+          cell3.innerHTML = timeConvert(mapTP[i].time);
+
+          if(!(/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent))) {
             cell1.innerHTML = position;
-            cell2.innerHTML = playerName;
-            cell3.innerHTML = timeConvert(mapTP[i].time);
-            cell4.innerHTML = mapTP[i].teleports;
-          } else {
-            row.id = mapTP[i].steam_id;
-            cell2.id = "name";
-            cell1.innerHTML = position;
-            cell2.innerHTML = playerName;
-            cell3.innerHTML = timeConvert(mapTP[i].time);
             cell4.innerHTML = mapTP[i].teleports + " TPs";
             cell5.innerHTML = dateConvert(mapTP[i].created_on);
+          } else {
+            cell4.innerHTML = mapTP[i].teleports;
+
           }
 
           document.getElementById("displayTimes").style.display = "none";
@@ -311,6 +337,7 @@ function loadMap(map) {
       success: function(mapPro) {
 
         $("#TableProTimes tr").remove();
+        mapProTimes = mapPro.slice();
 
         let position = 0;
         for (i=0;i<maplist.length;i++) {
@@ -327,7 +354,8 @@ function loadMap(map) {
           document.getElementById("displayMapTimes").style.display = "flex";
           return;
         }
-        for (i=0;i<mapPro.length;i++) {
+        let numberOfProTimes = (mapPro.length < 20 ? mapPro.length : 20);
+        for (i=0;i<numberOfProTimes;i++) {
           if (jsonMapId[mapPro[i].map_id][0] !== searchMapName) {
             let row = document.getElementById("TableProTimes").insertRow(-1);
             let cell1 = row.insertCell(0);
@@ -338,40 +366,23 @@ function loadMap(map) {
           }
           position++;
 
-          if( /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ) {
-            if (mapPro[i].player_name.toString().length > 13) {
-              if (mapPro[i].player_name.toString().length > 16) {
-                playerName = mapPro[i].player_name.substr(0,8) + "...";
-              } else { playerName = mapPro[i].player_name.substr(0,10) + "..."; }
-            } else { playerName = mapPro[i].player_name; }
-          } else {
-            if (mapPro[i].player_name.toString().length > 20) {
-              if (mapPro[i].player_name.toString().length > 23) {
-                playerName = mapPro[i].player_name.substr(0,15) + "...";
-              } else { playerName = mapPro[i].player_name.substr(0,17) + "..."; }
-            } else { playerName = mapPro[i].player_name; }
-          }
+          checkLength(mapPro[i]);
 
           let row = document.getElementById("TableProTimes").insertRow(-1);
           let cell1 = row.insertCell(0);
           let cell2 = row.insertCell(1);
           let cell3 = row.insertCell(2);
-          let cell4 = row.insertCell(3);
-          let cell5 = row.insertCell(4);
 
-          if( /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ) {
-            row.id = mapPro[i].steam_id;
-            cell2.id = "name";
-            cell1.innerHTML = position;
-            cell2.innerHTML = playerName;
-            cell3.innerHTML = timeConvert(mapPro[i].time);
-          } else {
-            row.id = mapPro[i].steam_id;
-            cell2.id = "name";
-            cell1.innerHTML = position;
-            cell2.innerHTML = playerName;
-            cell3.innerHTML = timeConvert(mapPro[i].time);
-            cell5.innerHTML = dateConvert(mapPro[i].created_on);
+
+          row.id = mapPro[i].steam_id;
+          cell1.innerHTML = position;
+          cell2.id = "name";
+          cell2.innerHTML = playerName;
+          cell3.innerHTML = timeConvert(mapPro[i].time);
+
+          if(!(/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent))) {
+            let cell4 = row.insertCell(3);
+            cell4.innerHTML = dateConvert(mapPro[i].created_on);
           }
 
           document.getElementById("displayTimes").style.display = "none";
@@ -383,6 +394,10 @@ function loadMap(map) {
 }
 
 function recentAndLatest() {
+  currentpage = 0;
+  document.getElementById("previous").style.background = "#cb6f6c";
+  document.getElementById("next").style.background = "#222831";
+  window.history.pushState('home', 'Home', '/');
   if( /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ) {
     document.getElementById("pagination").style.display = "flex";
   } else {
@@ -394,7 +409,6 @@ function recentAndLatest() {
     success: function(records) {
       document.getElementById("displayTimes").style.display === "flex";
 
-      // Creates a new array and then runs a for loop getting the most recent times (stops at 20)
       mostRecentTimes = [];
       for(i=0;i<records.length;i++) {
         if (records[i].map_id in jsonMapId) {
@@ -402,19 +416,15 @@ function recentAndLatest() {
         }
       }
 
-      // It then sorts the array of times so that they're in order by time.
       mostRecentTimes = sortArray(mostRecentTimes);
 
-      // Gives us all the informmation we need for a record (image, player, map, time) and formats it into a div.
       for (i=0;i<5;i++) {
-        if (mostRecentTimes[i].player_name.toString().length > 20) {
-          if (mostRecentTimes[i].player_name.toString().length > 23) {
-            playerName = mostRecentTimes[i].player_name.substr(0,15) + "...";
-          } else { playerName = mostRecentTimes[i].player_name.substr(0,17) + "..."; }
-        } else { playerName = mostRecentTimes[i].player_name; }
+        checkLength(mostRecentTimes[i])
+
         const ReadableTime = (mostRecentTimes[i].updated_on).split("T");
         const $map_div = $("<div>", {id: jsonMapId[mostRecentTimes[i].map_id][0], "class": "map_div"});
-        $map_div.append("<img src=" + "http://www.kzstats.com/img/map/" + jsonMapId[mostRecentTimes[i].map_id][0] + ".jpg>" + "<span style='color: white;'>" + jsonMapId[mostRecentTimes[i].map_id][0] + " <br>" + playerName + "<br>" + "<div>" + (mostRecentTimes[i].top_100_overall === 0 ? "NA" : '#' + mostRecentTimes[i].top_100_overall) + "</div>" + " | " + "<div>" + timeConvert(mostRecentTimes[i].time) + "</div><br>" + mostRecentTimes[i].teleports + " TPs" + "</span>");
+
+        $map_div.append("<img src=" + "https://d2u7y93d5eagqt.cloudfront.net/mapImages/thumbs/tn_" + jsonMapId[mostRecentTimes[i].map_id][0] + ".jpg>" + "<span style='color: white;'>" + jsonMapId[mostRecentTimes[i].map_id][0] + " <br>" + playerName + "<br>" + "<div>" + (mostRecentTimes[i].top_100_overall === 0 ? "NA" : '#' + mostRecentTimes[i].top_100_overall) + "</div>" + " | " + "<div>" + timeConvert(mostRecentTimes[i].time) + "</div><br>" + mostRecentTimes[i].teleports + " TPs" + "</span>");
         // This was created by Chuckles to help with selecting maps for users. Extremely useful as most users tend to not use their keyboard in 2018.
         $map_div.click(function(event){
           if (event.target.parentNode.id.includes("_")) {
@@ -424,12 +434,6 @@ function recentAndLatest() {
         });
         $("#recentTimes").append($map_div);
       }
-      $('td').click(function(event){
-        if (event.target.parentNode.id.includes("STEAM_")) {
-          $("#searchMap").val(event.target.parentNode.id);
-          getPlayerInfo("https://kztimerglobal.com/api/v1.0/records/top/recent?steam_id=" + event.target.parentNode.id + "&tickrate=128&stage=0&has_teleports=false&limit=500&modes_list_string=" + currentmode);
-        }
-      });
     }
   });
 
@@ -437,7 +441,6 @@ function recentAndLatest() {
     url: recordsTopUrl,
     success: function(recordsTop) {
 
-      // Create empty arrays.
       mostRecentTopTimes = [];
       usedTopTimes = [];
       mostRecentTopTimesFiltered = [];
@@ -448,8 +451,6 @@ function recentAndLatest() {
         }
       }
 
-      // This for loop is used to get the #1 times on maps.
-      // Eventually this will be removed as the API will do this for me.
       for (i=0;i<mostRecentTopTimes.length;i++) {
         if (usedTopTimes.includes(mostRecentTopTimes[i].map_id)) {
           continue;
@@ -457,25 +458,21 @@ function recentAndLatest() {
         mostRecentTopTimesFiltered.push(mostRecentTopTimes[i]);
         usedTopTimes.push(mostRecentTopTimes[i].map_id);
       }
-      // Filters the records by date and time.
       mostRecentTopTimesFiltered = sortArray(mostRecentTopTimesFiltered);
 
-      // Gives us all the informmation we need for a record (image, player, map, time) and formats it into a div.
       for (m=0;m<5;m++) {
         if (m >= mostRecentTopTimesFiltered.length) {
           break;
         }
-        // If name is longer than 20, but not longer than 23, length = 17 + ...
-        // If name is longer than 23, length = 15 + ...
-        if (mostRecentTopTimesFiltered[m].player_name.toString().length > 20) {
-          if (mostRecentTopTimesFiltered[m].player_name.toString().length > 23) {
-            playerName = mostRecentTopTimesFiltered[m].player_name.substr(0,15) + "...";
-          } else { playerName = mostRecentTopTimesFiltered[m].player_name.substr(0,17) + "..."; }
-        } else { playerName = mostRecentTopTimesFiltered[m].player_name; }
+
+        checkLength(mostRecentTopTimesFiltered[m])
+
+
 
         const ReadableTime = (mostRecentTopTimesFiltered[m].updated_on).split("T");
         const $map_div = $("<div>", {id: jsonMapId[mostRecentTopTimesFiltered[m].map_id][0], "class": "map_div"});
-        $map_div.append("<img src=" + "http://www.kzstats.com/img/map/" + jsonMapId[mostRecentTopTimesFiltered[m].map_id][0] + ".jpg>" + "<span style='color: white;'>" + jsonMapId[mostRecentTopTimesFiltered[m].map_id][0] + "<br>" + playerName + "<br>" + "<div>" + timeConvert(mostRecentTopTimesFiltered[m].time) + "</div></span>");
+
+        $map_div.append("<img src=" + "https://d2u7y93d5eagqt.cloudfront.net/mapImages/thumbs/tn_" + jsonMapId[mostRecentTopTimesFiltered[m].map_id][0] + ".jpg>" + "<span style='color: white;'>" + jsonMapId[mostRecentTopTimesFiltered[m].map_id][0] + "<br>" + playerName + "<br>" + "<div>" + timeConvert(mostRecentTopTimesFiltered[m].time) + "</div>" + "<br>" + "<div style='color: white; font-size: 90%; font-style: italic'>" + getTimeDifference(mostRecentTopTimesFiltered[m].created_on) + "</div>" + "</span>");
         $map_div.click(function(event){
           if (event.target.parentNode.id.includes("_")) {
             $("#searchMap").val(event.target.parentNode.id);
@@ -489,51 +486,60 @@ function recentAndLatest() {
 }
 
 /**************************************************************************************************************************
- **************************************************************************************************************************
- **************************************************************************************************************************
- **************************************************************************************************************************
- **************************************************************************************************************************
- **************************************************************************************************************************
- **************************************************************************************************************************
- **************************************************************************************************************************
- **************************************************************************************************************************
- **************************************************************************************************************************
- **************************************************************************************************************************
- **************************************************************************************************************************
- **************************************************************************************************************************
- **************************************************************************************************************************
- **************************************************************************************************************************
- **************************************************************************************************************************/
+**************************************************************************************************************************
+**************************************************************************************************************************
+**************************************************************************************************************************
+**************************************************************************************************************************
+**************************************************************************************************************************
+**************************************************************************************************************************
+**************************************************************************************************************************
+**************************************************************************************************************************
+**************************************************************************************************************************
+**************************************************************************************************************************
+**************************************************************************************************************************
+**************************************************************************************************************************
+**************************************************************************************************************************
+**************************************************************************************************************************
+**************************************************************************************************************************/
+
+function toggle(object) {
+  object.disabled = true;
+  setTimeout(function() {
+    object.disabled = false;
+  }, 500);
+}
+
 $(document).ready(function(){
 
-  $('td').click(function(event){
-    if (event.target.parentNode.id.includes("STEAM_")) {
-      $("#searchMap").val(event.target.parentNode.id);
-      getPlayerInfo("https://kztimerglobal.com/api/v1.0/records/top/recent?steam_id=" + event.target.parentNode.id + "&tickrate=128&stage=0&has_teleports=false&limit=500&modes_list_string=" + currentmode);
-    }
-  });
 
   // This allows a user to link to a direct map. Used in the discord bot.
   // Example: gokzstats.com/?map=kz_beginnerblock_go
-  const url = new URL(document.location);
-  const name = url.searchParams.get("name") || "empty";
-  const map = url.searchParams.get("map") || "empty";
-  if (map !== "empty") {
-    document.getElementById("searchMap").value = map;
-    setTimeout(function() {
-      loadMap($("#searchMap").val());
-      document.getElementById("displayMapTimes").style.display = "flex";
-      document.getElementById("displayTimes").style.display = "none";
-    });
+  if(!(/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent))) {
+
   }
-  if (name !== "empty") {
-    document.getElementById("searchMap").value = name;
-    setTimeout(function() {
-      getPlayerInfo("https://kztimerglobal.com/api/v1.0/records/top/recent?steam_id=" + $("#searchMap").val() + "&tickrate=128&stage=0&has_teleports=false&limit=500&modes_list_string=" + currentmode);
-      document.getElementById("displayPlayerTimes").style.display = "flex";
-      document.getElementById("displayMapTimes").style.display = "none";
-      document.getElementById("displayTimes").style.display = "none";
-    });
+  else if (/Edge\/\d./i.test(navigator.userAgent)){
+    // Microsoft Edge does not support searchParams.get. This just skips everything if you're on edge.
+  } else {
+    const url = new URL(document.location);
+    const name = url.searchParams.get("name") || "empty";
+    const map = url.searchParams.get("map") || "empty";
+    if (map !== "empty") {
+      document.getElementById("searchMap").value = map;
+      setTimeout(function() {
+        loadMap($("#searchMap").val());
+        document.getElementById("displayMapTimes").style.display = "flex";
+        document.getElementById("displayTimes").style.display = "none";
+      }, 500);
+    }
+    if (name !== "empty") {
+      document.getElementById("searchMap").value = name;
+      setTimeout(function() {
+        getPlayerInfo("https://kztimerglobal.com/api/v1.0/records/top/recent?steam_id=" + $("#searchMap").val() + "&tickrate=128&stage=0&has_teleports=false&limit=500&modes_list_string=" + currentmode);
+        document.getElementById("displayPlayerTimes").style.display = "flex";
+        document.getElementById("displayMapTimes").style.display = "none";
+        document.getElementById("displayTimes").style.display = "none";
+      });
+    }
   }
 
 
@@ -726,6 +732,99 @@ $(document).ready(function(){
 
   $("#previous").on('click', function() {
 
+    if (document.getElementById("displayMapTimes").style.display !== "none") {
+      if (document.getElementById("next").style.background === "#cb6f6c") {
+        return;
+      }
+      currentpage -= 20;
+      if (currentpage <= 0) {
+        currentpage = 0;
+        document.getElementById("previous").style.background = "#cb6f6c";
+      }
+      let mapOverallPosition = currentpage;
+      let mapProPosition = currentpage;
+      mostPositions = (mapRecentTimes >= mapProTimes ? mapRecentTimes : mapProTimes);
+      if (currentpage >= mostPositions.length) {
+        currentpage = Math.floor(mostPositions.length);
+        document.getElementById("previous").style.background = "#222831";
+        document.getElementById("next").style.background = "#cb6f6c";
+      } else {
+        document.getElementById("next").style.background = "#222831";
+      }
+      $("#TableOverallTimes tr").remove();
+      $("#TableProTimes tr").remove();
+      if (mostPositions.length <= currentpage) {
+        let row = document.getElementById("TableOverallTimes").insertRow(-1);
+        let cell1 = row.insertCell(0);
+        cell1.innerHTML = "No Other Records Found";
+        let row2 = document.getElementById("TableProTimes").insertRow(-1);
+        let cell2 = row2.insertCell(0);
+        cell2.innerHTML = "No Other Records Found";
+        return;
+      } else {
+        for (i=currentpage;i<currentpage+20;i++) {
+          if (mapRecentTimes.length === i) {
+            return;
+          }
+          mapOverallPosition++;
+          checkLength(mapRecentTimes[i]);
+          let row = document.getElementById("TableOverallTimes").insertRow(-1);
+          let cell1 = row.insertCell(0);
+          let cell2 = row.insertCell(1);
+          let cell3 = row.insertCell(2);
+          let cell4 = row.insertCell(3);
+          let cell5 = row.insertCell(4);
+          row.id = mapRecentTimes[i].steam_id;
+          cell2.id = "name";
+          cell2.innerHTML = playerName;
+          cell3.innerHTML = timeConvert(mapRecentTimes[i].time);
+          if(!(/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent))) {
+            cell1.innerHTML = mapOverallPosition;
+            cell4.innerHTML = mapRecentTimes[i].teleports + " TPs";
+            cell5.innerHTML = dateConvert(mapRecentTimes[i].created_on);
+          } else {
+            cell4.innerHTML = mapRecentTimes[i].teleports;
+          }
+        }
+        $('td').click(function(event){
+          if (event.target.parentNode.id.includes("STEAM_")) {
+            $("#searchMap").val(event.target.parentNode.id);
+            getPlayerInfo("https://kztimerglobal.com/api/v1.0/records/top/recent?steam_id=" + event.target.parentNode.id + "&tickrate=128&stage=0&has_teleports=false&limit=500&&place_top_at_least=20&modes_list_string=" + currentmode);
+          }
+        });
+      }
+
+      if (mapProTimes.length <= currentpage) {
+        let row = document.getElementById("TableProTimes").insertRow(-1);
+        let cell1 = row.insertCell(0);
+        cell1.innerHTML = "No Other Records Found";
+      } else {
+        for (i=currentpage;i<currentpage+20;i++) {
+          if (mapProTimes.length === i) {
+            return;
+          }
+          mapProPosition++;
+          checkLength(mapProTimes[i]);
+          let row = document.getElementById("TableProTimes").insertRow(-1);
+          let cell1 = row.insertCell(0);
+          let cell2 = row.insertCell(1);
+          let cell3 = row.insertCell(2);
+
+          row.id = mapProTimes[i].steam_id;
+          cell2.id = "name";
+          cell2.innerHTML = playerName;
+          cell3.innerHTML = timeConvert(mapProTimes[i].time);
+          if(!(/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent))) {
+            let cell4 = row.insertCell(3);
+            cell1.innerHTML = mapProPosition;
+            cell4.innerHTML = dateConvert(mapProTimes[i].created_on);
+          } else {
+            cell1.innerHTML = mapProPosition;
+          }
+        }
+      }
+    }
+
     if (document.getElementById("displayPlayerProfile").style.display !== "none") {
       if (document.getElementById("previous").style.background === "#cb6f6c") {
         return;
@@ -803,26 +902,16 @@ $(document).ready(function(){
         document.getElementById("next").style.background = "#222831";
       }
       $(".map_div").remove();
-      // For Recent Times
-      // Gives us all the informmation we need for a record (image, player, map, time) and formats it into a div.
+
       for (i=currentpage;i<currentpage+5;i++) {
 
-        // This prevents very long names from appearing as they are.
-        // This method is also used to prevent players with URLs after their names from appearing.
-        // If name is longer than 20, but not longer than 23, length = 17 + ...
-        // If name is longer than 23, length = 15 + ...
-        if (mostRecentTimes[i].player_name.toString().length > 20) {
-          if (mostRecentTimes[i].player_name.toString().length > 23) {
-            playerName = mostRecentTimes[i].player_name.substr(0,15) + "...";
-          } else { playerName = mostRecentTimes[i].player_name.substr(0,17) + "..."; }
-        } else { playerName = mostRecentTimes[i].player_name; }
-        // Constant is used because we do not want to manipulate ReadableTime past this point, as this gives us a date and time.
+        checkLength(mostRecentTimes[i]);
+
         const ReadableTime = (mostRecentTimes[i].updated_on).split("T");
-        // Constant is used because we DO intend on manipulating $map_div but we do not want to reassign it.
         const $map_div = $("<div>", {id: jsonMapId[mostRecentTimes[i].map_id][0], "class": "map_div"});
-        // This is a disaster piece of code that needs to be fixed. Appending in this size is slow.
-        $map_div.append("<img src=" + "http://www.kzstats.com/img/map/" + jsonMapId[mostRecentTimes[i].map_id][0] + ".jpg>" + "<span style='color: white;'>" + jsonMapId[mostRecentTimes[i].map_id][0] + " <br>" + playerName + "<br>" + "<div>" + (mostRecentTimes[i].top_100_overall === 0 ? "NA" : '#' + mostRecentTimes[i].top_100_overall) + "</div>" + " | " + "<div>" + timeConvert(mostRecentTimes[i].time) + "</div><br>" + (mostRecentTimes[i].teleports > 0 ? mostRecentTimes[i].teleports + " TPs" : "") + "</span>");
-        // This was created by Chuckles to help with selecting maps for users. Extremely useful as most users tend to not use their keyboard in 2018.
+
+        $map_div.append("<img src=" + "https://d2u7y93d5eagqt.cloudfront.net/mapImages/thumbs/tn_" + jsonMapId[mostRecentTimes[i].map_id][0] + ".jpg>" + "<span style='color: white;'>" + jsonMapId[mostRecentTimes[i].map_id][0] + " <br>" + playerName + "<br>" + "<div>" + (mostRecentTimes[i].top_100_overall === 0 ? "NA" : '#' + mostRecentTimes[i].top_100_overall) + "</div>" + " | " + "<div>" + timeConvert(mostRecentTimes[i].time) + "</div><br>" + (mostRecentTimes[i].teleports > 0 ? mostRecentTimes[i].teleports + " TPs" : "") + "</span>");
+        // This was created by Chuckles to help with selecting maps for users. Extremely useful as most users tend to not use their keyboard in 18.
         $map_div.click(function(event){
           if (event.target.parentNode.id.includes("_")) {
             $("#searchMap").val(event.target.parentNode.id);
@@ -832,24 +921,16 @@ $(document).ready(function(){
         $("#recentTimes").append($map_div);
       }
 
-      // For World Records.
-      // This runs the part of recentAndLatest() that fills the data
       for (m=currentpage;m<currentpage+5;m++) {
         if (m >= mostRecentTopTimesFiltered.length) {
           break;
         }
 
-        // If name is longer than 20, but not longer than 23, length = 17 + ...
-        // If name is longer than 23, length = 15 + ...
-        if (mostRecentTopTimesFiltered[m].player_name.toString().length > 20) {
-          if (mostRecentTopTimesFiltered[m].player_name.toString().length > 23) {
-            playerName = mostRecentTopTimesFiltered[m].player_name.substr(0,15) + "...";
-          } else { playerName = mostRecentTopTimesFiltered[m].player_name.substr(0,17) + "..."; }
-        } else { playerName = mostRecentTopTimesFiltered[m].player_name; }
+        checkLength(mostRecentTopTimesFiltered[m]);
 
         const ReadableTime = (mostRecentTopTimesFiltered[m].updated_on).split("T");
         const $map_div = $("<div>", {id: jsonMapId[mostRecentTopTimesFiltered[m].map_id][0], "class": "map_div"});
-        $map_div.append("<img src=" + "http://www.kzstats.com/img/map/" + jsonMapId[mostRecentTopTimesFiltered[m].map_id][0] + ".jpg>" + "<span style='color: white;'>" + jsonMapId[mostRecentTopTimesFiltered[m].map_id][0] + "<br>" + playerName + "<br>" + "<div>" + timeConvert(mostRecentTopTimesFiltered[m].time) + "</div></span>");
+        $map_div.append("<img src=" + "https://d2u7y93d5eagqt.cloudfront.net/mapImages/thumbs/tn_" + jsonMapId[mostRecentTopTimesFiltered[m].map_id][0] + ".jpg>" + "<span style='color: white;'>" + jsonMapId[mostRecentTopTimesFiltered[m].map_id][0] + "<br>" + playerName + "<br>" + "<div>" + timeConvert(mostRecentTopTimesFiltered[m].time) + "</div>" + "<br>" + "<div style='color: white; font-size: 90%; font-style: italic'>" + getTimeDifference(mostRecentTopTimesFiltered[m].created_on) + "</div>" + "</span>");
         $map_div.click(function(event){
           if (event.target.parentNode.id.includes("_")) {
             $("#searchMap").val(event.target.parentNode.id);
@@ -864,6 +945,98 @@ $(document).ready(function(){
 
   $("#next").on('click', function() {
 
+    if (document.getElementById("displayMapTimes").style.display !== "none") {
+      if (document.getElementById("next").style.background === "#cb6f6c") {
+        return;
+      }
+      currentpage += 20;
+      if (currentpage > 0) {
+        document.getElementById("previous").style.background = "#222831";
+      }
+      let mapOverallPosition = currentpage;
+      let mapProPosition = currentpage;
+      mostPositions = (mapRecentTimes >= mapProTimes ? mapRecentTimes : mapProTimes);
+      if (currentpage >= mostPositions.length) {
+        currentpage = Math.floor(mostPositions.length);
+        document.getElementById("previous").style.background = "#222831";
+        document.getElementById("next").style.background = "#cb6f6c";
+      } else {
+        document.getElementById("next").style.background = "#222831";
+      }
+      $("#TableOverallTimes tr").remove();
+      $("#TableProTimes tr").remove();
+      if (mostPositions.length <= currentpage) {
+        let row = document.getElementById("TableOverallTimes").insertRow(-1);
+        let cell1 = row.insertCell(0);
+        cell1.innerHTML = "No Other Records Found";
+        let row2 = document.getElementById("TableProTimes").insertRow(-1);
+        let cell2 = row2.insertCell(0);
+        cell2.innerHTML = "No Other Records Found";
+        return;
+      } else {
+        for (i=currentpage;i<currentpage+20;i++) {
+          if (mapRecentTimes.length === i) {
+            return;
+          }
+          mapOverallPosition++;
+          checkLength(mapRecentTimes[i]);
+          let row = document.getElementById("TableOverallTimes").insertRow(-1);
+          let cell1 = row.insertCell(0);
+          let cell2 = row.insertCell(1);
+          let cell3 = row.insertCell(2);
+          let cell4 = row.insertCell(3);
+          let cell5 = row.insertCell(4);
+          row.id = mapRecentTimes[i].steam_id;
+          cell2.id = "name";
+          cell2.innerHTML = playerName;
+          cell3.innerHTML = timeConvert(mapRecentTimes[i].time);
+          if(!(/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent))) {
+            cell1.innerHTML = mapOverallPosition;
+            cell4.innerHTML = mapRecentTimes[i].teleports + " TPs";
+            cell5.innerHTML = dateConvert(mapRecentTimes[i].created_on);
+          } else {
+            cell4.innerHTML = mapRecentTimes[i].teleports;
+          }
+        }
+      }
+
+      if (mapProTimes.length <= currentpage) {
+        let row = document.getElementById("TableProTimes").insertRow(-1);
+        let cell1 = row.insertCell(0);
+        cell1.innerHTML = "No Other Records Found";
+      } else {
+        for (i=currentpage;i<currentpage+20;i++) {
+          if (mapProTimes.length === i) {
+            return;
+          }
+          mapProPosition++;
+          checkLength(mapProTimes[i]);
+          let row = document.getElementById("TableProTimes").insertRow(-1);
+          let cell1 = row.insertCell(0);
+          let cell2 = row.insertCell(1);
+          let cell3 = row.insertCell(2);
+
+          row.id = mapProTimes[i].steam_id;
+          cell2.id = "name";
+          cell2.innerHTML = playerName;
+          cell3.innerHTML = timeConvert(mapProTimes[i].time);
+          if(!(/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent))) {
+            let cell5 = row.insertCell(3);
+            cell1.innerHTML = mapProPosition;
+            cell5.innerHTML = dateConvert(mapProTimes[i].created_on);
+          } else {
+            cell1.innerHTML = mapProPosition;
+          }
+        }
+        $('td').click(function(event){
+          if (event.target.parentNode.id.includes("STEAM_")) {
+            $("#searchMap").val(event.target.parentNode.id);
+            getPlayerInfo("https://kztimerglobal.com/api/v1.0/records/top/recent?steam_id=" + event.target.parentNode.id + "&tickrate=128&stage=0&has_teleports=false&limit=500&&place_top_at_least=20&modes_list_string=" + currentmode);
+          }
+        });
+      }
+    }
+
     if (document.getElementById("displayPlayerProfile").style.display !== "none") {
       if (document.getElementById("next").style.background === "#cb6f6c") {
         return;
@@ -877,29 +1050,22 @@ $(document).ready(function(){
         document.getElementById("previous").style.background = "#222831";
         document.getElementById("next").style.background = "#cb6f6c";
       }
-
       $("#TableTimes tr").remove();
       let count = 0;
-
-
       if (postTimes.length <= (currentpage + count)) {
         let row = document.getElementById("TableTimes").insertRow(-1);
         let cell1 = row.insertCell(0);
         cell1.innerHTML = "No Other Records Found";
       } else {
-
         let row = document.getElementById("TableTimes").insertRow(-1);
         let cell1 = row.insertCell(0);
         let cell2 = row.insertCell(1);
         let cell3 = row.insertCell(2);
-
         row.id = "TableTitle";
         cell1.innerHTML = "Map Name";
         cell2.innerHTML = "Time";
         cell3.innerHTML = "Date";
-
       }
-
       for (i=currentpage;i<currentpage+20;i++) {
         if (postTimes.length <= (currentpage + count)) {
           return;
@@ -908,17 +1074,14 @@ $(document).ready(function(){
           count = 0;
           break;
         }
-
         let row = document.getElementById("TableTimes").insertRow(-1);
         let cell1 = row.insertCell(0);
         let cell2 = row.insertCell(1);
         let cell3 = row.insertCell(2);
-
         cell1.parentNode.id = jsonMapId[postTimes[i].map_id][0];
         cell1.innerHTML = jsonMapId[postTimes[i].map_id][0];
         cell2.innerHTML = timeConvert(postTimes[i].time);
         cell3.innerHTML = dateConvert(postTimes[i].created_on);
-
         $('td').click(function(event){
           if (event.target.parentNode.id === "TableTitle") {
             return;
@@ -932,7 +1095,6 @@ $(document).ready(function(){
 
 
     if (document.getElementById("displayTimes").style.display !== "none") {
-
       if (document.getElementById("next").style.background === "#cb6f6c") {
         return;
       }
@@ -946,27 +1108,11 @@ $(document).ready(function(){
         document.getElementById("next").style.background = "#cb6f6c";
       }
       $(".map_div").remove();
-
-      // For Recent Times
-      // Gives us all the informmation we need for a record (image, player, map, time) and formats it into a div.
       for (i=currentpage;i<currentpage+5;i++) {
-
-
-        // This prevents very long names from appearing as they are.
-        // This method is also used to prevent players with URLs after their names from appearing.
-        // If name is longer than 20, but not longer than 23, length = 17 + ...
-        // If name is longer than 23, length = 15 + ...
-        if (mostRecentTimes[i].player_name.toString().length > 20) {
-          if (mostRecentTimes[i].player_name.toString().length > 23) {
-            playerName = mostRecentTimes[i].player_name.substr(0,15) + "...";
-          } else { playerName = mostRecentTimes[i].player_name.substr(0,17) + "..."; }
-        } else { playerName = mostRecentTimes[i].player_name; }
-        // Constant is used because we do not want to manipulate ReadableTime past this point, as this gives us a date and time.
+        checkLength(mostRecentTimes[i]);
         const ReadableTime = (mostRecentTimes[i].updated_on).split("T");
-        // Constant is used because we DO intend on manipulating $map_div but we do not want to reassign it.
         const $map_div = $("<div>", {id: jsonMapId[mostRecentTimes[i].map_id][0], "class": "map_div"});
-        // This is a disaster piece of code that needs to be fixed. Appending in this size is slow.
-        $map_div.append("<img src=" + "http://www.kzstats.com/img/map/" + jsonMapId[mostRecentTimes[i].map_id][0] + ".jpg>" + "<span style='color: white;'>" + jsonMapId[mostRecentTimes[i].map_id][0] + " <br>" + playerName + "<br>" + "<div>" + (mostRecentTimes[i].top_100_overall === 0 ? "NA" : '#' + mostRecentTimes[i].top_100_overall) + "</div>" + " | " + "<div>" + timeConvert(mostRecentTimes[i].time) + "</div><br>" + (mostRecentTimes[i].teleports > 0 ? mostRecentTimes[i].teleports + " TPs" : "") + "</span>");
+        $map_div.append("<img src=" + "https://d2u7y93d5eagqt.cloudfront.net/mapImages/thumbs/tn_" + jsonMapId[mostRecentTimes[i].map_id][0] + ".jpg>" + "<span style='color: white;'>" + jsonMapId[mostRecentTimes[i].map_id][0] + " <br>" + playerName + "<br>" + "<div>" + (mostRecentTimes[i].top_100_overall === 0 ? "NA" : '#' + mostRecentTimes[i].top_100_overall) + "</div>" + " | " + "<div>" + timeConvert(mostRecentTimes[i].time) + "</div><br>" + (mostRecentTimes[i].teleports > 0 ? mostRecentTimes[i].teleports + " TPs" : "") + "</span>");
         // This was created by Chuckles to help with selecting maps for users. Extremely useful as most users tend to not use their keyboard in 2018.
         $map_div.click(function(event){
           if (event.target.parentNode.id.includes("_")) {
@@ -976,24 +1122,14 @@ $(document).ready(function(){
         });
         $("#recentTimes").append($map_div);
       }
-
-      // For World Records.
-      // This runs the part of recentAndLatest() that fills the data
       for (m=currentpage;m<currentpage+5;m++) {
         if (m >= mostRecentTopTimesFiltered.length) {
           break;
         }
-        // If name is longer than 20, but not longer than 23, length = 17 + ...
-        // If name is longer than 23, length = 15 + ...
-        if (mostRecentTopTimesFiltered[m].player_name.toString().length > 20) {
-          if (mostRecentTopTimesFiltered[m].player_name.toString().length > 23) {
-            playerName = mostRecentTopTimesFiltered[m].player_name.substr(0,15) + "...";
-          } else { playerName = mostRecentTopTimesFiltered[m].player_name.substr(0,17) + "..."; }
-        } else { playerName = mostRecentTopTimesFiltered[m].player_name; }
-
+        checkLength(mostRecentTopTimesFiltered[m])
         const ReadableTime = (mostRecentTopTimesFiltered[m].updated_on).split("T");
         const $map_div = $("<div>", {id: jsonMapId[mostRecentTopTimesFiltered[m].map_id][0], "class": "map_div"});
-        $map_div.append("<img src=" + "http://www.kzstats.com/img/map/" + jsonMapId[mostRecentTopTimesFiltered[m].map_id][0] + ".jpg>" + "<span style='color: white;'>" + jsonMapId[mostRecentTopTimesFiltered[m].map_id][0] + "<br>" + playerName + "<br>" + "<div>" + timeConvert(mostRecentTopTimesFiltered[m].time) + "</div></span>");
+        $map_div.append("<img src=" + "https://d2u7y93d5eagqt.cloudfront.net/mapImages/thumbs/tn_" + jsonMapId[mostRecentTopTimesFiltered[m].map_id][0] + ".jpg>" + "<span style='color: white;'>" + jsonMapId[mostRecentTopTimesFiltered[m].map_id][0] + "<br>" + playerName + "<br>" + "<div>" + timeConvert(mostRecentTopTimesFiltered[m].time) + "</div>" + "<br>" + "<div style='color: white; font-size: 90%; font-style: italic'>" + getTimeDifference(mostRecentTopTimesFiltered[m].created_on) + "</div>" + "</span>");
         $map_div.click(function(event){
           if (event.target.parentNode.id.includes("_")) {
             $("#searchMap").val(event.target.parentNode.id);

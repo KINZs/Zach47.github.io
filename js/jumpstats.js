@@ -2,6 +2,13 @@ function showjumptypes() {
   document.getElementById("dropdown").style.display = "flex";
 }
 
+function toggle(object) {
+  object.disabled = true;
+  setTimeout(function() {
+    object.disabled = false;
+  }, 500);
+}
+
 function DropDown() {
   if (document.getElementById("dropdown").style.display === "flex") {
     document.getElementById("dropdown").style.display = "none";
@@ -39,12 +46,12 @@ function Bind() {
     document.getElementById("bindmobile").innerHTML = "Binded";
     document.getElementById("jumptype-button-laj").style.display = "none";
     document.getElementById("dropdown-laj").style.display = "none";
-    LJurl = "https://staging.kztimerglobal.com/api/v1/jumpstats/longjump/top?is_crouch_boost=true&limit=2000";
-    BHOPurl = "https://staging.kztimerglobal.com/api/v1/jumpstats/bhop/top?is_crouch_boost=true&limit=2000";
-    MBHOPurl = "https://staging.kztimerglobal.com/api/v1/jumpstats/multibhop/top?is_crouch_boost=true&limit=2000";
-    WJurl = "https://staging.kztimerglobal.com/api/v1/jumpstats/weirdjump/top?is_crouch_boost=true&limit=2000";
-    DBHOPurl = "https://staging.kztimerglobal.com/api/v1/jumpstats/dropbhop/top?is_crouch_boost=true&limit=2000";
-    CJurl = "https://staging.kztimerglobal.com/api/v1/jumpstats/countjump/top?is_crouch_boost=true&limit=2000";
+    LJurl = "https://kztimerglobal.com/api/v1.0/jumpstats/longjump/top?is_crouch_boost=true&limit=20";
+    BHOPurl = "https://kztimerglobal.com/api/v1.0/jumpstats/bhop/top?is_crouch_boost=true&limit=20";
+    MBHOPurl = "https://kztimerglobal.com/api/v1.0/jumpstats/multibhop/top?is_crouch_boost=true&limit=20";
+    WJurl = "https://kztimerglobal.com/api/v1.0/jumpstats/weirdjump/top?is_crouch_boost=true&limit=20";
+    DBHOPurl = "https://kztimerglobal.com/api/v1.0/jumpstats/dropbhop/top?is_crouch_boost=true&limit=20";
+    CJurl = "https://kztimerglobal.com/api/v1.0/jumpstats/countjump/top?is_crouch_boost=true&limit=20";
     playerListLJ = [];
     playerListBHOP = [];
     playerListMBHOP = [];
@@ -60,7 +67,7 @@ function Bind() {
     $("#TableCJ tr:not(:first)").remove();
     $("#TableLAJ tr:not(:first)").remove();
 
-    // Reset everything
+    // Reset everything and select LJ for bind
     Reset();
   }
   // if you dont want bind jumps to show up
@@ -71,13 +78,13 @@ function Bind() {
     document.getElementById("bindmobile").innerHTML = "Not Binded";
     document.getElementById("jumptype-button-laj").style.display = "flex";
     document.getElementById("dropdown-laj").style.display = "flex";
-    LJurl = "https://staging.kztimerglobal.com/api/v1.0/jumpstats/longjump/top?is_crouch_boost=false";
-    BHOPurl = "https://staging.kztimerglobal.com/api/v1.0/jumpstats?jumptype=bhop&is_crouch_boost=false";
-    MBHOPurl = "https://staging.kztimerglobal.com/api/v1.0/jumpstats?jumptype=multibhop&is_crouch_boost=false";
-    WJurl = "https://staging.kztimerglobal.com/api/v1.0/jumpstats?jumptype=weirdjump&is_crouch_boost=false";
-    DBHOPurl = "https://staging.kztimerglobal.com/api/v1.0/jumpstats?jumptype=dropbhop&is_crouch_boost=false";
-    CJurl = "https://staging.kztimerglobal.com/api/v1.0/jumpstats?jumptype=countjump&is_crouch_boost=false";
-    LAJurl = "https://staging.kztimerglobal.com/api/v1.0/jumpstats?jumptype=ladderjump&is_crouch_boost=false";
+    LJurl = "https://kztimerglobal.com/api/v1.0/jumpstats/longjump/top?is_crouch_boost=false&limit=20";
+    BHOPurl = "https://kztimerglobal.com/api/v1.0/jumpstats/bhop/top?is_crouch_boost=false&limit=20";
+    MBHOPurl = "https://kztimerglobal.com/api/v1.0/jumpstats/multibhop/top?is_crouch_boost=false&limit=20";
+    WJurl = "https://kztimerglobal.com/api/v1.0/jumpstats/weirdjump/top?is_crouch_boost=false&limit=20";
+    DBHOPurl = "https://kztimerglobal.com/api/v1.0/jumpstats/dropbhop/top?is_crouch_boost=false&limit=20";
+    CJurl = "https://kztimerglobal.com/api/v1.0/jumpstats/countjump/top?is_crouch_boost=false&limit=20";
+    LAJurl = "https://kztimerglobal.com/api/v1.0/jumpstats/ladderjump/top?is_crouch_boost=false&limit=20";
     playerListLJ = [];
     playerListBHOP = [];
     playerListMBHOP = [];
