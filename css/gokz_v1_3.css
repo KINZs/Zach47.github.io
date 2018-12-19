@@ -1,0 +1,1256 @@
+html, body {
+  background-color: #393E46;
+  height: 100%;
+  margin: 0;
+}
+
+#graph_container, #button_container {
+  display: none;
+  justify-content: center;
+}
+
+#gokz_api_bans_title {
+  display: none;
+}
+
+#maps {
+  display: none;
+}
+
+#map_search {
+  display: none;
+  background-color: rgb(203, 111, 108);
+  border: none;
+  color: #FFF;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  outline: none;
+  padding: 15px;
+}
+
+#map_graph {
+  display: none;
+  padding: 25px 0px 25px 0px;
+}
+
+#loading {
+  display: none;
+}
+
+#errorloading {
+  display: none;
+}
+
+:root {
+  --font-size: 15px;
+  --height: calc(200px);
+  --width: calc(130px);
+}
+
+.navbar {
+  display: none;
+}
+
+.title {
+  display: none;
+}
+
+.mobile-nav {
+  color: #DDDFD4;
+  height: 34px;
+  display: flex;
+}
+
+.mobile-nav-icon {
+  margin: auto;
+  z-index: 1;
+}
+
+.mobile-nav-logo {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  height: 36px;
+  width: auto;
+}
+
+.sidenav {
+  background-color: #222831;
+  height: 100%;
+  left: 0%;
+  overflow-x: hidden;
+  padding-top: 60px;
+  position: fixed;
+  transition: 0.5s;
+  width: 0%;
+  z-index: 3;
+}
+
+.sidenav a {
+  color: #E45051;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-family: 'Roboto', sans-serif;
+  font-size: 35px;
+  text-decoration: none;
+}
+
+.sidenav .fa-times {
+  color: #DDDFD4;
+}
+
+.sidenav .closebtn {
+  font-size: 35px;
+  right: 20px;
+  margin: 6px;
+  padding: 0;
+  position: absolute;
+  top: 0;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner {
+  background-color: #222831;
+  height: 40px;
+  width: auto;
+  display: flex;
+  justify-content: flex-start;
+  padding: 3px 15px 3px 35px;
+}
+
+.header {
+  display:none;
+}
+
+.btn {
+  letter-spacing: 1px;
+  font-size: 17px;
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  color: #E45051;
+  background-color: transparent;
+  border: none;
+  margin: 5px;
+  outline: none;
+  cursor: pointer;
+}
+
+td, a, img {
+  cursor: pointer;
+}
+
+.modes {
+  display: flex;
+  justify-content: center;
+  background-color: #222831;
+}
+
+#displayTimes {
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+}
+
+#recentTimes {
+  border-right: 4px #E45051 inset;
+  height: auto;
+  width: 100%;
+  background-color: #222831;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: calc(10px + .05vh);
+}
+
+#recentTimes span {
+  font-size: calc(12px + .1vh);
+  padding: 5px;
+}
+
+#topTimes {
+  height: auto;
+  width: 100%;
+  background-color: #222831;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: calc(10px + .05vh);
+}
+
+#topTimes span {
+  font-size: calc(12px + .1vh);
+  padding: 5px;
+  padding-bottom: 25px;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+#Tables {
+  border-collapse: collapse;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 10px;
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+
+#Tables tr {
+  color: #FFF;
+  padding: 0px;
+}
+
+#Tables tbody tr {
+  border-bottom: 1px rgba(255, 255, 255, 0.3) solid;
+}
+
+#Tables tbody tr:last-child {
+  border-bottom: none;
+}
+
+#Tables tbody tr td {
+  padding: 5px;
+}
+
+#Tables tbody tr td:first-child {
+  color: #E45051;
+}
+
+#displayMapTimes {
+  background-color: #222831;
+  display: none;
+  margin: auto;
+  width: 98%;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  font-family: sans-serif;
+}
+
+#recentMapTimes {
+  display: none;
+  flex-direction: column;
+  max-width: 900px;
+  width: 50%;
+  background-color: #222831;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+}
+
+#topMapTimes {
+  display: flex;
+  flex-direction: column;
+  max-width: 900px;
+  background-color: #222831;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px
+}
+
+#displayPlayerProfile {
+  display: none;
+  margin: auto;
+  justify-content: center;
+  width: 98%;
+}
+
+#playerInfo {
+  color: #FFF;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Montserrat', sans-serif;
+  font-size: calc(12px + 0.4vh);
+  padding-top: 15px;
+}
+
+#playerInfo a {
+  font-size: 32px;
+  justify-content: center;
+}
+
+#playerInfo #playerPoints {
+  font-size: 18px;
+  padding: 5px 0px 5px 0px;
+  text-align: center;
+}
+
+#playerInfo #playerSteamID, #playerInfo, #playerInfo div, #playerInfo #playerWorldRecords {
+  padding: 5px 0px 5px 0px;
+  font-size: 14px;
+  text-align: center;
+}
+
+#showTimes, #showGlobalTimes {
+  padding: 15px;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+
+#displayPlayerTimes {
+  align-items: center;
+  background-color: #222831;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Montserrat', sans-serif;
+  height: 120%;
+  padding-bottom: 30px;
+  width: 100%;
+}
+
+#displayPlayerTimes a {
+  color: #FFF;
+  text-decoration: none;
+}
+
+
+#displayPlayerTimes h2 {
+  text-align: center;
+}
+
+#TablesPlayer {
+  padding-top: 10px;
+  font-size: calc(9px + .5vh);
+}
+
+#TablesPlayer tbody tr td {
+  padding: 8px;
+  color: #FFF;
+  font-family: 'Montserrat', sans-serif;
+}
+
+#TablesPlayer tbody tr {
+  border-bottom: 1px rgba(255, 255, 255, 0.3) solid;
+}
+
+#TablesPlayer tbody tr:first-child, tr:last-child {
+  border-bottom: none;
+}
+
+#TablesPlayer tbody tr td:nth-child(1) {
+  text-align: left;
+}
+
+#TablesPlayer tbody tr td:nth-child(2) {
+  text-align: right;
+}
+
+#TablesPlayer tbody tr td:nth-child(3) {
+  text-align: right;
+}
+
+#TablesPlayer tbody tr td:nth-child(3) {
+  text-align: right;
+}
+
+#TablesPlayer tbody tr td:nth-child(4) {
+  text-align: right;
+}
+
+#TablesPlayer tbody tr td:nth-child(5) {
+  text-align: right;
+}
+
+#PROMapTimesAjax {
+  font-size: 2vh;
+  text-align: left;
+  padding-left: 5%;
+}
+
+#TPMapTimesAjax {
+  font-size: 2vh;
+  text-align: left;
+  padding-left: 5%;
+}
+
+#TableTimes {
+  font-size: 8px;
+}
+
+#TableTitle td {
+  color: #E45051 !important;
+}
+
+#TableTimes tr td:nth-child(2) {
+  padding-left: 0px;
+  border-bottom: none;
+}
+
+#TableTimes tr td:nth-child(3) {
+  padding-left: 0px;
+  border-bottom: none;
+}
+
+#Tables tbody tr td:nth-child(5) {
+  display: none;
+}
+
+#TableTimes tr:last-child {
+  border-bottom: none;
+}
+
+.map_div {
+  height: 27vh;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 3vh;
+}
+
+.map_div span {
+  width: 23.5vh;
+  align-self: center;
+}
+
+.map_div div {
+  display: inline-block;
+  color: #E45051;
+}
+
+.map_div img {
+  position: relative;
+  align-self: center;
+  width: 24vh;
+  height: 14vh;
+}
+
+.map_div img::after {
+  color: white;
+  display: flex;
+  justify-content: center;
+  bottom: 0%;
+  content: "Image not available";
+  position: absolute;
+  background-color: #222831;
+  width: 100%;
+  height: 100%;
+}
+
+#playerLeaderboards {
+  display: none;
+  margin: auto;
+  width: 98%;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  font-family: sans-serif;
+}
+
+#TitleLeaderboards, #kzstatslink {
+  text-decoration: none;
+  outline: none;
+  color: white;
+}
+
+#proPlayerLeaderboards {
+  background-color: #222831;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  min-height: 850px;
+  padding-bottom: 25px;
+  text-align: center;
+}
+
+#LeaderboardTables_points_title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  color: white;
+}
+
+#LeaderboardTables_records_title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  color: white;
+}
+
+#searchBar {
+  background-color: #222831;
+  border-bottom: 4px #393E46 solid;
+  display: flex;
+  justify-content: center;
+}
+
+#errorWarning {
+  display: none;
+  justify-content: center;
+  font-family: 'Lalezar', cursive;
+  color: white;
+  background-color: #222831;
+  text-align: center;
+}
+
+#mode-kz_vanilla-desktop:hover, #mode-kz_simple-desktop:hover, #mode-kz_timer-desktop:hover {
+  transition: 0.2s ease;
+  color: orange !important;
+}
+
+#mode-kz_simple-desktop {
+  color: orange;
+}
+
+input[type=search] {
+  padding: 4px 8px;
+  margin: 8px 0px;
+  border-radius: 4px;
+  text-align: center;
+  background: transparent;
+  border: none;
+  min-width: 80%;
+  font-size: 16px;
+  border-bottom: 2px #dddfd4 solid;
+  color: #dddfd4;
+  outline: none;
+}
+
+input[type=search]::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+  height: 10px;
+  width: 10px;
+  border-radius: 4px;
+  background: #E45051;
+  color: #E45051;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: white;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: white;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: white;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: white;
+}
+
+::-webkit-scrollbar-track
+{
+  border-radius: 2px;
+  background: -webkit-linear-gradient(#222831, #393E46); /* For Safari 5.1 to 6.0 */
+  background: linear-gradient(#222831, #393E46); /* Standard syntax */
+}
+
+::-webkit-scrollbar
+{
+  width: 12px;
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb
+{
+  border-radius: 2px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+  background-color: #E45051;
+}
+
+#pagination, #previous, #next {
+  display: flex;
+}
+
+#pagination {
+  opacity: 0;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#previous, #next {
+  display: inline-block;
+}
+
+#pagination ul {
+  padding: 0;
+}
+
+#pagination a {
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-size: calc(12px + .8vh);
+  padding: 8px 32px;
+  position: relative;
+  text-decoration: none;
+}
+
+#pagination #previous {
+  background-color: #cb6f6c;
+}
+
+#pagination ul, #pagination a, .title, .modes, #recentTimes, #topTimes {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently
+  supported by Chrome and Opera */
+}
+
+
+/* ``````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````*/
+@media (min-width: 1000px) {
+  .Header {
+    z-index: 5;
+  }
+
+  #loadingimage {
+    cursor: default;
+    width: 150px;
+    height: auto;
+  }
+
+  #map_search {
+    display: flex;
+  }
+
+  #LeaderboardOptions {
+    color: white;
+    justify-content: center;
+    padding-bottom: 20px;
+  }
+
+  #LeaderBoardOptions_tech, #LeaderBoardOptions_bhop, #LeaderBoardOptions_climb, #LeaderBoardOptions_combo, #LeaderBoardOptions_overall {
+    background: none;
+    border: none;
+    color: #E45051;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    outline: none;
+    padding: 10px 50px 10px 50px;
+  }
+
+  #LeaderBoardOptions_tech:hover, #LeaderBoardOptions_bhop:hover, #LeaderBoardOptions_climb:hover, #LeaderBoardOptions_combo:hover, #LeaderBoardOptions_overall:hover {
+    transition: 0.2s ease;
+    color: orange !important;
+  }
+
+  #maps {
+    margin: auto;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  #list_maps {
+    width: 70%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+  }
+
+  #list_of_maps, #TitleMaps {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: #222831;
+    padding-bottom: 15px;
+    padding-top: 15px;
+  }
+
+  #TitleMaps {
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  .maps_page_list {
+    display: flex;
+    flex: 1 0 24%;
+    margin: 5px;
+    flex-direction: row;
+    align-self: flex-start;
+    padding-left: 20px;
+  }
+
+  .maps_page_list span {
+    font-size: calc(var(--font-size));
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    align-self: flex-start;
+  }
+
+  #loading {
+    z-index: 1;
+    color: white;
+    display: flex;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    top: 162px;
+    bottom:0;
+    right:0;
+    left:0;
+    background-color: #222831;
+    opacity: 1;
+    transition: opacity 0.1s linear;
+  }
+
+  #errorloading {
+    z-index: 1;
+    color: white;
+    display: none;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    width: 1000px;
+    height: 600px;
+    background-color: #222831;
+    opacity: 1;
+    transition: opacity 0.1s linear;
+
+  }
+
+  /* Navbar */
+  .navbar {
+    display: flex;
+    margin: 0;
+  }
+
+  .btn {
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    color: #E45051;
+    background-color: transparent;
+    border: none;
+    margin: 5px;
+    outline: none;
+  }
+
+  ul.breadcrumbs {
+    /* This makes it so you cannot highlight the navbar */
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: -moz-none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    /* CSS */
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    margin: 0;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    padding-top: 8px;
+    padding-left: 0px;
+    background-color: #222831;
+    list-style: none;
+    z-index: 2; /* This is used so that the navbar is above the title */
+  }
+  ul.breadcrumbs li+li:before {
+    display: inline;
+    padding: 8px;
+    color: grey;
+    content: "/";
+  }
+  .navbar li {
+    background-color: #222831;
+    color: #EEE;
+    display: inline;
+    text-align: center;
+  }
+  .navbar a {
+    color: #EEE;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    padding-left: 15px;
+    padding-right: 10px;
+  }
+
+  .navbar a:link, a:hover, a:visited {
+    text-decoration: none;
+  }
+
+  .mobile-nav {
+    display: none;
+  }
+
+  .banner {
+    background-color: #222831;
+    display: flex;
+    flex-direction: column;
+    height: 80px;
+    padding: 0px;
+    z-index: 2;
+  }
+
+  .title {
+    color: #DDDFD4;
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+    font-size: 42px;
+    justify-content: center;
+  }
+
+  .modes {
+    background-color: #222831;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    z-index: 2;
+  }
+
+  #displayTimes {
+    background-color: transparent;
+    width: 50%;
+  }
+
+  #TableTimes {
+    font-size: 15px;
+  }
+
+  #recentTimes, #topTimes {
+    font-size: 16px;
+    height: 600px;
+    width: 550px;
+  }
+
+  #recentTimes img::after {
+    font-size: 12px;
+  }
+
+  #recentTimes span {
+    font-size: font-size: calc(var(--font-size));
+    background-color: transparent;
+    padding: 5px;
+    padding-left: 9px;
+  }
+
+  #topTimes img::after {
+    font-size: 12px;
+  }
+
+  #topTimes span {
+    font-size: font-size: calc(var(--font-size));
+    background-color: transparent;
+    padding: 5px;
+    padding-left: 9px;
+  }
+
+  #displayMapTimes {
+    margin: auto;
+  }
+
+  #recentMapTimes {
+    font-size: calc(12px + .5vh);
+    display: flex;
+  }
+
+  #recentMapTimes h2 {
+    font-size: 20px;
+  }
+
+  #topMapTimes {
+    font-size: calc(12px + .5vh);
+    width: 50%;
+  }
+
+  #topMapTimes h2 {
+    font-size: 20px;
+  }
+
+  #Tables, #TablesLeaderBoards {
+    width: auto;
+    border-collapse: collapse;
+    color: white;
+    display: flex;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    justify-content: center;
+    padding: 0px 50px 0px 50px;
+  }
+
+  #LeaderboardTables_points {
+    margin-right: 50px;
+  }
+
+  #Tables tr, #TablesLeaderBoards tr {
+    color: #FFF;
+    padding: 0px;
+  }
+
+  #Tables tbody tr td, #TablesLeaderBoards tbody tr td {
+    padding: 8px;
+  }
+
+  #Tables tbody tr, #TablesLeaderBoards tbody tr{
+    border-bottom: 1px rgba(255, 255, 255, 0.3) solid;
+  }
+
+  #Tables tbody tr:nth-child(even), #TablesLeaderBoards tbody tr:nth-child(even) {
+    background-color: #212A36;
+  }
+
+  #Tables tbody tr:last-child, #TablesLeaderBoards tbody tr:last-child {
+    border-bottom: none;
+  }
+
+  #Tables tbody tr td:first-child, #TablesLeaderBoards tbody tr td:first-child {
+    color: #E45051;
+    text-align: left;
+    width: 35px;
+  }
+
+  #Tables tbody tr td:nth-child(2), #TablesLeaderBoards tbody tr td:nth-child(2) {
+    text-align: left;
+  }
+
+  #Tables tbody tr td:nth-child(3), #TablesLeaderBoards tbody tr td:nth-child(3) {
+    text-align: right;
+    width: 95px;
+  }
+
+  #TablesLeaderBoards tbody tr td:nth-child(4) {
+    text-align: right;
+    width: 90px;
+  }
+
+  #Tables tbody tr td:nth-child(4) {
+    font-size: 95%;
+    text-align: right;
+    width: 70px;
+  }
+
+  #Tables tbody tr td:nth-child(5) {
+    color: #E45051;
+    font-size: 80%;
+    width: 200px;
+    display: table-cell;
+  }
+
+  #Tables tbody tr td:last-child {
+    font-size: 85%;
+    text-align: right;
+    width: 160px;
+  }
+
+  #TableTimes tr td:nth-child(2) {
+    padding-left: 45px;
+    border-bottom: none;
+  }
+
+  #TableTimes tr td:nth-child(3) {
+    padding-left: 45px;
+    border-bottom: none;
+  }
+
+  #TableTimes tr:last-child {
+    border-bottom: none;
+  }
+
+  #displayPlayerProfile {
+    height: auto;
+    min-height: 600px;
+  }
+
+  #displayPlayerTimes {
+    align-items: flex-start;
+    flex-direction: row;
+    height: 750px;
+    width: 1050px;
+    display: flex;
+    justify-content: space-evenly;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #222831;
+    padding-bottom: 30px;
+  }
+
+  #TablesPlayer {
+    width: 800px;
+    padding-top: 7px;
+    font-size: 15px;
+  }
+
+  #mode-kz_vanilla-desktop:hover, #mode-kz_simple-desktop:hover, #mode-kz_timer-desktop:hover {
+    transition: 0.2s ease;
+    color: orange !important;
+  }
+
+  #playerBans {
+    display: none;
+  }
+
+  #playerBanInfo {
+    display: none;
+  }
+
+  #mode-kz_simple-desktop {
+    color: orange;
+  }
+
+  #playerBans {
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  #TablesBans, #playerBanInfo {
+    display: none;
+    background-color: #222831;
+    color: white;
+  }
+
+  #gokz_api_bans_title, #gokz_api_player_ban_title {
+    display: flex;
+    padding: 8px;
+    font-size: 18px;
+  }
+
+  #gokz_api_player_ban_title {
+    min-width: 500px;
+    width: auto;
+  }
+
+  #gokz_api_bans td, #gokz_api_player_ban td {
+    padding: 8px;
+  }
+
+  #gokz_api_bans tr {
+    border-bottom: 1px solid grey;
+  }
+
+  #gokz_api_bans tr:last-child {
+    border-bottom: none;
+  }
+
+  #gokz_api_bans td:nth-child(3), #gokz_api_player_ban td:nth-child(3) {
+    width: 650px;
+    font-size: 13px;
+  }
+
+  #TableTitle td:nth-child(3) {
+    font-size: 16px;
+  }
+
+  .main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .map_div {
+    height: 84px;
+    display: flex;
+    flex-direction: row;
+    align-self: flex-start;
+    padding-bottom: 20px;
+    padding-left: 20px;
+  }
+
+  .map_div span {
+    padding-left: 1vh;
+    width: 32vh;
+    text-align: left;
+  }
+
+  .map_div div {
+    display: inline-block;
+    color: #E45051;
+  }
+
+  .map_div img {
+    align-self: center;
+    border-radius: 4px;
+    box-shadow: 1px 1px 5px;
+    height: 84px;
+    position: relative;
+    width: 150px;
+  }
+
+  .map_div img::after {
+    line-height: 5;
+  }
+
+
+  #PROMapTimesAjax {
+    font-size: calc(11px + 1vh);
+    text-align: left;
+    padding-left: 5%;
+    padding-right: 2.5%;
+  }
+
+  #TPMapTimesAjax {
+    font-size: calc(11px + 1vh);
+    text-align: left;
+    padding-left: 5%;
+    padding-right: 2.5%;
+  }
+
+  #pagination {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 65px;
+  }
+
+  #previous, #next {
+    display: inline-block;
+  }
+
+  #pagination ul {
+    padding: 0;
+  }
+
+  #pagination a {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: calc(12px + .8vh);
+    padding: 8px 32px;
+    text-decoration: none;
+  }
+
+  #pagination #previous {
+    background-color: #cb6f6c;
+  }
+
+  #pagination ul, #pagination a, .title, .modes, #recentTimes, #topTimes {
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently
+    supported by Chrome and Opera */
+  }
+
+  input[type=search] {
+    min-width: 220px;
+  }
+
+  input[type=search]:focus {
+    outline: none;
+  }
+}
+
+/**********************************************************************************************************************************************/
+
+@media (min-width: 1921px) {
+  #recentTimes, #topTimes {
+    height: 100%;
+    width: 100%;
+  }
+
+  #list_maps {
+    width: 50%;
+  }
+
+  #loading {
+    z-index: 1;
+    margin: 0;
+    padding: 0;
+    color: white;
+    display: flex;
+    position: fixed;
+    top:162px;
+    bottom:0;
+    right:0;
+    left:0;
+    background-color: #222831;
+    opacity: 1;
+    transition: opacity 0.1s linear;
+  }
+
+  #map_search {
+    display: flex;
+  }
+
+  #errorloading {
+    z-index: 1;
+    color: white;
+    display: none;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    width: 1200px;
+    height: 725px;
+    background-color: #222831;
+    opacity: 1;
+    transition: opacity 0.1s linear;
+  }
+
+  #recentMapTimes, #topMapTimes {
+    display: flex;
+    width: 1000px;
+  }
+
+  #displayMapTimes {
+    height: auto;
+    min-height: 840px;
+    width: 75%;
+    padding-bottom: 50px;
+    background-color: #222831;
+  }
+
+  #Tables {
+    font-size: 16px;
+    height: auto;
+  }
+
+  #TablesPlayer {
+    font-size: 15px;
+    width: 800px;
+  }
+
+  #displayPlayerProfile {
+    width: 75%;
+    height: auto;
+    min-height: 600px;
+  }
+
+  #displayPlayerTimes {
+    flex-direction: row;
+    height: 790px;
+    width: 1100px;
+    display: flex;
+    justify-content: space-evenly;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #222831;
+    padding-bottom: 30px;
+  }
+
+  .map_div {
+    height: 112px;
+    display: flex;
+    flex-direction: row;
+    align-self: flex-start;
+    padding-bottom: 0px;
+    padding-left: 20px;
+  }
+
+  .map_div img {
+    position: relative;
+    border-radius: 4px;
+    box-shadow: 1px 1px 5px;
+    align-self: center;
+    width: 150px;
+    height: 84px;
+  }
+
+  .map_div img::after {
+    line-height: 7;
+  }
+
+  #Tables tbody tr td:last-child {
+    font-size: 85%;
+    text-align: right;
+    width: 180px;
+  }
+}
